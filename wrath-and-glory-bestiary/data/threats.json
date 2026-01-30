@@ -4877,6 +4877,7 @@
   {
     "id": "dreadnought",
     "name": "DREADNOUGHT",
+    "quote": "Even in death I still serve.",
     "description": "Rampaging across war zones, Dreadnoughts carve out great swathes of destruction from the enemy ranks, wielding an array of brutal weaponry.\n\nTo be interned within the sarcophagus of a Dreadnought is both a great honour and a terrible fate. Returned from the very abyss of death, the remaining biological matter is bonded with the machine spirit of these mighty war machines, allowing them to wage war on the enemies of the Chapter for centuries to come.\n\nThe immense size and destructive capabilities of a Dreadnought mean that they are usually reserved for the most fierce and deadly battlefields, however a Player and GM may decide that the return of a deceased Space Marine Agent in the role of a Dreadnought could serve as a poignant and vengeful ending.",
     "tierThreat": { "1": "A", "2": "A", "3": "A", "4": "E" },
     "keywords": ["ADEPTUS ASTARTES"],
@@ -4937,6 +4938,7 @@
   {
     "id": "brother_sgt_hofniel",
     "name": "BROTHER SGT HOFNIEL",
+    "description": "In the brief years since his initiation, Hofniel has served in dozens of conflicts. He earned the rank of Sergeant after only a handful of engagements, when he demonstrated his calm leadership in the heat of combat. During a mission to Persephone's Regret, his Sergeant and several squad members were incapacitated by enemy fire. Hofniel not only completed the mission but even carried the injured to safety, extracting them to ensure they survived for later treatment.\n\nThe Sergeant holds the members of Righteous Will to the highest standards. They drill constantly to maintain and expand a series of predefined fire combat drills, which can be adapted to most tactical situations. Hofniel is fluent in rapidly identifying the most appropriate of those for any engagement and issuing commands necessary to execute them. Hofniel trusts his squad to immediately comply, reacting to their actions with transhuman swiftness to account for issues arising from communications break down or deadly environmental conditions. When it comes to their fields of expertise, he expects his battle-brothers to have a knowledge base that goes beyond his own, and does not hesitate to ask for input.",
     "tierThreat": { "1": "A", "2": "E", "3": "T", "4": "T" },
     "keywords": ["ADEPTUS ASTARTES", "IMPERIUM", "ABSOLVERS CHAPTER"],
     "attributes": { "S": 5, "T": 6, "A": 5, "I": 5, "Wil": 4, "Int": 4, "Fel": 2 },
@@ -5110,6 +5112,7 @@
   {
     "id": "corrupted_scribes",
     "name": "CORRUPTED SCRIBES",
+    "description": "The pilgrims of the Compostela cling to a semblance of life as hollowed-out husks eternally copying the Liber Servitium, unaware of their part in their own damnation. If disturbed, they respond with lethal force. One scribe is no threat to a well-armed agent, but a thousand might be a different issue.",
     "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
     "keywords": ["CHAOS", "TZEENTCH"],
     "attributes": { "S": 1, "T": 1, "A": 1, "I": 2, "Wil": 1, "Int": 3, "Fel": 2 },
@@ -5135,6 +5138,7 @@
   {
     "id": "jacobin_grizari",
     "name": "JACOBIN GRIZARI",
+    "description": "Jacobin Grizari is a charming and persuasive master criminal who shook Gilead high society with an outrageous heist of truly epic proportions. He convinced many of the upper echelons to invest a veritable fortune in Thronegelt on an audacious scheme promising a new and safe route through the Straits of Andraste, waiting only long enough for the Thronegelt to be in his possession before making his escape. The bounty on his head is sizable.",
     "tierThreat": { "1": "E", "2": "T", "3": "T", "4": "T" },
     "keywords": ["GENESTEALER CULT", "IMPERIUM", "SCUM"],
     "attributes": { "S": 2, "T": 2, "A": 3, "I": 4, "Wil": 5, "Int": 3, "Fel": 6 },
@@ -5162,6 +5166,7 @@
   {
     "id": "slaughter_servitor_processor",
     "name": "SLAUGHTER SERVITOR (PROCESSOR)",
+    "description": "Slaughter Servitors are horrific machines of death active at the Abattoir of the Luminous Emperor. The Processor variant is designed to swiftly dispatch targets with its spiker after immobilizing them with an electro-prod.",
     "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
     "keywords": ["ADEPTUS MECHANICUS", "IMPERIUM", "SERVITOR"],
     "attributes": { "S": 4, "T": 3, "A": 2, "I": 2, "Wil": 1, "Int": 1, "Fel": 1 },
@@ -5189,6 +5194,7 @@
   {
     "id": "slaughter_servitor_corral",
     "name": "SLAUGHTER SERVITOR (CORRAL)",
+    "description": "Slaughter Servitors are horrific machines of death active at the Abattoir of the Luminous Emperor. The Corral variant is a larger, heavily armored servitor designed to restrain and immobilize targets with its powerful hydraulic claws.",
     "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
     "keywords": ["ADEPTUS MECHANICUS", "IMPERIUM", "SERVITOR"],
     "attributes": { "S": 4, "T": 4, "A": 1, "I": 2, "Wil": 1, "Int": 1, "Fel": 1 },
@@ -5215,6 +5221,7 @@
   {
     "id": "slaughter_servitor_excoriator",
     "name": "SLAUGHTER SERVITOR (EXCORIATOR)",
+    "description": "Slaughter Servitors are horrific machines of death active at the Abattoir of the Luminous Emperor. The Excoriator variant is equipped with deadly blade arms designed to flay and bleed targets with horrifying efficiency.",
     "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
     "keywords": ["ADEPTUS MECHANICUS", "IMPERIUM", "SERVITOR"],
     "attributes": { "S": 4, "T": 3, "A": 3, "I": 3, "Wil": 1, "Int": 1, "Fel": 1 },
@@ -5241,6 +5248,7 @@
   {
     "id": "eternity_watch",
     "name": "ETERNITY WATCH",
+    "description": "Eternity Watch are boundlessly enthusiastic about the great work. Far more given to free-thinking and fanciful expressions of faith than the typical Tech-Priest, they scoff at the idea of their research being dangerous, and quickly forget anything troubling or suspicious to do with the flares or their own behaviour.",
     "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
     "keywords": ["ADEPTUS MECHANICUS", "AVACHRUS FORGE WORLD", "IMPERIAL"],
     "attributes": { "S": 2, "T": 2, "A": 2, "I": 2, "Wil": 1, "Int": 4, "Fel": 3 },
@@ -5265,6 +5273,8 @@
   {
     "id": "machinae_fractus",
     "name": "MACHINAE FRACTUS",
+    "quote": "The Machine God is broken. The flesh is weak. Only together can they be redeemed.",
+    "attribution": "Archdominus Vakuul",
     "description": "The Machinae are a horrible fusion of man and machine, but not as the Omnissiah intended. They shamble relentlessly towards enemies, heedless of their own lives. When an enemy falls in battle, some of them are tasked with carrying away the remains to be processed into more abominations.",
     "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
     "keywords": ["ADEPTUS MECHANICUS", "CHAOS", "HERETIC"],
@@ -5293,6 +5303,9 @@
   {
     "id": "sundered_wheel_cultist",
     "name": "SUNDERED WHEEL CULTIST",
+    "quote": "We must remind the Magi that even the mightiest machine rests upon the functioning of its simplest component.",
+    "attribution": "Alorex Vaunt, Cultist of the Sundered Wheel",
+    "description": "The Sundered Wheel is a cult of labourers who sabotage equipment to protest the harsh conditions imposed by the Mechanicus. Cultists are almost serene in their devotion to the Omnissiah, but should any mention be made of the Tech-Priests mistreating the laity, their faces grow grim and their jaws clench. Occasionally they will whisper a prayer about the Omnissiah's wrath while touching their hidden cog.",
     "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
     "keywords": ["ADEPTUS MECHANICUS", "CHAOS", "HERETIC"],
     "attributes": { "S": 3, "T": 2, "A": 2, "I": 2, "Wil": 2, "Int": 3, "Fel": 2 },
@@ -5479,6 +5492,9 @@
   {
     "id": "worshipful_rootfolk",
     "name": "WORSHIPFUL ROOTFOLK",
+    "quote": "Roots go deep, roots know all. Drink of the blood of the roots and hear their wisdom.",
+    "attribution": "Congregation of the Worshipful Rootfolk",
+    "description": "The Rootfolk exist largely in a state of serene ignorance, utterly dedicated to the giftroot. They are peaceful and calm, except when roused to defend the giftroot, when they become fanatical. Most rootfolk are ill-educated peasants, simple commoners with little idea about the world beyond their dominion.",
     "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
     "keywords": ["HERETIC", "IMPERIAL"],
     "attributes": { "S": 4, "T": 4, "A": 2, "I": 2, "Wil": 2, "Int": 2, "Fel": 2 },
@@ -5504,6 +5520,7 @@
   {
     "id": "duke_of_putrescence",
     "name": "DUKE OF PUTRESCENCE (BLIGHTLORD CHAMPION)",
+    "description": "Khargast the Bloated is a Chaos Space Marine in Terminator Armour, blessed by Nurgle and armed with a fearsome Power Axe. He is oddly good-humoured, and talks to his opponents like old friends, although his phlegmy, gurgling voice is extremely off-putting. Even in defeat his humour remains, content in the knowledge that his rotting corpse will birth new diseases and parasites.",
     "tierThreat": { "1": "A", "2": "A", "3": "A", "4": "A" },
     "keywords": ["CHAOS", "ADEPTUS ASTARTES", "NURGLE", "MARK OF NURGLE"],
     "attributes": { "S": 9, "T": 9, "A": 5, "I": 5, "Wil": 6, "Int": 4, "Fel": 3 },
@@ -5537,6 +5554,7 @@
   {
     "id": "kastelan_robot",
     "name": "KASTELAN ROBOT",
+    "description": "Once these potent ferric warriors marched in vast legions at the behest of the Adeptus Mechanicus, scouring whole alien civilisations from the face of the galaxy. In the current age, the secrets of their construction are long lost, and the remaining few Kastelan are zealously maintained by rites and rituals whose true meanings have long since been obscured by the mists of time. Grouped together into Maniples, they are led into battle by Cybernetica Datasmiths, who manipulate their programming as needed.",
     "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
     "keywords": ["IMPERIUM", "ADEPTUS MECHANICUS", "LEGIO CYBERNETICA", "ROBOT", "[FORGE WORLD]"],
     "attributes": { "S": 8, "T": 10, "A": 2, "I": 2, "Wil": 1, "Int": 1, "Fel": 1 },
@@ -5566,6 +5584,7 @@
   {
     "id": "raider_cybercanid",
     "name": "RAIDER CYBERCANID",
+    "description": "Cybercanid constructs are highly advanced combat servitors, melding the instincts of naturally aggressive creatures with the strength and power of an augmetic frame. They can lope rapidly across almost any terrain, and maintain a noospheric link to their rider, allowing them access to the creature's sensory augmetics. The metal beast itself is a potent engine of war, with razor claws and an armoured hide. Cybercanids are carefully matched to a specific rider, each complementing the other's combat capabilities. Over time the two form a nigh-unbreakable bond of loyalty; should one die, the other will seek vengeance with cold, savage fury.",
     "tierThreat": { "1": "E", "2": "T", "3": "T", "4": "T" },
     "keywords": ["IMPERIUM", "ADEPTUS MECHANICUS", "SERBERYS", "[FORGE WORLD]"],
     "attributes": { "S": 4, "T": 6, "A": 3, "I": 4, "Wil": 3, "Int": 1, "Fel": 1 },
@@ -5592,6 +5611,7 @@
   {
     "id": "sulphurhound_cybercanid",
     "name": "SULPHURHOUND CYBERCANID",
+    "description": "Cybercanid constructs are highly advanced combat servitors, melding the instincts of naturally aggressive creatures with the strength and power of an augmetic frame. They can lope rapidly across almost any terrain, and maintain a noospheric link to their rider, allowing them access to the creature's sensory augmetics. The metal beast itself is a potent engine of war, with razor claws and an armoured hide. Cybercanids are carefully matched to a specific rider, each complementing the other's combat capabilities. Over time the two form a nigh-unbreakable bond of loyalty; should one die, the other will seek vengeance with cold, savage fury.",
     "tierThreat": { "1": "E", "2": "T", "3": "T", "4": "T" },
     "keywords": ["IMPERIUM", "ADEPTUS MECHANICUS", "SERBERYS", "[FORGE WORLD]"],
     "attributes": { "S": 4, "T": 6, "A": 3, "I": 3, "Wil": 3, "Int": 1, "Fel": 1 },
@@ -5619,6 +5639,7 @@
   {
     "id": "oily_squig",
     "name": "OILY SQUIG",
+    "description": "Oily Squigs are a type of orkoid scavenger used by Ork Mekaniaks to provide lubricant. They consume almost any organic material but prefer fats and oils, storing such chemicals in their plump, fleshy bodies and releasing it in a jet when they need to squeeze into tight spaces or when startled. Individually the squigs are no challenge at all to an armed Human, at worst giving a painful bite. Even in swarms they are cowardly creatures.",
     "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
     "keywords": ["ORK", "SQUIG"],
     "attributes": { "S": 2, "T": 1, "A": 1, "I": 1, "Wil": 1, "Int": 1, "Fel": 1 },
@@ -5676,6 +5697,7 @@
   {
     "id": "magos_luxus",
     "name": "MAGOS LUXUS",
+    "description": "The Magos is clad in a ceremonial outfit, studded with glowing crystal shards and laced with arcane circuitry. Both of his arms have been replaced with augmetic las weapons and a pair of mechadendrites for labour. He is perfectly affable, and quite pleased to give a tour to any pilgrims who visit the Cathedral. He also talks to himself quite a bit, and seems rather preoccupied with some decidedly non-Imperial looking tech that he's working on.",
     "tierThreat": { "1": "E", "2": "E", "3": "T", "4": "T" },
     "keywords": ["IMPERIUM", "ADEPTUS MECHANICUS", "NECRON"],
     "attributes": { "S": 3, "T": 3, "A": 3, "I": 2, "Wil": 4, "Int": 6, "Fel": 2 },
