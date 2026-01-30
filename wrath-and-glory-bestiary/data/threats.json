@@ -1030,5 +1030,938 @@
     "speed": 6,
     "size": "Avg",
     "source": "Core Rules"
+  },
+  {
+    "id": "avatar_of_khaine",
+    "name": "AVATAR OF KHAINE",
+    "description": "Legends tells how the Aeldari god of war was shattered during the Fall, his essence was dispersed to settle at the heart of every Asuryani Craftworld. In times of cataclysm, the Asuryani awaken Khaine's enraged embers through ritual sacrifice, calling forth a titanic entity of runic iron and incandescent flame. In one hand he wields a monstrous blade, whilst his other drips with streaming red gore, leaving none in doubt that this is the Avatar of the Bloody-Handed God.\n\nThe Avatar of the Ul-Khari Craftworld is perhaps the most dangerous entity in the Gilead System. Even high-Tier Agents may not penetrate the creature's Divine Determination without Combined Fire or dedicated anti-armour weaponry, whilst The Wailing Doom can cause the Annihilation of low-Tier Agents in a single strike. Agents could aim to surround and humble the war god through sheer weight of numbers, but the Avatar is seldom encountered alone, almost always serving as the speartip of the Asuryani warhosts, inspiring his followers to acts of glorious bloodshed.",
+    "tierThreat": { "1": "A", "2": "A", "3": "A", "4": "A" },
+    "keywords": ["AELDARI", "ASURYANI", "DAEMON", "MONSTER", "[CRAFTWORLD]"],
+    "attributes": { "S": 11, "T": 13, "A": 5, "I": 6, "Wil": 8, "Int": 4, "Fel": 1 },
+    "resilience": { "value": 18, "note": "4 AR" },
+    "defence": 5,
+    "wounds": 23,
+    "shock": "-",
+    "skills": "Default 7, Awareness 10 (Passive 5), Ballistic Skill 14, Intimidation 12, Weapon Skill 16",
+    "bonuses": [
+      { "name": "Molten Form", "description": "The Avatar is immune to the Bleeding, Exhausted, On Fire, and Poisoned Conditions, and cannot Suffocate." },
+      { "name": "Khaine Awakened", "description": "Allied ASURYANI who can see the Avatar gain +3 bonus dice on Resolve tests, and can Sprint as part of Charges. The Avatar itself does not gain these bonuses." },
+      { "name": "Second Strike", "description": "This Threat reduces the Multi-Attack penalty by 2 DN, as though it had the Dual Wield Talent." },
+      { "name": "Champion", "description": "The Avatar may use Ruin Actions and has 6 personal Ruin." }
+    ],
+    "abilities": [
+      { "type": "BATTLECRY", "name": "Doom of Mortals", "description": "Enemies who see the Avatar must make a DN 4 Terror test." },
+      { "type": "ACTION", "name": "The Wailing Doom (melee)", "stats": "19 +6 ED / AP -5 / Parry, Inflict (On Fire)" },
+      { "type": "ACTION", "name": "The Wailing Doom (shooting)", "stats": "23 +3 ED / AP -4 / Range 6-12-18 / Salvo 1 / Assault, Flamer, Melta" },
+      { "type": "DETERMINATION", "name": "Divine Determination", "description": "Spend 1 Ruin to roll 13d6. The Avatar can roll Determination against Mortal Wounds. Any Wounds negated by Determination are ignored instead of being converted to Shock." },
+      { "type": "ANNIHILATION", "name": "Burning Demise", "description": "If an attack which destroys the Avatar rolls a Complication, the Avatar explodes as though it were the epicentre of a Blast weapon's attack: 10 +5 ED / AP -2 / Blast (6), Inflict (On Fire)." }
+    ],
+    "determination": "Spend 1 Ruin to roll 13d6. (Divine Determination)",
+    "conviction": 8,
+    "resolve": 7,
+    "speed": 10,
+    "size": "Huge",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "autarch",
+    "name": "AUTARCH",
+    "description": "Autarchs are military commanders par excellence, veterans of the Path of Command with such deep tactical insights that they put the generals of lesser cultures to shame. After walking several Paths of the Warrior, they have not only honed their combat skills, but mastered their understanding of how each Aspect Temple contributes to the wider Aeldari warhost. Autarchs are identified by their myriad Aspect Warrior wargear, raiment that indicates their personal combat history and preferred blend of strategic philosophies.\n\nAutarchs are devastating fighters in their own right, but are most dangerous when commanding a larger force of Asuryani warriors. As an architect of victory, they effortlessly bait melee-focused Agents to pursue uncatchable foes, whilst bombarding those poor fools with repeated attacks from their army's most devastating weapons. To disrupt this strategy, Agents are advised to eliminate Autarchs as a first priority. Of course, between the Autarch's armour, weapons, and skill at arms, this is easier said than done.",
+    "tierThreat": { "1": "A", "2": "A", "3": "A", "4": "A" },
+    "keywords": ["AELDARI", "ASURYANI", "[CRAFTWORLD]"],
+    "attributes": { "S": 4, "T": 4, "A": 6, "I": 6, "Wil": 7, "Int": 7, "Fel": 5 },
+    "resilience": { "value": 12, "note": "8 AR" },
+    "defence": 5,
+    "wounds": 14,
+    "shock": 12,
+    "skills": "Default 8, Awareness 10 (Passive 5), Ballistic Skill 12, Intimidation 10, Leadership 12, Pilot 10, Weapon Skill 12",
+    "bonuses": [
+      { "name": "Beyond the Warrior Paths", "description": "Autarchs may be given weapons, bonuses, and abilities from any ASPECT WARRIOR profile at the GM's discretion. Autarchs do not use Exarch equipment or bonuses. Autarchs may be equipped with Swooping Hawk wings, increasing their Speed to 16 (Fly)." },
+      { "name": "Champion", "description": "An Autarch may use Ruin Actions and has 4 personal Ruin. They may activate the Move Ruin Action during their own turn." },
+      { "name": "Intense Emotions", "description": "This Threat takes a penalty of +1 DN to all Resolve Tests." },
+      { "name": "Path of Command", "description": "Any ally within communication range of an Autarch may use Ruin Actions using the Autarch's personal Ruin." }
+    ],
+    "abilities": [
+      { "type": "BATTLECRY", "name": "Superlative Strategist", "description": "Before combat begins, the Autarch may choose an ally within communication range to use a Ruin Action for free. If they make a Test, as part of this Ruin Action, they gain +3 bonus dice." },
+      { "type": "ACTION", "name": "Shuriken Pistol", "stats": "10 +1 ED / Range 6-12-18 / Salvo 2 / Pistol, Rending (3)" },
+      { "type": "ACTION", "name": "Star Glaive", "stats": "10 +5 ED / AP -3 / Parry" },
+      { "type": "ACTION", "name": "Plasma Grenade (2)", "stats": "10 +5 ED / AP -1 / Range 16 / Blast (6)" },
+      { "type": "DETERMINATION", "name": "Force Shield", "description": "Spend 1 Ruin to roll 4d6. Autarchs can roll Determination against Mortal Wounds." }
+    ],
+    "determination": "Spend 1 Ruin to roll 4d6.",
+    "conviction": 7,
+    "resolve": 6,
+    "speed": 8,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "farseer",
+    "name": "FARSEER",
+    "description": "If the Autarchs are the shepherds of combat, then Farseers are the shepherds of destiny. They have walked the Witch Path to its doomed conclusion, developing incredible psychic powers of precognition. Their ability to anticipate and counter enemy strategies has obvious applications on the battlefield, but most Farseers prefer to take a long term view, architecting centuries-long manipulations of fate so their Craftworld can benefit at lesser races expense. Consequently it is not uncommon for them to be singled out as assassination targets.\n\nFarseers have little need for mundane weapons, and use their powers to aid their allies and stage-manage the doom of their enemies. Yet many Agents expecting to easily overwhelm these aged seers with brute force have ended up their minds shattered as reward for their hubris. Farseers excel at psychic duels in particular, leveraging ancient wisdom to tax younger psykers to their very limits.",
+    "tierThreat": { "1": "A", "2": "A", "3": "A", "4": "A" },
+    "keywords": ["AELDARI", "ASURYANI", "PSYKER", "[CRAFTWORLD]"],
+    "attributes": { "S": 3, "T": 4, "A": 5, "I": 5, "Wil": 8, "Int": 7, "Fel": 5 },
+    "resilience": { "value": 8, "note": "4 AR" },
+    "defence": 4,
+    "wounds": 14,
+    "shock": 13,
+    "skills": "Default 7, Awareness 10 (Passive 5), Ballistic Skill 10, Leadership 10, Psychic Mastery 12, Weapon Skill 10",
+    "bonuses": [
+      { "name": "Architect of Fate", "description": "When a Farseer's turn begins, the GM gains 1 Ruin." },
+      { "name": "Champion", "description": "A Farseer may use Ruin Actions and has 4 personal Ruin. They may activate the Move Ruin Action during their own turn." },
+      { "name": "Ghosthelm", "description": "Farseers never roll on the Perils of the Warp table. They always use the Unbound Power Level (+1 Wrath Die)." },
+      { "name": "Intense Emotions", "description": "This Threat takes a penalty of +1 DN to all Resolve Tests." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Runes of Fate", "description": "The Farseer may attempt to activate one of the following psychic powers: Smite, Forewarning, Misfortune, Guide. Guide: DN 5, Action. An ally within 15m gains +6 bonus dice on their next attack Test. Spend 1 Shift per additional +1 bonus die on the attack Test, or 1 Shift per additional 5m of range." },
+      { "type": "ACTION", "name": "Shuriken Pistol", "stats": "10 +1 ED / Range 6-12-18 / Salvo 2 / Pistol, Rending (3)" },
+      { "type": "ACTION", "name": "Witchblade", "stats": "13 +5 ED / Range 1 / Force, Parry, Warp Weapon" },
+      { "type": "RUIN", "name": "The Path of the Seer", "description": "Spend 1 Ruin to activate a Psychic Power or Deny the Witch." },
+      { "type": "DETERMINATION", "name": "Power Field", "description": "Spend 1 Ruin to roll 4d6. Farseers can roll Determination against Mortal Wounds." }
+    ],
+    "determination": "Spend 1 Ruin to roll 4d6.",
+    "conviction": 7,
+    "resolve": 6,
+    "speed": 8,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "warlock",
+    "name": "WARLOCK",
+    "description": "After having walked the Path of the Warrior, those that turn to the Path of the Seer most often find their psychic powers turned to violent ends. These Warlocks might lead less-experienced Guardians into battle, or form a 'Seer Council' retinue for an elder Farseer. Either way, their powers are mostly channelled to protect and strengthen their kin, but readily turn destructive if an enemy comes too close.\n\nWarlocks may appear as the 'boss' of a low-Tier Aeldari war-party, whilst several acting as a close-knit battle conclave pose a severe threat to even higher-Tier groups. Thanks to their psychic prescience, Warlocks usually begin a battle with Conceal (or another augmenting Runes of Battle power) already active. Agents may direct small-arms fire to break this Sustained power — but unless they can finish off the Warlock, they should expect debilitating eldritch powers to afflict them in reprisal.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
+    "keywords": ["AELDARI", "ASURYANI", "PSYKER", "[CRAFTWORLD]"],
+    "attributes": { "S": 3, "T": 3, "A": 5, "I": 5, "Wil": 7, "Int": 5, "Fel": 3 },
+    "resilience": { "value": 7, "note": "4 AR" },
+    "defence": 4,
+    "wounds": 9,
+    "shock": 9,
+    "skills": "Default 6, Awareness 8 (Passive 4), Ballistic Skill 7, Leadership 8, Psychic Mastery 12, Weapon Skill 8",
+    "bonuses": [
+      { "name": "Champion", "description": "A Warlock may use Ruin Actions. They may activate the Move Ruin Action during their own turn." },
+      { "name": "Intense Emotions", "description": "This Threat takes a penalty of +1 DN to all Resolve Tests." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Runes of Battle", "description": "The Warlock may attempt to activate one of the following psychic powers: Smite, any Runes of Battle power, Conceal. Conceal: DN 5, Action, Sustained. While sustained, allies within 5m gain +1 Defence and +1 bonus dice on Stealth (A) Tests. Spend 3 Shifts per additional +1 Defence and +1 on Stealth (A) Tests." },
+      { "type": "ACTION", "name": "Shuriken Pistol", "stats": "10 +1 ED / Range 6-12-18 / Salvo 2 / Pistol, Rending (3)" },
+      { "type": "ACTION", "name": "Witchblade", "stats": "9 +5 ED / Force, Parry, Warp Weapon" },
+      { "type": "RUIN", "name": "The Path of the Seer", "description": "Spend 1 Ruin to activate a Psychic Power or Deny the Witch." }
+    ],
+    "determination": "Spend 1 Ruin to roll 3d6.",
+    "conviction": 6,
+    "resolve": 6,
+    "speed": 8,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "guardian_defender_xenos",
+    "name": "GUARDIAN DEFENDER",
+    "description": "Guardians are the most commonly sighted Asuryani fighters — reservist soldiers summoned from civilian duties to make up their warhost's numbers. Most are equipped as Defenders, with psychically-reactive mesh armour and rapid-firing, monomolecular-blade spitting shuriken catapults. Depending on a Guardian's prior experiences walking the Path of the Warrior, they might instead operate a heavy weapon platform, or pilot a jetbike, grav-tank, or aerial fightercraft. On Trollius, where the winds themselves harbour malevolent intent, it is common for travelling Ul-Khari civilians to wear the garb of a Guardian for self-defence.\n\nGuardians are lightly-protected, but even the militia of the Craftworlds are dangerous killers by the standards of lesser cultures. They fare best when utilising their natural Aeldari grace to quickly seize positions of cover, or keeping out of range from enemy melee fighters. Agents of all Tiers should beware a Guardian squad's floating heavy weapon platform, which combines the deadliness of Aeldari military technology with enviable mobility.",
+    "tierThreat": { "1": "E", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["AELDARI", "ASURYANI", "[CRAFTWORLD]"],
+    "attributes": { "S": 3, "T": 3, "A": 4, "I": 4, "Wil": 3, "Int": 3, "Fel": 2 },
+    "resilience": { "value": 7, "note": "4 AR" },
+    "defence": 3,
+    "wounds": 7,
+    "shock": 5,
+    "skills": "Default 5, Awareness 6 (Passive 3), Ballistic Skill 7, Pilot 7, Weapon Skill 7",
+    "bonuses": [
+      { "name": "Defenders", "description": "When a Guardian Defender attacks from a position of Cover, they gain +2 bonus dice to Ballistic Skill Tests with SHURIKEN weapons." },
+      { "name": "Intense Emotions", "description": "This Threat takes a penalty of +1 DN to all Resolve Tests." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Shuriken Catapult", "stats": "10 +1 ED / Range 9-18-27 / Salvo 3 / Assault, Rending (3)" },
+      { "type": "ACTION", "name": "Plasma Grenade (1)", "stats": "10 +5 ED / AP -1 / Range 8 / Blast (6)" },
+      { "type": "RUIN", "name": "Battle Focus", "description": "Spend 1 Ruin immediately before or after making a ranged attack to Move up to the Guardian Defender's Speed as a Free Action." }
+    ],
+    "determination": "Spend 1 Ruin to roll 3d6.",
+    "conviction": 6,
+    "resolve": 5,
+    "speed": 8,
+    "size": "Avg",
+    "mobOptions": "In a Mob of ten or more Guardian Defenders, two Guardians can operate a heavy weapons platform with one of these weapons: Aeldari Missile Launcher (Sunburst): 12 +6 ED / AP -3 / Range 24-48-72 / Salvo - / Blast (10), Heavy (4); Bright Lance: 16 +2 ED / AP -4 / Range 18-36-54 / Salvo 1 / Heavy (12), Lance, Reliable; Scatter Laser: 13 +2 ED / Range 18-36-54 / Salvo 4 / Mounted (Large), Rapid Fire (3); Starcannon: 14 +3 ED / AP -3 / Range 18-36-54 / Salvo 2 / Mounted (Large), Rapid Fire (2); Shuriken Cannon: 14 +2 ED / Range 12-24-36 / Salvo 3 / Assault, Heavy (6), Rending (4)",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "storm_guardian",
+    "name": "STORM GUARDIAN",
+    "description": "Mustered Guardians with experience as Howling Banshees, Striking Scorpions, or other melee-focused Warrior Paths will fight as Storm Guardians, accompanying those Aspect Warriors into the fiercest close-quarters combat. They provide the numbers to match their kindred's specialist training, flushing out entrenched enemies with grenades, flamers or shock assaults, and establishing their own mobile cover with floating 'Serpent Shield' force field emitters.\n\nThough capable fighters, Storm Guardians lack the resilience to withstand concentrated fire as they charge, depending on their allies for support. This may be provided through a suppressive barrage, deployment by grav-tank or wraithgate, or even the prophecies of a Farseer that facilitate assault with maximum speed and surprise. Agents which deprive a Storm Guardian mob of this essential assistance have a much better chance of repelling their assault, or gunning them down from a distance.",
+    "tierThreat": { "1": "E", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["AELDARI", "ASURYANI", "[CRAFTWORLD]"],
+    "attributes": { "S": 3, "T": 3, "A": 4, "I": 4, "Wil": 3, "Int": 3, "Fel": 2 },
+    "resilience": { "value": 7, "note": "4 AR" },
+    "defence": 3,
+    "wounds": 7,
+    "shock": 5,
+    "skills": "Default 5, Awareness 6 (Passive 3), Ballistic Skill 7, Pilot 7, Weapon Skill 8",
+    "bonuses": [
+      { "name": "Stormblades", "description": "If a Storm Guardian is Engaged at the start of their Turn, they gain +1 bonus dice to Weapon melee attack Tests and +1 Defence when attacked in melee." },
+      { "name": "Intense Emotions", "description": "This Threat takes a penalty of +1 DN to all Resolve Tests." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Shuriken Catapult", "stats": "10 +1 ED / Range 9-18-27 / Salvo 3 / Assault, Rending (3)" },
+      { "type": "ACTION", "name": "Plasma Grenade (1)", "stats": "10 +5 ED / AP -1 / Range 8 / Blast (6)" },
+      { "type": "ACTION", "name": "Guardian Chainsword", "stats": "8 +4 ED / Brutal, Parry" },
+      { "type": "RUIN", "name": "Battle Focus", "description": "Spend 1 Ruin immediately before or after making a ranged attack to Move up to the Guardian Defender's Speed as a Free Action." }
+    ],
+    "determination": "Spend 1 Ruin to roll 3d6.",
+    "conviction": 6,
+    "resolve": 5,
+    "speed": 8,
+    "size": "Avg",
+    "mobOptions": "In a Mob of ten or more Storm Guardians, two Guardians may: Exchange their Shuriken Pistol for a Fusion Gun: 16 +2 ED / AP -4 / Range 6-12-18 / Salvo 1 / Assault, Melta; Exchange their Shuriken Pistol for an Aeldari Flamer: 10 +1 ED / Range 4-8-12 / Salvo 1 / Assault, Flamer; Exchange their Guardian Chainsword for an Aeldari Power Sword: 7 +4 ED / AP -3 / Parry; Operate a Serpent's Scale Platform: A Serpent's Scale Platform provides +1 Defence and +1 AR against ranged attacks to all Storm Guardians within 8m of it. A Serpent's Scale Platform has 8 AR and 8 Wounds, and follows the nearest Storm Guardian to it.",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "ranger_xenos",
+    "name": "RANGER",
+    "description": "The Path of the Outcast awaits those who cannot bear the prohibitive restrictions of the Asuryani Path. Whilst many cut ties with their Craftworld and become Corsairs, others continue to serve their distant kin as Rangers, acting as scouts, explorers, messengers, or even assassins. These Rangers survive in a hostile galaxy by mastering fieldcraft and stealth, fostering a self-reliance born of necessity, as backup may be lightyears away.\n\nIndividual Rangers have roamed the Gilead System for centuries, sniper assassins interfering as third parties in seemingly unrelated conflicts, enacting the enigmatic will of their Craftworld's Seer Council. In recent years, squads of Rangers patrol Ul-Khari ruins as an unseen frontier guard, or perform reconnaissance on strongpoints soon to be targeted by Aeldari warhosts. In active combat, Rangers excel when attacking from cover, at long range, and against unaware targets. When the odds are not in their favour, they simply disappear into the wilderness, waiting patiently for the next opportunity to strike again.",
+    "tierThreat": { "1": "A", "2": "E", "3": "T", "4": "T" },
+    "keywords": ["AELDARI", "ASURYANI", "[CRAFTWORLD]"],
+    "attributes": { "S": 3, "T": 3, "A": 6, "I": 4, "Wil": 3, "Int": 3, "Fel": 2 },
+    "resilience": { "value": 7, "note": "4 AR" },
+    "defence": 3,
+    "wounds": 7,
+    "shock": 5,
+    "skills": "Default 6, Awareness 8 (Passive 4), Ballistic Skill 10, Pilot 7, Stealth 8, Weapon Skill 7",
+    "bonuses": [
+      { "name": "Ranger Cloak", "description": "Rangers gain +1 bonus die to Stealth (A) Tests and +1 to Defence when in shadow or cover." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Ranger Long Rifle", "stats": "10 +1 ED / AP -1 / Range 18-36-54 / Salvo - / Sniper (4)" },
+      { "type": "ACTION", "name": "Shuriken Pistol", "stats": "10 +1 ED / Range 6-12-18 / Salvo 2 / Pistol, Rending (3)" },
+      { "type": "ACTION", "name": "Knife", "stats": "3 +2 ED" },
+      { "type": "RUIN", "name": "Battle Focus", "description": "Spend 1 Ruin immediately before or after making a ranged attack to Move up to the Ranger's Speed as a Free Action." }
+    ],
+    "determination": "Spend 1 Ruin to roll 3d6.",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 8,
+    "size": "Avg",
+    "mobOptions": "In a Mob of five or more Rangers, one Ranger may gain one of the following: Gloom Field: When targeted by an attack from 18m or more away, the wearer of the Gloom Field and all allies within 6m gain +2 Defence. Wireweave Net: As an Action, a Ranger can set up a Wireweave Net over a space of Blast (10). Whenever an opponent enters the Blast (10) of the Wireweave Net, they must make a DN 4 Toughness Test or suffer 1d3 Mortal Wound. The Wireweave Net is destroyed after it deals 3 or more Mortal Wounds.",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "dire_avenger",
+    "name": "DIRE AVENGER",
+    "description": "First among the Asuryani Aspect warriors, the Dire Avengers represent Khaine's unending thirst for vengeance. The most common and adaptable of their kind, their wargear superficially similar to a Guardian Defender's, but wielded with expertise only one committed to the Warrior Path could attain. In combat, they lay down a relentless onslaught of shuriken fire that shreds an oncoming force in a storm of monomolecular blades.\n\nDeadly in attack, yet steadfast in defence, Dire Avengers alternate between Sprinting, Full Defence, and Reloading after utilising Salvo options — all whilst maintaining a steady rate of fire. Their flexible Defence Tactics also make them a prime choice for seizing mission-critical objectives, when their goal is not simply to obliterate a team of Agents.",
+    "tierThreat": { "1": "A", "2": "E", "3": "T", "4": "T" },
+    "keywords": ["AELDARI", "ASURYANI", "ASPECT WARRIOR", "[CRAFTWORLD]"],
+    "attributes": { "S": 3, "T": 3, "A": 5, "I": 5, "Wil": 5, "Int": 3, "Fel": 2 },
+    "resilience": { "value": 8, "note": "4 AR" },
+    "defence": 4,
+    "wounds": 9,
+    "shock": 8,
+    "skills": "Default 5, Awareness 6 (Passive 3), Ballistic Skill 8, Weapon Skill 8",
+    "bonuses": [
+      { "name": "Defence Tactics", "description": "Dire Avengers may make a ranged attack as a Free Action, but cannot do so in the same Turn they use their Action to make ranged, melee, or Interaction Attacks." },
+      { "name": "Intense Emotions", "description": "This Threat takes a penalty of +1 DN to all Resolve Tests." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Avenger Shuriken Catapult", "stats": "10 +2 ED / AP -2 / Range 9-18-27 / Salvo 4 / Assault, Rending (4)" },
+      { "type": "ACTION", "name": "Plasma Grenade", "stats": "10 +5 ED / AP -1 / Range 12 / Blast (6)" },
+      { "type": "RUIN", "name": "Battle Focus", "description": "Spend 1 Ruin immediately before or after making a ranged attack to Move up to the Dire Avenger's Speed as a Free Action." }
+    ],
+    "determination": "Spend 1 Ruin to roll 3d6.",
+    "conviction": 5,
+    "resolve": 4,
+    "speed": 8,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "howling_banshee",
+    "name": "HOWLING BANSHEE",
+    "description": "The shrieking maidens of Aeldari myth are made incarnate by the Howling Banshee Aspect Warrior temple, an order of swordmasters whose power weapons sunder armour with contemptuous ease. Their attacks are never subtle and always forewarned, the audio-amplifiers in the war masks transforming their battlecries into a crashing wave of sonic bombardment, striking as the Banshees close into engagement range. Those lucky few who survive the assault will forever hear the Banshee's wail in their nightmares.\n\nHowling Banshees are the shock assault specialists of the Asuryani. They are absolutely devastating on the charge, and are best tackled at a distance, or with a pre-emptive counter-charge, depending on the Agents' specialties. Remaining mobile is a better defence than heavy armour, as Banshee blades will make short work of the latter. Unfortunately, few combatants can count on enjoying superior mobility to the acrobatic murderers closing on them with lethal intent.",
+    "tierThreat": { "1": "A", "2": "E", "3": "T", "4": "T" },
+    "keywords": ["AELDARI", "ASURYANI", "ASPECT WARRIOR", "[CRAFTWORLD]"],
+    "attributes": { "S": 3, "T": 3, "A": 5, "I": 6, "Wil": 4, "Int": 3, "Fel": 2 },
+    "resilience": { "value": 8, "note": "4 AR" },
+    "defence": 4,
+    "wounds": 9,
+    "shock": 8,
+    "skills": "Default 5, Athletics 8, Awareness 6 (Passive 3), Ballistic Skill 7, Intimidate 8, Weapon Skill 10",
+    "bonuses": [
+      { "name": "Whirling Death & Howling Banshee Mask", "description": "Howling Banshees gain an additional +2 bonus dice on melee attacks made as part of a Charge (+3 bonus dice in total). Additionally, a Howling Banshee may make an Intimidation Interaction Attack as a Free Action as part of a Charge." },
+      { "name": "Intense Emotions", "description": "This Threat takes a penalty of +1 DN to all Resolve Tests." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Shuriken Pistol", "stats": "10 +1 ED / Range 6-12-18 / Salvo 2 / Pistol, Rending (3)" },
+      { "type": "ACTION", "name": "Banshee Blade", "stats": "8 +5 ED / AP -4 / Parry" }
+    ],
+    "determination": "Spend 1 Ruin to roll 5d6.",
+    "conviction": 5,
+    "resolve": 4,
+    "speed": 8,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "striking_scorpion",
+    "name": "STRIKING SCORPION",
+    "description": "Striking Scorpions are Aspect Warriors that haunt the shadows as ambush predators, silently stalking across dense terrain to slit the throats of unsuspecting prey. When their attack is launched, it is with a terrifying snap of shuriken shot, spinning chainblades, and short-range laser fire from the Mandiblasters in each Scorpion's war mask. Even amongst the Aeldari, the Striking Scorpions have a dark reputation, seeming to revel in the brutality of their kills. Ostensibly, the patience of the hunt helps to temper these unseemly instincts but those on the receiving end of their assault are unlikely to agree.\n\nStriking Scorpions are dispatched to hunt Agents that wander into difficult terrain, urban ruins and unspoiled wilderness concealing their creeping advance. Wary Agents may anticipate their approach, and attempt to turn the tables on their pursuers but less diligent teams are destined for shocking close-quarters engagement and a desperate struggle for their lives.",
+    "tierThreat": { "1": "A", "2": "E", "3": "T", "4": "T" },
+    "keywords": ["AELDARI", "ASURYANI", "ASPECT WARRIOR", "[CRAFTWORLD]"],
+    "attributes": { "S": 4, "T": 3, "A": 5, "I": 5, "Wil": 4, "Int": 3, "Fel": 2 },
+    "resilience": { "value": 8, "note": "4 AR" },
+    "defence": 4,
+    "wounds": 9,
+    "shock": 8,
+    "skills": "Default 5, Athletics 8, Awareness 6 (Passive 3), Ballistic Skill 7, Intimidate 8, Weapon Skill 10",
+    "bonuses": [
+      { "name": "Stalking Shadow", "description": "Striking Scorpions in a concealed position may start an encounter with a Stealth Score of 5, and may Move at full Speed without reducing their Stealth Score. They gain +2 bonus dice and +2 ED when making a Surprise Attack (+4 bonus dice and +4 ED in total)." },
+      { "name": "Intense Emotions", "description": "This Threat takes a penalty of +1 DN to all Resolve Tests." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Shuriken Pistol", "stats": "10 +1 ED / Range 6-12-18 / Salvo 2 / Pistol, Rending (3)" },
+      { "type": "ACTION", "name": "Scorpion Chainsword", "stats": "10 +5 ED / AP -1 / Brutal, Parry" },
+      { "type": "WRATH", "name": "Mandiblasters", "description": "If a Striking Scorpion rolls a Wrath Critical on a melee attack Test against a creature Size Average or smaller, the target suffers 1d3 Mortal Wounds in addition to the Critical Hit's effects." }
+    ],
+    "determination": "Spend 1 Ruin to roll 5d6.",
+    "conviction": 4,
+    "resolve": 3,
+    "speed": 8,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "fire_dragon",
+    "name": "FIRE DRAGON",
+    "description": "Fire Dragons are dauntless anti-armour specialists clad in blazing war plate. Their short-ranged melta weaponry is the bane of vehicles and fortifications alike, and capable of reducing enemy infantry to smouldering ash. Setting their sights on battle tanks and towering walkers, Fire Dragons often use vehicles of their own to safely close into position. They bask in the flames of the devastation they unleash, torching surviving crew without mercy.\n\nAgents who regularly use vehicles as transportation or a mobile headquarters may first encounter Fire Dragons when their fusion guns reduce its armour to molten slag. They often deploy in concert with other units, so surviving the subsequent combat depends on adapting to other threats of the Asuryani warhost. In isolation, Fire Dragons can be effectively encountered at either long range or close-quarters, but in mid-range firefights they can annihilate a low-Tier Agent with a single shot. Players disturb the Dragons at their peril!",
+    "tierThreat": { "1": "A", "2": "E", "3": "E", "4": "T" },
+    "keywords": ["AELDARI", "ASURYANI", "ASPECT WARRIOR", "[CRAFTWORLD]"],
+    "attributes": { "S": 3, "T": 4, "A": 5, "I": 5, "Wil": 4, "Int": 3, "Fel": 2 },
+    "resilience": { "value": 9, "note": "5 AR" },
+    "defence": 4,
+    "wounds": 10,
+    "shock": 7,
+    "skills": "Default 5, Awareness 6 (Passive 3), Ballistic Skill 10, Weapon Skill 7",
+    "bonuses": [
+      { "name": "Assured Destruction", "description": "Fire Dragons may activate their weapons' Melta trait at Medium and Long Range (as well as Short Range)." },
+      { "name": "Intense Emotions", "description": "This Threat takes a penalty of +1 DN to all Resolve Tests." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Dragon Fusion Gun", "stats": "18 +4 ED / AP -4 / Range 6-12-18 / Salvo 1 / Assault, Melta" },
+      { "type": "RUIN", "name": "Battle Focus", "description": "Spend 1 Ruin immediately before or after making a ranged attack to Move up to the Fire Dragon's Speed as a Free Action." }
+    ],
+    "determination": "Spend 1 Ruin to roll 5d6.",
+    "conviction": 4,
+    "resolve": 3,
+    "speed": 8,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "dark_reaper",
+    "name": "DARK REAPER",
+    "description": "Dark Reapers carry the heaviest weaponry of any Aspect Warrior — the missile-launching Reaper Launchers that obliterate their foes from afar. In their role as Khaine the Destroyer, they employ an assortment of targeting vanes, recoil absorbers, and mind-to-weapon links to ensure they land a hit with every barrage. Their black armour and bone masks recalls the inevitability of death itself, an apt comparison considering the toll they reap upon the battlefield.\n\nDark Reapers lack the mobility of other Aeldari warriors, making them easy prey once an Agent has locked them down in melee combat. The hard part is surviving the advance, as a Dark Reaper can easily devastate even high-Tier Agents if allowed to strike from long range. Stealth is an Agent's friend here — if a Dark Reaper sees an attacker coming, there is no heavy armour, concealing cover, or vehicular transport that can truly protect their target from the subsequent fusillade.",
+    "tierThreat": { "1": "A", "2": "E", "3": "E", "4": "T" },
+    "keywords": ["AELDARI", "ASURYANI", "ASPECT WARRIOR", "[CRAFTWORLD]"],
+    "attributes": { "S": 4, "T": 3, "A": 5, "I": 5, "Wil": 4, "Int": 3, "Fel": 2 },
+    "resilience": { "value": 9, "note": "5 AR" },
+    "defence": 4,
+    "wounds": 9,
+    "shock": 7,
+    "skills": "Default 5, Awareness 6 (Passive 3), Ballistic Skill 10, Intimidate 6, Weapon Skill 7",
+    "bonuses": [
+      { "name": "Inescapable Accuracy", "description": "Characters targeted by a Dark Reaper's ranged attacks do not gain bonus Defence for being in Cover. A Dark Reaper may also Aim as a Free Action when they Brace a Heavy Weapon." },
+      { "name": "Intense Emotions", "description": "This Threat takes a penalty of +1 DN to all Resolve Tests." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Reaper Launcher (Starshot)", "stats": "16 +2 ED / AP -2 / Range 24-48-72 / Salvo - / Heavy (4)" },
+      { "type": "ACTION", "name": "Reaper Launcher (Starswarm)", "stats": "12 +2 ED / AP -2 / Range 24-48-72 / Salvo 2 / Heavy (4)" }
+    ],
+    "determination": "Spend 1 Ruin to roll 5d6.",
+    "conviction": 4,
+    "resolve": 3,
+    "speed": 8,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "swooping_hawk",
+    "name": "SWOOPING HAWK",
+    "description": "The wings of a Swooping Hawk permit them to strike from any angle, their swift attacks ferocious even by Aeldari standards. Though they are effective killers at long range with their rapid-firing lasblasters, they usually prefer to circle their targets, bombarding from above with plasma grenades ejected from their greaves. If an enemy is cunning enough to strike down a Swooping Hawk, the survivors simply soar out of reach, before banking around for another strafing pass against their defenceless quarry.\n\nSwooping Hawks are a melee fighter's worst nightmare. Though a party of ranged combat specialists can capably deter a squad of Hawks with fire discipline, shorter-ranged Agents will have few options but to hunker down and wait for reinforcements. Alternatively, Agents with jump packs can take to the sky, and engage their hunters in an aerial assault. Such a memorable combat should be characterised with daring manoeuvres and high-speed chases, testing the Agent's Pilot Skill as well as their combat abilities.",
+    "tierThreat": { "1": "A", "2": "E", "3": "E", "4": "T" },
+    "keywords": ["AELDARI", "ASURYANI", "ASPECT WARRIOR", "[CRAFTWORLD]"],
+    "attributes": { "S": 3, "T": 3, "A": 5, "I": 5, "Wil": 4, "Int": 3, "Fel": 2 },
+    "resilience": { "value": 8, "note": "5 AR" },
+    "defence": 4,
+    "wounds": 9,
+    "shock": 7,
+    "skills": "Default 5, Awareness 8 (Passive 4), Ballistic Skill 9, Pilot 8, Weapon Skill 7",
+    "bonuses": [
+      { "name": "Swooping Hawk Wings", "description": "This Threat can Fly at Speed 16." },
+      { "name": "Skyleap", "description": "Swooping Hawks do not provoke Reflexive Attacks when they move out of Engagement. Swooping Hawks also gain +2 bonus dice when they make a Pinning Attack." }
+    ],
+    "abilities": [
+      { "type": "BATTLECRY", "name": "Sudden Assault", "description": "If a Swooping Hawk attacks from above, all opponents must make a DN 3 Initiative Test. If they all fail, the Swooping Hawk may Seize the Initiative without spending Ruin." },
+      { "type": "ACTION", "name": "Lasblaster", "stats": "10 +1 ED / Range 12-24-36 / Salvo 3 / Assault, Rapid Fire (3), Reliable, Rending (3)" },
+      { "type": "RUIN", "name": "Battle Focus", "description": "Spend 1 Ruin immediately before or after making a ranged attack to Move up to the Swooping Hawk's Speed as a Free Action." }
+    ],
+    "determination": "Spend 1 Ruin to roll 5d6.",
+    "conviction": 4,
+    "resolve": 3,
+    "speed": 16,
+    "size": "Avg",
+    "movement": "Fly",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "warp_spider",
+    "name": "WARP SPIDER",
+    "description": "The jump generator technology of the Warp Spiders is something truly alien, a miniature Warp engine that teleports them around the battlefield with short hops through the Empyrean. They use this technology to launch unpredictable surprise attacks, and disappear before facing reprisals. Warp travel is especially dangerous for an Aeldari, as Slaanesh is ever hungry, so for an Aspect Warrior to risk their soul in this manner is regarded by the Asuryani as either foolhardy or courageous. Such valour is unappreciated by the target of a Warp Spider's Death Spinner, as they are entangled in a cloud of monomolecular wire that shreds flesh and bone as it settles.\n\nLike Swooping Hawks, Warp Spiders represent the Asuryani at their most frustratingly elusive. Their hit-and-run tactics target Agents when they are herded into a tight group, so their death spinners can ensnare multiple targets at once. Though Flickerjump allows them to escape melee combat, it can be countered through combined assaults by multiple Agents.",
+    "tierThreat": { "1": "A", "2": "E", "3": "E", "4": "T" },
+    "keywords": ["AELDARI", "ASURYANI", "ASPECT WARRIOR", "[CRAFTWORLD]"],
+    "attributes": { "S": 3, "T": 3, "A": 5, "I": 5, "Wil": 4, "Int": 3, "Fel": 2 },
+    "resilience": { "value": 8, "note": "5 AR" },
+    "defence": 4,
+    "wounds": 9,
+    "shock": 7,
+    "skills": "Default 5, Awareness 6 (Passive 3), Ballistic Skill 8, Pilot 10, Stealth 7, Weapon Skill 8",
+    "bonuses": [
+      { "name": "Intense Emotions", "description": "This Threat takes a penalty of +1 DN to all Resolve Tests." },
+      { "name": "Warp Spider Jump Generator", "description": "Warp Spiders may make a DN 3 Pilot (A) test to increase their Speed to 12 when they Move, teleporting horizontally through characters and ignoring terrain penalties. If the Test fails, their movement deviates according to Scattering rules. A Complication means something has gone terribly wrong — the results are up to the GM, but it is likely the Warp Spider is simply dead." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Death Spinner", "stats": "14 +1 ED / AP -2 / Range 6-12-18 / Salvo 1 / Assault, Blast (4)" },
+      { "type": "RUIN", "name": "Battle Focus", "description": "Spend 1 Ruin immediately before or after making a ranged attack to Move up to the Warp Spider's Speed as a Free Action." },
+      { "type": "REACTION", "name": "Flickerjump", "description": "When a character enters Engagement with an Unengaged Warp Spider, the Warp Spider may Move up to their Speed, teleporting as a Reflexive Action. This Move does not provoke Reflexive Attacks." }
+    ],
+    "determination": "Spend 1 Ruin to roll 3d6.",
+    "conviction": 4,
+    "resolve": 3,
+    "speed": 8,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "shadow_spectre",
+    "name": "SHADOW SPECTRE",
+    "description": "Shadow Spectres float across the battlefield on silent jetpacks, their camouflaging holo-fields bestowing them with the visage of malignant ghosts. Their haunting presence evokes the eternal vigilance of their Craftworld's wraith constructs, eternal warriors who fight from beyond the grave. This daunting spectacle is accompanied by the lightning discharge of Shadow Spectre prism rifles, the spectral bands of the laser shot fine-tuned to target large groups or priority targets as required. By attuning to a bizarre crystal targeting matrix known as the Ghostlight, the Aspect Warriors can even combine the shots of multiple prisms rifles into a single lancing strike, that punches through tank armour with ease.\n\nShadow Spectres combine the deadly weaponry of Dark Reapers with the mobility of Swooping Hawks, claiming their enemy's souls whilst remaining out of range from return fire. They are easily scattered by Agents with heavy weapons though, or canny melee combatants who find a way to close the gap with stealth or speed. Fortunately, Shadow Spectres are commonly deployed alongside Ghost Warriors, whose resilience and horrifying short-range firepower effectively compliments these weaknesses.",
+    "tierThreat": { "1": "A", "2": "E", "3": "E", "4": "T" },
+    "keywords": ["AELDARI", "ASURYANI", "ASPECT WARRIOR", "[CRAFTWORLD]"],
+    "attributes": { "S": 3, "T": 3, "A": 5, "I": 5, "Wil": 4, "Int": 3, "Fel": 2 },
+    "resilience": { "value": 7, "note": "5 AR" },
+    "defence": 5,
+    "wounds": 9,
+    "shock": 7,
+    "skills": "Default 5, Awareness 6 (Passive 3), Ballistic Skill 9, Intimidate 8, Pilot 8, Stealth 8, Weapon Skill 7",
+    "bonuses": [
+      { "name": "Intense Emotions", "description": "This Threat takes a penalty of +1 DN to all Resolve Tests." },
+      { "name": "Shadow Spectre Jetpack", "description": "A jetpack is built into the Shadow Spectre's Heavy Aspect Armour, and their sophisticated technology allows them to fly at their Speed +4, and do not need to make Pilot (A) Tests unless called for by the GM." },
+      { "name": "Spectre Holo-Field", "description": "Shadow Spectres gain +1 Defence and +1 bonus die on Stealth (A) Tests (bonuses included above)." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Prism Rifle (Diffuse)", "stats": "12 +1 ED / AP -1 / Range 9-18-27 / Salvo 1 / Assault, Blast (6)" },
+      { "type": "ACTION", "name": "Prism Rifle (Focused)", "stats": "14 +2 ED / AP -3 / Range 12-24-36 / Salvo 1 / Assault" },
+      { "type": "RUIN", "name": "Battle Focus", "description": "Spend 1 Ruin immediately before or after making a ranged attack to Move up to the Shadow Spectre's Speed as a Free Action." }
+    ],
+    "determination": "Spend 1 Ruin to roll 3d6.",
+    "conviction": 4,
+    "resolve": 3,
+    "speed": 12,
+    "size": "Avg",
+    "movement": "Fly",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "wraithguard_xenos",
+    "name": "WRAITHGUARD",
+    "description": "Just as the Asuryani have mastered the process of transplanting an Aeldari's soul into a Spirit Stone upon their death, they have learned to install that Spirit Stone in an inanimate shell, so they can be restored to a facsimile of true life. Disturbing the slumber of the dead can only be justified in times of existential conflict, so these wraith constructs are designed to be formidable battle platforms: roughly twice the height of an Aeldari, and armoured in reinforced wraithbone. A Wraithguard no longer perceives the world as a living soul would, but their superlative combat instincts remain. These talents are further enhanced by the appalling distortion weaponry they wield in battle, designed to tear apart a body with invasive Warp energies, or cast a soul into the ruinous beyond.\n\nWraithguard are forged with a resilience most Aeldari warriors lack, and Agents equipped to handle fast-moving Asuryani may find their Blast or other anti-personnel weaponry struggles to penetrate a wraith construct's carapace. It is just as well the Asuryani only deploy Ghost Warriors in only the most dire circumstances, for low-Tier Agents are easily Annihilated by Wraithguard weaponry. However, the Spiritseers of Ul-Khari find themselves awakening their ancestors with increasing frequency in defence of their walls, but with each awakening they further risk the spirits of their beloved ancestors falling into the grasp of She-Who-Thirsts.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "T" },
+    "keywords": ["AELDARI", "ASURYANI", "WRAITH CONSTRUCT", "[CRAFTWORLD]"],
+    "attributes": { "S": 7, "T": 9, "A": 4, "I": 4, "Wil": 5, "Int": 3, "Fel": 1 },
+    "resilience": { "value": 14, "note": "4 AR" },
+    "defence": 3,
+    "wounds": 17,
+    "shock": 9,
+    "skills": "Default 4, Awareness 8 (Passive 4), Ballistic Skill 9, Weapon Skill 9",
+    "bonuses": [
+      { "name": "Wraithsight", "description": "Wraithguard can communicate telepathically, and perceive the presence of psychic powers and Warp phenomena, as well as thoughts and feelings at the GM's discretion. However, unless there is a living Aeldari character within line of sight, Wraithguard gain the Hindered Condition." },
+      { "name": "War Construct", "description": "Wraithguard are immune to the Blinded, Bleeding, and Poisoned Conditions, and cannot Suffocate. Any ranged weapons wielded by Wraithguard can be used whilst Engaged, as though they had the Pistol Trait." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Wraithcannon", "stats": "20 +3 ED / AP -4 / Range 9-18-27 / Salvo 1 / Assault, Heavy (8), Warp Weapon" },
+      { "type": "ACTION", "name": "D-Scythe (alternate)", "stats": "20 +1 ED / AP -4 / Range 6-12-18 / Salvo 1 / Assault, Blast (6), Warp Weapon" }
+    ],
+    "determination": "Spend 1 Ruin to roll 9d6.",
+    "conviction": 5,
+    "resolve": 4,
+    "speed": 5,
+    "size": "Large",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "wraithblade",
+    "name": "WRAITHBLADE",
+    "description": "Wraithblades resemble their Wraithguard cousins in form, but are entirely unlike them in disposition. Whilst the Wraithguard are stoic and still, the Wraithblades are wrathful and furious, desperate to dispatch their foes in close combat. Their ghostblades are implanted with Spirit Stones retrieved from Crone Worlds, those forsaken planets were most afflicted by the Chaotic energies of the Fall, and the souls of their occupants have endured tortures that drove them to a howling rage. Though the Spiritseers are deeply troubled by the anguish of these spirits, they are a useful asset in battle, as the Wraithblades vent their anger against the enemies of their Craftworld.\n\nWhilst Wraithguard excel at mid-range firefights, Wraithblades are melee specialists through-and-through, preferring to brutally engage groups of Agents where possible. Luckily, they can be outmanoeuvred, as they are neither fast nor as unnaturally graceful as living Aeldari. Whilst canny Agents can avoid melee by affecting a tactical retreat and firing on-the-move, the sheer resilience of the Wraithblades makes this a time-consuming strategy, allowing other Asuryani to seize unguarded strongpoints in the meantime. High-Tier Agents may stand and fight instead, but should expect to pay a price for their courage.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "T" },
+    "keywords": ["AELDARI", "ASURYANI", "WRAITH CONSTRUCT", "[CRAFTWORLD]"],
+    "attributes": { "S": 8, "T": 9, "A": 3, "I": 4, "Wil": 5, "Int": 3, "Fel": 1 },
+    "resilience": { "value": 14, "note": "4 AR" },
+    "defence": 3,
+    "wounds": 17,
+    "shock": 9,
+    "skills": "Default 4, Awareness 8 (Passive 4), Ballistic Skill 7, Weapon Skill 10",
+    "bonuses": [
+      { "name": "Wraithsight", "description": "Wraithblades can communicate telepathically, and perceive the presence of psychic powers and Warp phenomena, as well as thoughts and feelings at the GM's discretion. However, unless there is a living Aeldari character within line of sight, Wraithblades gain the Hindered Condition." },
+      { "name": "War Construct", "description": "Wraithblades are immune to the Blinded, Bleeding, and Poisoned Conditions, and cannot Suffocate. Any ranged weapons wielded by Wraithblades gain the Pistol Trait." },
+      { "name": "Blades of Bone", "description": "Wraithblades are equipped with either two Ghostswords or one Ghostaxe. If equipped with Ghostswords, they reduce the DN penalty for making Multi-Attacks by 2. If equipped with a Ghostaxe, they also gain a Forceshield (*2 AR / Power Field, Shield)" }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Ghostsword (x2)", "stats": "13 +4 ED / AP -3 / Parry" },
+      { "type": "ACTION", "name": "Ghostaxe (alternate)", "stats": "14 +6 ED / AP -3 / Rending (2)" }
+    ],
+    "determination": "Spend 1 Ruin to roll 9d6.",
+    "conviction": 5,
+    "resolve": 4,
+    "speed": 5,
+    "size": "Large",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "wraithlord",
+    "name": "WRAITHLORD",
+    "description": "Housing the soul of a legendary Aeldari war hero, Wraithlords are the largest constructs deployed by the Asuryani, armed and armoured with both the devastating weaponry and wisdom of the ancients. Each Wraithlord is crafted to suit the specialties of its occupant, so a range of heavy weaponry may be employed. The Ghostglaive is perhaps the most iconic — a blade twice the height of a man that can fell a towering monster as easily it does a whole squad of infantry.\n\nA Wraithlord is a devastating opponent for any warparty. They are best engaged whilst separated from their living kin, which can confuse their spectral perceptions of reality — they are not helpless however, the Spirits they carry still ever wary of traps or deceptive ploys. High-Tier Agents could amass anti-armour weaponry, and hope to fell the colossus with a combined assault. Low-Tier Agents would be smarter to flee to a confined space, where the Wraithlord's bulk will not permit them to follow.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "T" },
+    "keywords": ["AELDARI", "ASURYANI", "WRAITH CONSTRUCT", "[CRAFTWORLD]"],
+    "attributes": { "S": 12, "T": 13, "A": 3, "I": 4, "Wil": 6, "Int": 4, "Fel": 1 },
+    "resilience": { "value": 14, "note": "4 AR" },
+    "defence": 3,
+    "wounds": 17,
+    "shock": 9,
+    "skills": "Default 4, Awareness 8 (Passive 4), Ballistic Skill 9, Weapon Skill 9",
+    "bonuses": [
+      { "name": "Champion", "description": "A Wraithlord may use Ruin Actions and has 2 personal Ruin." },
+      { "name": "Sweeping Blow", "description": "A Wraithlord's melee attacks have the Spread weapon trait." },
+      { "name": "Wraithsight", "description": "Wraithlords can communicate telepathically, and perceive the presence of psychic powers and Warp phenomena, as well as thoughts and feelings at the GM's discretion. However, unless there is a living Aeldari character within line of sight, Wraithlords gain the Hindered Condition." },
+      { "name": "Wraithlord Weapon Systems", "description": "If the Wraithlord makes a ranged weapon attack, it may choose to fire each of its weapons once and suffer no DN penalty." },
+      { "name": "War Construct", "description": "Wraithlords are immune to the Blinded, Bleeding, and Poisoned Conditions, and cannot Suffocate. Any ranged weapons wielded by Wraithlords can be used whilst Engaged, as though they had the Pistol Trait." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Bright Lance", "stats": "16 +2 ED / AP -4 / Range 18-36-54 / Salvo 1 / Heavy (12), Lance, Reliable" },
+      { "type": "ACTION", "name": "Ghostglaive", "stats": "18 +6 ED / AP -4 / Range 2 / Spread" },
+      { "type": "ACTION", "name": "Shuriken Catapult (x2)", "stats": "10 +1 ED / Range 9-18-27 / Salvo 3 / Assault, Rending (3)" }
+    ],
+    "determination": "Spend 1 Ruin to roll 9d6.",
+    "conviction": 6,
+    "resolve": 5,
+    "speed": 8,
+    "size": "Huge",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "corsair_prince",
+    "name": "CORSAIR PRINCE",
+    "description": "Corsair Princes proudly sit upon the command thrones of their flagships, surveying all they command, idly sipping potent cordials and enjoying platters of delicacies plundered from the hundreds of star systems they claim as their hunting grounds. Some claim they are lords and ladies of the domains they stalk, imagining themselves as scions of noble bloodlines. In some cases, this is true, but often it is merely an act used to legitimise a Prince's independence.\n\nPrinces are experts in combat, displaying insightful tactics that confound the captains of Imperial ships. They are deft blade-masters, and keen marksmen, aware they must maintain their prowess unless they wish to risk being deposed by an enterprising underling. Princes are also canny negotiators — despite their ostracism from their Asuryani and Drukhari kindred, their skills, knowledge, and fleets are required by these other parties.",
+    "tierThreat": { "1": "A", "2": "A", "3": "A", "4": "A" },
+    "keywords": ["AELDARI", "ANHRATHE", "DRUKHARI", "[COTERIE]"],
+    "attributes": { "S": 3, "T": 3, "A": 7, "I": 7, "Wil": 5, "Int": 4, "Fel": 4 },
+    "resilience": { "value": 10, "note": "3 AR" },
+    "defence": 6,
+    "wounds": 11,
+    "shock": 9,
+    "skills": "Default 9, Athletics 10, Awareness 10 (Passive 5), Ballistic Skill 12, Leadership 10, Pilot 10, Weapon Skill 12",
+    "bonuses": [
+      { "name": "Champion", "description": "This Threat may use Ruin Actions and has 4 personal Ruin." },
+      { "name": "Intense Emotions", "description": "This Threat takes a penalty of +1 DN to all Resolve Tests." },
+      { "name": "Path of Command", "description": "Any ally with a shared [COTERIE] Keyword within communication range of a Corsair Prince may use Ruin Actions using the Prince's personal Ruin." },
+      { "name": "Reckless Abandon", "description": "This Threat's attacks gain +6 bonus dice during All-Out Attacks." },
+      { "name": "Uncanny Balance", "description": "The Corsair Prince gains +3 bonus die when they use Athletics (S) Interaction Attacks." }
+    ],
+    "abilities": [
+      { "type": "BATTLECRY", "name": "Superlative Strategist", "description": "Before combat begins, the Corsair Prince may choose an ally with a shared [COTERIE] Keyword within communication range to use a Ruin Action for free. If they make a Test, as part of this Ruin Action, they gain +2 bonus dice." },
+      { "type": "ACTION", "name": "Void Sabre", "stats": "8 +4 ED / AP -3 / Range 1 / Brutal, Parry" },
+      { "type": "ACTION", "name": "Fusion Pistol", "stats": "16 +2 ED / AP -4 / Range 3-6-9 / Salvo 1 / Pistol, Melta" },
+      { "type": "DETERMINATION", "name": "Enduring Resolve", "description": "Spend 1 Ruin to roll 3d6. This Threat can roll Determination against Mortal Wounds. Include a Wrath Die in this Threat's Determination rolls. If the Wrath die rolls an Icon, the Threat does not suffer Shock damage for this Determination roll, the Wounds are simply ignored." }
+    ],
+    "determination": "Spend 1 Ruin to roll 3d6. (Enduring Resolve)",
+    "conviction": 5,
+    "resolve": 4,
+    "speed": 8,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "felarch",
+    "name": "FELARCH",
+    "description": "Champions and captains amongst the pirate fleets, leading warbands, starships, or wings of starfighters, Felarchs are dashing figures on the field of battle, brandishing exotic mind-flaying firearms, and finely crafted monomolecular edged blades. Having travelled across the stars for many centuries and faced all manner of enemies, they are capable combatants able to stand toe to toe with millennia-old Chaos Space Marines, and gargantuan Ork brutes.\n\nFelarchs lead the reaver bands that venture far from the courts of their Corsair Prince, either sent on a specific mission, or having strayed to pursue their own personal agenda. Even in larger engagements, Felarchs are assigned small warbands to enable tactical flexibility and unpredictability that confounds armies that rely on massed arms but lack in skill.",
+    "tierThreat": { "1": "A", "2": "A", "3": "A", "4": "E" },
+    "keywords": ["AELDARI", "ANHRATHE", "DRUKHARI", "[COTERIE]"],
+    "attributes": { "S": 3, "T": 3, "A": 6, "I": 6, "Wil": 4, "Int": 3, "Fel": 3 },
+    "resilience": { "value": 9, "note": "5 AR" },
+    "defence": 5,
+    "wounds": 9,
+    "shock": 7,
+    "skills": "Default 6, Athletics 8, Awareness 8 (Passive 4), Ballistic Skill 10, Intimidation 7, Leadership 8, Pilot 10, Weapon Skill 11",
+    "bonuses": [
+      { "name": "Champion", "description": "This Threat may use Ruin Actions and has 2 personal Ruin." },
+      { "name": "Combat Master", "description": "When using a weapon in each hand, the DN penalty for Multi-Attack is reduced by 2." },
+      { "name": "Intense Emotions", "description": "This Threat takes a penalty of +1 DN to all Resolve Tests." },
+      { "name": "Reavers of the Void", "description": "This Threat's attacks gain +2 bonus dice during All-Out Attacks." },
+      { "name": "Uncanny Balance", "description": "Corsairs gain +1 bonus die when they use Athletics (S) Interaction Attacks." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Aeldari Power Sword", "stats": "8 +4 ED / AP -3 / Range 1 / Parry" },
+      { "type": "ACTION", "name": "Shuriken Pistol", "stats": "10 +1 ED / Range 6-12-18 / Salvo 2 / Pistol, Rending (3)" },
+      { "type": "ACTION", "name": "Plasma Grenade (1)", "stats": "10 +5 ED / AP -1 / Range 8 / Blast (6)" },
+      { "type": "RUIN", "name": "Reaver of the Void", "description": "Spend 1 Ruin. The Felarch Seizes the Initiative and gains +3 bonus dice to all attack Tests." },
+      { "type": "WRATH", "name": "Outcast Coordinator", "description": "When a Felarch rolls a Wrath Critical, an ally that shares its [COTERIE] Keyword within 6m may immediately Move or take an Action." },
+      { "type": "DETERMINATION", "name": "Enduring Resolve", "description": "Spend 1 Ruin to roll 3d6. This Threat can roll Determination against Mortal Wounds. Include a Wrath Die in this Threat's Determination rolls. If the Wrath die rolls an Icon, the Threat does not suffer Shock damage for this Determination roll, the Wounds are simply ignored." }
+    ],
+    "determination": "Spend 1 Ruin to roll 3d6. (Enduring Resolve)",
+    "conviction": 4,
+    "resolve": 3,
+    "speed": 8,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "wayseeker",
+    "name": "WAYSEEKER",
+    "description": "Corsairs are unafraid of tapping into the raw psychic potential inside every member of the Aeldari race. As a void-faring society, the Corsairs rely on psykers to guide their starships through the labyrinthine network of the Webway. While Void Dreamers direct the flagships and fleet at larger, Wayseekers are less experienced psykers, with similar skills in reading portents and omens, who guide smaller ships of the fleet and join warbands to guide them to their targets.\n\nBrandishing staffs made of psychically resonant Wraithbone, these psykers can unleash crackling bolts of lighting. Tapping into visions of the future the Wayseeker can cloak themselves and others in a bubble of fate that does not deflect shots, but simply ensures the beneficiaries are stood in the right spot at the right time to survive.",
+    "tierThreat": { "1": "A", "2": "E", "3": "T", "4": "T" },
+    "keywords": ["AELDARI", "ANHRATHE", "DRUKHARI", "PSYKER", "[COTERIE]"],
+    "attributes": { "S": 3, "T": 3, "A": 4, "I": 5, "Wil": 7, "Int": 4, "Fel": 3 },
+    "resilience": { "value": 7, "note": "3 AR" },
+    "defence": 4,
+    "wounds": 7,
+    "shock": 9,
+    "skills": "Default 6, Athletics 7, Awareness 8 (Passive 4), Ballistic Skill 7, Pilot 8, Psychic Mastery 10, Weapon Skill 7",
+    "bonuses": [
+      { "name": "Intense Emotions", "description": "This Threat takes a penalty of +1 DN to all Resolve Tests." },
+      { "name": "Ghosthelm", "description": "This Threat never rolls on the Perils of the Warp table. They always use the Bound Power Level (+0 Wrath Die)." },
+      { "name": "Reckless Abandon", "description": "This Threat's attacks gain +4 bonus dice during All-Out Attacks." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Shuriken Pistol", "stats": "10 +1 ED / Range 6-12-18 / Salvo 2 / Pistol, Rending (3)" },
+      { "type": "ACTION", "name": "Witch Staff", "stats": "10 +3 ED / AP -1 / Range 2 / Force, Warp Weapon" },
+      { "type": "ACTION", "name": "Witch Sight", "description": "The Way Seeker knows the following Psychic Powers: Protect/Jinx, Quicken/Restrain, Smite" },
+      { "type": "RUIN", "name": "Soul Channel", "description": "Spend 1 Ruin to activate a Psychic Power or Deny the Witch." }
+    ],
+    "determination": "Spend 1 Ruin to roll 3d6.",
+    "conviction": 7,
+    "resolve": 6,
+    "speed": 8,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "soul_weaver",
+    "name": "SOUL WEAVER",
+    "description": "As travellers far from the confines of the Craftworlds, exploring lost Maiden Worlds, or the ruins of their ancient civilisation, the Anhrathe recover Spirit Stones of long dead Aeldari. Amongst the Corsairs, the Soul Weavers are psykers who use their talent to speak to the spirits held within these relics, learning from them forgotten secrets, lost arts, and borrowing their former strength in life to bestow it temporarily upon others.\n\nThe Soul Weavers commune with their fallen ancestors and honour the dead. Far from the Infinity Circuits of the Craftworlds, the Soul Weavers take the time to care for each Spirit Stone in their care.",
+    "tierThreat": { "1": "A", "2": "E", "3": "T", "4": "T" },
+    "keywords": ["AELDARI", "ANHRATHE", "DRUKHARI", "PSYKER", "[COTERIE]"],
+    "attributes": { "S": 3, "T": 3, "A": 4, "I": 5, "Wil": 7, "Int": 4, "Fel": 3 },
+    "resilience": { "value": 7, "note": "3 AR" },
+    "defence": 4,
+    "wounds": 7,
+    "shock": 9,
+    "skills": "Default 6, Athletics 7, Awareness 8 (Passive 4), Ballistic Skill 6, Pilot 8, Psychic Mastery 10, Weapon Skill 8",
+    "bonuses": [
+      { "name": "Intense Emotions", "description": "This Threat takes a penalty of +1 DN to all Resolve Tests." },
+      { "name": "Reckless Abandon", "description": "This Threat's attacks gain +4 bonus dice during All-Out Attacks." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Aeldari Power Sword", "stats": "7 +4 ED / AP -3 / Range 1 / Parry" },
+      { "type": "ACTION", "name": "Shuriken Pistol", "stats": "10 +1 ED / Range 6-12-18 / Salvo 2 / Pistol, Rending (3)" },
+      { "type": "ACTION", "name": "Plasma Grenades (2)", "stats": "10 +5 ED / AP -1 / Range 12 / Blast (6)" },
+      { "type": "ACTION", "name": "Soul Channel", "description": "The Soul Weaver knows the following Psychic Powers: Dull Pain, Embolden/Horrify, Empower/Enervate." },
+      { "type": "RUIN", "name": "Soul Channel", "description": "Spend 1 Ruin to activate a Psychic Power or Deny the Witch." },
+      { "type": "REACTION", "name": "Channeler Stones", "description": "Once per Round when this Threat or an ally within 5m would suffer damage, this Threat may activate their Channeler Stones. The damage of that attack is reduced to 0." }
+    ],
+    "determination": "Spend 1 Ruin to roll 3d6.",
+    "conviction": 7,
+    "resolve": 6,
+    "speed": 8,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "fate_dealer",
+    "name": "FATE DEALER",
+    "description": "Rangers are expert marksmen who have grown bored of life on the Craftworlds and have chosen the Path of the Outcast, wandering the Webway and visiting distant worlds. Though they have strayed from the Asuryani, many return to their former Craftworlds in their time of need, offering their services as scouts and assassins. Some rangers, however, find a sense of belonging amongst the pirate fleets of the Corsairs.\n\nKnown as Fate Dealers, these marksmen are prized assets within the fleet, striking from the shadows with their long rifles, having waited patiently for days for their target to reveal themselves. Fate Dealers are often sent ahead of their warbands, relaying critical intelligence regarding their opponents numbers and distribution, and complementing the ability of Corsair warbands to adapt to any opponent.",
+    "tierThreat": { "1": "A", "2": "E", "3": "T", "4": "T" },
+    "keywords": ["AELDARI", "ANHRATHE", "DRUKHARI", "[COTERIE]"],
+    "attributes": { "S": 3, "T": 3, "A": 6, "I": 4, "Wil": 3, "Int": 3, "Fel": 2 },
+    "resilience": { "value": 7, "note": "3 AR" },
+    "defence": 3,
+    "wounds": 7,
+    "shock": 5,
+    "skills": "Default 6, Athletics 7, Awareness 10 (Passive 5), Ballistic Skill 10, Pilot 9, Stealth 9, Survival 8, Weapon Skill 7",
+    "bonuses": [
+      { "name": "Cameleoline Cloak", "description": "Gain +1 bonus die to Stealth (A) Tests and +1 Defence while in cover or shadows." },
+      { "name": "Intense Emotions", "description": "This Threat takes a penalty of +1 DN to all Resolve Tests." },
+      { "name": "Reckless Abandon", "description": "This Threat's attacks gain +4 bonus dice during All-Out Attacks." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Shuriken Pistol", "stats": "10 +1 ED / Range 6-12-18 / Salvo 2 / Pistol, Rending (3)" },
+      { "type": "ACTION", "name": "Ranger Long Rifle", "stats": "10 +1 ED / Range 18-36-54 / Salvo - / Sniper (4)" },
+      { "type": "WRATH", "name": "Sniper", "description": "When the Threat rolls a 6 on the Wrath Die as part of a ranged attack it deals an additional 1d3 Mortal Wounds." }
+    ],
+    "determination": "Spend 1 Ruin to roll 3d6.",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 8,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "kurnathi",
+    "name": "KURNATHI",
+    "description": "Whether having trained on the Path of the Warrior, in the deadly gladiatorial arenas of Commorragh, or learned their martial arts during their dance with the Harlequins, Kurnathi are expert swordmasters who seek out new challenges out amongst the stars. Their skill and subtlety with a blade makes Kurnathi the ideal bodyguards for Corsair Princes, forming bands known as Blade Sworn retinues.\n\nTogether they test each other, constantly seeking to perfect their art, while protecting their liege. Within the Voidscarred warbands these swordmasters challenge all manner of alien killers to mortal combat, meeting crude chainaxes with their finely crafted power blades. Each sword that a Kurnathi bears has a history of its own, passed on from mentor to student, or as a prize between honourable duelists.",
+    "tierThreat": { "1": "A", "2": "E", "3": "T", "4": "T" },
+    "keywords": ["AELDARI", "ANHRATHE", "DRUKHARI", "[COTERIE]"],
+    "attributes": { "S": 3, "T": 3, "A": 5, "I": 6, "Wil": 2, "Int": 3, "Fel": 2 },
+    "resilience": { "value": 7, "note": "3 AR" },
+    "defence": 6,
+    "wounds": 7,
+    "shock": 4,
+    "skills": "Default 6, Athletics 7, Awareness 8 (Passive 4), Ballistic Skill 9, Intimidation 7, Pilot 10, Weapon Skill 11",
+    "bonuses": [
+      { "name": "Bladed Stance", "description": "When wielding two melee weapons, this Threat reduces the DN penalty for Multi-Attack by 2. Additionally, this Threat gains +1 Defence when wielding two melee weapons (already included above)." },
+      { "name": "Intense Emotions", "description": "This Threat takes a penalty of +1 DN to all Resolve Tests." },
+      { "name": "Reckless Abandon", "description": "This Threat's attacks gain +4 bonus dice during All-Out Attacks." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Shuriken Pistol", "stats": "10 +1 ED / Range 6-12-18 / Salvo 2 / Pistol, Rending (3)" },
+      { "type": "ACTION", "name": "Dual Aeldari Power Swords", "stats": "7 +4 ED / AP -3 / Range 1 / Parry" }
+    ],
+    "determination": "Spend 1 Ruin to roll 3d6.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 8,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "shade_runner",
+    "name": "SHADE RUNNER",
+    "description": "Leaping from the shadows before disappearing from sight once more, Shaderunners are the sharp eyes and deft blades of a Prince, daring to go where others would not. Shade Runners share the skills and training from across the Aeldari. Wielding Hekatarii Blades forged in the Dark City, they are able to slice through even the thickest armour.\n\nShade Runners wear blink packs, enabling them to strike from the shadows. Operating in a similar manner to the warp jump packs of the Warp Spider Aspect Warriors, but combined with the technology of the Drukhari, these teleportation devices give the appearance of their bearers appearing and disappearing from the shadows.",
+    "tierThreat": { "1": "A", "2": "E", "3": "T", "4": "T" },
+    "keywords": ["AELDARI", "ANHRATHE", "DRUKHARI", "[COTERIE]"],
+    "attributes": { "S": 3, "T": 3, "A": 5, "I": 6, "Wil": 2, "Int": 4, "Fel": 2 },
+    "resilience": { "value": 7, "note": "3 AR" },
+    "defence": 5,
+    "wounds": 7,
+    "shock": 4,
+    "skills": "Default 6, Athletics 7, Awareness 8 (Passive 4), Ballistic Skill 6, Pilot 9, Stealth 9, Weapon Skill 12",
+    "bonuses": [
+      { "name": "Blademaster", "description": "When wielding its Paired Hekatarri Blades, this Threat reduces the DN penalty for Multi-Attack by 2." },
+      { "name": "Intense Emotions", "description": "This Threat takes a penalty of +1 DN to all Resolve Tests." },
+      { "name": "Reckless Abandon", "description": "This Threat's attacks gain +4 bonus dice during All-Out Attacks." }
+    ],
+    "abilities": [
+      { "type": "BATTLECRY", "name": "Shade Runner Assaults", "description": "The Shade Runner Charges at a target, potentially using its Blink Pack, and attacks a minimum of twice with its Hekatarri Blades. If it deals any Wounds, the target is Vulnerable." },
+      { "type": "ACTION", "name": "Shuriken Pistol", "stats": "10 +1 ED / Range 6-12-18 / Salvo 2 / Pistol, Rending (3)" },
+      { "type": "ACTION", "name": "Paired Hekatarri Blades", "stats": "8 +4 ED / AP -3 / Range 1 / Parry" },
+      { "type": "RUIN", "name": "Blink Pack", "description": "The Shade Runner slips from sight, momentarily entering the Warp, before appearing again. They may make a DN 3 Pilot (A) test to increase their Speed to 12. They may move in any direction, ignoring terrain, though may not end their movement within terrain. If the test fails, their movement is resolved using the Scattering rules. A Complication indicates that the Shade Runner ends up somewhere they did not intend." },
+      { "type": "DETERMINATION", "name": "Dodge", "description": "Spend 1 Ruin to roll 5d6. This Threat uses Agility instead of Toughness to roll Determination." }
+    ],
+    "determination": "Spend 1 Ruin to roll 5d6. (Dodge)",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 8,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "starstorm_duellist",
+    "name": "STARSTORM DUELLIST",
+    "description": "Even amongst the Aeldari there are gunslingers and desperados, out to make a name for themselves as the greatest fighters in the galaxy. Wielding shuriken pistols, fusion guns, poisonous splinter pistols, blast pistols, and laser carbines, these gunfighters unleash a hailstorm of death on their enemies at close range.\n\nWhen not engaged in battle these duelists hone their skills in the holo-arenas of the fleet, gloating about their latest kills. Where Kurnathi are noble and measured, and Shaderunners secretive and conniving, Starstorm Duelists are some of the most boisterous champions amongst their kind.",
+    "tierThreat": { "1": "A", "2": "E", "3": "T", "4": "T" },
+    "keywords": ["AELDARI", "ANHRATHE", "DRUKHARI", "[COTERIE]"],
+    "attributes": { "S": 3, "T": 3, "A": 6, "I": 5, "Wil": 2, "Int": 3, "Fel": 3 },
+    "resilience": { "value": 6, "note": "3 AR" },
+    "defence": 4,
+    "wounds": 7,
+    "shock": 4,
+    "skills": "Default 6, Athletics 8, Awareness 8 (Passive 4), Ballistic Skill 12, Intimidation 8, Weapon Skill 8",
+    "bonuses": [
+      { "name": "Intense Emotions", "description": "This Threat takes a penalty of +1 DN to all Resolve Tests." },
+      { "name": "Pistol Barrage", "description": "This Threat reduces the Multi-Attack penalty by 2 DN when it fires with both of its pistols." },
+      { "name": "Reckless Abandon", "description": "This Threat's attacks gain +4 bonus dice during All-Out Attacks." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Fusion Pistol", "stats": "16 +2 ED / AP -4 / Range 3-6-9 / Salvo 1 / Melta, Pistol" },
+      { "type": "ACTION", "name": "Shuriken Pistol", "stats": "10 +1 ED / Range 6-12-18 / Salvo 2 / Pistol, Rending (3)" },
+      { "type": "RUIN", "name": "Reaver of the Void", "description": "Spend 1 Ruin. The Starstorm Duellist Seizes the Initiative and gains +2 bonus dice to all attack Tests." }
+    ],
+    "determination": "Spend 1 Ruin to roll 3d6.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 8,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "voidreaver",
+    "name": "VOIDREAVER",
+    "description": "The main body of warriors that make up the Corsair fleets are Voidreavers. Each has only just begun down the Path of the Outcast, throwing off the shackles of their former lives amongst the Asuryani and Drukhari. Despite being the footsoldiers of the fleet, their wargear reflects the diverse origins of their number. Each wears void capable armour, allowing them to perform daring boarding actions and sow disruption in an enemy crew.\n\nOver the many centuries of raiding and looting, each Voidreaver becomes a unique fighter in their own right, with those who survive longest forming elite warbands, known as the Voidscarred. The weapons of the Voidreavers are eclectic, such as the devastating shredders and blasters of the Drukhari, or the warp disrupting Wraithcannon and slicing shuriken cannons of the Craftworld Aeldari.",
+    "tierThreat": { "1": "A", "2": "E", "3": "T", "4": "T" },
+    "keywords": ["AELDARI", "ANHRATHE", "DRUKHARI", "[COTERIE]"],
+    "attributes": { "S": 3, "T": 3, "A": 4, "I": 4, "Wil": 2, "Int": 3, "Fel": 2 },
+    "resilience": { "value": 6, "note": "3 AR" },
+    "defence": 3,
+    "wounds": 7,
+    "shock": 4,
+    "skills": "Default 5, Athletics 6, Awareness 6 (Passive 3), Ballistic Skill 8, Pilot 9, Weapon Skill 8",
+    "bonuses": [
+      { "name": "Intense Emotions", "description": "This Threat takes a penalty of +1 DN to all Resolve Tests." },
+      { "name": "Reckless Abandon", "description": "This Threat's attacks gain +2 bonus dice during All-Out Attacks" },
+      { "name": "Uncanny Balance", "description": "Corsairs gain +1 bonus die when they use Athletics (S) Interaction Attacks." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Aeldari Power Sword", "stats": "7 +4 ED / AP -3 / Range 1 / Parry" },
+      { "type": "ACTION", "name": "Shuriken Pistol", "stats": "10 +1 ED / Range 6-12-18 / Salvo 2 / Pistol, Rending (3)" },
+      { "type": "ACTION", "name": "Plasma Grenade (1)", "stats": "10 +5 ED / AP -1 / Range 8 / Blast (6)" },
+      { "type": "RUIN", "name": "Reaver of the Void", "description": "Spend 1 Ruin. The Voidreaver Seizes the Initiative and gains +1 bonus dice to all attack Tests." }
+    ],
+    "determination": "Spend 1 Ruin to roll 3d6.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 8,
+    "size": "Avg",
+    "mobOptions": "In a Mob of 5 or more Voidreavers, one Voidreaver may exchange their Shuriken Pistol for either: Corsair Blaster: 17 +2 ED / AP -4 / Range 9-18-27 / Salvo - / Brutal, Heavy (6), Spread; Corsair Shredder: 13 +2 ED / AP -1 / Range 9-18-27 / Salvo 1 / Blast (6), Heavy (4), Rending (3). In a Mob of 10 or more Voidreavers, one Voidreaver may exchange their Shuriken Pistol for either: Shuriken Cannon: 14 +2 ED / Range 12-24-36 / Salvo 3 / Heavy (6), Rending (4); Wraithcannon: 20 +3 ED / AP -4 / Range 9-18-27 / Salvo 1 / Assault, Heavy (8), Warp Weapon",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "solitaire",
+    "name": "SOLITAIRE",
+    "description": "Pariahs even amongst their own enigmatic kind, Solitaires are those doomed souls who perform the role of Slaanesh, She-Who-Thirsts for the souls of all Aeldari. The athletic abilities of Solitaires defy rational explanation, and those few who survive their prismatic pummellings describe powers of flight, invisibility, and indestructibility. Who knows what evil lies behind their leering, daemonic masks? Whatever the truth, they are legendarily ferocious killers, and fewer more deadly opponents can be found in the Gilead System.\n\nSolitaires are one-man armies even the Officio Assassinorum are envious of. Amongst the Aeldari, only the mythical Phoenix Lords are said to be more gifted in the warrior arts. An Agent engaging a Solitaire in melee is set for the fight of their lives, but though a Solitaire is fast, a supremely skilled marksman can hope to triumph by landing a salvo of expert shots before they close into killing range.",
+    "tierThreat": { "1": "A", "2": "A", "3": "A", "4": "A" },
+    "keywords": ["AELDARI", "HARLEQUIN", "[MASQUE]"],
+    "attributes": { "S": 5, "T": 5, "A": 8, "I": 8, "Wil": 6, "Int": 4, "Fel": 2 },
+    "resilience": { "value": 8, "note": "*2 AR" },
+    "defence": 8,
+    "wounds": 15,
+    "shock": 11,
+    "skills": "Default 6, Athletics 12, Awareness 8 (Passive 4), Ballistic Skill 12, Stealth 10, Weapon Skill 12",
+    "bonuses": [
+      { "name": "Champion", "description": "A Solitaire may use Ruin Actions and has 3 personal Ruin." },
+      { "name": "Flip Belt", "description": "This Threat ignores Difficult Terrain and can hurdle obstacles up to 2m high or leap over gaps up to 2m in length as part of their standard movement. When this Threat makes a Long or High Jump as a Simple Action with an Athletics (S) Test, their Long Jump distance is equal to their Agility in metres (8m) and their High Jump is equal to half their Agility in metres (4m)." },
+      { "name": "Rising Crescendo", "description": "This Threat can Fall Back as a Simple Action." },
+      { "name": "Second Strike", "description": "This Threat reduces the Multi-Attack penalty by 2 DN, as though it had the Dual Wield Talent." },
+      { "name": "Solitaire's Holo-suit", "description": "In addition to providing *2 AR, a Holo-suit increases the wearer's Defence by +1 (included above). If this Threat moves, it gains additional Defence until the start of its next Turn, depending on the type of movement: Move: +1 additional Defence (total 9). Run: +2 additional Defence (total 10). Sprint: +3 additional Defence (total 11)." },
+      { "name": "Solitaire's Mask", "description": "Whenever an opponent becomes Engaged with this Threat, they must make a DN 3 Fear Test." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Solitaire's Kiss", "stats": "13 +6 ED / AP -3 / Rending (3)" },
+      { "type": "ACTION", "name": "Solitaire's Caress", "stats": "12 +5 ED / AP -3 / Agonising, Rending (6)" },
+      { "type": "RUIN", "name": "Blitz", "description": "Spend 1 Ruin to Charge or Run at Speed 24, jumping over any characters or environmental obstacles in the way." },
+      { "type": "DETERMINATION", "name": "Dodge", "description": "Spend 1 Ruin to roll 8d6. This Threat uses Agility instead of Toughness to roll Determination. Additionally, this Threat can roll Determination against Mortal Wounds." }
+    ],
+    "determination": "Spend 1 Ruin to roll 8d6. (Dodge)",
+    "conviction": 6,
+    "resolve": 5,
+    "speed": 8,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "death_jester",
+    "name": "DEATH JESTER",
+    "description": "Death Jesters provide Harlequins with heavy-weapon support, but without sacrificing the mobility that role would imply. Their garb reflects their role as Death in their Masque's ritual performances, even incorporating the bones of their immediate predecessor into their suits. Death Jesters have a notoriously warped sense of humour, despatching their foes in the most bleakly ironic or beautifully grotesque manner possible. Their long-barrelled shrieker cannons are well suited to this task, its projectiles injecting victims with toxins that explode them from the inside-out.\n\nDeath Jesters are uniquely infuriating foes, using Intimidation Interaction Attacks and their Rictus Masks to openly laugh at Agents as they wound or mutilate their allies. Agents thirsting for vengeance are advised to close into melee range, where they are less exposed to shrieker cannon fire. Unfortunately, like any Harlequin, Death Jesters are skilled hand-to-hand combatants.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
+    "keywords": ["AELDARI", "HARLEQUIN", "[MASQUE]"],
+    "attributes": { "S": 4, "T": 3, "A": 7, "I": 7, "Wil": 6, "Int": 4, "Fel": 4 },
+    "resilience": { "value": 8, "note": "*1 AR" },
+    "defence": 7,
+    "wounds": 11,
+    "shock": 10,
+    "skills": "Default 6, Athletics 8, Awareness 8 (Passive 4), Ballistic Skill 11, Deception 8, Intimidation 8, Weapon Skill 11",
+    "bonuses": [
+      { "name": "Champion", "description": "A Death Jester may use Ruin Actions and has 2 personal Ruin. They may activate the Move Ruin Action during their own turn, jumping over any characters or environmental obstacles in the way." },
+      { "name": "Death is Not Enough", "description": "When a Death Jester kills an opponent, all living opponents that saw the death must make a DN 3 Fear Test." },
+      { "name": "Flip Belt", "description": "This Threat ignores Difficult Terrain and can hurdle obstacles up to 2m high or leap over gaps up to 2m in length as part of their standard movement. When this Threat makes a Long or High Jump as a Simple Action with an Athletics (S) Test, their Long Jump distance is equal to their Agility in metres (7m) and their High Jump is equal to half their Agility in metres (4m)." },
+      { "name": "Holo-suit", "description": "In addition to providing *1 AR, a Holo-suit increases the wearer's Defence by +1 (included above). If this Threat moves, it gains additional Defence until the start of its next Turn: Move: +1 (total 8). Run: +2 (total 9). Sprint: +3 (total 10)." },
+      { "name": "Intense Emotions", "description": "This Threat takes a penalty of +1 DN to all Resolve Tests." },
+      { "name": "Rictus Mask", "description": "Whenever an opponent becomes Engaged with this Threat, they must make a DN 3 Fear Test." },
+      { "name": "Rising Crescendo", "description": "This Threat can Fall Back as a Simple Action." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Shrieker Cannon", "stats": "14 +2 ED / AP -2 / Range 15-30-45 / Salvo 4 / Agonising, Heavy (4), Rending (4)" },
+      { "type": "ACTION", "name": "Jester's Blade", "stats": "9 +4 ED / AP -1 / Parry" },
+      { "type": "DETERMINATION", "name": "Dodge", "description": "Spend 1 Ruin to roll 7d6. This Threat uses Agility instead of Toughness to roll Determination. Additionally, this Threat can roll Determination against Mortal Wounds." }
+    ],
+    "determination": "Spend 1 Ruin to roll 7d6. (Dodge)",
+    "conviction": 6,
+    "resolve": 5,
+    "speed": 8,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "harlequin_player",
+    "name": "HARLEQUIN PLAYER",
+    "description": "Troupes form the core of Harlequin Masques, each player impeccably rehearsed to anticipate the actions of their co-performers. They dart around each other in a blur of multi-coloured motion, concealing their true location with holo-field illusions, and activating flip belts to achieve impossible acrobatic displays. Troupes may appear to toy with their enemies, enlisting them as unwilling participants in a dance they cannot understand. When a foe is close enough to behold a player's shifting, unsettling mask, they are subjected to the Harlequin's Kiss: a horrendous melee weapon that punctures the target's flesh, and shreds their insides with a whip of monomolecular wire.\n\nA troupe of players may act as an independent threat, or appear as allies beside an Asuryani, Drukhari, or Corsair force. Their specialties are speed and misdirection — their armour is frail, but actually striking a Harlequin is difficult enough. They are sworn enemies of the Ruinous Powers, and high-Tier CHAOS Agents are right to dread their deadly attentions.",
+    "tierThreat": { "1": "A", "2": "E", "3": "E", "4": "E" },
+    "keywords": ["AELDARI", "HARLEQUIN", "[MASQUE]"],
+    "attributes": { "S": 3, "T": 3, "A": 6, "I": 6, "Wil": 4, "Int": 3, "Fel": 4 },
+    "resilience": { "value": 5, "note": "*1 AR" },
+    "defence": 6,
+    "wounds": 9,
+    "shock": 7,
+    "skills": "Default 6, Athletics 8, Awareness 6 (Passive 3), Ballistic Skill 8, Deception 8, Weapon Skill 8",
+    "bonuses": [
+      { "name": "False Face", "description": "Whenever an opponent becomes Engaged with this Threat, they must make a DN 2 Fear Test." },
+      { "name": "Flip Belt", "description": "This Threat ignores Difficult Terrain, and can hurdle obstacles up to 2m high or leap over gaps up to 2m in length as part of their standard movement. When this Threat makes a Long or High Jump as a Simple Action with an Athletics (S) Test, their Long Jump distance is equal to their Agility in metres (6m) and their High Jump is equal to half their Agility in metres (3m)." },
+      { "name": "Holo-suit", "description": "In addition to providing *1 AR, a Holo-suit increases the wearer's Defence by +1 (included above). If this Threat moves, it gains additional Defence until the start of its next Turn: Move: +1 (total 9). Run: +2 (total 10). Sprint: +3 (total 11)." },
+      { "name": "Intense Emotions", "description": "This Threat takes a penalty of +1 DN to all Resolve Tests." },
+      { "name": "Rising Crescendo", "description": "This Threat can Fall Back as a Simple Action." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Shuriken Pistol", "stats": "10 +1 ED / Range 6-12-18 / Salvo 2 / Pistol, Rending (3)" },
+      { "type": "ACTION", "name": "Harlequin's Blade", "stats": "7 +5 ED / AP -1 / Parry" },
+      { "type": "ACTION", "name": "Haywire Grenade", "stats": "10 +10 ED / AP -4 / Range 12 / Can only target vehicles" },
+      { "type": "DETERMINATION", "name": "Dodge", "description": "Spend 1 Ruin to roll 6d6. This Threat uses Agility instead of Toughness to roll Determination. Additionally, this Threat can roll Determination against Mortal Wounds." }
+    ],
+    "determination": "Spend 1 Ruin to roll 6d6. (Dodge)",
+    "conviction": 4,
+    "resolve": 3,
+    "speed": 8,
+    "size": "Avg",
+    "mobOptions": "Any number of individuals in a Mob of Harlequins may replace their Harlequin's Blade with a Harlequin's Kiss: 8 +6 ED / AP -2 / Rending (3). In a Mob of 5 or more Harlequins: Up to 2 may replace their Shuriken Pistol with a Neuro Disruptor: 13 +2 ED / AP -3 / 6-12-18 / Salvo 1 / Agonising, Brutal, Pistol; Up to 2 may replace their Shuriken Pistol with a Fusion Pistol: 16 +2 ED / AP -4 / Range 3-6-9 / Salvo 1 / Melta, Pistol; Up to 2 may replace their Harlequin's Blade with a Harlequin's Caress: 7 +4 ED / AP -2 / Rending (6); Up to 2 may replace their Harlequin's Blade with a Harlequin's Embrace: 8 +8 ED / AP -2",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "shadowseer",
+    "name": "SHADOWSEER",
+    "description": "The role of Fate in Harlequin performances is played by a Shadowseer, masterful psykers who use illusory magics and hallucinogenic gas to enhance their shows with haunting mirages. Like Asuryani Farseers, Shadowseers can perceive the twisting course of the future, but they are not prideful enough to avert its course. Instead, they consider themselves agents of prophecy, willingly enacting their visions as reconstructions of ancient Aeldari mythology.\n\nShadowseers are deadly battle-psykers — more directly combative than their Asuryani counterparts, and no less a master of witchcraft. Confronting them is as much a psychological battle as a physical one, as an Agent is assaulted by beguiling visions, struck by madness-inducing force weaponry, and confronted with their darkest secrets in the mirrored sheen of the Shadowseer's mask.",
+    "tierThreat": { "1": "A", "2": "A", "3": "A", "4": "A" },
+    "keywords": ["AELDARI", "HARLEQUIN", "PSYKER", "[MASQUE]"],
+    "attributes": { "S": 3, "T": 3, "A": 6, "I": 6, "Wil": 8, "Int": 5, "Fel": 4 },
+    "resilience": { "value": 5, "note": "*1 AR" },
+    "defence": 6,
+    "wounds": 13,
+    "shock": 13,
+    "skills": "Default 7, Athletics 8, Awareness 10 (Passive 5), Ballistic Skill 10, Deception 10, Psychic Mastery 12, Weapon Skill 10",
+    "bonuses": [
+      { "name": "Champion", "description": "A Shadowseer may use Ruin Actions and has 4 personal Ruin. They may activate the Move Ruin Action during their own turn, jumping over any characters or environmental obstacles in the way." },
+      { "name": "Flip Belt", "description": "This Threat ignores Difficult Terrain and can hurdle obstacles up to 2m high or leap over gaps up to 2m in length as part of their standard movement. When this Threat makes a Long or High Jump as a Simple Action with an Athletics (S) Test, their Long Jump distance is equal to their Agility in metres (7m) and their High Jump is equal to half their Agility in metres (4m)." },
+      { "name": "Holo-suit", "description": "In addition to providing *1 AR, a Holo-suit increases the wearer's Defence by +1 (included above). If this Threat moves, it gains additional Defence until the start of its next Turn: Move: +1 (total 9). Run: +2 (total 10). Sprint: +3 (total 11)." },
+      { "name": "Intense Emotions", "description": "This Threat takes a penalty of +1 DN to all Resolve Tests." },
+      { "name": "Mirror Mask", "description": "The DN of any Test made that targets the Shadowseer is increased by +1." },
+      { "name": "Rising Crescendo", "description": "This Threat can Fall Back as a Simple Action." },
+      { "name": "Shield from Harm", "description": "All allies with the HARLEQUIN Keyword within 6m of this Threat gain +1 Defence." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Phantasmancer", "description": "The Shadowseer may attempt to activate one of the following psychic powers: Smite, Invoke Luck, Forewarning, Fog the Mind, Veil of Tears. Veil of Tears: DN Target's Willpower, Action. A target within 20m cannot perceive or interact with anything more than 20m away, and gains the Hindered Condition, until the start of your next turn. Spend 2 Shifts per additional turn the Condition remains for." },
+      { "type": "ACTION", "name": "Neuro Disruptor", "stats": "13 +2 ED / AP -3 / 6-12-18 / Salvo 1 / Agonising, Brutal, Pistol" },
+      { "type": "ACTION", "name": "Hallucinogen Grenade Launcher", "stats": "Range 9-18-27 / Salvo 1 / Blast (6), Inflict (Fear 4), this weapon does not inflict Damage but applies the Fear Condition on any successful hit" },
+      { "type": "ACTION", "name": "Miststave", "stats": "13 +5 ED / AP -1 / Brutal, Force" },
+      { "type": "RUIN", "name": "Spirit Guide", "description": "Spend 1 Ruin to activate a Psychic Power or Deny the Witch." },
+      { "type": "DETERMINATION", "name": "Dodge", "description": "Spend 1 Ruin to roll 6d6. This Threat uses Agility instead of Toughness to roll Determination. Additionally, this Threat can roll Determination against Mortal Wounds." }
+    ],
+    "determination": "Spend 1 Ruin to roll 6d6. (Dodge)",
+    "conviction": 8,
+    "resolve": 7,
+    "speed": 8,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
   }
 ]
