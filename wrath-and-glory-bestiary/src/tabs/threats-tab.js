@@ -1,0 +1,562 @@
+// Threats Tab - Displays threat list and detail view
+
+const ThreatsTab = {
+    selectedThreatId: null,
+    selectedWeaponId: null,
+    filters: {
+        search: '',
+        threatLevels: ['T', 'E', 'A'],
+        keywords: []
+    },
+
+    init() {
+        // Initialize search
+        const searchInput = document.getElementById('search-input');
+        searchInput.addEventListener('input', (e) => {
+            this.filters.search = e.target.value;
+            this.renderThreatList();
+        });
+
+        // Initialize threat level filters
+        const threatLevelFilters = document.querySelectorAll('#threat-level-filters input[type="checkbox"]');
+        threatLevelFilters.forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+                this.updateThreatLevelFilters();
+                this.renderThreatList();
+            });
+        });
+
+        // Initialize clear filters button
+        document.getElementById('btn-clear-filters').addEventListener('click', () => {
+            this.clearFilters();
+        });
+
+        // Populate keyword filters
+        this.populateKeywordFilters();
+
+        // Render initial threat list
+        this.renderThreatList();
+    },
+
+    refresh() {
+        this.renderThreatList();
+        if (this.selectedThreatId) {
+            this.renderThreatDetail(this.selectedThreatId);
+        }
+    },
+
+    populateKeywordFilters() {
+        const keywords = DataLoader.getAllKeywords();
+        const container = document.getElementById('keyword-filters');
+
+        container.innerHTML = keywords.map(keyword => `
+            <label class="checkbox-label">
+                <input type="checkbox" data-keyword="${keyword}">
+                <span>${keyword}</span>
+            </label>
+        `).join('');
+
+        // Add event listeners
+        container.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+                this.updateKeywordFilters();
+                this.renderThreatList();
+            });
+        });
+    },
+
+    updateThreatLevelFilters() {
+        const checkboxes = document.querySelectorAll('#threat-level-filters input[type="checkbox"]');
+        this.filters.threatLevels = [];
+        checkboxes.forEach(cb => {
+            if (cb.checked) {
+                this.filters.threatLevels.push(cb.dataset.threat);
+            }
+        });
+    },
+
+    updateKeywordFilters() {
+        const checkboxes = document.querySelectorAll('#keyword-filters input[type="checkbox"]');
+        this.filters.keywords = [];
+        checkboxes.forEach(cb => {
+            if (cb.checked) {
+                this.filters.keywords.push(cb.dataset.keyword);
+            }
+        });
+    },
+
+    clearFilters() {
+        // Clear search
+        document.getElementById('search-input').value = '';
+        this.filters.search = '';
+
+        // Reset threat level filters
+        document.querySelectorAll('#threat-level-filters input[type="checkbox"]').forEach(cb => {
+            cb.checked = true;
+        });
+        this.filters.threatLevels = ['T', 'E', 'A'];
+
+        // Clear keyword filters
+        document.querySelectorAll('#keyword-filters input[type="checkbox"]').forEach(cb => {
+            cb.checked = false;
+        });
+        this.filters.keywords = [];
+
+        this.renderThreatList();
+    },
+
+    renderThreatList() {
+        const threats = DataLoader.filterThreats({
+            search: this.filters.search,
+            threatLevels: this.filters.threatLevels.length > 0 ? this.filters.threatLevels : null,
+            keywords: this.filters.keywords.length > 0 ? this.filters.keywords : null
+        });
+
+        const container = document.getElementById('threat-list');
+
+        if (threats.length === 0) {
+            container.innerHTML = `
+                <div class="threat-list-empty">
+                    <p>No threats match your filters</p>
+                </div>
+            `;
+            return;
+        }
+
+        container.innerHTML = threats.map(threat => {
+            const tierBadges = this.renderTierBadges(threat.tierThreat);
+            const keywords = threat.keywords || [];
+
+            return `
+                <div class="threat-list-item ${this.selectedThreatId === threat.id ? 'selected' : ''}"
+                     data-threat-id="${threat.id}">
+                    <div class="threat-list-header">
+                        <span class="threat-list-name">${threat.name}</span>
+                        <div class="threat-list-level">${tierBadges}</div>
+                    </div>
+                    <div class="threat-list-keywords">
+                        ${keywords.map(kw => `<span class="threat-list-keyword">${kw}</span>`).join('')}
+                    </div>
+                </div>
+            `;
+        }).join('');
+
+        // Add click handlers
+        container.querySelectorAll('.threat-list-item').forEach(item => {
+            item.addEventListener('click', () => {
+                this.selectThreat(item.dataset.threatId);
+            });
+        });
+    },
+
+    renderTierBadges(tierThreat) {
+        if (!tierThreat) return '';
+
+        // Get unique threat levels
+        const levels = new Set(Object.values(tierThreat));
+        return Array.from(levels).map(level =>
+            `<span class="threat-tier-badge">${level}</span>`
+        ).join('');
+    },
+
+    selectThreat(threatId) {
+        this.selectedThreatId = threatId;
+        this.selectedWeaponId = null;
+
+        // Update list selection
+        document.querySelectorAll('.threat-list-item').forEach(item => {
+            item.classList.toggle('selected', item.dataset.threatId === threatId);
+        });
+
+        // Render detail
+        this.renderThreatDetail(threatId);
+    },
+
+    renderThreatDetail(threatId) {
+        const threat = DataLoader.getThreat(threatId);
+        const container = document.getElementById('threat-detail');
+
+        if (!threat) {
+            container.innerHTML = `
+                <div class="threat-detail-placeholder">
+                    <p>Threat not found</p>
+                </div>
+            `;
+            return;
+        }
+
+        // Find the default weapon (first ACTION ability) or use selected weapon
+        let currentWeapon = null;
+        if (this.selectedWeaponId) {
+            currentWeapon = DataLoader.getThreatWeapon(this.selectedWeaponId);
+        } else if (threat.abilities) {
+            const actionAbility = threat.abilities.find(a => a.type === 'ACTION');
+            if (actionAbility && actionAbility.weaponId) {
+                currentWeapon = DataLoader.getThreatWeapon(actionAbility.weaponId);
+                this.selectedWeaponId = actionAbility.weaponId;
+            }
+        }
+
+        container.innerHTML = this.renderThreatCard(threat, currentWeapon);
+
+        // Enhance glossary terms
+        Glossary.enhanceDescriptions(container);
+
+        // Attach keyword click handlers
+        container.querySelectorAll('.threat-keyword').forEach(kw => {
+            kw.addEventListener('click', (e) => {
+                const keyword = e.target.textContent;
+                this.showKeywordPopup(keyword, e.target);
+            });
+        });
+
+        // Attach weapon selector handler
+        const weaponSelector = container.querySelector('.weapon-selector');
+        if (weaponSelector) {
+            weaponSelector.addEventListener('change', (e) => {
+                this.selectedWeaponId = e.target.value || null;
+                this.renderThreatDetail(threatId);
+            });
+        }
+    },
+
+    renderThreatCard(threat, currentWeapon) {
+        // Build tier/threat table
+        const tierThreatTable = this.renderTierThreatTable(threat.tierThreat);
+
+        // Build keywords row
+        const keywordsHtml = (threat.keywords || []).map(kw =>
+            `<span class="threat-keyword">${kw}</span>`
+        ).join('');
+
+        // Build attributes table
+        const attributesTable = this.renderAttributesTable(threat.attributes);
+
+        // Build resilience row
+        const resilienceHtml = this.renderResilienceRow(threat);
+
+        // Build combat stats table
+        const combatStatsTable = this.renderCombatStatsTable(threat);
+
+        // Build skills row
+        const skillsHtml = this.renderSkillsRow(threat.skills);
+
+        // Build abilities section
+        const abilitiesHtml = this.renderAbilities(threat.abilities, currentWeapon);
+
+        // Build determination row
+        const determinationHtml = this.renderDeterminationRow(threat.determination);
+
+        // Build bottom stats table
+        const bottomStatsTable = this.renderBottomStatsTable(threat);
+
+        // Build weapon selector
+        const weaponSelectorHtml = this.renderWeaponSelector(threat, currentWeapon);
+
+        return `
+            <div class="threat-card">
+                <div class="threat-card-header">
+                    <h2 class="threat-card-title">${threat.name}</h2>
+                    ${threat.quote ? `
+                        <p class="threat-card-quote">${threat.quote}</p>
+                        ${threat.attribution ? `<p class="threat-card-attribution">—${threat.attribution}</p>` : ''}
+                    ` : ''}
+                </div>
+                <div class="threat-card-body">
+                    ${threat.description ? `
+                        <div class="threat-card-description" data-glossary-enhance>
+                            ${threat.description}
+                        </div>
+                    ` : ''}
+
+                    <div class="threat-stats-section">
+                        ${tierThreatTable}
+
+                        <div class="threat-keywords-row">
+                            <span class="threat-keywords-label">KEYWORDS:</span>
+                            ${keywordsHtml}
+                        </div>
+
+                        ${attributesTable}
+
+                        ${resilienceHtml}
+
+                        ${combatStatsTable}
+
+                        ${skillsHtml}
+
+                        <div class="abilities-section">
+                            <div class="abilities-header">Abilities</div>
+                            ${abilitiesHtml}
+                        </div>
+
+                        ${determinationHtml}
+
+                        ${bottomStatsTable}
+
+                        ${weaponSelectorHtml}
+                    </div>
+                </div>
+            </div>
+        `;
+    },
+
+    renderTierThreatTable(tierThreat) {
+        if (!tierThreat) return '';
+
+        const tiers = Object.keys(tierThreat).sort((a, b) => parseInt(a) - parseInt(b));
+
+        return `
+            <table class="threat-stat-table tier-threat-table">
+                <thead>
+                    <tr>
+                        <th>Tier</th>
+                        ${tiers.map(t => `<th>${t}</th>`).join('')}
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Threat</td>
+                        ${tiers.map(t => `<td class="stat-value">${tierThreat[t]}</td>`).join('')}
+                    </tr>
+                </tbody>
+            </table>
+        `;
+    },
+
+    renderAttributesTable(attributes) {
+        if (!attributes) return '';
+
+        const attrOrder = ['S', 'T', 'A', 'I', 'Wil', 'Int', 'Fel'];
+        const attrNames = {
+            'S': 'S', 'T': 'T', 'A': 'A', 'I': 'I',
+            'Wil': 'WIL', 'Int': 'INT', 'Fel': 'FEL'
+        };
+
+        return `
+            <table class="threat-stat-table attributes-table">
+                <thead>
+                    <tr>
+                        ${attrOrder.map(attr => `<th>${attrNames[attr]}</th>`).join('')}
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        ${attrOrder.map(attr => `<td class="stat-value">${attributes[attr] || '-'}</td>`).join('')}
+                    </tr>
+                </tbody>
+            </table>
+        `;
+    },
+
+    renderResilienceRow(threat) {
+        const resilience = threat.resilience || {};
+        const value = resilience.value || '-';
+        const note = resilience.note || '';
+
+        return `
+            <div class="resilience-row">
+                <span class="resilience-label">Resilience</span><br>
+                <span class="resilience-value">${value}</span>
+                ${note ? `<span class="resilience-note"> (${note})</span>` : ''}
+            </div>
+        `;
+    },
+
+    renderCombatStatsTable(threat) {
+        return `
+            <table class="threat-stat-table combat-stats-table">
+                <thead>
+                    <tr>
+                        <th>Defence</th>
+                        <th>Wounds</th>
+                        <th>Shock</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="stat-value">${threat.defence || '-'}</td>
+                        <td class="stat-value">${threat.wounds || '-'}</td>
+                        <td class="stat-value">${threat.shock || '-'}</td>
+                    </tr>
+                </tbody>
+            </table>
+        `;
+    },
+
+    renderSkillsRow(skills) {
+        if (!skills) return '';
+
+        return `
+            <div class="skills-row">
+                <span class="skills-label">SKILLS:</span>
+                <span class="skills-value">${skills}</span>
+            </div>
+        `;
+    },
+
+    renderAbilities(abilities, currentWeapon) {
+        if (!abilities || abilities.length === 0) return '<p class="text-muted">No abilities</p>';
+
+        return abilities.map(ability => {
+            let statsHtml = '';
+            let descHtml = '';
+
+            if (ability.type === 'ACTION' && ability.weaponId) {
+                // This is a weapon action - show weapon stats
+                const weapon = currentWeapon || DataLoader.getThreatWeapon(ability.weaponId);
+                if (weapon) {
+                    statsHtml = this.formatWeaponStats(weapon);
+                }
+            } else if (ability.stats) {
+                statsHtml = `, ${ability.stats}`;
+            }
+
+            if (ability.description) {
+                descHtml = `<div class="ability-description" data-glossary-enhance>${ability.description}</div>`;
+            }
+
+            return `
+                <div class="ability-item">
+                    <div>
+                        <span class="ability-type">${ability.type}:</span>
+                        <span class="ability-name">${ability.name}</span>
+                        ${statsHtml ? `<span class="ability-stats">${statsHtml}</span>` : ''}
+                    </div>
+                    ${descHtml}
+                </div>
+            `;
+        }).join('');
+    },
+
+    formatWeaponStats(weapon) {
+        const parts = [];
+        if (weapon.damage !== undefined) parts.push(`${weapon.damage}`);
+        if (weapon.ed !== undefined) parts.push(`+${weapon.ed} ED`);
+        if (weapon.ap !== undefined && weapon.ap !== 0) parts.push(`AP ${weapon.ap}`);
+        if (weapon.range) parts.push(`Range ${weapon.range}`);
+        if (weapon.salvo) parts.push(`Salvo ${weapon.salvo}`);
+
+        let result = parts.join(' / ');
+        if (weapon.traits && weapon.traits.length > 0) {
+            result += ` [${weapon.traits.join(', ')}]`;
+        }
+        return result;
+    },
+
+    renderDeterminationRow(determination) {
+        if (!determination) return '';
+
+        return `
+            <div class="determination-row">
+                <span class="determination-label">DETERMINATION:</span>
+                <span class="determination-value">${determination}</span>
+            </div>
+        `;
+    },
+
+    renderBottomStatsTable(threat) {
+        return `
+            <table class="threat-stat-table bottom-stats-table">
+                <thead>
+                    <tr>
+                        <th>Conviction</th>
+                        <th>Resolve</th>
+                        <th>Speed</th>
+                        <th>Size</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="stat-value">${threat.conviction || '-'}</td>
+                        <td class="stat-value">${threat.resolve || '-'}</td>
+                        <td class="stat-value">${threat.speed || '-'}</td>
+                        <td class="stat-value">${threat.size || '-'}</td>
+                    </tr>
+                </tbody>
+            </table>
+        `;
+    },
+
+    renderWeaponSelector(threat, currentWeapon) {
+        // Get all available threat weapons
+        const allWeapons = DataLoader.getAllThreatWeapons();
+        if (allWeapons.length === 0) return '';
+
+        // Get the default weapon from the threat
+        let defaultWeaponId = null;
+        if (threat.abilities) {
+            const actionAbility = threat.abilities.find(a => a.type === 'ACTION' && a.weaponId);
+            if (actionAbility) {
+                defaultWeaponId = actionAbility.weaponId;
+            }
+        }
+
+        const currentWeaponId = this.selectedWeaponId || defaultWeaponId;
+
+        return `
+            <div class="weapon-selector-section">
+                <div class="weapon-selector-label">Change Weapon</div>
+                <select class="weapon-selector">
+                    <option value="">-- Select a weapon --</option>
+                    ${allWeapons.map(w => `
+                        <option value="${w.id}" ${w.id === currentWeaponId ? 'selected' : ''}>
+                            ${w.name}
+                        </option>
+                    `).join('')}
+                </select>
+                ${currentWeapon ? this.renderWeaponPreview(currentWeapon) : ''}
+            </div>
+        `;
+    },
+
+    renderWeaponPreview(weapon) {
+        return `
+            <div class="weapon-stats-preview">
+                <div class="stat-row">
+                    <span class="stat-label">Damage</span>
+                    <span class="stat-value">${weapon.damage || '-'}</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">ED</span>
+                    <span class="stat-value">+${weapon.ed || 0} ED</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">AP</span>
+                    <span class="stat-value">${weapon.ap || 0}</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Range</span>
+                    <span class="stat-value">${weapon.range || '-'}</span>
+                </div>
+                ${weapon.salvo ? `
+                <div class="stat-row">
+                    <span class="stat-label">Salvo</span>
+                    <span class="stat-value">${weapon.salvo}</span>
+                </div>
+                ` : ''}
+                ${weapon.traits && weapon.traits.length > 0 ? `
+                <div class="stat-row">
+                    <span class="stat-label">Traits</span>
+                    <span class="stat-value">${weapon.traits.join(', ')}</span>
+                </div>
+                ` : ''}
+            </div>
+        `;
+    },
+
+    showKeywordPopup(keyword, anchorElement) {
+        // Try to find the keyword in the glossary
+        const glossaryData = DataLoader.getGlossary();
+        if (glossaryData && glossaryData.keywords) {
+            const keywordKey = keyword.toLowerCase().replace(/\s+/g, '_');
+            const keywordData = Object.values(glossaryData.keywords).find(
+                k => k.name.toLowerCase() === keyword.toLowerCase()
+            );
+
+            if (keywordData) {
+                Glossary.showPopup(keywordData, anchorElement, 'keyword');
+            }
+        }
+    }
+};

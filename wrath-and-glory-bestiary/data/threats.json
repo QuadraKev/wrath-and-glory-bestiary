@@ -1,0 +1,52 @@
+[
+  {
+    "id": "imperial_citizen",
+    "name": "IMPERIAL CITIZEN",
+    "quote": "By the Throne! God-Emperor, please protect me, I'll never sin again!",
+    "attribution": "Evangeline Galdain, Manufactorum Labourer",
+    "description": "The unwashed trillions that form Imperial society and prop up the Emperor's war machine through sweat and blood are diverse beyond imagining, hailing from the million unique worlds that make up the Imperium. However, there are some commonalities between the downtrodden commoners: they are utterly devoted to the God-Emperor, and ignorant of anything beyond the propaganda they are fed. They labour in hazardous conditions for punishing hours, and their treacherous work has left them with missing body parts replaced with cheap augmetics.\n\nEvangeline Galdain is a typical citizen, working for 18 hours every day at a plascrete manufactorum in Hive Ultio on Gilead Primus. She lost her organic leg when an overtired co-worker fumbled with a Heavy Rock Crusher. Her eye was replaced after a blight of Rector's Rot swept through her hab block; all she can remember from the incident that broke her ocular augmetic is the smell of incense, and she refuses to repair it or check the recordings.\n\nEvangeline spends her few spare credits on holy writs of protection sold by the Ecclesiarchy, though she can barely read the High Gothic script — even so, she has noticed some disquieting errors, which she has written off as mistranslations on her part.\n\nIf an Imperial Citizen is encountered during or after their work for the day, they are more than likely Exhausted.",
+    "tierThreat": {
+      "1": "T",
+      "2": "T",
+      "3": "T",
+      "4": "T"
+    },
+    "keywords": ["IMPERIUM"],
+    "attributes": {
+      "S": 2,
+      "T": 2,
+      "A": 3,
+      "I": 2,
+      "Wil": 3,
+      "Int": 1,
+      "Fel": 2
+    },
+    "resilience": {
+      "value": 3,
+      "note": "Ragged Clothes: 0 AR"
+    },
+    "defence": 1,
+    "wounds": 4,
+    "shock": 3,
+    "skills": "Default 4, Awareness 3 (Passive 2)",
+    "abilities": [
+      {
+        "type": "ACTION",
+        "name": "Unarmed",
+        "weaponId": "unarmed",
+        "stats": "2 +1 ED / Range 1"
+      },
+      {
+        "type": "COMPLICATION",
+        "name": "Cheap Augmetic",
+        "description": "Whenever this Threat rolls a Complication, one of their augmetics malfunctions. They are Hindered and unable to use the body part effectively until it is repaired by a DN 3 Tech (Int) Test."
+      }
+    ],
+    "determination": "Spend 1 Ruin to roll 2d6.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 6,
+    "size": "Avg",
+    "source": "Core Rules"
+  }
+]

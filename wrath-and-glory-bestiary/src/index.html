@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <title>Wrath and Glory Bestiary</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-left">
+                <h1 class="app-title">Wrath & Glory</h1>
+                <span class="app-subtitle">Bestiary</span>
+            </div>
+            <div class="header-right">
+                <span class="threat-count" id="threat-count">0 Threats</span>
+            </div>
+        </header>
+
+        <!-- Tab Navigation -->
+        <nav class="tab-nav">
+            <div class="tab-nav-tabs">
+                <button class="tab-btn active" data-tab="threats">THREATS</button>
+                <button class="tab-btn" data-tab="glossary">GLOSSARY</button>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <div class="main-container">
+            <!-- Threats Tab -->
+            <div id="tab-threats" class="tab-content active">
+                <!-- Left Sidebar - Filters -->
+                <aside class="sidebar">
+                    <div class="sidebar-section">
+                        <h3 class="sidebar-title">Filters</h3>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <label class="filter-label">Search</label>
+                        <input type="text" id="search-input" class="search-input" placeholder="Search threats...">
+                    </div>
+
+                    <div class="sidebar-section">
+                        <label class="filter-label">Threat Level</label>
+                        <div id="threat-level-filters" class="filter-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" data-threat="T" checked>
+                                <span>Troops (T)</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" data-threat="E" checked>
+                                <span>Elites (E)</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" data-threat="A" checked>
+                                <span>Adversaries (A)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <label class="filter-label">Keywords</label>
+                        <div id="keyword-filters" class="filter-group keyword-filter-group">
+                            <!-- Populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <button id="btn-clear-filters" class="btn-secondary">Clear Filters</button>
+                    </div>
+                </aside>
+
+                <!-- Threat List and Detail -->
+                <main class="content">
+                    <div class="content-split">
+                        <!-- Threat List -->
+                        <div class="threat-list-container">
+                            <div id="threat-list" class="threat-list">
+                                <!-- Threat list items populated by JavaScript -->
+                            </div>
+                        </div>
+
+                        <!-- Threat Detail -->
+                        <div class="threat-detail-container">
+                            <div id="threat-detail" class="threat-detail">
+                                <div class="threat-detail-placeholder">
+                                    <p>Select a threat from the list to view details</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+
+            <!-- Glossary Tab -->
+            <div id="tab-glossary" class="tab-content tab-fullwidth">
+                <div class="glossary-container">
+                    <h2>Glossary</h2>
+                    <div class="glossary-controls">
+                        <input type="text" id="glossary-search" placeholder="Search terms..." class="search-input">
+                        <div class="glossary-filters">
+                            <button class="glossary-filter-btn active" data-category="all">All</button>
+                            <button class="glossary-filter-btn" data-category="characterTerms">Character Terms</button>
+                            <button class="glossary-filter-btn" data-category="conditions">Conditions</button>
+                            <button class="glossary-filter-btn" data-category="combatTerms">Combat Rules</button>
+                            <button class="glossary-filter-btn" data-category="terms">Game Rules</button>
+                            <button class="glossary-filter-btn" data-category="weaponTraits">Weapon Traits</button>
+                            <button class="glossary-filter-btn" data-category="armorTraits">Armor Traits</button>
+                            <button class="glossary-filter-btn" data-category="keywords">Keywords</button>
+                        </div>
+                    </div>
+                    <div id="glossary-content">
+                        <!-- Glossary entries populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <span class="footer-info">Wrath & Glory Bestiary</span>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/data-loader.js"></script>
+    <script src="js/glossary.js"></script>
+    <script src="tabs/threats-tab.js"></script>
+    <script src="tabs/glossary-tab.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

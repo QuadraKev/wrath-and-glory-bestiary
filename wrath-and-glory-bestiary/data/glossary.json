@@ -1,0 +1,716 @@
+{
+  "conditions": {
+    "bleeding": {
+      "name": "Bleeding",
+      "description": "You're bleeding, afflicted with a grievous wound that is difficult to treat. You suffer one Mortal Wound at the end of each of your Turns. Bleeding can be stopped with a successful Toughness Test (DN 4), or if another character aids you with the Medicae Skill. You can attempt to use Medicae on yourself but do so at +1 DN."
+    },
+    "blinded": {
+      "name": "Blinded",
+      "description": "You're unable to see properly. Increase the DN for any sight-related task (including all combat Tests) by 4, replacing any lesser vision penalties. At the GM's discretion you may use a Combat Action to remove the Blinded condition, using a narratively appropriate Skill."
+    },
+    "exhausted": {
+      "name": "Exhausted",
+      "description": "You are weary from battle or persistent effort and suffer from fatigue. On your Turn, you can only Walk or Crawl, perform a basic Combat Action (attack with no combat options, such as Aim or Multi-Attack), or Fall Back. Additionally, you may not roll Determination. Any Shock suffered by an Exhausted character is immediately converted into Mortal Wounds. You are automatically Exhausted if your Shock increases beyond your Maximum Shock. If you are Exhausted from a source other than exceeding your Maximum Shock, that effect determines how you remove the Exhausted condition. Otherwise, the Exhausted condition is removed whenever you recover Shock."
+    },
+    "fear": {
+      "name": "Fear",
+      "description": "You're scared. Whatever is causing your Fear might also make you anxious, or trigger physical reactions like rapid breathing, shaking, and a lack of focus. When you encounter something that causes Fear, you roll your Resolve against a DN dictated by the source of Fear. Success allows you to act normally. If you fail, you suffer +2 DN to all Tests. The penalty lasts until the end of the scene or until an ally passes a Leadership (Wil) Test of DN 2 + the source's Fear value. A being that causes Fear is immune to Fear and Intimidation Interaction Attacks."
+    },
+    "frenzied": {
+      "name": "Frenzied",
+      "description": "Whether whipped into a zealous fury or auto injecting Frenzon combat stims, you're Frenzied. You lose all sense of self-preservation and throw yourself into the thick of combat. When you become Frenzied, you may choose to embrace the frenzy or attempt to resist it. If you choose to resist, at the start of your Turn make a DN 3 Willpower Test. If you pass, the rage subsides and you resist the frenzy. If the effect is triggered, embraced, or otherwise not resisted, you are Frenzied and must try to get into close combat as quickly as possible, charging the nearest visible enemy. If you are in cover, you break cover and move towards the nearest enemy. While Frenzied, you are immune to Fear and cannot be Pinned and must always use the All-Out Attack option, if possible. You gain +1 to your Strength Attribute while Frenzied."
+    },
+    "hindered": {
+      "name": "Hindered",
+      "description": "Something's holding you back. While Hindered increase the DN for all Tests by +1, or higher if the rules of whatever is hindering you say so. Hindered lasts until the end of the next Turn, unless otherwise stated."
+    },
+    "on_fire": {
+      "name": "On Fire",
+      "description": "You're on fire! You take 1d3 Mortal Wounds at the start of each of your Turns. You may then use your Action to throw yourself Prone and roll around in an attempt to extinguish the fire with a DN 3 Athletics (S) Test. If you succeed you are no longer On Fire. Alternatively, you can attempt to ignore the flames and take your Turn as normal. Make a DN 3 Willpower Test; if you fail, you are Hindered."
+    },
+    "pinned": {
+      "name": "Pinned",
+      "description": "You're under heavy fire, and there's a chance your Resolve will break under pressure. If someone uses a Pinning Attack against you, they make a Ballistic Skill (A) Test against your Resolve. If they succeed you are Pinned until the start of the attacker's next Turn. If you're behind cover, you hunker down. If you aren't behind cover, you immediately move to the nearest cover, using your Movement for your next Turn. While Pinned, you can't leave cover, but may take other Actions as normal. You suffer a +2 DN penalty to Ballistic Skill (A) Tests when you target an enemy using Pinning Attacks against you. You may attempt to rally Pinned comrades on your Turn by making a Leadership (Wil) Test as an Action, with a DN equal to the enemy weapon's Salvo value, adding an extra +1 DN if a Pinned character has taken any damage (Shock or Wounds) during the combat. If the Test is successful, you rally any Pinned allies within 5 metres, ending the effect."
+    },
+    "poisoned": {
+      "name": "Poisoned",
+      "description": "You've been inflicted with one of the galaxy's countless pathogens, plagues, or viruses. You could be suffering from neurotoxins injected into your system, alien acid splashed on you, or Nurgle's contagions. You suffer a +2 DN penalty to all Tests while Poisoned. Some poisons also inflict damage based on the poison. Some poisons may affect your ability to function instead of, or in addition to, causing damage. The Poisoned condition ends when you are treated using the Medicae Skill or you succeed on a Toughness Test (DN based on the poison) at the beginning of your Turn."
+    },
+    "prone": {
+      "name": "Prone",
+      "description": "You're knocked down on the ground. Your Defence is reduced by 2 against any attack made by a Threat within 5 metres of you. Your Defence is increased by 1 when you're attacked from 6 or more metres away. If you become Prone while flying, you fall to the ground and suffer falling damage. Standing up when Prone is a Free Action on your Turn. If you stand up in this way, you can only use the Standard Movement option; you can't use combat options such as Brace or Aim. An adjacent character may use a Simple Action to help you stand up immediately when you're Prone."
+    },
+    "restrained": {
+      "name": "Restrained",
+      "description": "You're bound, possibly by some form of entangling attack such as a Genestealer Cultist Webber, a Barbed Strangler, or a good old-fashioned net. While Restrained you can't use your Movement and your Defence is reduced by 2."
+    },
+    "staggered": {
+      "name": "Staggered",
+      "description": "You're off balance; you've run too fast over rough terrain, ordnance has impacted nearby, or you've been clipped by a stray bullet. When you move while Staggered, your Speed is reduced by half. You can't Run or Sprint unless otherwise stated. The Staggered condition lasts until the end of your next Turn."
+    },
+    "terror": {
+      "name": "Terror",
+      "description": "You're overcome with a sense of intense dread and rational thought becomes impossible: this is all-consuming Terror. Make a Resolve Test against the DN of the source of Terror. If you pass, you may act normally on your Turn. If you fail, you suffer all of the effects of Fear, and you must use every action available on each of your Turns to move as far away as possible until you no longer have line of sight to the source of Terror. Terror lasts until the end of the scene or until an ally passes a Leadership (Wil) Test of DN 2 + the Terror value. Any effect that grants a bonus to Fear Tests also applies to Terror Tests. Any effect that grants immunity to Fear grants one extra Icon on your Resolve Test against Terror. A being that causes Terror is immune to Fear, Terror, and Intimidation Interaction Attacks."
+    },
+    "vulnerable": {
+      "name": "Vulnerable",
+      "description": "Your defences are open! While Vulnerable, you suffer -1 to your Defence. Certain abilities and effects increase this penalty. Being Vulnerable lasts until the end of your next Turn."
+    }
+  },
+  "combatTerms": {
+    "charge": {
+      "name": "Charge",
+      "description": "You can Charge a target as a Full-Round Action. When you Charge, you move up to double your Speed and make a melee attack Test with +1 bonus dice. You must move at least 4 metres to Charge."
+    },
+    "combat_action": {
+      "name": "Combat Action",
+      "description": "Combat Actions require your primary focus in a combat Round, taking the most effort to achieve. Combat Actions are usually your main objective during your Turn. You may perform a single Combat Action (or Action) in a Turn. Combat Actions include, but are not limited to, the following: Making an attack. Using a Skill to make an Interaction Attack. Using a Skill or object that requires time and attention, such as a Medicae (Int) Test. There are other activities that may also count as Combat Actions, such as using certain psychic powers."
+    },
+    "critical_hit": {
+      "name": "Critical Hit",
+      "description": "If you hit and the Wrath Die result is a 6, then the target suffers a Wrath Critical. The group also gains one point of Glory. You can spend Glory to increase the power of a Critical Hit."
+    },
+    "free_action": {
+      "name": "Free Action",
+      "description": "Some actions take little thought, concentration, or time to perform. So little, in fact, that they can be performed while doing other things without any penalty and may be performed outside of your Turn. These are called 'Free Actions'. The GM is the final arbiter on how many Free Actions you can perform in a Turn or Round. Free Actions include but are not limited to: Shouting a warning or a short sentence. Opening an unlocked door. Using Psyniscience. Rolling Determination to reduce damage. Several Talents and pieces of Wargear may allow some Simple Actions to be performed as Free Actions. Free Actions should add to the narrative of the game and should never arbitrarily extend a Turn."
+    },
+    "interaction_attack": {
+      "name": "Interaction Attack",
+      "description": "Wily characters can use their Skills to trick, disorient, stun, or otherwise hinder a target, leaving them vulnerable. The DN of an Interaction Attack is the foe's opposing Skill Rating or Resolve, whichever is higher. The following Skills can be used to make Interaction Attacks: Athletics to push your enemy. Deception to manipulate your enemy into a poor position. Intimidate to menace your enemy, cowing them. Persuasion to throw your enemy off balance with careful words. Tech to use nearby technology to confuse or weaken your enemy. If your Interaction Attack Test equals or exceeds the DN, you must choose to make the target Hindered or Vulnerable; this effect lasts until the start of your next turn."
+    },
+    "mob": {
+      "name": "Mob",
+      "description": "A Mob is a group of near identical Threats, like a crowd of ten Ork Boyz. Mobs have additional rules for how they act and take damage as a unit."
+    },
+    "move_action": {
+      "name": "Movement",
+      "description": "On your Turn, you can make a Movement or use a Movement Option. There are several options for Movement in and out of combat. Often anything other than Standard Movement requires a Simple or Combat Action. Movement options include: Standard Movement, Running, Sprinting, Crawling, Jumping, Swimming, Flying, and Climbing."
+    },
+    "reflexive_action": {
+      "name": "Reflexive Action",
+      "description": "Certain actions can be made outside of your Turn. These are known as Reflexive Actions, and under normal circumstances you may only make one per Round. You usually make a Reflexive Action in response to an action someone else makes on their Turn."
+    },
+    "seize_initiative": {
+      "name": "Seize the Initiative",
+      "description": "Whenever an Agent has finished their Turn for the Round, the players can Seize the Initiative. Instead of the initiative order passing to a Threat, the players may choose to spend one Glory to have another Agent act instead. This can only be done once before the Threats take their Turn. The GM may spend one Ruin to Seize the Initiative for a Threat in the same way."
+    },
+    "simple_action": {
+      "name": "Simple Action",
+      "description": "Simple Actions take less time and concentration to perform than Combat Actions but still represent significant effort and focus. You may perform one Simple Action per Turn. Simple Actions include but are not limited to: Reloading a weapon. Drawing or readying a weapon. Kicking open a locked door. Looking around with your Awareness (Int) Skill. You might also be able to use your Simple Action to activate a piece of Wargear, for specific Skill Tests, to use abilities, or to activate certain psychic powers."
+    },
+    "stealth_score": {
+      "name": "Stealth Score",
+      "description": "You can make a Stealth (A) Test as a Combat Action. Whenever you do this (or whenever the GM calls for a Stealth (A) Test), write down the number of Icons you roll. This is your Stealth Score for the scene. Whenever another character uses their Passive Awareness or makes an Awareness (Int) Test, they use your Stealth Score for the DN of their Test. If the enemy discovers you, you lose your Stealth Score for the scene. You can't roll Stealth (A) again until the next scene, as dictated by the GM.<br><br><table class='glossary-table'><caption>Stealth Score Reduction</caption><tr><th>Action</th><th>Reduction</th></tr><tr><td>Whispering. Readying a quiet weapon. Snapping a twig.</td><td>−1</td></tr><tr><td>Talking softly. Readying a weapon with moving parts. Reloading.</td><td>−2</td></tr><tr><td>Talking normally. Attacking an unaware target with a Knife. Firing a MELTA weapon. Activating Wargear that generates light.</td><td>−3</td></tr><tr><td>A sword duel. Engaging a grav-vehicle's engines. Firing a FLAME weapon.</td><td>−4</td></tr><tr><td>Shouting or screaming. Revving a CHAIN weapon. Firing an ARC, LAS, PLASMA, or PROJECTILE weapon. Engaging a Jump Pack.</td><td>−5</td></tr><tr><td>Firing a BOLT weapon. Triggering an explosive. Engaging a flying vehicle's jet engines.</td><td>−6</td></tr></table>"
+    },
+    "ambush": {
+      "name": "Ambush",
+      "description": "Characters that are unaware of or unprepared for a combat situation are considered ambushed. The GM decides which (if any) characters are ambushed at the start of combat. Ambushed characters don't get a Turn in the first Round. Once all characters that weren't ambushed have had a Turn, the combat proceeds using normal initiative order — no one is considered ambushed after the first Round. You can choose to spend a point of Glory to make your character aware of an ambush and take your Turn as normal. The GM can do the same for a Threat by spending a point of Ruin."
+    },
+    "multi_action": {
+      "name": "Multi-Action",
+      "description": "You can attempt more than one Combat Action in a Round, but doing so makes all Combat Actions you take more difficult. You can't take more than one Attack Action by using a Multi-Action. First, declare that you are making a Multi-Action, and say which actions you want to take. For every additional Action you declare, you suffer a +2 DN penalty to all Tests made as part of an Action that Turn. So, if you make two Actions, you have a +2 DN penalty on both of those Tests, and if you make three Actions you have a +4 DN penalty on all three Tests."
+    },
+    "full_round_action": {
+      "name": "Full-Round Action",
+      "description": "Performing a Full-Round Action prevents you from taking any other actions (except Free Actions) and you can't make a Movement unless that is part of the Full-Round Action. Some examples of Full-Round Actions are: Sprinting, Full Defence, and certain psychic powers."
+    },
+    "standard_movement": {
+      "name": "Standard Movement",
+      "description": "During a Turn you can move your Speed in metres. You don't have to use all of your Movement; you can move as little as you want or not at all. There is no additional Movement cost for changing elevation if you are using an incline, stairs, or a ladder. You may take any other Action at any point during a Standard Movement, unless the rules for that Action state otherwise."
+    },
+    "running": {
+      "name": "Running",
+      "description": "When you Run, you move double your Speed in metres. If you Run, you may not perform a Simple Action during your Turn, and you cannot Run if you've already performed a Simple Action during your Turn."
+    },
+    "sprinting": {
+      "name": "Sprinting",
+      "description": "When you Sprint, you move triple your Speed in metres in a straight line. Sprinting is a Full-Round Action."
+    },
+    "crawling": {
+      "name": "Crawling",
+      "description": "You can Crawl half your Speed in metres; you are Prone while Crawling."
+    },
+    "jumping": {
+      "name": "Jumping",
+      "description": "You can hurdle obstacles up to 1 metre high or leap over gaps up to 1 metre in length as part of your standard Movement. Making a Long Jump or High Jump beyond these limits is a Simple Action, and requires an Athletics (S) Test with a DN determined by the GM based on the current circumstances. Your Long Jump distance is equal to your Strength in metres. Your High Jump is equal to a quarter of your Strength in metres. If you Jump onto Difficult Terrain, you must make an additional DN 3 Athletics (S) Test to avoid falling Prone."
+    },
+    "swimming": {
+      "name": "Swimming",
+      "description": "Your Speed is halved while swimming. If you begin your Turn in the water you can swim half your Speed in metres. If the GM determines that whatever you're swimming through is Difficult Terrain, they may call for an Athletics (S) Test to make progress. The GM decides how many Athletics (S) Tests are needed to Swim through the area, the DN of all Tests, and the difficulty of any other action taken while Swimming. If you become submerged for an extended period of time, fall unconscious, or are Dying while swimming, you may begin to drown."
+    },
+    "flying": {
+      "name": "Flying",
+      "description": "Flying allows you to move a number of metres equal to either your Speed, or a Speed indicated by the method of flight (in your ability or Wargear text). Flying ignores terrain penalties and can move over (but not through) other characters. If you are knocked Prone while flying, you fall from the sky."
+    },
+    "climbing": {
+      "name": "Climbing",
+      "description": "You can use your Movement to Climb at half your Speed in metres. You can attempt to Climb at a faster rate, but at the risk of falling. If you succeed on a DN 3 Athletics (S) Test, you may instead climb a number of metres up to your Speed. Using both your Movement and Simple Action reduces the DN of the Athletics (S) Test by 1. Using both your Movement and Combat Action reduces the DN of the Athletics (S) Test by 2."
+    },
+    "difficult_terrain": {
+      "name": "Difficult Terrain",
+      "description": "Any terrain the GM considers 'difficult' reduces your Speed by half. This could be shin-high sewage clinging to your boots, sharp rubble that shifts wherever you stand, or something else entirely."
+    },
+    "cover": {
+      "name": "Cover",
+      "description": "Cover represents the protection gained from seeking shelter from incoming fire. Characters concealed from their attacker gain a bonus to Defence. If less than half of your character is concealed, they receive +1 Defence. If half or more of your character is concealed, the bonus increases to +2 Defence."
+    },
+    "moving_stealthily": {
+      "name": "Moving Stealthily",
+      "description": "By staying low and sticking to cover or the shadows you can move unseen and unheard. You may use a Combat Action and your Movement to Move Stealthily. You move at half your Speed in metres and cannot Run or Sprint while Moving Stealthily."
+    },
+    "surprise_attack": {
+      "name": "Surprise Attack",
+      "description": "If you attack an unaware enemy, you gain 2 bonus dice to the Attack Test and +2 ED. If a Surprise Attack starts a combat, the target is also ambushed. The attack is likely to reduce your Stealth Score; any decrease is resolved after the attack."
+    },
+    "unarmed_strike": {
+      "name": "Unarmed Strike",
+      "description": "You can attack hand-to-hand without wielding a melee weapon, using the normal rules for attacking. An unarmed strike uses your Strength Attribute as the Damage value and has +1 ED."
+    },
+    "engaged": {
+      "name": "Engaged",
+      "description": "Combatants who are within their opponent's melee range are considered to be Engaged in close combat. If you are Engaged in close combat, you can only attack targets you are Engaged with. You cannot fire a ranged weapon while Engaged unless it has the Pistol Trait."
+    },
+    "reflexive_attack": {
+      "name": "Reflexive Attack",
+      "description": "If you are Engaged with an enemy and they choose to move out of Engagement, you may use your Reflexive Action to make a melee attack against them. If you move out of Engagement with an enemy, they may do the same. You cannot make a Reflexive Attack if your target uses the Fall Back Combat Action."
+    },
+    "pistols_in_melee": {
+      "name": "Pistols In Melee",
+      "description": "You can fire a weapon with the Pistol Trait when Engaged in close combat. Any Ballistic Skill (A) Tests you make while you are Engaged suffer a +2 DN penalty. You can't Aim and don't gain a bonus for being in Short Range, but you can use other ranged combat options and weapon traits, such as Rapid Fire."
+    },
+    "reloading": {
+      "name": "Reloading",
+      "description": "You can spend a Simple Action to Reload one ranged weapon, expending one point of Ammo. This may be required to fire your weapon after using a Salvo Option or due to a Complication. Weapons with a Salvo rating of '–' must be Reloaded after every shot. If you don't use a Simple Action to Reload a weapon when required, the weapon can't be used again until it is Reloaded."
+    },
+    "salvo": {
+      "name": "Salvo",
+      "description": "Most ranged weapons have a Salvo rating which is used for the following options. After you use any of these options you must Reload your weapon before you can fire it again. A weapon with a Salvo of '-' can't be used for Salvo Options.<br><br><b>Full Auto:</b> You empty your entire clip firing at a single target. You gain a number of bonus dice to your attack Test equal to the weapon's Salvo value.<br><br><b>Spray Shot:</b> You spray ammunition at multiple targets. You can make a Spray Shot as part of a Multi-Attack, reducing the DN of the Test by the weapon's Salvo value. This can't decrease the DN by more than the penalty imposed by the Multi-Attack.<br><br><b>Spray Shot Vs Mobs:</b> You can target a Mob with a Spray Shot as a Full-Round Action. Make a ranged attack Test against the Mob as normal. If your attack is successful, you hit an additional number of individuals in the Mob equal to the weapon's Salvo value."
+    },
+    "firing_into_melee": {
+      "name": "Firing Into Melee",
+      "description": "When using a ranged attack against a target who is Engaged in melee, there is a chance the shot goes awry. If the Wrath Die result is a 1, the ranged attack is made against a random target in the melee instead of the chosen target. Choose one of the combatants randomly, excluding the intended target. If the Attack Test result beats their Defence, then roll damage against that new target. You may choose to shift Exalted Icons from the Attack Test to the damage roll after the target has been assigned as usual. If you use the Aim combat option, you can negate the penalties for firing into melee instead of taking the regular Aim bonus."
+    },
+    "area_effect_weapons": {
+      "name": "Area Effect Weapons",
+      "description": "Area effect weapons, such as grenades, missiles, and other explosives, have the Blast (X) Trait. When you fire or throw a Blast weapon, choose any point in range (including another character!), then make a DN 3 Ballistic Skill (A) Test. Apply Range effects as normal unless you are using a thrown weapon like a grenade. If you fail the Test, the attack misses and Scatters. If you succeed, the explosion is centered on your target. If you are measuring distance, the Blast rating determines the radius of the explosion in metres. Anyone inside this radius is hit by the attack. If you are targeting a Mob, the number of individuals in the Mob hit by the explosion is equal to half of the Blast rating. You cannot Shift to increase the damage of a Blast weapon. If you inflict a Critical Hit with a Blast weapon, the effects apply to all targets hit by the attack.<br><br><table class='glossary-table'><caption>Blast</caption><tr><th>Blast Rating</th><th>Mob Targets</th><th>Example</th></tr><tr><td>2</td><td>1</td><td>Micro Grenade</td></tr><tr><td>6</td><td>3</td><td>Frag Grenade</td></tr><tr><td>10</td><td>5</td><td>Frag Missile</td></tr><tr><td>20</td><td>10</td><td>Battle Cannon Shell</td></tr><tr><td>30</td><td>15</td><td>Quake Cannon Shell</td></tr></table>"
+    },
+    "scattering": {
+      "name": "Scattering",
+      "description": "If your Ballistic Skill (A) Test for an area effect weapon fails, you miss your target, and the weapon lands somewhere other than the intended target area. This is called Scattering. Roll 1d6 to determine the direction of the scatter. Then roll another 1d6 and double the result for the distance in metres that the attack deviates by."
+    },
+    "dodging_area_effects": {
+      "name": "Dodging Area Effect Attacks",
+      "description": "If you are caught in a Blast radius or hit by a Flamer, you may attempt the Full Defence combat option, adding 1 + any Icons rolled to your Resilience instead of your Defence. You can dive for cover, but you might not escape the full explosion or shrapnel. The GM may decide that some area effect attacks can't be dodged or avoided. Area effect attacks with Blast (6) or more, or a radius of over 10m are usually too big to escape in this way."
+    },
+    "called_shot": {
+      "name": "Called Shot",
+      "description": "You can make an attack a called shot by declaring a target, such as a gap in some armour, an eye, or a vulnerable joint. Your attack suffers a DN penalty dependent on the size of your target. If you hit, you gain Extra Damage dice equal to the DN penalty.<br><br><table class='glossary-table'><caption>Called Shots</caption><tr><th>Size</th><th>DN Penalty</th><th>Extra Damage Dice</th></tr><tr><td>Medium (arm or leg)</td><td>1</td><td>+1 ED</td></tr><tr><td>Small (hand, head)</td><td>2</td><td>+2 ED</td></tr><tr><td>Tiny (eye-slit, armour joint)</td><td>3</td><td>+3 ED</td></tr></table>"
+    },
+    "shot_to_disarm": {
+      "name": "Shot To Disarm",
+      "description": "Called shots may be used to disarm an opponent by shooting their weapon or the hand that holds it. If the attack hits, the victim must make a Strength Test against a DN equal to half the attack's total Damage. If they fail, they drop their weapon. Using a called shot to disarm does not award additional ED, and the shot itself does not deal any Damage."
+    },
+    "shot_to_bypass_armour": {
+      "name": "Shot To Bypass Armour",
+      "description": "Called shots may also bypass a target's armour. This might include shooting at a target's head who is not wearing a helmet or targeting an area of weaker armour. The GM determines how much armour you bypass when using this called shot."
+    },
+    "full_defence": {
+      "name": "Full Defence",
+      "description": "You can use a Full-Round Action to focus on dodging incoming attacks. Your Speed is reduced by half, and you must make an Initiative Attribute Test. Until the end of your Turn your Defence increases by 1, +1 for every Icon rolled in the Initiative Attribute Test. You can activate Full Defence as a Reflexive Action. If you do so, you can't perform Movement, Combat Actions or Simple Actions on your next Turn."
+    },
+    "hold_action": {
+      "name": "Hold Action",
+      "description": "You may choose to wait and act later in the Round. To do so, announce you are holding your Combat Action instead of taking it during your Turn. You may announce you are using your held Combat Action at any point later in the Round. If you wish to Interrupt another character, you must succeed at an opposed Initiative Test. Failure means that the acting character takes their action first before you have the chance to intervene. If you don't use your held Combat Action by the end of the Round it is lost."
+    },
+    "multi_attack": {
+      "name": "Multi-Attack",
+      "description": "Multi-Attacks work similarly to Multi-Actions; every additional attack increases the Defence of every target by +2 for the purposes of the Multi-Attack. Each attack of your Multi-Attack must use the same weapon, and you cannot Shift as part of a Multi-Attack. Roll damage once, and apply the result to every target hit. If you Multi-Attack with a melee weapon, you must move into Engagement with all targets. You provoke Reflexive Attacks from any targets you leave Engagement with during this attack. If you cannot reach a target, they are not hit by the Multi-Attack."
+    },
+    "all_out_attack": {
+      "name": "All-Out Attack",
+      "description": "When making an All-Out Attack, you gain +2 bonus dice to your melee attack dice pool, but you also suffer −2 to your Defence until the start of your next Turn. You can't take a Multi-Action if you All-Out Attack. You can Multi-Attack as part of an All-Out Attack; all of your attacks gain the same bonus."
+    },
+    "fall_back": {
+      "name": "Fall Back",
+      "description": "You can use your Combat Action to fall back from close combat with any number of Threats. You may then use your Movement without suffering Reflexive Attacks from Engaged Threats. Your Movement must take you at least half your Speed in metres away from the enemy, or as far as possible if this is impossible due to the environment."
+    },
+    "grapple": {
+      "name": "Grapple",
+      "description": "You can use your Combat Action to try to grapple a target you are Engaged with. Make an Opposed Strength Test with the target. If you win, you grapple the target. Once grappled, a character is Restrained and may only use one-handed weapons. To break free from a grapple, a character must succeed an Opposed Strength Test using a Combat Action. You may attempt to grapple multiple targets using a Multi-Attack, but you must be Engaged with all targets and you can't grapple more targets than you have arms. A target gains +2 bonus dice to the Opposed Strength Test for every size category it is larger than you."
+    },
+    "combined_attack": {
+      "name": "Combined Attack",
+      "description": "You can elect to lead a Combined Attack on your Turn as a Combat Action. Any other Agents that have held their Action or have not taken their Turn yet may support the Combined Attack by sacrificing their Combat Action. Every Agent supporting the Combined Attack makes the same Test. Any supporting character that rolls more Icons than the target's Defence increases the leader's dice pool by +1 bonus dice. The leader then makes a Leadership (Wil) Test with the bonus dice from the supporters. If the number of Icons exceeds the target's Defence, the Combined Attack is successful, and the leader may choose to Shift for +ED as though this were a normal attack with a weapon. The leader then chooses one of the supporter's weapons that successfully hit the target to deal damage, plus any Extra Damage Dice from Shifting, +1 ED for each other supporter's weapon that successfully hit the target."
+    },
+    "aim": {
+      "name": "Aim",
+      "description": "The Aim option allows you to sacrifice your Movement to focus on aiming a weapon. If you Aim, you cannot make a Movement but gain +1 bonus die to ranged attack Tests you make this Turn. You may also use Aim to ignore the penalty for firing at a target Engaged in melee instead of gaining bonus dice."
+    },
+    "brace": {
+      "name": "Brace",
+      "description": "You can Brace for firing a weapon with the Heavy trait instead of making a Movement. You must have a suitable surface to Brace against, a tripod, or another means of stabilising your weapon. If you Brace, you negate the Heavy weapon trait."
+    },
+    "shoot_through_cover": {
+      "name": "Shoot Through Cover",
+      "description": "Some weapons are powerful enough that conventional cover is little more than a nuisance. If your target is visible, then you may spend a Combat Action to Shoot Through Cover. Make an Attack Test as normal and compare the result to the target's Defence, but don't add a Defence bonus for the target's cover. If your attack is successful, calculate damage as normal but add a bonus to the target's Resilience based on the type of cover they were behind.<br><br><table class='glossary-table'><caption>Shoot Through Cover</caption><tr><th>Cover Type</th><th>Resilience Bonus</th></tr><tr><td>Ultra-light materials: wooden planking, blast curtains</td><td>+1</td></tr><tr><td>Light materials: thick wood, aluminium sheeting, interior doors</td><td>+2</td></tr><tr><td>Medium materials: steel sheeting, flak board</td><td>+4</td></tr><tr><td>Heavy materials: plasteel barricade, permacrete walls, security doors</td><td>+8</td></tr><tr><td>Super-heavy materials: adamant reinforced barricade, blast doors, bunker walls</td><td>+16</td></tr></table>"
+    },
+    "pinning_attack": {
+      "name": "Pinning Attack",
+      "description": "A Pinning Attack allows you to use suppressive fire to pin an enemy behind cover. If you have a ranged weapon with Salvo 1 or more, you can make a Pinning Attack as a Combat Action. A Pinning Attack deals no damage, and you must Reload to fire your weapon again after you make a Pinning Attack. The DN of a Pinning Attack is equal to the target's Resolve. If you succeed, the target is Pinned until the start of your next turn. You can Shift Icons to add additional targets on a 1-for-1 basis as long as they are within range and the Icons in your pool exceed the highest Resolve of all of your targets."
+    },
+    "size_categories": {
+      "name": "Size Categories",
+      "description": "Every character and creature has a Size Trait. Size affects how difficult a character is to hit and how stealthy it can be.<br><br><table class='glossary-table'><caption>Size Categories</caption><tr><th>Size</th><th>Attack Modifier</th><th>Detection</th></tr><tr><td>Tiny</td><td>+2 Defence</td><td>+2 DN to detect</td></tr><tr><td>Small</td><td>+1 Defence</td><td>+1 DN to detect</td></tr><tr><td>Average</td><td>—</td><td>—</td></tr><tr><td>Large</td><td>+1 bonus dice to hit</td><td>+1 bonus dice to detect</td></tr><tr><td>Huge</td><td>+2 bonus dice to hit</td><td>+2 bonus dice to detect</td></tr><tr><td>Gargantuan</td><td>+3 bonus dice to hit</td><td>+3 bonus dice to detect</td></tr></table>"
+    },
+    "vision_penalties": {
+      "name": "Vision Penalties",
+      "description": "Darkness, photon flares, thermal smoke, and much more can impede a character's vision.<br><br><table class='glossary-table'><caption>Vision Penalties</caption><tr><th>Conditions</th><th>+DN to BS &amp; Awareness</th><th>+DN to Melee</th></tr><tr><td>Twilight, light shadows, heavy mist</td><td>+1</td><td>+0</td></tr><tr><td>Very dim light, heavy rain, fog, drifting smoke</td><td>+2</td><td>+1</td></tr><tr><td>Heavy fog, deployed smoke, torrential storm</td><td>+3</td><td>+2</td></tr><tr><td>Total darkness, thermal smoke</td><td>+4</td><td>+3</td></tr></table>"
+    },
+    "combat_complications": {
+      "name": "Combat Complications",
+      "description": "A result of 1 on the Wrath Die during an attack results in a Complication. Complications do not, by themselves, mean that your Test failed, only that something unusual or unfortunate has occurred.<br><br><table class='glossary-table'><caption>Combat Complications</caption><tr><th>d66 Roll</th><th>Result</th><th>Summary</th></tr><tr><td>11–26</td><td>Out of Ammo</td><td>Must Reload to use again</td></tr><tr><td>31–33</td><td>Weapon Jam</td><td>DN 2 Tech (Int) Test to use again</td></tr><tr><td>34–36</td><td>Dropped Weapon</td><td>Simple Action to recover weapon</td></tr><tr><td>41–43</td><td>Weapon Malfunction</td><td>DN 4 Tech (Int) Test to use again</td></tr><tr><td>44–46</td><td>Weapon Stuck</td><td>DN 3 Strength Test to recover weapon</td></tr><tr><td>51–53</td><td>Dropped Item</td><td>Drop an item of Wargear</td></tr><tr><td>54–56</td><td>Fall Prone</td><td>You're Prone</td></tr><tr><td>61–62</td><td>Restrained</td><td>You're Restrained. DN 4 Strength Test to recover</td></tr><tr><td>63–64</td><td>Blinded</td><td>You're Blinded</td></tr><tr><td>65–66</td><td>Inconvenient Target</td><td>GM picks a new target for your attack</td></tr></table>"
+    }
+  },
+  "terms": {
+    "corruption_test": {
+      "name": "Corruption Test",
+      "description": "A Corruption Test is made when you are exposed to the taint of Chaos. Roll a number of dice equal to your Willpower + Conviction. Each Icon rolled reduces the Corruption gained by 1. If you gain Corruption, your total may trigger mutation or other effects."
+    },
+    "dn": {
+      "name": "DN (Difficulty Number)",
+      "description": "The Difficulty Number represents how hard a Test is. You need to roll a number of Icons equal to or greater than the DN to succeed. DN 1-2 is easy, DN 3-4 is average, DN 5-6 is hard, and DN 7+ is very difficult."
+    },
+    "ed": {
+      "name": "ED (Extra Damage)",
+      "description": "Extra Damage dice are rolled in addition to a weapon's base damage. Each Icon rolled on ED dice adds +1 to the total damage. Some abilities and talents add ED to attacks."
+    },
+    "exalted_icon": {
+      "name": "Exalted Icon",
+      "description": "An Exalted Icon is rolled when you get a 6 on a die. It counts as 2 Icons instead of 1. Exalted Icons can also be 'shifted' to activate special effects or weapon traits."
+    },
+    "fear_test": {
+      "name": "Fear Test",
+      "description": "When confronted with something terrifying, you must make a Fear Test. Roll Willpower + Resolve against the DN specified by the source. If you fail, you gain the Fear Condition. Some sources may inflict the Terror Condition instead."
+    },
+    "glory": {
+      "name": "Glory",
+      "description": "Glory is a shared party resource. The party starts each session with Glory equal to half the party size (rounded up). Glory can be spent to gain bonus dice, Seize the Initiative, or activate special abilities. The GM can award Glory for impressive actions."
+    },
+    "icon": {
+      "name": "Icon",
+      "description": "When rolling dice, a 4 or 5 counts as 1 Icon, and a 6 (Exalted Icon) counts as 2 Icons. You compare the total Icons rolled to the DN to determine success."
+    },
+    "mortal_wound": {
+      "name": "Mortal Wound",
+      "description": "A Mortal Wound is damage that cannot be reduced by Resilience or Determination. Mortal Wounds are applied directly to your Wounds total and often come from Critical Hits, Conditions, or special abilities."
+    },
+    "psychic_power": {
+      "name": "Psychic Power",
+      "description": "Psychic Powers are abilities used by Psykers that manipulate the Warp. To use a power, make a Psychic Mastery (Wil) Test against the power's DN. Failing the Test may result in Perils of the Warp."
+    },
+    "rank": {
+      "name": "Rank",
+      "description": "Your Rank represents your overall power level and experience. Rank ranges from 1 to 5. Many abilities scale with Rank, such as '+Rank bonus dice' meaning you add dice equal to your Rank value."
+    },
+    "regroup": {
+      "name": "Regroup",
+      "description": "A Regroup is a short rest taken after combat. During a Regroup, you can recover Shock, heal Wounds (with Medicae), and reset abilities that refresh 'after a Regroup.' A Regroup typically takes 15-30 minutes."
+    },
+    "respite": {
+      "name": "Respite",
+      "description": "A Respite is a full rest, typically 8 hours of sleep or downtime. During a Respite, you fully recover Shock and Wounds (unless prevented by a Condition), and abilities that refresh 'after a Respite' reset."
+    },
+    "ruin": {
+      "name": "Ruin",
+      "description": "Ruin is the GM's resource, similar to the party's Glory. The GM gains Ruin when players roll Complications on the Wrath Die or from certain abilities. The GM spends Ruin to activate enemy abilities, add complications, or empower threats."
+    },
+    "shock": {
+      "name": "Shock",
+      "description": "Shock represents mental and physical fatigue. When you suffer damage that exceeds your Resilience but doesn't cause Wounds, you take Shock instead. When your Shock exceeds your Max Shock, excess damage becomes Wounds."
+    },
+    "tier": {
+      "name": "Tier",
+      "description": "The campaign Tier (1-5) represents the power level of the game. Higher Tier games have access to more powerful archetypes, more starting XP, and face greater threats. Tier also affects Wound calculations and other derived stats."
+    },
+    "wrath": {
+      "name": "Wrath",
+      "description": "Wrath is a personal resource each character has. You start each session with 2 Wrath. You can spend Wrath to reroll all dice on a Test (once per Test), add +1 to damage, or activate certain abilities. You gain Wrath from Glory or special abilities."
+    },
+    "wrath_die": {
+      "name": "Wrath Die",
+      "description": "One die in every dice pool is the Wrath Die (usually a different color). A 6 on the Wrath Die is an Exalted Icon and triggers Critical Hits on attacks. A 1 on the Wrath Die is a Complication, which gives the GM +1 Ruin."
+    }
+  },
+  "keywords": {
+    "imperium": {
+      "name": "IMPERIUM",
+      "description": "The vast interstellar empire of Humanity that spans over a million worlds, led by the Emperor from Holy Terra."
+    },
+    "chaos": {
+      "name": "CHAOS",
+      "description": "The forces and worshippers of the Chaos Gods."
+    },
+    "aeldari": {
+      "name": "AELDARI",
+      "description": "An ancient xenos Species whose declining empire once spanned the galaxy. They are naturally psychic, long lived, and old enemies of the Imperium."
+    },
+    "ork": {
+      "name": "ORK",
+      "description": "A brutal xenos Species that crave violence and live only for war."
+    },
+    "adeptus_astartes": {
+      "name": "ADEPTUS ASTARTES",
+      "description": "The Space Marines: genetically enhanced transhuman super soldiers who know no fear."
+    },
+    "primaris": {
+      "name": "PRIMARIS",
+      "description": "Primaris Space Marines are a new generation of Adeptus Astartes created by Belisarius Cawl. They are larger, stronger, and incorporate additional gene-seed organs compared to their Firstborn brothers."
+    },
+    "adepta_sororitas": {
+      "name": "ADEPTA SORORITAS",
+      "description": "A sect of righteous warrior-monks that form the army of the Adeptus Ministorum, waging Wars of Faith to see the God-Emperor's will done."
+    },
+    "adeptus_mechanicus": {
+      "name": "ADEPTUS MECHANICUS",
+      "description": "Adherents to the Cult Mechanicus, the Mars-based cult of the machine that supply the Imperium with its advanced technology and guard the sacred knowledge of its workings."
+    },
+    "astra_militarum": {
+      "name": "ASTRA MILITARUM",
+      "description": "The largest military force of the Imperium, numbering billions of mortal Humans."
+    },
+    "inquisition": {
+      "name": "INQUISITION",
+      "description": "A clandestine organisation given absolute power to battle the greatest threats to the Imperium: heresy, xenos, and daemons."
+    },
+    "psyker": {
+      "name": "PSYKER",
+      "description": "A Psyker is an individual with psychic abilities, able to manipulate the Warp. They can use Psychic Powers but risk Perils of the Warp when doing so. Characters with this Keyword can purchase Psychic Powers."
+    },
+    "power_field_keyword": {
+      "name": "POWER FIELD",
+      "description": "Melee weapons sheathed in matter-disrupting power fields cut through armour with ease. Weapons with this Keyword benefit from certain talents like Honed to Lethality."
+    },
+    "adeptus_ministorum": {
+      "name": "ADEPTUS MINISTORUM",
+      "description": "The Adeptus Ministorum, also known as the Ecclesiarchy, is the official state religion of the Imperium. They preach the Imperial Creed and maintain the faith of humanity in the God-Emperor."
+    },
+    "rogue_trader": {
+      "name": "ROGUE TRADER",
+      "description": "Rogue Traders are unique individuals who hold a Warrant of Trade, granting them authority to explore beyond Imperial borders, trade with xenos, and operate largely outside Imperial law."
+    },
+    "scum": {
+      "name": "SCUM",
+      "description": "The dregs of Imperial society operating outside of other Factions, and often the law."
+    },
+    "asuryani": {
+      "name": "ASURYANI",
+      "description": "The Asuryani are the Craftworld Aeldari who escaped the Fall aboard massive spacecraft called Craftworlds. They follow the Path system to control their emotions and avoid the fate of their ancestors."
+    },
+    "drukhari": {
+      "name": "DRUKHARI",
+      "description": "The Drukhari, or Dark Eldar, dwell in the dark city of Commorragh in the Webway. They stave off Slaanesh by feeding on the suffering of others through raids and torture."
+    },
+    "anhrathe": {
+      "name": "ANHRATHE",
+      "description": "The Anhrathe, or Corsairs, are Aeldari who have rejected both the rigid Path of the Craftworlds and the depravity of Commorragh. They live as pirates and raiders in the void."
+    },
+    "harlequin": {
+      "name": "HARLEQUIN",
+      "description": "Harlequins are followers of the Laughing God Cegorach. They preserve Aeldari history through performance and serve as warriors, diplomats, and messengers between Aeldari factions."
+    },
+    "skitarii": {
+      "name": "SKITARII",
+      "description": "Skitarii are the cyborg soldiers of the Adeptus Mechanicus. Heavily augmented with bionics, they fight with a combination of ancient technology and religious fervor for the Machine God."
+    },
+    "militarum_tempestus": {
+      "name": "MILITARUM TEMPESTUS",
+      "description": "The Militarum Tempestus are elite stormtroopers of the Astra Militarum. Trained from childhood at Schola Progenium facilities, they are superior soldiers equipped with the finest wargear."
+    },
+    "kroot": {
+      "name": "KROOT",
+      "description": "Kroot are a species of carnivorous humanoids often employed as mercenaries by the T'au Empire. They absorb genetic material from those they eat, allowing them to evolve and adapt over generations."
+    }
+  },
+  "armorTraits": {
+    "bulk": {
+      "name": "Bulk",
+      "description": "Heavy and restrictive armour possesses the Bulk trait. Bulk reduces the Speed of the wearer by a number of metres equal to its rating."
+    },
+    "cumbersome": {
+      "name": "Cumbersome",
+      "description": "Large suits of armour can severely restrict movement. You cannot Run or Sprint in Cumbersome armour."
+    },
+    "powered": {
+      "name": "Powered",
+      "description": "This armour is designed to augment the wearer's might through the marvels of mechanisation. Whilst wearing armour with this Trait you gain a Strength bonus equal to the rating. Additionally, you are not knocked Prone when you roll a Complication while firing an unsecured Heavy weapon."
+    },
+    "power_field_armor": {
+      "name": "Power Field",
+      "description": "Wonders of archeotech, personal Power Fields envelope their user in a protective barrier of energy. Armour with this Trait allows you to roll Determination against attacks that deal Mortal Wounds."
+    },
+    "shield": {
+      "name": "Shield",
+      "description": "Wielded like a defensive weapon, shields are carried instead of worn, and used to deflect incoming attacks. Armour with this Trait adds its AR to your Defence and Resilience, provided the GM agrees you can manoeuvre the shield to block the attack."
+    },
+    "invulnerable": {
+      "name": "Invulnerable",
+      "description": "This armour's protection cannot be negated by Armour Penetration (AP). The full Armour Rating always applies regardless of the attacker's AP value."
+    },
+    "ere_we_go": {
+      "name": "'Ere We Go",
+      "description": "The latent psychic power of an Ork empowers their armour, allowing them to fight harder when harmed. An Ork wearing armour with this Trait ignores the Bulk and Cumbersome Traits when Wounded."
+    },
+    "fear_armor": {
+      "name": "Fear",
+      "description": "This armour's appearance is terrifying. Enemies viewing you for the first time must make a Fear Test with a DN equal to the Fear rating or gain the Fear Condition."
+    }
+  },
+  "weaponTraits": {
+    "arc": {
+      "name": "Arc",
+      "description": "Arc weapons discharge electrical energy. When you hit a target, they must make a Toughness Test (DN equal to the Arc rating) or become Staggered."
+    },
+    "assault": {
+      "name": "Assault",
+      "description": "This weapon can be fired while moving. You do not suffer the normal penalty for firing after Running."
+    },
+    "blast": {
+      "name": "Blast",
+      "description": "Explosive weapons can devastate multiple enemies with a single attack. When you fire or throw a Blast weapon, choose any point in range (including another character!), then make a DN 3 Ballistic Skill (A) Test. Apply Range effects as normal unless you are using a thrown weapon like a grenade. If you fail the Test, the attack misses and Scatters. If you succeed, the explosion is centered on your target. If you are measuring distance, the Blast rating determines the radius of the explosion in metres. Anyone inside this radius is hit by the attack. If you are targeting a Mob or using a simplified theater of the mind approach, the number of nearby individuals hit by the explosive is equal to half the Blast rating. You cannot Shift to increase the damage of a Blast weapon. If you inflict a Critical Hit with a Blast weapon, the effects apply to all targets hit by the attack."
+    },
+    "brutal": {
+      "name": "Brutal",
+      "description": "Brutal weapons inflict appalling, traumatic wounds. When you roll Extra Damage Dice for a Brutal weapon: Results of 1 and 2 inflict 0 Damage. Results of 3 and 4 inflict 1 Damage. Results of 5 and 6 inflict 2 Damage."
+    },
+    "flamer": {
+      "name": "Flamer",
+      "description": "Flamers spew a stream of burning chemical liquid. The flowing torrent of flame can be guided by the wielder of a Flamer to set multiple foes ablaze. Attacks made with a Flamer ignore cover. If you hit a target with a Flamer, blazing liquid fills the space between you and your target in a straight line. Anything in that line is also hit by the attack. You can Shift when you make a ranged attack Test with a Flamer to arc the stream of burning chemicals a number of metres equal to your Ballistic Skill Rating. Anything in this arc is hit by the attack. Whenever you hit multiple targets, roll damage once and apply that damage to all targets. Any target may attempt to reduce the damage using the rules for Dodging Area Effect Attacks. A weapon with the Flamer Trait is considered to have the Inflict (On Fire) Trait."
+    },
+    "force": {
+      "name": "Force",
+      "description": "Psykers can channel the power of the Warp through the etheric circuit patterns and psycho-reactive materials of these weapons. If you have the PSYKER Keyword, you may add half of your Willpower Rating to a Force weapon's Damage Value. If you don't have the PSYKER Keyword, a Force weapon's damage is decreased by 2."
+    },
+    "heavy": {
+      "name": "Heavy",
+      "description": "Large and cumbersome weapons are difficult to wield accurately and effectively. You must have a Strength equal to the Heavy weapon's rating to fire it normally. All attacks with a Heavy weapon are made with a +2 DN penalty if you do not meet the minimum Strength, and rolling a Complication as part of an attack knocks you Prone in addition to any other effects. Taking the Brace Action or securing a Heavy weapon to something like a tripod negates the Heavy Trait."
+    },
+    "inflict": {
+      "name": "Inflict",
+      "description": "These weapons are designed to harm the target in cruel and unusual ways. Every Inflict weapon has a Condition that it imposes on the target if it deals a Wound. For example, if a weapon with Inflict (On Fire) deals a Wound to a target, the target is On Fire. If an Inflict weapon has a number, that number determines the DN of any Test made to remove the Condition. For example, if a weapon with Inflict (Poisoned 4) Wounds a target, they are Poisoned, and the target would need to make a DN 4 Toughness Test to recover at the beginning of their next turn."
+    },
+    "kustom": {
+      "name": "Kustom",
+      "description": "You can replace this weapon Trait with any other Weapon Trait of your choice when you acquire a weapon with this Trait. If the Trait you select has a Rating (X), roll 1d3 to determine the Rating."
+    },
+    "melta": {
+      "name": "Melta",
+      "description": "The sub-atomic bursts that spew from these weapons melt flesh and reduce armour to slag. When you roll Extra Damage Dice for a Melta weapon fired at Short Range: Results of 1 and 2 inflict 0 Damage. Results of 3 and 4 inflict 1 Damage. Results of 5 and 6 inflict 2 Damage. When you roll Extra Damage Dice for a Melta weapon fired against a vehicle or fortification at Short range: Results of 1, 2 and 3 inflict 1 Damage. Results of 4, 5 and 6 inflict 2 Damage."
+    },
+    "parry": {
+      "name": "Parry",
+      "description": "You can use these weapons to deflect blows. You gain +1 Defence against melee attacks while wielding a Parry weapon."
+    },
+    "pistol": {
+      "name": "Pistol",
+      "description": "Built light to be drawn quickly and used in close quarters. Pistols can be fired while Engaged."
+    },
+    "rad": {
+      "name": "Rad",
+      "description": "The dangerous radioactive materials fired by these weapons irrevocably damage flesh. When you roll Extra Damage Dice for a Rad weapon, you add the Rating to the results of the dice."
+    },
+    "rapid_fire": {
+      "name": "Rapid Fire",
+      "description": "These weapons are capable of quickly unleashing a hail of death at close range. If you hit with a Rapid Fire weapon at Short Range, you gain Extra Damage Dice equal to the weapon's Rapid Fire rating."
+    },
+    "reliable": {
+      "name": "Reliable",
+      "description": "A rugged and easily maintained weapon. You can ignore the first Complication related to this weapon per scene. Tests made to repair or maintain Reliable weapons are made with +1 bonus die."
+    },
+    "rending": {
+      "name": "Rending",
+      "description": "These powerful weapons punch through armour. When you Shift an Exalted Icon as part of an attack with a Rending weapon, the weapon's AP improves by the Rending rating for that attack."
+    },
+    "silent": {
+      "name": "Silent",
+      "description": "These stealthy weapons are designed to deal damage as quietly as possible. When a weapon with this Trait is used as part of an attack, your Stealth Score is only reduced by 2."
+    },
+    "sniper": {
+      "name": "Sniper",
+      "description": "Weapons optimised for high accuracy over long range. When you Aim with a Sniper weapon you gain an additional +1 bonus die to the attack, and gain +ED equal to the weapon's Sniper rating."
+    },
+    "spread": {
+      "name": "Spread",
+      "description": "These wide-bore weapons wreak havoc on closely packed combatants. When fired at Short Range, a Spread weapon can hit any number of targets as long as they are all within 3 metres of one another. When you fire a Spread Weapon at a Mob you gain +3 bonus dice."
+    },
+    "supercharge": {
+      "name": "Supercharge",
+      "description": "The super-heated matter plasma weapons fire can be overcharged with undeniably deadly results for the target and, occasionally, the wielder. You can choose to fire a weapon with this Trait in Supercharge mode. If you roll a Complication, you take 1d6 Mortal Wounds. If you hit, the weapon deals an additional +3 ED."
+    },
+    "two_handed": {
+      "name": "Two-Handed",
+      "description": "This weapon requires both hands to wield effectively. You cannot use a shield or another weapon while wielding this weapon."
+    },
+    "unwieldy": {
+      "name": "Unwieldy",
+      "description": "Whether unbalanced or too large, some weapons are harder to use. Attacks made with Unwieldy weapons have their DN increased by an amount equal to their Unwieldy rating."
+    },
+    "waaagh": {
+      "name": "Waaagh!",
+      "description": "Ork weapons defy understanding; they break the laws of mechanics and physics, but a Greenskin's beliefs make them all the more deadly. If you are an Ork, you gain +1 bonus die to attacks with a WAAAGH! weapon. If you are also Wounded, you deal an extra +1 ED."
+    },
+    "warp_weapon": {
+      "name": "Warp Weapon",
+      "description": "Powered by psychic energy, xenos technology, or the raw force of Chaos, few can face these ungodly weapons and emerge unharmed. A Warp Weapon has a Damage value equal to the target's Total Resilience -4, unless the weapon's listed Damage is higher."
+    }
+  },
+  "characterTerms": {
+    "strength": {
+      "name": "Strength",
+      "description": "An Attribute representing physical power and muscle. Strength is the linked Attribute for Athletics. It also contributes to melee damage with certain weapons."
+    },
+    "toughness": {
+      "name": "Toughness",
+      "description": "An Attribute representing physical resilience and endurance. Toughness contributes to Resilience, Determination, and Max Wounds."
+    },
+    "agility": {
+      "name": "Agility",
+      "description": "An Attribute representing quickness, coordination, and fine motor control. Agility is the linked Attribute for Ballistic Skill, Pilot, and Stealth."
+    },
+    "initiative": {
+      "name": "Initiative",
+      "description": "An Attribute representing reflexes and reaction speed. Initiative determines turn order in combat and contributes to Defence. It is the linked Attribute for Weapon Skill."
+    },
+    "willpower": {
+      "name": "Willpower",
+      "description": "An Attribute representing mental fortitude, discipline, and psychic potential. Willpower is the linked Attribute for Intimidation, Leadership, Psychic Mastery, and Survival. It contributes to Resolve, Conviction, and Max Shock."
+    },
+    "intellect": {
+      "name": "Intellect",
+      "description": "An Attribute representing mental acuity, knowledge, and reasoning. Intellect is the linked Attribute for Awareness, Investigation, Medicae, Scholar, and Tech."
+    },
+    "fellowship": {
+      "name": "Fellowship",
+      "description": "An Attribute representing social aptitude, personal magnetism, and empathy. Fellowship is the linked Attribute for Cunning, Deception, Insight, and Persuasion. It contributes to Influence."
+    },
+    "athletics": {
+      "name": "Athletics",
+      "description": "A Skill representing physical feats such as climbing, jumping, swimming, and throwing. Linked to Strength."
+    },
+    "awareness": {
+      "name": "Awareness",
+      "description": "A Skill representing perception and sensory acuity. Used to notice threats, find hidden objects, and detect ambushes. Linked to Intellect. Also contributes to Passive Awareness."
+    },
+    "ballistic_skill": {
+      "name": "Ballistic Skill",
+      "description": "A Skill representing ranged combat proficiency. Used for all ranged weapon attacks. Linked to Agility."
+    },
+    "cunning": {
+      "name": "Cunning",
+      "description": "A Skill representing streetwise knowledge and underhanded tactics. Used for criminal knowledge, finding contacts, and subtle manipulation. Linked to Fellowship."
+    },
+    "deception": {
+      "name": "Deception",
+      "description": "A Skill representing the art of lying and misdirection. Used to bluff, disguise yourself, and mislead others. Linked to Fellowship."
+    },
+    "insight": {
+      "name": "Insight",
+      "description": "A Skill representing the ability to read people and understand motivations. Used to detect lies, gauge moods, and resist Interaction Attacks. Linked to Fellowship."
+    },
+    "intimidation": {
+      "name": "Intimidation",
+      "description": "A Skill representing coercion through force of personality or threat of violence. Used for Interaction Attacks and coercing information from others. Linked to Willpower."
+    },
+    "investigation": {
+      "name": "Investigation",
+      "description": "A Skill representing analytical examination and deduction. Used for searching scenes, conducting research, and piecing together clues. Linked to Intellect."
+    },
+    "leadership": {
+      "name": "Leadership",
+      "description": "A Skill representing command and inspiration. Used to rally allies, give orders, coordinate actions, and remove Fear and Pinned conditions from comrades. Linked to Willpower."
+    },
+    "medicae": {
+      "name": "Medicae",
+      "description": "A Skill representing medical knowledge and healing ability. Used to treat Wounds, remove Conditions such as Bleeding and Poisoned, and perform surgery. Linked to Intellect."
+    },
+    "persuasion": {
+      "name": "Persuasion",
+      "description": "A Skill representing the ability to convince others through argument and charm. Used for negotiations, diplomacy, and Interaction Attacks. Linked to Fellowship."
+    },
+    "pilot": {
+      "name": "Pilot",
+      "description": "A Skill representing the ability to control vehicles and aircraft. Used for driving, flying, and vehicle combat maneuvers. Linked to Agility."
+    },
+    "psychic_mastery": {
+      "name": "Psychic Mastery",
+      "description": "A Skill representing the ability to channel psychic power from the Warp. Required to manifest Psychic Powers. Only usable by characters with the PSYKER Keyword. Linked to Willpower."
+    },
+    "scholar": {
+      "name": "Scholar",
+      "description": "A Skill representing academic knowledge and lore. Used for recalling information, identifying objects, and understanding historical or scientific phenomena. Linked to Intellect."
+    },
+    "stealth_skill": {
+      "name": "Stealth",
+      "description": "A Skill representing the ability to move unseen and unheard. Used for sneaking, hiding, and shadowing targets. Linked to Agility."
+    },
+    "survival": {
+      "name": "Survival",
+      "description": "A Skill representing endurance and wilderness expertise. Used for tracking, navigation, foraging, and resisting environmental hazards. Linked to Willpower."
+    },
+    "tech": {
+      "name": "Tech",
+      "description": "A Skill representing technical knowledge and engineering ability. Used for repairing equipment, operating machinery, and understanding technology. Linked to Intellect."
+    },
+    "weapon_skill": {
+      "name": "Weapon Skill",
+      "description": "A Skill representing melee combat proficiency. Used for all melee weapon attacks. Linked to Initiative."
+    },
+    "defence": {
+      "name": "Defence",
+      "description": "A Trait representing how hard you are to hit in combat. Calculated as Initiative - 1. Attackers must roll Icons equal to or greater than your Defence to hit you with an attack."
+    },
+    "resilience_trait": {
+      "name": "Resilience",
+      "description": "A Trait representing your passive damage reduction. Calculated as Toughness + 1 + Armour Rating. When you take damage from an attack, subtract your Resilience from the total damage. Any remaining damage is applied as Wounds, or as Shock if the attack's damage did not exceed your Resilience."
+    },
+    "determination_trait": {
+      "name": "Determination",
+      "description": "A Trait representing your ability to shrug off incoming damage through sheer toughness. When you suffer Wounds, you may roll Determination to reduce the damage. Roll a number of dice equal to your Toughness. Each Icon rolled reduces the Wounds suffered by 1."
+    },
+    "max_wounds": {
+      "name": "Max Wounds",
+      "description": "A Trait representing the maximum physical damage you can sustain. Calculated as (Tier x 2) + Toughness + species bonuses. When your Wounds reach your Max Wounds, you are dying."
+    },
+    "max_shock": {
+      "name": "Max Shock",
+      "description": "A Trait representing the maximum mental and physical fatigue you can endure. Calculated as Willpower + Tier. When your Shock exceeds your Max Shock, you become Exhausted and excess Shock becomes Wounds."
+    },
+    "speed": {
+      "name": "Speed",
+      "description": "A Trait representing how far you can move in metres during a Move Action. Determined primarily by species, typically 6 for most species. Running allows movement at double Speed, and Sprinting at triple Speed."
+    },
+    "conviction": {
+      "name": "Conviction",
+      "description": "A Trait representing your strength of belief and mental resilience against the taint of Chaos. Equal to Willpower. Used when making Corruption Tests to resist gaining Corruption."
+    },
+    "resolve": {
+      "name": "Resolve",
+      "description": "A Trait representing your mental defences against Fear and Terror. Calculated as Willpower - 1. When confronted with something that causes Fear or Terror, you roll Resolve to resist the effects."
+    },
+    "passive_awareness": {
+      "name": "Passive Awareness",
+      "description": "A Trait representing your baseline perception when not actively searching. Calculated as the ceiling of (Intellect + Awareness) / 2. The GM uses this to determine if you notice hidden threats or subtle details without making an active Test."
+    },
+    "influence": {
+      "name": "Influence",
+      "description": "A Trait representing your social standing and ability to affect events through connections and reputation. Calculated as Fellowship - 1 + archetype modifier. Used for social interactions and can affect Requisition Tests."
+    },
+    "wealth": {
+      "name": "Wealth",
+      "description": "A Trait representing your access to material resources and purchasing power. Equal to Tier. Used for Requisition Tests to acquire equipment and supplies."
+    },
+    "corruption": {
+      "name": "Corruption",
+      "description": "A Trait tracking your exposure to the forces of Chaos. Starts at 0 and increases from Warp exposure, daemonic contact, and other corrupting influences. High Corruption can lead to mental afflictions, physical mutations, and worse."
+    }
+  }
+}
