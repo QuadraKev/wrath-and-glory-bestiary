@@ -3681,7 +3681,7 @@
     "shock": 11,
     "skills": "Default 6, Awareness 8 (Passive 4), Ballistic Skill 10, Leadership 8, Weapon Skill 10",
     "bonuses": [
-      { "name": "Adaptive Strategy", "description": "At the start of each Round, one Mob or individual with the same <DYNASTY> Keyword as this Threat within 10 m can Seize the Initiative for free." },
+      { "name": "Adaptive Strategy", "description": "At the start of each Round, one Mob or individual with the same [DYNASTY] Keyword as this Threat within 10 m can Seize the Initiative for free." },
       { "name": "Champion", "description": "This Threat may use Ruin Actions and has 1 personal Ruin." },
       { "name": "Living Metal", "description": "At the start of each of this Threat's turns it regains 1 Wound and 1 Shock." },
       { "name": "Relentless March", "description": "Every Mob or individual with the same [DYNASTY] Keyword as this Threat within 10 m gains +1 Speed." }
@@ -3711,10 +3711,10 @@
     "skills": "Default 5, Awareness 10 (Passive 5), Ballistic Skill 6, Tech 12, Weapon Skill 6",
     "bonuses": [
       { "name": "Architect of Ruin", "description": "The GM gains 1 point of Ruin at the start of each of this Threat's turns." },
-      { "name": "Canoptek Cloak", "description": "This Threat can Fly. Once per turn, if this Threat flies within 3m of another Threat with the same <DYNASTY> Keyword, that Threat regains 1d3 Wounds." },
+      { "name": "Canoptek Cloak", "description": "This Threat can Fly. Once per turn, if this Threat flies within 3m of another Threat with the same [DYNASTY] Keyword, that Threat regains 1d3 Wounds." },
       { "name": "Champion", "description": "This Threat may use Ruin Actions and has 2 personal Ruin." },
       { "name": "Living Metal", "description": "At the start of each of this Threat's turns it regains 1 Wound and 1 Shock." },
-      { "name": "Rites of Reanimation", "description": "Once per turn, the Technomancer can select a Threat with the same <DYNASTY> Keyword within 10m. Select one of the following effects to apply to the target: The Threat's Living Metal restores 1d3 Wounds and Shock. OR The Threat's Reanimation Protocols activate on an Icon and an Exalted Icon." }
+      { "name": "Rites of Reanimation", "description": "Once per turn, the Technomancer can select a Threat with the same [DYNASTY] Keyword within 10m. Select one of the following effects to apply to the target: The Threat's Living Metal restores 1d3 Wounds and Shock. OR The Threat's Reanimation Protocols activate on an Icon and an Exalted Icon." }
     ],
     "abilities": [
       { "type": "ACTION", "name": "Staff of Light (Shooting)", "stats": "12 + 1ED / AP -1 / 9 - 18 - 27" },
@@ -3941,7 +3941,7 @@
     "name": "DEATHMARK",
     "description": "Deathmarks are the snipers and ambush forces of the Necron armies, with advanced sensory systems that are capable of defeating most stealth technology and compensating for any environmental conditions. Able to nest inside dimensional pockets where they are still able to view real-space, Deathmarks wait patiently until the perfect opportunity arises and then emerge to take down their targets with a single, precise shot. Typically deployed in small squads, this can make for a devastating surprise assault as they strike down multiple officers, champions, and specialists simultaneously.\n\nDeathmarks wield a precision weapon known as a Synaptic Disintegrator that targets both body and mind for destruction. This means that even if an attack fails to achieve a kill outright, it may still snuff out the target's personality, leaving them a mindless husk.\n\nDeathmarks are so patient and stealthy that Crypteks have postulated that there may well be many of them scattered across the galaxy who were sent on missions only for their dynasty to fall. Without orders, they simply continue to fulfil their last instructions, and may do so for eternity.",
     "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
-    "keywords": ["NECRON", "<DYNASTY>"],
+    "keywords": ["NECRON", "[DYNASTY]"],
     "attributes": { "S": 4, "T": 5, "A": 5, "I": 3, "Wil": 3, "Int": 2, "Fel": 1 },
     "resilience": { "value": 9, "note": "3 AR" },
     "defence": 2,
@@ -4000,7 +4000,7 @@
     "name": "LYCHGUARD",
     "description": "Unswervingly loyal, Lychguard act as the retinue and personal guard to Necron nobility. Wielding massive scythes crackling with eldritch energies and capable of slicing through any material, their presence is as much symbolic as military, and typically indicates that a commander is taking a personal interest in the battle. They are also responsible for defending their Lord from the various internal enemies of a Necron court, and will unthinkingly place themselves in harm's way to protect any individual they have been instructed to defend.\n\nLychguard operate in units, very seldom being left to their own devices. The extreme engrammatic programming they undergo means that they are left with little imagination, but their battle instincts are well honed and each has millennia of combat experience to call on. Should their lord ask it of them, they will not hesitate to sacrifice their lives to cover their escape from a threatening situation or soften up a particularly dangerous foe.",
     "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
-    "keywords": ["NECRON", "<DYNASTY>"],
+    "keywords": ["NECRON", "[DYNASTY]"],
     "attributes": { "S": 7, "T": 7, "A": 4, "I": 4, "Wil": 4, "Int": 2, "Fel": 1 },
     "resilience": { "value": 12, "note": "4 AR" },
     "defence": 3,
@@ -4013,7 +4013,7 @@
     "abilities": [
       { "type": "ACTION", "name": "Warscythe", "stats": "11 +5 ED / AP -4 / 2m / Brutal" },
       { "type": "ANNIHILATION", "name": "Self Destruct", "description": "When this Threat dies, roll a d6. If you roll a Complication, the threat explodes using the following profile: 12 +5 ED / Blast (10), Rad (1)." },
-      { "type": "REACTION", "name": "Guardian Protocols", "description": "Lychguard may use their Reaction to intercept any ranged attack targeting a Threat that they share a <DYNASTY> Keyword within 3m, forcing them to target the Lychguard instead." }
+      { "type": "REACTION", "name": "Guardian Protocols", "description": "Lychguard may use their Reaction to intercept any ranged attack targeting a Threat that they share a [DYNASTY] Keyword within 3m, forcing them to target the Lychguard instead." }
     ],
     "determination": "Spend 1 Ruin to roll 7d6.",
     "conviction": 2,
@@ -4802,7 +4802,7 @@
     "shock": 3,
     "skills": "Default 3, Awareness 8 (Passive 4), Ballistic Skill 6, Leadership 6, Pilot 6, Survival 6, Weapon Skill 6",
     "bonuses": [
-      { "name": "Communion Helmet", "description": "The Vespid Strain Leader can communicate with and receive commands from any Troop with the <T'AU> Keyword. It never needs to make a Resolve Test to continue fighting while there is a Threat with the <T'AU> Keyword within 10m. This bonus also applies to any Vespid Stingwings within 10m of the Vespid Strain Leader." }
+      { "name": "Communion Helmet", "description": "The Vespid Strain Leader can communicate with and receive commands from any Troop with the [T'AU] Keyword. It never needs to make a Resolve Test to continue fighting while there is a Threat with the [T'AU] Keyword within 10m. This bonus also applies to any Vespid Stingwings within 10m of the Vespid Strain Leader." }
     ],
     "abilities": [
       { "type": "ACTION", "name": "Neutron Blaster", "stats": "12 +4 ED / AP -3 / Range 9 - 18 - 27 / Salvo 1 / Arc (2), Assault, Melta" },
