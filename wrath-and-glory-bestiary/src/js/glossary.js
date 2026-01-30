@@ -340,7 +340,6 @@ const Glossary = {
     enhanceDescriptions(container) {
         const selectors = [
             '.ability-description',
-            '.threat-card-description',
             '[data-glossary-enhance]'
         ];
 

@@ -293,7 +293,7 @@ const ThreatsTab = {
                 </div>
                 <div class="threat-card-body">
                     ${threat.description ? `
-                        <div class="threat-card-description" data-glossary-enhance>
+                        <div class="threat-card-description">
                             ${threat.description}
                         </div>
                     ` : ''}
