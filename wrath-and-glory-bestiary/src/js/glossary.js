@@ -122,6 +122,13 @@ const Glossary = {
     processText(text) {
         if (!this.data || !text) return text;
 
+        // Skip if text already contains glossary markup or broken HTML patterns
+        if (text.includes('data-term-type=') ||
+            text.includes('class="glossary-term"') ||
+            text.includes('data-term-key=')) {
+            return text;
+        }
+
         const sortedTerms = Array.from(this.termMap.keys())
             .filter(term => !term.startsWith('__KEYWORD__'))
             .sort((a, b) => b.length - a.length);
@@ -304,13 +311,29 @@ const Glossary = {
     enhanceElement(element) {
         if (!element) return;
 
+        // Skip if already enhanced (prevent double-processing)
+        if (element.dataset.glossaryEnhanced === 'true') {
+            return;
+        }
+
         const originalHTML = element.innerHTML;
+
+        // Skip if content already contains glossary spans (already processed)
+        if (originalHTML.includes('class="glossary-term"') || originalHTML.includes('data-term-type=')) {
+            element.dataset.glossaryEnhanced = 'true';
+            this.attachHandlers(element);
+            return;
+        }
+
         const processedHTML = this.processText(originalHTML);
 
         if (processedHTML !== originalHTML) {
             element.innerHTML = processedHTML;
             this.attachHandlers(element);
         }
+
+        // Mark as enhanced to prevent re-processing
+        element.dataset.glossaryEnhanced = 'true';
     },
 
     // Process all description/effect fields in a container
