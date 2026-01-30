@@ -5138,6 +5138,7 @@
     "resilience": { "value": 8, "note": "Grafted Plates: 4 AR" },
     "defence": 1,
     "wounds": 5,
+    "shock": "-",
     "skills": "Default 5, Weapon Skill 6",
     "bonuses": [
       { "name": "Iron Soul", "description": "This Threat is unaffected by Abilities that target the mind, and never needs to make a Resolve Test to continue fighting." },
@@ -5164,6 +5165,7 @@
     "resilience": { "value": 10, "note": "Heavy Plates: 5 AR" },
     "defence": 1,
     "wounds": 8,
+    "shock": "-",
     "skills": "Default 5, Athletics 7, Weapon Skill 6",
     "bonuses": [
       { "name": "Iron Soul", "description": "This Threat is unaffected by Abilities that target the mind, and never needs to make a Resolve Test to continue fighting." }
@@ -5189,6 +5191,7 @@
     "resilience": { "value": 7, "note": "Grafted Plates: 4 AR" },
     "defence": 2,
     "wounds": 5,
+    "shock": "-",
     "skills": "Default 5, Weapon Skill 7",
     "bonuses": [
       { "name": "Iron Soul", "description": "This Threat is unaffected by Abilities that target the mind, and never needs to make a Resolve Test to continue fighting." }
@@ -5239,6 +5242,7 @@
     "resilience": { "value": 5, "note": "Implants: 2 AR" },
     "defence": 1,
     "wounds": 6,
+    "shock": "-",
     "skills": "Default 3, Awareness 4 (Passive 2), Ballistic Skill 3, Medicae 4, Weapon Skill 4",
     "bonuses": [
       { "name": "Beyond Human Frailties", "description": "Ignore penalties for being Heavily Injured." }
@@ -5509,6 +5513,7 @@
     "resilience": { "value": 16 },
     "defence": 1,
     "wounds": 16,
+    "shock": "-",
     "skills": "Default 3, Awareness 4 (Passive 2), Ballistic Skill 6, Weapon Skill 6",
     "bonuses": [
       { "name": "Battle Protocols", "description": "By default, the Kastelan Robot's Aegis Protocol is active. As an Action, an individual with the Tech Skill can make a DN 10 Tech Test to change the Kastelan Robot's Battle Protocol. An individual with the Reprogrammer ability can make this Test as a Simple Action at DN 5. Aegis Protocol: The Kastelan Robot's Resilience increases to 20. Conqueror Protocol: The Kastelan Robot's Weapon Skill increases to 10 and it gains +2 bonus dice when it Charges. Protector Protocol: The Kastelan Robot's Speed is reduced to 0, its Ballistic Skill is increased by 2, and its Resilience is increased to 18." },
