@@ -3033,5 +3033,577 @@
     "speed": 8,
     "size": "Gargantuan",
     "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "patriarch_xenos",
+    "name": "PATRIARCH",
+    "description": "At the heart of the cult is the origin of the infection — the Genestealer that sired the cult, towering over even a Space Marine and swelled with a frightening inhuman strength. The Patriarch's ferocity is coupled with its ability to entrance others with its hypnotic gaze and psionic abilities, making it a terrifying beast that few can summon the courage to fight against.\n\nWhen a lone Genestealer stowaway reaches a new world, severed from the greater Tyranid Hive Mind, it instinctively sets about infecting hosts. Dormant genetic traits take hold, as the Genestealer seeks to form its own gestalt mind and foster a growing throng of thralls. As its followers grow in number so does the Patriarch, swelling in size and developing its bestial brain into a more potent psychic mind. As the cult expands, the gestalt Brood Mind spreads like a thick fog, enveloping the minds and wills of those about it, mimicking the true Tyranid Hive Mind at a smaller scale.",
+    "tierThreat": { "1": "A", "2": "A", "3": "A", "4": "A" },
+    "keywords": ["GENESTEALER CULT", "TYRANID"],
+    "attributes": { "S": 10, "T": 8, "A": 6, "I": 8, "Wil": 8, "Int": 4, "Fel": 2 },
+    "resilience": { "value": 9, "note": "0 AR" },
+    "defence": 7,
+    "wounds": 18,
+    "shock": "-",
+    "skills": "Default 8, Awareness 10 (Passive 5), Athletics 11, Psychic Mastery 10, Stealth 10, Weapon Skill 12",
+    "bonuses": [
+      { "name": "Champion", "description": "This Threat may use Ruin Actions and has 4 personal Ruin." },
+      { "name": "Living Idol", "description": "Any Threats with GENESTEALER CULT within 10 metres gain +2 bonus to all Tests." },
+      { "name": "Second Strike", "description": "This Threat reduces the Multi-Attack penalty by 2DN, as though it had the Dual Wield Talent (Wrath & Glory, page 133)." }
+    ],
+    "abilities": [
+      { "type": "BATTLECRY", "name": "Swift and Deadly", "description": "The Threat Seizes the Initiative without spending a point of Ruin and Charges. It gains an additional +1 bonus die to its attack Test as part of the Charge." },
+      { "type": "ACTION", "name": "Broodmind", "description": "The Patriarch may use its Broodmind and Monstrous Rending Claws without suffering the -2DN Multi-Attack penalty. The Patriarch may attempt to activate any of the following psychic powers: Smite (Wrath & Glory, page 272), Psyniscience (page 267), Deny the Witch (page 267), Compel (page 268), Fog the Mind (page 279), Psychic Shriek (page 279), Terrify (page 280)." },
+      { "type": "ACTION", "name": "Patriarch's Claws", "stats": "15 +4 ED / AP -3 / Range 1 / Rending (3)" },
+      { "type": "RUIN", "name": "Broodmind", "description": "Spend 1 Ruin. The Patriarch attempts to activate a Psychic Power, or Deny the Witch." }
+    ],
+    "determination": "Spend 1 Ruin to roll 8d6. (Lightning Reflexes: This Threat can roll Determination against Mortal Wounds.)",
+    "conviction": 8,
+    "resolve": 7,
+    "speed": 8,
+    "size": "Large",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "primus",
+    "name": "PRIMUS",
+    "description": "Adepts of the Ordo Xenos theorise that in response to the cult reaching a significant size, or due to the presence of a nearby hive fleet, the Brood Mind triggers a genetic change in the cult, leading to the emergence of a Primus. These individuals display martial prowess and consummate strategic inspiration, making them ideal leaders for a cult on the verge of initiating an insurgency.\n\nUnlike many other bioforms that emerge as the cult readies for its bloody uprising, Primuses more easily pass for human, though often they have extra limbs and clawed hands. Not only are they savvy commanders, they are blessed with strength and preternatural speed, enabling such figures to fight toe-to-toe with even the superhuman Astartes.\n\nWhile a Primus is a competent fighter, they further are enhanced by their twisted wargear. They wield needle pistols loaded with toxins concocted from their own poisonous blood, and their blades are living chitinous shards drawn from the bio-throne of the Patriarch.",
+    "tierThreat": { "1": "A", "2": "A", "3": "A", "4": "A" },
+    "keywords": ["GENESTEALER CULT", "TYRANID"],
+    "attributes": { "S": 6, "T": 6, "A": 5, "I": 6, "Wil": 8, "Int": 5, "Fel": 5 },
+    "resilience": { "value": 9, "note": "2 AR" },
+    "defence": 5,
+    "wounds": 16,
+    "shock": 13,
+    "skills": "Default 6, Awareness 8 (Passive 4), Ballistic Skill 10, Cunning 10, Deception 10, Leadership 12, Stealth 8, Weapon Skill 10",
+    "bonuses": [
+      { "name": "Champion", "description": "This Threat may use Ruin Actions and has 2 personal Ruin." },
+      { "name": "Cult Demagogue", "description": "Whenever a Threat with the GENESTEALER CULT Keyword is within 10 metres of the Primus, they gain bonuses to their Tests." },
+      { "name": "Extra Arm", "description": "This Threat has 3 arms. If this Threat is wielding a one-handed weapon in each hand, or a one-handed weapon in one hand and a two-handed weapon in its other two hands, it can make one attack with each weapon without suffering a Multi-Attack DN penalty. If this Threat is wielding a weapon with all 3 hands, they can take the Brace Action (Wrath & Glory, page 189) as a free action." },
+      { "name": "Scoped Needle Pistol", "description": "All range penalties to ranged attacks this Threat makes with its Scoped Needle Pistol are reduced by -2." }
+    ],
+    "abilities": [
+      { "type": "BATTLECRY", "name": "One With The Shadows", "description": "When this Threat or another within 10m of the Primus is benefitting from Cover in combat, they gain a further +1 bonus to Defence." },
+      { "type": "ACTION", "name": "Cult Bonesword", "stats": "11 +5 ED / AP -1 / Range 1 / Brutal, Rending (2)" },
+      { "type": "ACTION", "name": "Scoped Needle Pistol", "stats": "8 +2 ED / Range 6-12-18 / Salvo 1 / Agonising, Inflict (Poisoned 4), Pistol, Silent" },
+      { "type": "ACTION", "name": "Toxin Injector Claw", "stats": "6 +3 ED / AP -1 / Range 1 / Agonising, Inflict (Poisoned 4)" },
+      { "type": "RUIN", "name": "Meticulous Planner", "description": "Spend 1 Ruin and select an individual or Mob within 10m of the Primus. That individual or Mob may use the Primus' Leadership dice pool when making any Test on their next turn." }
+    ],
+    "determination": "Spend 1 Ruin to roll 6d6.",
+    "conviction": 8,
+    "resolve": 7,
+    "speed": 6,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "magus_xenos",
+    "name": "MAGUS",
+    "description": "While the genetic taint of the Genestealer can cause all manner of grotesque mutations, if a cult member has been touched by the Warp, then there is a high probability that their offspring will be psychically gifted. Despite the risk of disaster, nascent Genestealer Cults are more than ready to induct untrained psykers, knowing that in doing so they pave the way for a Magus to be born.\n\nTapping into the gestalt Broodmind, Maguses can control the hybrids around them, and in return a Magus is venerated as a prophet of their alien star-gods. Despite all the bravado and pomp, a Magus is totally enslaved to the Patriarch, and acts as an extension of their will, openly walking places where the Patriarch may not.\n\nMaguses outwardly appear almost Human, with no extra limbs, and just the signature ridged forehead. Combined with their psychic abilities, they are able to insinuate themselves within Imperial society.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
+    "keywords": ["GENESTEALER CULT"],
+    "attributes": { "S": 4, "T": 4, "A": 3, "I": 4, "Wil": 8, "Int": 6, "Fel": 6 },
+    "resilience": { "value": 9, "note": "0 AR" },
+    "defence": 3,
+    "wounds": 10,
+    "shock": 11,
+    "skills": "Default 6, Awareness 8 (Passive 4), Deception 8, Insight 8, Leadership 10, Persuasion 10, Psychic Mastery 10",
+    "bonuses": [
+      { "name": "Champion", "description": "This Threat may use Ruin Actions and has 2 personal Ruin." },
+      { "name": "Passes For Human", "description": "A DN 3 Awareness (Int) Test is required to notice a Magus is not Human." },
+      { "name": "Spiritual Leader", "description": "Allied GENESTEALER CULT Threats within 10m of the Magus gain +4 bonus dice to resist psychic powers." }
+    ],
+    "abilities": [
+      { "type": "BATTLECRY", "name": "Cult Recruitment", "description": "The Magus attempts to activate Possession (Wrath & Glory, page 281)." },
+      { "type": "ACTION", "name": "Broodmind", "description": "The Magus may attempt to activate any of the following psychic powers: Smite (Wrath & Glory, page 272), Psyniscience (page 267), Deny the Witch (page 267), Compel (page 268), Fog the Mind (page 279), Psychic Shriek (page 279), Terrify (page 280)." },
+      { "type": "ACTION", "name": "Autopistol", "stats": "7 +1 ED / Range 6-12-18 / Salvo 2 / Pistol" },
+      { "type": "ACTION", "name": "Force Stave", "stats": "8 +2 ED / AP -1 / Range 2 / Brutal, Force" },
+      { "type": "ACTION", "name": "Bio-dagger", "stats": "6 +1 ED / Range 1 / Inflict (Poisoned 3)" },
+      { "type": "RUIN", "name": "Broodmind", "description": "Spend 1 Ruin. The Magus attempts to activate a Psychic Power or Deny the Witch." }
+    ],
+    "determination": "Spend 1 Ruin to roll 4d6.",
+    "conviction": 8,
+    "resolve": 7,
+    "speed": 6,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "acolyte_hybrid_xenos",
+    "name": "ACOLYTE HYBRID",
+    "description": "The first and second generation of Hybrids express the Genestealer in the most obvious manner, and display the most aspects of their inherited xenos morphology. The nature of their existence makes Hybrids capable hunters and experts in stealth, ambushing the unwary who they drag away and infect. While incapable of pursuing the cult's agenda in Imperial society, the Acolyte Hybrids are fearsome combatants, capable of wielding heavy weaponry with ease thanks to their alien strength and extra limbs.\n\nWith hunched posture, elongated craniums, extra arms and clawed hands and feet, these Hybrids are unable to insinuate themselves into Imperial society, instead existing in the shadows amongst other outcasts where many think them simply victims of mutation. Due to their savagery, Acolytes often form the loyal guard of the Patriarch.",
+    "tierThreat": { "1": "A", "2": "E", "3": "E", "4": "T" },
+    "keywords": ["GENESTEALER CULT", "TYRANID"],
+    "attributes": { "S": 5, "T": 4, "A": 4, "I": 4, "Wil": 4, "Int": 2, "Fel": 1 },
+    "resilience": { "value": 7, "note": "2 AR" },
+    "defence": 3,
+    "wounds": 6,
+    "shock": 5,
+    "skills": "Default 6, Awareness 6 (Passive 3), Ballistic Skill 6, Stealth 8, Weapon Skill 8",
+    "bonuses": [
+      { "name": "Extra Arm", "description": "This Threat has 3 arms. If this Threat is wielding a one-handed weapon in each hand, or a one-handed weapon in one hand and a two-handed weapon in its other two hands, it can make one attack with each weapon without suffering a Multi-Attack DN penalty. If this Threat is wielding a weapon with all 3 hands, they can take the Brace Action (Wrath & Glory, page 189) as a free action." }
+    ],
+    "abilities": [
+      { "type": "REACTION", "name": "Unquestioning Loyalty", "description": "When a Threat with the GENESTEALER CULT and PSYKER Keywords within 6m of this Threat is targeted by a ranged attack, this Threat may interpose themself as a reaction and become the new target for the attack." },
+      { "type": "ACTION", "name": "Autopistol", "stats": "7 +1 ED / Range 6-12-18 / Salvo 2 / Pistol" },
+      { "type": "ACTION", "name": "Cult Knife", "stats": "7 +2 ED / Range 1" },
+      { "type": "ACTION", "name": "Rending Claw", "stats": "11 +4 ED / AP -2 / Range 1 / Rending (2)" }
+    ],
+    "determination": "Spend 1 Ruin to roll 4d6.",
+    "conviction": 4,
+    "resolve": 3,
+    "speed": 6,
+    "size": "Avg",
+    "mobAbilities": "Broodmind: This Threat gains a +3 bonus dice to Resolve Tests when within 20 metres of a Threat with the GENESTEALER CULT and PSYKER Keywords.",
+    "mobOptions": "An Acolyte Hybrid can exchange their Autopistol for a Hand Flamer. They may also exchange both their Autopistol and Cult Knife for: Heavy Rock Cutter (11 +6 ED / AP -4 / Brutal, Heavy (6), Rending (2), Unwieldy (4)), Heavy Rock Drill (10 +5 ED / AP -4 / Brutal, Heavy (6), Rending (4), Unwieldy (4)), or Heavy Rock Saw (11 +4 ED / AP -4 / Brutal, Heavy (4), Unwieldy (3)).",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "neophyte_hybrid_xenos",
+    "name": "NEOPHYTE HYBRID",
+    "description": "The third and fourth generation of Hybrids appear far more Human compared to the previous generations. Third generation Hybrids lack extra arms or chitinous hides, but still have distinct features that marks them as alien, such as their elongated skulls, and pronounced bone structure. They stand more upright compared to their parents and grandparents, but still have a gait that is not Human.\n\nThe fourth generation appear far more Human, standing completely upright, with a regular skull shape, save for the ridges on the forehead. Infiltrating industry and local military structures, these Hybrids siphon funds and munitions for the cult.",
+    "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["GENESTEALER CULT", "TYRANID"],
+    "attributes": { "S": 3, "T": 3, "A": 3, "I": 3, "Wil": 3, "Int": 3, "Fel": 2 },
+    "resilience": { "value": 6, "note": "2 AR" },
+    "defence": 2,
+    "wounds": 5,
+    "shock": 4,
+    "skills": "Default 4, Awareness 5 (Passive 3), Ballistic Skill 5, Stealth 6, Weapon Skill 5",
+    "bonuses": [
+      { "name": "Passes For Human", "description": "A DN 3 Awareness (Int) Test is required to notice a Neophyte is not Human." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Autopistol", "stats": "7 +1 ED / Range 6-12-18 / Salvo 2 / Pistol" },
+      { "type": "ACTION", "name": "Autogun", "stats": "7 +1 ED / Range 12-24-36 / Salvo 3" },
+      { "type": "REACTION", "name": "Unquestioning Loyalty", "description": "When a Threat with the GENESTEALER and PSYKER Keywords within 6m of the Neophyte Hybrid is targeted by an attack, the Neophyte Hybrid interposes themself and becomes the new target for the attack." }
+    ],
+    "determination": "Spend 1 Ruin to roll 3d6.",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 6,
+    "size": "Avg",
+    "mobAbilities": "Broodmind: This Threat gains a +3 bonus dice to Resolve Tests when within 20 metres of a Threat with the GENESTEALER CULT and PSYKER Keywords.",
+    "mobOptions": "In a Mob of 10 or more Neophyte Hybrids, 2 Neophytes can exchange their Autogun for: Flamer (10 +4 ED / Range 4-8-12 / Salvo 1 / Assault, Flamer), Grenade Launcher (Frag: 10 +1 ED / Range 12-24-36 / Assault, Blast (6) or Krak: 14 +2 ED / Range 12-24-36 / Assault, Blast (4)), Heavy Stubber (10 +2 ED / Range 18-36-54 / Salvo 3 / Heavy (4)), Mining Laser (18 +1 ED / AP -3 / Range 12-24-36 / Salvo 1 / Heavy (6)), or Webber (Range 9-18-27, does not deal damage, all individuals of Large size or smaller within Blast (4) are Restrained, DN 3 Strength Test to escape).",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "purestrain_genestealer_xenos",
+    "name": "PURESTRAIN GENESTEALER",
+    "description": "These terrifying creatures go by many names across the worlds of the Imperium: Cave Nightmares, Clawed Changelings, Snatcher-Devils, Scuttlers, and Void Ghosts. The populations they prey upon soon speak in hushed tones about these creatures, as if they are monsters born from folklore.\n\nGenestealers can display a variety of bio-weapons and deadly organs, but commonly their morphology is consistent: standing around the height of an average Imperial citizen, these hunched bipedal beasts have clawed feet and two sets of arms. Their upper arms end in scything claws that are capable of ripping through Terminator armour, while the second set of arms end in powerful hands.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
+    "keywords": ["GENESTEALER", "TYRANID"],
+    "attributes": { "S": 6, "T": 6, "A": 6, "I": 6, "Wil": 4, "Int": 1, "Fel": 1 },
+    "resilience": { "value": 7, "note": "0 AR" },
+    "defence": 5,
+    "wounds": 12,
+    "shock": 7,
+    "skills": "Default 6, Athletics 10, Awareness 8 (Passive 4), Stealth 10, Weapon Skill 10",
+    "bonuses": [
+      { "name": "Second Strike", "description": "This Threat reduces the Multi-Attack penalty by 2DN, as though it had the Dual Wield Talent (Wrath & Glory, page 133)." }
+    ],
+    "abilities": [
+      { "type": "BATTLECRY", "name": "Swift and Deadly", "description": "The Threat Seizes the Initiative without spending a point of Ruin and Charges. It gains an additional +1 bonus die to its attack Test as part of the Charge." },
+      { "type": "ACTION", "name": "Rending Claw", "stats": "12 +4 ED / AP -2 / Range 1 / Rending (2)" }
+    ],
+    "determination": "Spend 1 Ruin to roll 6d6. (Lightning Reflexes: This Threat can roll Determination against Mortal Wounds.)",
+    "conviction": 4,
+    "resolve": 3,
+    "speed": 8,
+    "size": "Avg",
+    "mobAbilities": "Flurry of Claws: As long as all individuals in the Mob of Genestealers target the same opponent, they gain +2 bonus dice to the attack Test.",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "hybrid_metamorph",
+    "name": "HYBRID METAMORPH",
+    "description": "The Genestealer genome hides many attributes that, with the right trigger, can mutate the organism. All manner of grotesque adaptations can be expressed, many of which resemble the hideous bio-weapons of other Tyranid creatures. The trigger is typically the presence of a Hive Fleet, but if the Gene-Sect is threatened then the Broodmind can also induce these changes.\n\nThe mutations occur within those Hybrids of the first and second generation of the breeding cycle, their extra limbs forming crushing claws and scything talons. Some digits fuse and extend into spined whips of thrashing muscle. Mouths distend, containing glands filled with acid and venom, or reform entirely into a host of writhing tentacles.",
+    "tierThreat": { "1": "A", "2": "E", "3": "T", "4": "T" },
+    "keywords": ["GENESTEALER CULT", "TYRANID"],
+    "attributes": { "S": 5, "T": 5, "A": 3, "I": 4, "Wil": 4, "Int": 2, "Fel": 1 },
+    "resilience": { "value": 8, "note": "2 AR" },
+    "defence": 3,
+    "wounds": 7,
+    "shock": 5,
+    "skills": "Default 4, Awareness 6 (Passive 3), Ballistic Skill 6, Stealth 7, Weapon Skill 8",
+    "bonuses": [
+      { "name": "Broodmind", "description": "This Threat gains a +3 bonus dice to Resolve Tests when within 20 metres of a Threat with the GENESTEALER CULT and PSYKER Keywords." },
+      { "name": "Extra Arm", "description": "This Threat has 3 arms. If this Threat is wielding a one-handed weapon in each hand, or a one-handed weapon in one hand and a two-handed weapon in its other two hands, it can make one attack with each weapon without suffering a Multi-Attack DN penalty. If this Threat is wielding a weapon with all 3 hands, they can take the Brace Action (Wrath & Glory, page 189) as a free action." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Rending Claw", "stats": "8 +3 ED / AP -2 / Range 1 / Rending (2)" },
+      { "type": "ACTION", "name": "Scything Talon", "stats": "9 +4 ED / AP -1 / Range 1 / Rending (3)" },
+      { "type": "ACTION", "name": "Lash Whip", "stats": "9 +4 ED / AP -1 / Range 4 / Agonising" },
+      { "type": "ACTION", "name": "Blasting Charge (1)", "stats": "10 +2 ED / AP -4 / Thrown 20m / Blast (4)" },
+      { "type": "REACTION", "name": "Unquestioning Loyalty", "description": "When a Threat with the GENESTEALER CULT and PSYKER Keywords within 6m of this Threat is targeted by a ranged attack, this Threat may interpose themself as a reaction and become the new target for the attack." },
+      { "type": "ANNIHILATION", "name": "Savage Amalgam", "description": "When the Hybrid Metamorph would die, it may make a melee attack, a charge, or a ranged attack. When the attack resolves, the Hybrid Metamorph dies." }
+    ],
+    "determination": "Spend 1 Ruin to roll 5d6.",
+    "conviction": 4,
+    "resolve": 3,
+    "speed": 6,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "aberrant",
+    "name": "ABERRANT",
+    "description": "Hulking towers of muscle and sinew, Aberrants are slow thinking but capable of superhuman feats of strength. They shamble in battle, lurching towards the enemy as they mumble prayers to their void born gods, brandishing industrial power hammers, pneumatic pick axes, and improvised weapons to crush their enemies. Aberrants are an unexpected, but welcome, mutation amongst the brood, caused by exposure of their parents to unstable chemicals and radiation, or the reality shifting influence of the Warp.\n\nTheir base instincts and lack of complex thoughts makes Aberrants easy for a Magus and Patriarch to control. When not called upon to fight, these brutes toil away carving out tunnels within which the Gene-Sect may hide and multiply.",
+    "tierThreat": { "1": "A", "2": "A", "3": "A", "4": "E" },
+    "keywords": ["GENESTEALER CULT", "TYRANID"],
+    "attributes": { "S": 9, "T": 8, "A": 3, "I": 4, "Wil": 4, "Int": 1, "Fel": 1 },
+    "resilience": { "value": 10, "note": "1 AR" },
+    "defence": 2,
+    "wounds": 14,
+    "shock": 6,
+    "skills": "Default 4, Athletics 10, Awareness 4 (Passive 2), Intimidation 8, Weapon Skill 8",
+    "bonuses": [
+      { "name": "Extra Arm", "description": "This Threat has 3 arms. If this Threat is wielding a one-handed weapon in each hand, or a one-handed weapon in one hand and a two-handed weapon in its other two hands, it can make one attack with each weapon without suffering a Multi-Attack DN penalty. If this Threat is wielding a weapon with all 3 hands, they can take the Brace Action (Wrath & Glory, page 189) as a free action and ignore the Unwieldy weapon trait." }
+    ],
+    "abilities": [
+      { "type": "BATTLECRY", "name": "Thunderous Charge", "description": "The Threat Seizes the Initiative without spending a point of Ruin and Charges. It gains an additional +1 Strength when it attacks." },
+      { "type": "ACTION", "name": "Heavy Power Pick", "stats": "16 +5 ED / AP -2 / Range 1 / Heavy (8), Rending (4), Unwieldy (4)" },
+      { "type": "REACTION", "name": "Unquestioning Loyalty", "description": "When a Threat with the GENESTEALER CULT and PSYKER Keywords within 6m of this Threat is targeted by a ranged attack, this Threat may interpose themself as a reaction and become the new target for the attack." }
+    ],
+    "determination": "Spend 1 Ruin to roll 8d6. (Bestial Vigour: This Threat can roll Determination against Mortal Wounds.)",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 6,
+    "size": "Large",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "abominant",
+    "name": "ABOMINANT",
+    "description": "There are even monsters amongst the monsters: Abominants are hideous juggernauts of taut muscle and alien fury, towering over their fellow Aberrants. They are champions that chill the souls of their opponents as they witness the beast pulverise man and machine about them.\n\nTypically seen late in the cult's brood cycles, as the hive fleets call to their hybrid children, their creation is heralded by a Mindwyrm Familiar. The familiar is a bio-psychic construct created by the Patriarch and which selects the Aberrant with the most potential, injecting them with mutagenic cells from the Patriarch, which initiates the dramatic changes in the host.",
+    "tierThreat": { "1": "A", "2": "A", "3": "A", "4": "E" },
+    "keywords": ["GENESTEALER CULT", "TYRANID"],
+    "attributes": { "S": 9, "T": 8, "A": 3, "I": 4, "Wil": 4, "Int": 1, "Fel": 1 },
+    "resilience": { "value": 9, "note": "0 AR" },
+    "defence": 3,
+    "wounds": 16,
+    "shock": 8,
+    "skills": "Default 6, Athletics 12, Awareness 6 (Passive 3), Stealth 8, Weapon Skill 8",
+    "bonuses": [
+      { "name": "Second Strike", "description": "This Threat reduces the Multi-Attack penalty by 2DN, as though it had the Dual Wield Talent (Wrath & Glory, page 133)." },
+      { "name": "Extra Arm", "description": "The Aberrant's extra arm confers the Second Strike bonus when each arm wields a different weapon, or a single weapon and a double handed weapon. Using all three arms allows the Abominant to ignore the Unwieldy weapon trait." },
+      { "name": "Champion", "description": "This Threat may use Ruin Actions and has 2 personal Ruin." }
+    ],
+    "abilities": [
+      { "type": "BATTLECRY", "name": "Thunderous Charge", "description": "The Threat Seizes the Initiative without spending a point of Ruin and Charges. It gains an additional +1 Strength when it attacks." },
+      { "type": "ACTION", "name": "Power Sledgehammer", "stats": "16 +4 ED / AP -3 / Range 1 / Brutal, Unwieldy, Inflict (Hindered 1)" },
+      { "type": "RUIN", "name": "Pulverise", "description": "Spend 1 Ruin to add the game's Tier as ED to all attacks this Threat makes this Round." }
+    ],
+    "determination": "Spend 1 Ruin to roll 8d6. (Unstoppable Bulk: This Threat can roll Determination against Mortal Wounds.)",
+    "conviction": 4,
+    "resolve": 3,
+    "speed": 6,
+    "size": "Large",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "nexos",
+    "name": "NEXOS",
+    "description": "As the cult spreads across a planet, and billions of thralls and hybrids come under the control of the Patriarch, the effort of coordinating the cult becomes too much for the Patriarch alone. Stimulated by the Broodmind, certain Hybrids, called Nexoses, develop psychometric powers, which allow them to absorb the thoughts and memories of other members of the cult.\n\nBy their enhanced cerebral cortex, they process and analyse the information and develop stratagems. By absorbing the thoughts of the cult, and exchanging information between each other, Nexoses build complex mental plans within their brains — not just the physical battlefields, but also the power and political structures that keep a planet running.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
+    "keywords": ["GENESTEALER CULT", "TYRANID"],
+    "attributes": { "S": 3, "T": 4, "A": 3, "I": 4, "Wil": 6, "Int": 8, "Fel": 5 },
+    "resilience": { "value": 7, "note": "2 AR" },
+    "defence": 3,
+    "wounds": 10,
+    "shock": 9,
+    "skills": "Default 4, Awareness 10 (Passive 5), Ballistic Skill 5, Cunning 10, Deception 8, Investigation 10, Leadership 8, Stealth 6, Weapon Skill 5",
+    "bonuses": [
+      { "name": "Champion", "description": "This Threat may use Ruin Actions and has 2 personal Ruin." },
+      { "name": "Passes For Human", "description": "A DN 3 Awareness (Int) Test is required to notice a Nexos is not Human." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Autopistol", "stats": "7 +1 ED / Range 6-12-18 / Salvo 2 / Pistol" },
+      { "type": "ACTION", "name": "Battlefield Analysis", "description": "Select an individual or Mob that the Nexos is aware of in 1km. All Threats with the GENESTEALER CULT Keyword gain +3 bonus dice to all tests targeting that individual or Mob until the start of the Nexos' next turn." },
+      { "type": "RUIN", "name": "Strategic Coordination", "description": "A Threat with the GENESTEALER CULT Keyword within 1km that has fewer Wounds than the Nexos immediately takes a turn." },
+      { "type": "REACTION", "name": "Unquestioning Loyalty", "description": "When a Threat with the GENESTEALER CULT and PSYKER Keywords within 6m of this Threat is targeted by a ranged attack, this Threat may interpose themself as a reaction and become the new target for the attack." }
+    ],
+    "determination": "Spend 1 Ruin to roll 4d6.",
+    "conviction": 8,
+    "resolve": 7,
+    "speed": 6,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "locus",
+    "name": "LOCUS",
+    "description": "Darting from the shadows and dealing eviscerating strikes, Locuses are the silent sentinels of the cult. Their preternatural speed and agility makes them perfect guardians, leaping to the defence with a decapitating strike. These warriors typically guard the cult Magus, draped in thick cloaks and standing statue still.\n\nBeneath their robes they bear scything blades and executioner swords, coupled with their barbed poison tipped tail. When they do speak, they are calm and focused, each word said with purpose. They conduct themselves as diligent monks, attending to their charges and watching for any threats.",
+    "tierThreat": { "1": "A", "2": "A", "3": "A", "4": "E" },
+    "keywords": ["GENESTEALER CULT", "TYRANID"],
+    "attributes": { "S": 5, "T": 5, "A": 6, "I": 8, "Wil": 6, "Int": 4, "Fel": 3 },
+    "resilience": { "value": 8, "note": "2 AR" },
+    "defence": 7,
+    "wounds": 13,
+    "shock": 10,
+    "skills": "Default 6, Athletics 8, Awareness 8 (Passive 4), Cunning 8, Stealth 10, Weapon Skill 10",
+    "bonuses": [
+      { "name": "Champion", "description": "This Threat may use Ruin Actions and has 2 personal Ruin." },
+      { "name": "Passes For Human", "description": "A DN 3 Awareness (Int) Test is required to notice a Locus is not Human." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Locus Blades", "stats": "10 +5 ED / AP -3 / Range 1 / Parry" },
+      { "type": "ACTION", "name": "Hypermorph Tail", "stats": "8 +3 ED / AP -1 / Range 2" },
+      { "type": "WRATH", "name": "Death of a Thousand Cuts", "description": "If this Threat rolls a Wrath Critical as part of an attack, the target suffers the Bleeding Condition in addition to any other effects." },
+      { "type": "RUIN", "name": "Quicksilver Strike", "description": "Spend 1 Ruin. The Locus Takes the Initiative and can Charge up to 20m." },
+      { "type": "REACTION", "name": "Bodyguard", "description": "When a Threat with the GENESTEALER CULT and PSYKER Keywords within 6m of this Threat is targeted by an attack, this Threat may interpose themself as a reaction and become the new target for the attack." }
+    ],
+    "determination": "Spend 1 Ruin to roll 5d6. (Preternatural Reflexes: This Threat can roll Determination against Mortal Wounds.)",
+    "conviction": 6,
+    "resolve": 5,
+    "speed": 6,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "kelermorph",
+    "name": "KELERMORPH",
+    "description": "If a Magus is a priest, and Abominants living saints, then a Kelermorph is a folk hero, fighting the good fight against the oppressive forces of the Imperium. The emergence of a Kelermorph is no accident, as the Broodmind selects the Hybrid most respected and heroic, and shapes them into an expert marksman and gunfighter whose actions inspire the greater body of the cult.\n\nTheir image is daubed on the walls of ruined factorums and corpse-starch refineries, and the cult spreads fanciful tales of these champions of the revolution. As a product of the Broodmind and generations of breeding, a Kelermorph displays supernatural speed and heightened senses, on a par with the Aeldari.",
+    "tierThreat": { "1": "A", "2": "A", "3": "A", "4": "E" },
+    "keywords": ["GENESTEALER CULT", "TYRANID"],
+    "attributes": { "S": 4, "T": 4, "A": 8, "I": 7, "Wil": 6, "Int": 4, "Fel": 3 },
+    "resilience": { "value": 7, "note": "2 AR" },
+    "defence": 5,
+    "wounds": 10,
+    "shock": 9,
+    "skills": "Default 6, Athletics 8, Awareness 10 (Passive 5), Ballistic Skill 12, Leadership 8, Stealth 10, Weapon Skill 8",
+    "bonuses": [
+      { "name": "Champion", "description": "This Threat may use Ruin Actions and has 2 personal Ruin." },
+      { "name": "Extra Arm", "description": "This Threat has 3 arms. If this Threat is wielding a one-handed weapon in each hand, or a one-handed weapon in one hand and a two-handed weapon in its other two hands, it can make one attack with each weapon without suffering a Multi-Attack DN penalty. If this Threat is wielding a weapon with all 3 hands, they can take the Brace Action (Wrath & Glory, page 189) as a free action and ignore the Unwieldy weapon trait." },
+      { "name": "Hypersensory Abilities", "description": "If the Kelermorph fires any of its Liberator Autostub Pistols it can Sprint as a Simple Action on the same turn." },
+      { "name": "Passes For Human", "description": "A DN 3 Awareness (Int) Test is required to notice a Kelermorph is not Human." },
+      { "name": "Revolutionary Anarch", "description": "All Threats with the GENESTEALER CULT Keyword that see a Kelermorph kill an opponent gain +1 Conviction and Resolve for 1 day." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Liberator Autostub Pistol", "stats": "12 +1 ED / AP -1 / Range 9-18-27 / Salvo 2 / Pistol, Rad (2)" },
+      { "type": "WRATH", "name": "Dead Shot", "description": "When the Kelermorph scores a wrath critical on a ranged attack test with a Liberator Autostub Pistol, the target automatically suffers 1d3 Mortal Wounds." },
+      { "type": "RUIN", "name": "Gunslinger", "description": "Whenever the Kelermorph successfully deals a Wound using a Liberator Autostub Pistol it may spend 1 Ruin to make another attack with the same weapon against the same target as a Free Action." },
+      { "type": "REACTION", "name": "Unquestioning Loyalty", "description": "When a Threat with the GENESTEALER CULT and PSYKER within 6m of this Threat is targeted by a ranged attack, this Threat may interpose themself as a reaction and become the new target for the attack." }
+    ],
+    "determination": "Spend 1 Ruin to roll 4d6. (Preternatural Reflexes: This Threat can roll Determination against Mortal Wounds.)",
+    "conviction": 6,
+    "resolve": 5,
+    "speed": 6,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "sanctus",
+    "name": "SANCTUS",
+    "description": "Sanctuses prowl the hives and factorums of Imperial worlds, delivering knives to the backs of investigators, gang leaders, and anyone else who threatens the cult and their bloody uprising. They are the precision scalpel directed by the Nexoses and Magus to perform the Patriarch's will.\n\nArmed with advanced sensor goggles allowing them to see all forms of light and radiation, they run their prey to ground, ending their lives with their alien daggers — their atrophic blades, like many of the strange daggers and swords wielded within the cult, are grown from the pools of rotting matter and psychic essence from thousands of slain cultists.",
+    "tierThreat": { "1": "A", "2": "A", "3": "A", "4": "E" },
+    "keywords": ["GENESTEALER CULT", "TYRANID"],
+    "attributes": { "S": 4, "T": 4, "A": 6, "I": 6, "Wil": 5, "Int": 5, "Fel": 1 },
+    "resilience": { "value": 7, "note": "2 AR" },
+    "defence": 6,
+    "wounds": 10,
+    "shock": 8,
+    "skills": "Default 5, Athletics 7, Awareness 8 (Passive 4), Ballistic Skill 10, Cunning 6, Stealth 12, Weapon Skill 10",
+    "bonuses": [
+      { "name": "Champion", "description": "This Threat may use Ruin Actions and has 2 personal Ruin." },
+      { "name": "Cloaked by Shadows", "description": "If this Threat is in cover or hidden by shadows it gains +2 Defence. Additionally, attacks that target this Threat from 12m or more away suffer a +2 DN penalty." },
+      { "name": "Passes For Human", "description": "A DN 3 Awareness (Int) Test is required to notice a Sanctus is not Human." },
+      { "name": "Soulsight", "description": "This Threat ignores all vision penalties when making attack Tests." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Cult Sniper Rifle", "stats": "12 +2 ED / AP -3 / Range 18-36-54 / Agonising, Inflict (Poisoned), Sniper (2), Silent" },
+      { "type": "ACTION", "name": "Sanctus Bio-Dagger", "stats": "6 +3 ED / Range 1 / Agonising, Inflict (Bleeding, Poisoned), Rending (10)" },
+      { "type": "REACTION", "name": "Unquestioning Loyalty", "description": "When a Threat with the GENESTEALER CULT and PSYKER Keywords within 6m of this Threat is targeted by a ranged attack, this Threat may interpose themself as a reaction and become the new target for the attack." },
+      { "type": "RUIN", "name": "Dead-Eye Sniper", "description": "After this Threat makes a successful ranged attack, you can spend 1 Ruin to inflict the Vulnerable Condition and a Mortal Wound to the target." }
+    ],
+    "determination": "Spend 1 Ruin to roll 4d6.",
+    "conviction": 5,
+    "resolve": 4,
+    "speed": 6,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "sanctus_familiar",
+    "name": "SANCTUS FAMILIAR",
+    "description": "Accompanying the Sanctus is a familiar, which allows the Patriarch to remotely view and direct the Sanctus to their target.",
+    "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["GENESTEALER CULT", "TYRANID"],
+    "attributes": { "S": 2, "T": 1, "A": 6, "I": 4, "Wil": 2, "Int": 1, "Fel": 1 },
+    "resilience": { "value": 2, "note": "0 AR" },
+    "defence": 4,
+    "wounds": 3,
+    "shock": 3,
+    "skills": "Default 4, Athletics 6, Awareness 8 (Passive 4), Stealth 10, Weapon Skill 6",
+    "bonuses": [
+      { "name": "Cloaked by Shadows", "description": "If this Threat is in cover or hidden by shadows it gains +2 Defence. Additionally, attacks that target this Threat from 12m or more away suffer a +2 DN penalty." },
+      { "name": "Second Strike", "description": "This Threat reduces the Multi-Attack penalty by 2 DN, as though it had the Dual Wield Talent (Wrath & Glory, page 133)." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Familiar's Claws", "stats": "10 +4 ED / Range 1" },
+      { "type": "REACTION", "name": "Unquestioning Loyalty", "description": "When a Threat with the GENESTEALER CULT and PSYKER Keywords within 6m of this Threat is targeted by a ranged attack, this Threat may interpose themself as a reaction and become the new target for the attack." }
+    ],
+    "determination": "Spend 1 Ruin to roll 4d6.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 6,
+    "size": "Small",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "reductus_saboteur",
+    "name": "REDUCTUS SABOTEUR",
+    "description": "While a Nexos does the planning, and a Sanctus provides covering fire, the Reductus Saboteur moves into position to plant the charges. When chaos and terror are the order of the day, these cunning chemists mix the toxic slurry from the Patriarch's lair with noxious chemicals from the sump pits, mining explosives from the quarry, even adding them to the occasional purloined melta bomb.\n\nThese devices are not used entirely for offence either and many are the unfortunate souls that have fallen foul of a Saboteur booby trap while attempting to clear a Genestealer infestation.",
+    "tierThreat": { "1": "A", "2": "A", "3": "A", "4": "E" },
+    "keywords": ["GENESTEALER CULT", "TYRANID"],
+    "attributes": { "S": 3, "T": 4, "A": 6, "I": 4, "Wil": 5, "Int": 5, "Fel": 3 },
+    "resilience": { "value": 7, "note": "2 AR" },
+    "defence": 3,
+    "wounds": 8,
+    "shock": 7,
+    "skills": "Default 5, Awareness 8 (Passive 4), Ballistic Skill 12, Cunning 8, Leadership 8, Stealth 8, Tech 8, Weapon Skill 6",
+    "bonuses": [
+      { "name": "Champion", "description": "This Threat may use Ruin Actions and has 2 personal Ruin." },
+      { "name": "Clandestine", "description": "This Threat gains doubled Defence and Stealth bonuses from cover and visual conditions." },
+      { "name": "Extra Arm", "description": "This Threat has 3 arms. If this Threat is wielding a one-handed weapon in each hand, or a one-handed weapon in one hand and a two-handed weapon in its other two hands, it can make one attack with each weapon without suffering a Multi-Attack DN penalty. If this Threat is wielding a weapon with all 3 hands, they can take the Brace Action (Wrath & Glory, page 189) as a free action." },
+      { "name": "Passes For Human", "description": "A DN 3 Awareness (Int) Test is required to notice a Saboteur is not Human." }
+    ],
+    "abilities": [
+      { "type": "BATTLECRY", "name": "Grenade!", "description": "During the first round of combat the Saboteur may Seize the Initiative to make an immediate ranged attack with a Blasting Charge, a Demolition Charge, or a Frag Grenade." },
+      { "type": "ACTION", "name": "Autopistol", "stats": "7 +1 ED / Range 6-12-18 / Salvo 2 / Pistol" },
+      { "type": "ACTION", "name": "Blasting Charges (3)", "stats": "11 +4 ED / AP -4 / Thrown 12m / Blast (2)" },
+      { "type": "ACTION", "name": "Demolition Charge (1)", "stats": "15 +4 ED / AP -4 / Thrown 6m / Blast (10)" },
+      { "type": "ACTION", "name": "Frag Grenades (3)", "stats": "10 +4 ED / Thrown 12m / Blast (6)" },
+      { "type": "RUIN", "name": "Remote Explosives", "description": "Spend 1 Ruin. The Reductus Saboteur may make one Demolition Charge attack up to 60m away as if they had thrown the charge, representing a booby trap they have placed, or a servitor based improvised explosive that has moved into position." }
+    ],
+    "determination": "Spend 1 Ruin to roll 4d6.",
+    "conviction": 5,
+    "resolve": 4,
+    "speed": 6,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "atalan_jackal",
+    "name": "ATALAN JACKAL",
+    "description": "Kicking up dust, the thrum of engines heralds the Atalan Jackals. These Neophyte Hybrids cross the wastes on their Atalan pattern dirt bikes. Gangs of these rebels race down the streets of forge cities, the nimble machines able to navigate sand dunes, scrap piles, and the steppes of agri-worlds with equal ease.\n\nThe primary goal of these outriders is to scout for new territory and resources for the Gene-Sect. Such riders are often mistaken for prospectors working for mining corps, or rangers keeping watch over the herds of genespliced cattle.",
+    "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["GENESTEALER CULT", "TYRANID"],
+    "attributes": { "S": 3, "T": 4, "A": 5, "I": 4, "Wil": 3, "Int": 2, "Fel": 3 },
+    "resilience": { "value": 6, "note": "2 AR" },
+    "defence": 3,
+    "defenceNote": "6 Mounted",
+    "wounds": 6,
+    "shock": 4,
+    "skills": "Default 4, Awareness 6 (Passive 3), Ballistic Skill 7, Cunning 5, Pilot 7, Weapon Skill 6",
+    "bonuses": [
+      { "name": "Mounted", "description": "By default, an Atalan Jackal is mounted on a Dirtcycle (see Church of Steel)." },
+      { "name": "Passes For Human", "description": "A DN 3 Awareness (Int) Test is required to notice an Atalan Jackal is not Human." },
+      { "name": "Raiders", "description": "When this Threat makes a ranged attack test against a target within 6m, that target is Vulnerable." },
+      { "name": "Skilled Outriders", "description": "If this Threat is Mounted and moves on its Turn it gains +1 Defence until the start of its next Turn." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Autopistol", "stats": "8 +2 ED / Range 6-12-18 / Salvo 2 / Pistol" },
+      { "type": "ACTION", "name": "Blasting Charge", "stats": "10 +2 ED / AP -4 / Thrown Sx4 / Blast (4)" },
+      { "type": "ACTION", "name": "Power Pick", "stats": "8 +4 ED / AP -2 / Range 1 / Rending (3)" },
+      { "type": "RUIN", "name": "Jackal Manoeuvre", "description": "If Mounted, this Threat can move and attack as a single Ruin Action." },
+      { "type": "REACTION", "name": "Unquestioning Loyalty", "description": "When a Threat with the GENESTEALER CULT and PSYKER Keywords within 6m of this Threat is targeted by a ranged attack, this Threat may interpose themself as a reaction and become the new target for the attack. If this Threat is mounted, the range of this Reaction is half the Speed of the vehicle." }
+    ],
+    "determination": "Spend 1 Ruin to roll 3d6.",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 6,
+    "speedNote": "38 Mounted",
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "jackal_alphus",
+    "name": "JACKAL ALPHUS",
+    "description": "Leading every pack of Jackals is an Alphus, who has travelled far and wide, racing at breakneck speeds and leading daring ambushes.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
+    "keywords": ["GENESTEALER CULT", "TYRANID"],
+    "attributes": { "S": 3, "T": 5, "A": 6, "I": 5, "Wil": 5, "Int": 4, "Fel": 4 },
+    "resilience": { "value": 8, "note": "2 AR" },
+    "defence": 4,
+    "defenceNote": "6 Mounted",
+    "wounds": 11,
+    "shock": 8,
+    "skills": "Default 5, Awareness 10 (Passive 5), Ballistic Skill 10, Cunning 8, Leadership 8, Pilot 10, Weapon Skill 7",
+    "bonuses": [
+      { "name": "Master Outrider", "description": "If this Threat is Mounted and moves on its Turn it gains +2 Defence until the start of its next Turn. Additionally, if an Atalan Jackal is within 6m of the Jackal Alphus, its Defence increases by a further +2." },
+      { "name": "Mounted", "description": "By default, Jackal Alphus is mounted on a Dirtcycle (see Church of Steel)." },
+      { "name": "Passes For Human", "description": "A DN 3 Awareness (Int) Test is required to notice a Jackal Alphus is not Human." },
+      { "name": "Priority Target", "description": "All of the Jackal Alphus' ranged weapons have the Inflict (Vulnerable) weapon trait." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Autopistol", "stats": "8 +2 ED / Range 6-12-18 / Salvo 2 / Pistol" },
+      { "type": "ACTION", "name": "Blasting Charge", "stats": "10 +2 ED / AP -4" },
+      { "type": "ACTION", "name": "Cult Sniper Rifle", "stats": "13 +1 ED / AP -3 / Sniper (2)" },
+      { "type": "RUIN", "name": "Jackal Manoeuvre", "description": "If Mounted, this Threat can move and attack as a single Ruin Action." },
+      { "type": "REACTION", "name": "Unquestioning Loyalty", "description": "When a Threat with the GENESTEALER CULT and PSYKER Keywords within 6m of this Threat is targeted by a ranged attack, this Threat may interpose themself as a reaction and become the new target for the attack. If this Threat is mounted, the range of this Reaction is half the Speed of the vehicle." }
+    ],
+    "determination": "Spend 1 Ruin to roll 5d6.",
+    "conviction": 5,
+    "resolve": 4,
+    "speed": 6,
+    "speedNote": "38 Mounted",
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "biophagus",
+    "name": "BIOPHAGUS",
+    "description": "Why rely on kidnapping and luring new subjects to be indoctrinated in the cult when the entire process can be industrialised? A Biophagus is a master of genetics, virology, and mutagenics, developing novel means to spread the Genestealer plague.\n\nSome pose as medicae providing cheap treatment to injured workers, all while planting the Genestealer Curse in their unwitting patients. Others work in starch refineries and fungal fermentation factorums, tainting the food supplies with the Genestealer germ-seed before the rations are shipped around the planet or off-world to the front lines of the Imperium.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
+    "keywords": ["GENESTEALER CULT", "TYRANID"],
+    "attributes": { "S": 3, "T": 5, "A": 5, "I": 4, "Wil": 6, "Int": 7, "Fel": 2 },
+    "resilience": { "value": 7, "note": "1 AR" },
+    "defence": 3,
+    "wounds": 9,
+    "shock": 8,
+    "skills": "Default 6, Awareness 8 (Passive 4), Ballistic Skill 6, Cunning 6, Medicae 10, Tech 7, Weapon Skill 8",
+    "bonuses": [
+      { "name": "Champion", "description": "This Threat may use Ruin Actions and has 2 personal Ruin." },
+      { "name": "Passes For Human", "description": "A DN 3 Awareness (Int) Test is required to notice a Biophagus is not Human." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Autopistol", "stats": "7 +1 ED / Range 6-12-18 / Salvo 2 / Pistol" },
+      { "type": "ACTION", "name": "Injector Goad", "stats": "6 +2 ED / Range 1 / Inflict (Poisoned 4), Rending (8)" },
+      { "type": "ACTION", "name": "Chemical Vials", "stats": "4 +6 ED / AP -2 / Thrown 8m / Rad (3), Rending (8)" },
+      { "type": "ACTION", "name": "Genomic Enhancement", "description": "Choose a Threat within 3m with the GENESTEALER CULT Keyword and roll 1d3. The target gains the matching effect for the next hour: 1. Enhanced Musculature: the target gains +2 Strength. 2. Enhanced Aggression: the target is Frenzied and gains +2 Initiative. 3. Enhanced Resilience: the target gains +2 Toughness. An individual can only be affected by one type of Genomic Enhancement at a time. If the target is an Aberrant, you may choose the enhancement instead of rolling 1d3." },
+      { "type": "RUIN", "name": "Twisted Experiment", "description": "Spend 1 Ruin and choose one of the following effects: The Biophagus uses their Genomic Enhancement Action on two targets within range. OR The Biophagus uses their Genomic Enhancement Action twice on the same target. The target also suffers 1d6 Mortal Wounds." },
+      { "type": "REACTION", "name": "Unquestioning Loyalty", "description": "When a Threat with the GENESTEALER CULT and PSYKER Keywords within 6m of this Threat is targeted by a ranged attack, this Threat may interpose themself as a reaction and become the new target for the attack." }
+    ],
+    "determination": "Spend 1 Ruin to roll 5d6.",
+    "conviction": 5,
+    "resolve": 4,
+    "speed": 6,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "alchemicus_familiar",
+    "name": "ALCHEMICUS FAMILIAR",
+    "description": "Many Biophaguses are served by a familiar, which acts as a twisted lab assistant scurrying to bring them reagents or sneaking into secure facilities to spread the latest genetic bioweapon.",
+    "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["GENESTEALER CULT", "TYRANID"],
+    "attributes": { "S": 2, "T": 1, "A": 4, "I": 4, "Wil": 2, "Int": 2, "Fel": 1 },
+    "resilience": { "value": 2, "note": "0 AR" },
+    "defence": 3,
+    "wounds": 3,
+    "shock": 3,
+    "skills": "Default 3, Awareness 4 (Passive 2), Cunning 4, Medicae 4, Weapon Skill 6",
+    "abilities": [
+      { "type": "ACTION", "name": "Alchemicus Courier", "description": "The Alchemicus Familiar can use its action to assist a Biophagus, extending the range of its Genomic Enhancement to 18m." },
+      { "type": "ACTION", "name": "Rending Claws", "stats": "5 +3 ED / AP -2 / Range 1 / Rending (2)" },
+      { "type": "REACTION", "name": "Unquestioning Loyalty", "description": "When a Threat with the GENESTEALER CULT and PSYKER Keyword within 6m of this Threat is targeted by a ranged attack, this Threat may interpose themself as a reaction and become the new target for the attack." }
+    ],
+    "determination": "Spend 1 Ruin to roll 1d6.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 6,
+    "size": "Small",
+    "source": "Threat Assessment: Xenos"
   }
 ]
