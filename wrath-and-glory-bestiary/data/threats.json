@@ -3605,5 +3605,1243 @@
     "speed": 6,
     "size": "Small",
     "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "necron_lord",
+    "name": "NECRON LORD",
+    "description": "These 'minor' nobles represent the lowest rung of royalty amongst the Necrons, but even they are vastly more potent and cunning than most of their underlings. Strong willed, Necron Lords have retained their personalities through biotransference, and although less of them have suffered outright engrammatic decay during the Great Sleep, many of them do display subtle quirks of personality that they didn't have before.\n\nTo be a Lord is a difficult position, since you must not only keep your superiors happy, but also deal with the scheming underlings who would like to replace you. If you appear too powerful or competent, your own Overlord or Phaeron will take notice, and while this can be a path to power, it can also be a mark of death. Your own peers will also vie with you constantly through means both foul and fair.\n\nOn top of this, a Lord will be expected to frequently lead their armies into battle, expanding their dynasty's power-base via relentless conquest. While this is certainly glorious, it exposes them to increased danger.",
+    "tierThreat": { "1": "A", "2": "A", "3": "A", "4": "A" },
+    "keywords": ["NECRON", "[DYNASTY]"],
+    "attributes": { "S": 8, "T": 8, "A": 4, "I": 4, "Wil": 9, "Int": 8, "Fel": 3 },
+    "resilience": { "value": 13, "note": "4 AR" },
+    "defence": 3,
+    "wounds": 18,
+    "shock": 14,
+    "skills": "Default 7, Awareness 10 (Passive 5), Ballistic Skill 8, Leadership 10, Weapon Skill 8",
+    "bonuses": [
+      { "name": "Architect of Ruin", "description": "The GM gains 1 point of Ruin at the start of each of this Threat's turns." },
+      { "name": "Champion", "description": "This Threat may use Ruin Actions and has 2 personal Ruin." },
+      { "name": "Living Metal", "description": "At the start of each of this Threat's turns it regains 1 Wound and 1 Shock." },
+      { "name": "Relentless March", "description": "Every Mob or individual with the same [DYNASTY] Keyword as this Threat within 10 m gains +1 Speed." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Staff of Light (Shooting)", "stats": "10 + 2ED / AP -1 / 9 - 18 - 27" },
+      { "type": "ACTION", "name": "Staff of Light (Melee)", "stats": "11 + 5 ED / AP -2 / Range 2m / Parry" },
+      { "type": "RUIN", "name": "Resurrection Orb", "description": "Roll 10d6. The Resurrection Orb restores a number of Wounds equal to the number of Icons rolled to any individual or Mob within 10 m of the Necron Lord that share a [DYNASTY] Keyword, including destroyed Necrons. The Resurrection Orb can only be used once per day." },
+      { "type": "ANNIHILATION", "name": "Reanimation Protocols", "description": "When this Threat is destroyed, roll a d6. If the result is an Exalted Icon, it is resurrected with 1 Wound and 1 Shock." }
+    ],
+    "determination": "Spend 1 Ruin to roll 8d6.",
+    "conviction": 9,
+    "resolve": 8,
+    "speed": 6,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "overlord",
+    "name": "OVERLORD",
+    "description": "The highest social strata of the Necron empire are the Overlords, brilliant strategists and accomplished dynastic leaders from whose ranks the Phaerons themselves are drawn. These nobles serve as the generals of their house, directing legions into battle and commanding the host of Lords beneath them to their grand strategic plan. A single Overlord will have fleets, armies, and whole worlds at his command, answering only to the Phaeron.\n\nIf the power of the Overlord is great, so too is the cost for failure. An Overlord can be sure that their Phaeron will keep tabs on them at all times; any sign of weakness, treachery, or incompetence is likely to be punished. Phaerons are adept at keeping their Overlords at each others' throats, and should one rival succeed to the throne then their first act is likely to be to settle a lot of old scores.\n\nConspiring against the throne, however, is to be discouraged by all means and the Phaerons prefer to keep their Overlords busy with campaigns of conquest.",
+    "tierThreat": { "1": "A", "2": "A", "3": "A", "4": "A" },
+    "keywords": ["NECRON", "[DYNASTY]"],
+    "attributes": { "S": 8, "T": 8, "A": 5, "I": 5, "Wil": 10, "Int": 8, "Fel": 4 },
+    "resilience": { "value": 14, "note": "4 AR, PHASE SHIFTER: AR 2*" },
+    "defence": 4,
+    "wounds": 18,
+    "shock": 15,
+    "skills": "Default 8, Awareness 10 (Passive 5), Ballistic Skill 10, Leadership 12, Weapon Skill 9",
+    "bonuses": [
+      { "name": "Architect of Ruin", "description": "The GM gains 1 point of Ruin at the start of each of this Threat's turns." },
+      { "name": "Champion", "description": "This Threat may use Ruin Actions and has 3 personal Ruin." },
+      { "name": "Living Metal", "description": "At the start of each of this Threat's turns it regains 1 Wound and 1 Shock." },
+      { "name": "My Will Be Done", "description": "Individuals and Mobs that share a [DYNASTY] Keyword with the Overlord and can see the Overlord gain +2 bonus dice to all Tests." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Hyperphase Glaive", "stats": "14 +5 ED / AP -3 / 2m / Rending (2)" },
+      { "type": "ACTION", "name": "Tachyon Arrow (single use)", "stats": "20 + 8 ED / AP -5 / 60 - 120 - 180 / Blast 20, Reliable" },
+      { "type": "RUIN", "name": "Resurrection Orb", "description": "Roll 10d6. The Resurrection Orb restores a number of Wounds equal to the number of Icons rolled to any individual or Mob within 10 m of the Necron Lord that share a [DYNASTY] Keyword, including destroyed Necrons. The Resurrection Orb can only be used once per day." },
+      { "type": "ANNIHILATION", "name": "Reanimation Protocols", "description": "When this Threat is destroyed, roll a d6. If the result is an Exalted Icon, it is resurrected with 1 Wound and 1 Shock." }
+    ],
+    "determination": "Roll 8d6.",
+    "conviction": 10,
+    "resolve": 9,
+    "speed": 6,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "royal_warden",
+    "name": "ROYAL WARDEN",
+    "description": "Physically potent and unswervingly loyal, the Wardens act as both bodyguards and lieutenants to the lords of the dynasty. They strike fear into the scheming underlings of the viperous Necron courts, for it is well known that Wardens cannot be bought or blackmailed. Many ambitious Necron nobles have found their existence extinguished by the pitiless weaponry of the Royal Wardens after perceived treachery or failure.\n\nWhile intelligent and free-willed, Royal Wardens have additional engrams ensuring their loyalty, and hence are trusted implicitly to speak for their lord in negotiations. In turn, Royal Wardens tend to be granted access to the finest weaponry and wargear, so that they can function as champions.\n\nOn the battlefield the Royal Wardens direct phalanxes, ensuring that objectives are achieved. Should their lord wish (or be forced) to partake in combat, the Royal Warden will stand at their side, shielding them from assault and laying waste to their enemies. Steeped in ancient Necron traditions, Royal Wardens often hold themselves to a coldly honourable code of conduct.",
+    "tierThreat": { "1": "A", "2": "A", "3": "A", "4": "E" },
+    "keywords": ["NECRON", "[DYNASTY]"],
+    "attributes": { "S": 9, "T": 8, "A": 4, "I": 4, "Wil": 7, "Int": 5, "Fel": 2 },
+    "resilience": { "value": 13, "note": "4 AR" },
+    "defence": 3,
+    "wounds": 16,
+    "shock": 11,
+    "skills": "Default 6, Awareness 8 (Passive 4), Ballistic Skill 10, Leadership 8, Weapon Skill 10",
+    "bonuses": [
+      { "name": "Adaptive Strategy", "description": "At the start of each Round, one Mob or individual with the same <DYNASTY> Keyword as this Threat within 10 m can Seize the Initiative for free." },
+      { "name": "Champion", "description": "This Threat may use Ruin Actions and has 1 personal Ruin." },
+      { "name": "Living Metal", "description": "At the start of each of this Threat's turns it regains 1 Wound and 1 Shock." },
+      { "name": "Relentless March", "description": "Every Mob or individual with the same [DYNASTY] Keyword as this Threat within 10 m gains +1 Speed." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Relic Gauss Blaster", "stats": "12 + 1 ED / AP -2 / 15 - 30 - 45 / Salvo 2, Rapid Fire (2), Reliable" },
+      { "type": "ANNIHILATION", "name": "Reanimation Protocols", "description": "When this Threat is destroyed, roll a d6. If the result is an Exalted Icon, it is resurrected with 1 Wound and 1 Shock." }
+    ],
+    "determination": "Spend 1 Ruin to roll 8d6.",
+    "conviction": 7,
+    "resolve": 6,
+    "speed": 6,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "technomancer",
+    "name": "TECHNOMANCER",
+    "description": "The Crypteks work as advisors to the nobility, providing the technological marvels that Necron society relies on. Technomancers are particularly trained in the arts of repairing and modifying Necrons and other Necron technology. Although equipped with a deadly Staff of Light, Technomancers are far more likely to focus their attention on either reanimating fallen Necrons or directing Canoptek units to fight on their behalf.\n\nCrypteks are generally heavily involved in dynastic politics, and Technomancers will often trade their services to other powerful Necrons in return for favours or resources. Given how vital the services of Technomancers are, they are often allowed a certain leeway by their Lords — even if this involves questionable experiments such as adapting the bodies of Destroyer Cult members.\n\nNecron royalty tend to value vehicles far more highly than their warriors, and a large part of a Technomancer's time will likely be spent producing or repairing vehicles for the dynasty. A Technomancer's lab will likely be filled with a variety of experiments, mostly focused on military research.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
+    "keywords": ["NECRON", "[DYNASTY]", "CRYPTEK"],
+    "attributes": { "S": 4, "T": 5, "A": 4, "I": 4, "Wil": 6, "Int": 8, "Fel": 3 },
+    "resilience": { "value": 9, "note": "3 AR" },
+    "defence": 3,
+    "wounds": 9,
+    "shock": 8,
+    "skills": "Default 5, Awareness 10 (Passive 5), Ballistic Skill 6, Tech 12, Weapon Skill 6",
+    "bonuses": [
+      { "name": "Architect of Ruin", "description": "The GM gains 1 point of Ruin at the start of each of this Threat's turns." },
+      { "name": "Canoptek Cloak", "description": "This Threat can Fly. Once per turn, if this Threat flies within 3m of another Threat with the same <DYNASTY> Keyword, that Threat regains 1d3 Wounds." },
+      { "name": "Champion", "description": "This Threat may use Ruin Actions and has 2 personal Ruin." },
+      { "name": "Living Metal", "description": "At the start of each of this Threat's turns it regains 1 Wound and 1 Shock." },
+      { "name": "Rites of Reanimation", "description": "Once per turn, the Technomancer can select a Threat with the same <DYNASTY> Keyword within 10m. Select one of the following effects to apply to the target: The Threat's Living Metal restores 1d3 Wounds and Shock. OR The Threat's Reanimation Protocols activate on an Icon and an Exalted Icon." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Staff of Light (Shooting)", "stats": "12 + 1ED / AP -1 / 9 - 18 - 27" },
+      { "type": "ACTION", "name": "Staff of Light (Melee)", "stats": "8 + 3 ED / AP -2 / 2m / Parry" },
+      { "type": "ANNIHILATION", "name": "Reanimation Protocols", "description": "When this Threat is destroyed, roll a d6. If the result is an Exalted Icon, it is resurrected with 1 Wound and 1 Shock." }
+    ],
+    "determination": "Spend 1 Ruin to roll 5d6.",
+    "conviction": 6,
+    "resolve": 5,
+    "speed": 5,
+    "speedNote": "Fly",
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "psychomancer",
+    "name": "PSYCHOMANCER",
+    "description": "These sinister Crypteks serve as the Necron equivalent of anthropologists or psychologists, studying the minds and cultures of organic species in order to understand their motivations. Of course, being Necron, they frame this all in terms of fear, and advise their Lords on exactly how to go about breaking their enemies' will to fight. The fascination that the Psychomancer's feel studying fear is partly to do with their longing for their own mortal forms, driving them to truly obsessive behaviour from time to time.\n\nWhen a Psychomancer takes to the field, it will be to test their theories by attempting to overload the senses or shatter the sanity of the organic species that they face. While they are figures of terror, their appreciation for drama sometimes prolongs a battle unnecessarily as they sadistically toy with their foes. Survivors are carried away to the most heinous laboratories in Necron space; places where minds are broken and re-assembled to suffer again in a cycle without end.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
+    "keywords": ["NECRON", "[DYNASTY]", "CRYPTEK"],
+    "attributes": { "S": 4, "T": 5, "A": 4, "I": 4, "Wil": 7, "Int": 7, "Fel": 5 },
+    "resilience": { "value": 9, "note": "3 AR" },
+    "defence": 3,
+    "wounds": 9,
+    "shock": 9,
+    "skills": "Default 5, Awareness 9 (Passive 5), Ballistic Skill 6, Intimidation 10, Tech 8, Weapon Skill 6",
+    "bonuses": [
+      { "name": "Architect of Ruin", "description": "The GM gains 1 point of Ruin at the start of each of this Threat's turns." },
+      { "name": "Living Metal", "description": "At the start of each of this Threat's turns it regains 1 Wound and 1 Shock." },
+      { "name": "Champion", "description": "This Threat may use Ruin Actions and has 2 personal Ruin." },
+      { "name": "Nightmare Shroud", "description": "This Threat can Fly. Once per turn, this Threat can select an individual within 10m. The target increases the DN of all Willpower, Fear, Conviction, and Resolve Tests by +1." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Abyssal Lance (shooting)", "stats": "10 +2 ED / AP -3 / 9 - 18 - 27 / Assault, Agonising" },
+      { "type": "ACTION", "name": "Abyssal Lance (melee)", "stats": "7 + 3 ED / AP -3 / 2m / Agonising, Parry" },
+      { "type": "ANNIHILATION", "name": "Reanimation Protocols", "description": "When this Threat is destroyed, roll a d6. If the result is an Exalted Icon, it is resurrected with 1 Wound and 1 Shock." }
+    ],
+    "determination": "Spend 1 Ruin to roll 5d6.",
+    "conviction": 7,
+    "resolve": 6,
+    "speed": 5,
+    "speedNote": "Fly",
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "chronomancer",
+    "name": "CHRONOMANCER",
+    "description": "Wreathed in swirling energies, and surrounded by a strange mantle decorated with glyph-etched cubes, Chronomancers are one of the rarest and most potent of Crypteks. Claiming mastery over time itself, they advise their Lords in the manner of seers and prognosticators. By studying the temporal flow, they can forecast propitious times for action, and give warnings of impending disasters. As with all Crypteks, such advice is also political in nature, and is often intended to make life harder for their dynastic opponents.\n\nOn the battlefield Chronomancers wield time as both weapon and armour, twisting chronomantic energy to deflect enemy attacks, power their entropic aeonstaves, and effectively speed up or slow down the actions of those around them. They seem almost bored by battle, as if the outcome of every interaction is already known.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
+    "keywords": ["NECRON", "[DYNASTY]", "CRYPTEK"],
+    "attributes": { "S": 4, "T": 5, "A": 4, "I": 4, "Wil": 6, "Int": 8, "Fel": 3 },
+    "resilience": { "value": 11, "note": "3 AR, Timesplinter Mantle: AR 2*" },
+    "defence": 3,
+    "wounds": 9,
+    "shock": 8,
+    "skills": "Default 5, Awareness 9 (Passive 5), Ballistic Skill 6, Intimidation 10, Tech 8, Weapon Skill 6",
+    "bonuses": [
+      { "name": "Architect of Ruin", "description": "The GM gains 1 point of Ruin at the start of each of this Threat's turns." },
+      { "name": "Living Metal", "description": "At the start of each of this Threat's turns it regains 1 Wound and 1 Shock." },
+      { "name": "Champion", "description": "This Threat may use Ruin Actions and has 2 personal Ruin." },
+      { "name": "Chronometron", "description": "Once per turn, this Threat can select a target within 10m that shares the same [DYNASTY] Keyword. The target triples its movement when it chooses to Charge and gains +2 AR* until the end of its next turn." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Aeonstave (shooting)", "stats": "12 + 2 ED / AP -2 / 9 - 18 - 27 / Blast 10, Brutal" },
+      { "type": "ACTION", "name": "Aeonstave (melee)", "stats": "8 +3 ED / AP -2 / 2m / Brutal, Parry" },
+      { "type": "REACTION", "name": "Chronotendrils", "description": "Whenever the Technomancer is attacked in melee, it may make a counter attack using its Chronotendrils with the following profile: 7 +2 ED / Rending 4. The Chronomancer can use its Chronotendrils 3 times per Round." },
+      { "type": "ANNIHILATION", "name": "Reanimation Protocols", "description": "When this Threat is destroyed, roll a d6. If the result is an Exalted Icon, it is resurrected with 1 Wound and 1 Shock." }
+    ],
+    "determination": "Spend 1 Ruin to roll 5d6.",
+    "conviction": 6,
+    "resolve": 5,
+    "speed": 8,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "plasmancer",
+    "name": "PLASMANCER",
+    "description": "These cunning Crypteks have learned how to directly wield vast and potent energies — as such they are by far the most martial of all the Crypteks, raining down destruction on enemy forces like a living weapon system. They surround themselves by a glowing sphere of plasma, scorching the life from everything around them as they move. Alone amongst Crypteks, Plasmancers have a reputation for bluntness, but this is just as often a cover for the scheming minds beneath. It suits their purposes to be seen as wantonly destructive and single-minded, since this means that their enemies underestimate them. When not engaged in combat, they are generally conducting experiments into extremely high-energy systems, learning how to manipulate stellar energies, improve the efficiency of reactor systems, or tinkering with all kinds of doomsday weaponry.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
+    "keywords": ["NECRON", "[DYNASTY]", "CRYPTEK"],
+    "attributes": { "S": 4, "T": 5, "A": 5, "I": 5, "Wil": 5, "Int": 8, "Fel": 2 },
+    "resilience": { "value": 11, "note": "3 AR" },
+    "defence": 4,
+    "wounds": 11,
+    "shock": 8,
+    "skills": "Default 5, Awareness 10 (Passive 5), Ballistic Skill 7, Tech 10, Weapon Skill 8",
+    "bonuses": [
+      { "name": "Architect of Ruin", "description": "The GM gains 1 point of Ruin at the start of each of this Threat's turns." },
+      { "name": "Living Metal", "description": "At the start of each of this Threat's turns it regains 1 Wound and 1 Shock." },
+      { "name": "Champion", "description": "This Threat may use Ruin Actions and has 2 personal Ruin." },
+      { "name": "Harbinger of Destruction", "description": "After this Threat has moved, all enemies within 24m must make a DN 3 Athletics Test or suffer 1 Mortal Wound." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Plasmic Lance (shooting)", "stats": "12 + 3 ED / AP -3 / 9 - 18 - 27" },
+      { "type": "ACTION", "name": "Plasmic Lance (melee)", "stats": "8 +5 ED / AP -3 / Range 2m" },
+      { "type": "REACTION", "name": "Living Lightning", "description": "Once per round when the Plasmancer is attacked in melee, all enemies of the Plasmancer within 6m must make a DN 4 Athletics Test or suffer 1 Mortal Wound." },
+      { "type": "ANNIHILATION", "name": "Reanimation Protocols", "description": "When this Threat is destroyed, roll a d6. If the result is an Exalted Icon, it is resurrected with 1 Wound and 1 Shock." }
+    ],
+    "determination": "Spend 1 Ruin to roll 5d6.",
+    "conviction": 5,
+    "resolve": 4,
+    "speed": 5,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "necron_warrior",
+    "name": "NECRON WARRIOR",
+    "description": "Little more than mindless automatons, the Necron Warriors are the undying cannon-fodder for their dynasties' never-ending warfare. Heedless of injury, they slowly advance on enemy positions until victorious or destroyed. Equipped with horrifying gauss weaponry that strips layers of matter from their foes and capable of recovering quickly from the most grievous injuries, even death is not the end for the Necron Warrior. Should a unit sustain terminal damage, it becomes wreathed in green energy; either initiating an instantaneous repair protocol or being teleported back to a crypt casket where it can be reassembled to rise and fight again.\n\nOnce these were the rank-and-file of the ancient Necrontyr empire, but during the biotransference process when they entered the C'tan soul-forges, their souls were consumed, leaving only the shell of a mortal mind in their robotic body. Each time the Necron Warrior falls, more of their mind and memories are burned away, leaving them incapable of imagination or desire. Without leadership to oversee their phalanxes on the battlefield, Necron Warriors are easy to outwit.",
+    "tierThreat": { "1": "E", "2": "E", "3": "T", "4": "T" },
+    "keywords": ["NECRON", "[DYNASTY]"],
+    "attributes": { "S": 4, "T": 4, "A": 2, "I": 2, "Wil": 3, "Int": 2, "Fel": 1 },
+    "resilience": { "value": 8, "note": "3 AR" },
+    "defence": 1,
+    "wounds": 6,
+    "shock": 4,
+    "skills": "Default 4, Awareness 5 (Passive 3) Ballistic Skill 6, Weapon Skill 6",
+    "bonuses": [
+      { "name": "Living Metal", "description": "At the start of each of this Threat's turns it regains 1 Wound and 1 Shock." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Gauss Flayer", "stats": "10 + 1 ED / AP-1 / Range 12 - 24 - 36 / Salvo 2 / Rapid Fire (2)" },
+      { "type": "ACTION", "name": "Gauss Bayonet", "stats": "6 +2 ED / AP -1 / Range 1" },
+      { "type": "ANNIHILATION", "name": "Reanimation Protocols", "description": "When this Threat is destroyed, roll a d6. If the result is an Exalted Icon, it is resurrected with 1 Wound and 1 Shock." }
+    ],
+    "determination": "Spend 1 Ruin to roll 4d6.",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 5,
+    "size": "Avg",
+    "mobAbilities": [
+      { "name": "Their Number Is Legion", "description": "If 10 or more Necron Warriors are alive in a Mob, Reanimation Protocols activate on a result of 5 and 6." }
+    ],
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "immortal",
+    "name": "IMMORTAL",
+    "description": "Immortals are the core heavy infantry of the Necron armies, bearing larger and deadlier weapons than their Warrior counterparts. They are capable of standing toe-to-toe against almost any foe, their gauss blasters ripping through the armour of enemy vehicles with ease. Having once been the elite of the Necrontyr armies, the Immortals' pride and determination allowed more of their minds to survive the biotransference process — they are capable of adapting their tactics to evolving situations and prioritising enemies intelligently. Like the Necron Warriors from whose ranks they were elevated, they have extensive self-repair capabilities, and will rise to fight their foes over and over again.\n\nImmortals are generally used as shock troops, breaking through enemy formations in order to allow other Necron units to advance. Very few military forces in the galaxy have the courage to stand against such a withering storm of fire or the deathless monsters that wield it.",
+    "tierThreat": { "1": "A", "2": "E", "3": "T", "4": "T" },
+    "keywords": ["NECRON", "[DYNASTY]"],
+    "attributes": { "S": 5, "T": 6, "A": 3, "I": 3, "Wil": 3, "Int": 2, "Fel": 1 },
+    "resilience": { "value": 11, "note": "4 AR" },
+    "defence": 2,
+    "wounds": 10,
+    "shock": 6,
+    "skills": "Default 4, Awareness 6 (Passive 3) Ballistic Skill 8, Weapon Skill 8",
+    "bonuses": [
+      { "name": "Living Metal", "description": "At the start of each of this Threat's turns it regains 1 Wound and 1 Shock." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Gauss Blaster", "stats": "13 + 1 ED / AP -2 / Range 15 - 30 - 45 / Salvo 2 / Rapid Fire (2)" },
+      { "type": "ACTION", "name": "Gauss Bayonet", "stats": "7 +2 ED / AP-1 / Range 1" },
+      { "type": "ANNIHILATION", "name": "Reanimation Protocols", "description": "When this Threat is destroyed, roll a d6. If the result is an Exalted Icon, it is resurrected with 1 Wound and 1 Shock." }
+    ],
+    "determination": "Spend 1 Ruin to roll 6d6.",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 5,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "canoptek_scarab",
+    "name": "CANOPTEK SCARAB",
+    "description": "The humble scarab is the basis of the majority of Necron construction processes; these tiny insectile beings come in an array of sizes and forms, from the nano-scale up. Canoptek Scarabs are deployed to break material down into raw energy to feed the Necron industrial processes — often using enemy warriors, vehicles, and structures as fuel. On the battlefield, vast, chittering swarms are usually deployed to cover the advance of more valuable units. Despite their small size, the mandibles of a Canoptek Scarab are capable of chewing through almost any material, and they are particularly prized for their ability to rip through heavy armour. Even the heaviest of enemy vehicles seldom has any way to defend itself against a Swarm once it is latched onto their hull. Scarabs are hard to target and can pour in through even a small gun port or glide over fortifications to envelop their prey. Scarabs are generally under the control of more complex Canopteks, and have only instinctive intelligence without being directed.",
+    "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["NECRON", "[DYNASTY]"],
+    "attributes": { "S": 1, "T": 2, "A": 2, "I": 3, "Wil": 3, "Int": 1, "Fel": 1 },
+    "resilience": { "value": 4, "note": "1 AR" },
+    "defence": 4,
+    "wounds": 4,
+    "shock": 2,
+    "skills": "Default 2, Awareness 4 (Passive 2), Stealth 4, Weapon Skill 5",
+    "bonuses": [
+      { "name": "Mechanical Assistance", "description": "A Scarab can use the Help any Necron within 10m as a Free Action." },
+      { "name": "Living Metal", "description": "At the start of each of this Threat's turns it regains 1 Wound and 1 Shock." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Feeder Mandibles", "stats": "2 +2 ED / Range 1 / Rending (6)" },
+      { "type": "RUIN", "name": "Self-Destruction", "description": "Spend 1 Ruin to activate a Canoptek Scarab or a Mob of Canoptek Scarabs self-destruction protocols, causing them to explode with the following profile: 4 +1 ED / Blast (2). For every additional Scarab that self destructs, increase the ED and Blast Rating by +1." },
+      { "type": "ANNIHILATION", "name": "Reanimation Protocols", "description": "When this Threat is destroyed, roll a d6. If the result is an Exalted Icon, it is resurrected with 1 Wound and 1 Shock." }
+    ],
+    "determination": "Spend 1 Ruin to roll 2d6.",
+    "conviction": 1,
+    "resolve": 1,
+    "speed": 10,
+    "speedNote": "Flying",
+    "size": "Tiny",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "canoptek_reanimator",
+    "name": "CANOPTEK REANIMATOR",
+    "description": "These slave-constructs are tasked with conducting repairs on Necrons and their tombs. With their gangly limbs, bulging orb-like visual arrays and armoured carapace, they resemble some kind of nightmarish creature from the depths of the ocean. Capable of projecting a beam which carries clouds of nanoscarabs directly onto damaged Necron materials, a Canoptek Reanimator can repair almost any Necron technology. For protection it wields a pair of Atomiser Beams, which can cause matter to soften, slide apart, and then fuse back together when the beam is switched off. Needless to say, this is a horrifying way to die, with gruesome injuries leaving the victim a tangle of melted flesh and bone, or fused with inanimate objects. The Reanimator's claws are also large and sharp, and can spear downwards with great force to pin struggling warriors to the ground. As with all Canopteks, Reanimators are merely sophisticated machines, and have no free will or desires of their own.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
+    "keywords": ["NECRON", "[DYNASTY]", "CANOPTEK"],
+    "attributes": { "S": 6, "T": 7, "A": 2, "I": 2, "Wil": 2, "Int": 2, "Fel": 1 },
+    "resilience": { "value": 12, "note": "4 AR" },
+    "defence": 1,
+    "wounds": 11,
+    "shock": 4,
+    "skills": "Default 3, Awareness 6 (Passive 3), Ballistic Skill 6, Tech 6, Weapon Skill 6",
+    "bonuses": [
+      { "name": "Living Metal", "description": "At the start of each of this Threat's turns it regains 1 Wound and 1 Shock." },
+      { "name": "Nanoscarab Reanimation Protocols", "description": "Whenever a Threat within 6m that shares a [DYNASTY] Keyword with the Canoptek Reanimator activates its Reanimation Protocols, it may roll 2d6." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Atomiser Beam", "stats": "14 + 1 ED / AP -2 / 6 - 12 - 18 / Spread" },
+      { "type": "ACTION", "name": "Reanimator Claws", "stats": "9 + 2 ED / AP -2 / Range 2m / Brutal" },
+      { "type": "ANNIHILATION", "name": "Self Destruct", "description": "When this Threat dies, roll a d6. If you roll a Complication, the threat explodes using the following profile: 12 +5 ED / Blast (10), Rad (1)." }
+    ],
+    "determination": "Spend 1 Ruin to roll 7d6.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 8,
+    "size": "Huge",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "deathmark",
+    "name": "DEATHMARK",
+    "description": "Deathmarks are the snipers and ambush forces of the Necron armies, with advanced sensory systems that are capable of defeating most stealth technology and compensating for any environmental conditions. Able to nest inside dimensional pockets where they are still able to view real-space, Deathmarks wait patiently until the perfect opportunity arises and then emerge to take down their targets with a single, precise shot. Typically deployed in small squads, this can make for a devastating surprise assault as they strike down multiple officers, champions, and specialists simultaneously.\n\nDeathmarks wield a precision weapon known as a Synaptic Disintegrator that targets both body and mind for destruction. This means that even if an attack fails to achieve a kill outright, it may still snuff out the target's personality, leaving them a mindless husk.\n\nDeathmarks are so patient and stealthy that Crypteks have postulated that there may well be many of them scattered across the galaxy who were sent on missions only for their dynasty to fall. Without orders, they simply continue to fulfil their last instructions, and may do so for eternity.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
+    "keywords": ["NECRON", "<DYNASTY>"],
+    "attributes": { "S": 4, "T": 5, "A": 5, "I": 3, "Wil": 3, "Int": 2, "Fel": 1 },
+    "resilience": { "value": 9, "note": "3 AR" },
+    "defence": 2,
+    "wounds": 7,
+    "shock": 4,
+    "skills": "Default 4, Awareness 8 (Passive 4), Ballistic Skill 10, Stealth 8",
+    "bonuses": [
+      { "name": "Living Metal", "description": "At the start of each of this Threat's turns it regains 1 Wound and 1 Shock." },
+      { "name": "Synaptic Targeting", "description": "Whenever a Deathmark would suffer a DN penalty to a Ballistic Skill Test, roll a d6. If the result is an Exalted Icon, the Deathmark ignores the DN penalty." }
+    ],
+    "abilities": [
+      { "type": "BATTLECRY", "name": "Dimensional Translocation", "description": "The Deathmark emerges from a hidden dimensional oubliette no closer than 10m to any Agent. All opponents of the Deathmark must make a DN 3 Initiative Test or are Ambushed." },
+      { "type": "ACTION", "name": "Synaptic Disintegrator", "stats": "12 +2 ED / AP -2 / 18 - 36 - 54 / Sniper (2)" },
+      { "type": "WRATH", "name": "Synaptic Headshot", "description": "On a Critical Hit, the Synaptic Disintegrator inflicts an additional Mortal Wound." },
+      { "type": "ANNIHILATION", "name": "Reanimation Protocols", "description": "When this Threat is destroyed, roll a d6. If the result is an Exalted Icon, it is resurrected with 1 Wound and 1 Shock." }
+    ],
+    "determination": "Spend 1 Ruin to roll 7d6.",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 5,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "hexmark_destroyer",
+    "name": "HEXMARK DESTROYER",
+    "description": "When a Deathmark succumbs to the corrupted engrams of the Destroyer Cult, they lose the icy efficiency that marked their previous life as a sniper, and instead embrace a fervent desire to inflict violent death on as many different beings as possible. They seek out unscrupulous crypteks to modify their forms, becoming hunched, bristling with extra limbs and additional visual arrays. Each one sports as many fearsome Enmitic Disintegrator Pistols as they can physically carry, and their extensive modifications mean that they are capable of targeting and firing these independently.\n\nWhile 'sane' Necrons regard these beings as loathsome perversions of both mind and body, their undeniable effectiveness means that less principled leaders will sometimes engage their services. Lurking in their dimensional oubliettes, the Hexmark waits until the enemy comes into view (or their limited patience runs out), then appears in their midst, striking in all directions with blasts of energy which cause their victims to literally explode as their molecules repel each other. Once unleashed, there really is no controlling a Hexmark, and they will simply slaughter until they run out of targets to destroy.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
+    "keywords": ["NECRON", "[DYNASTY]", "DESTROYER CULT"],
+    "attributes": { "S": 5, "T": 6, "A": 6, "I": 5, "Wil": 3, "Int": 2, "Fel": 1 },
+    "resilience": { "value": 11, "note": "4 AR" },
+    "defence": 3,
+    "wounds": 10,
+    "shock": 5,
+    "skills": "Default 4, Awareness 10 (Passive 5) Ballistic Skill 12, Weapon Skill 6",
+    "bonuses": [
+      { "name": "Living Metal", "description": "At the start of each of this Threat's turns it regains 1 Wound and 1 Shock." },
+      { "name": "Inescapable Death", "description": "This Threat ignores all environmental DN penalties (cover, lighting conditions, etc.) to Ballistic Skill Tests." },
+      { "name": "Multi-threat Eliminator", "description": "When using its Enmitic Disintegrator Pistols, this Threat can Multi-Attack 6 times without suffering a DN penalty." }
+    ],
+    "abilities": [
+      { "type": "BATTLECRY", "name": "Dimensional Translocation", "description": "The Hexmark Destroyer emerges from a hidden dimensional oubliette, automatically Ambushing all Agents. They cannot emerge closer than 10m." },
+      { "type": "ACTION", "name": "Enmitic Disintegrator Pistol", "stats": "14 +1 ED / AP -1 / Range 9 - 18 - 27 / Pistol" },
+      { "type": "ACTION", "name": "Pistol Whip", "stats": "6 +2 ED / Range 1" },
+      { "type": "RUIN", "name": "Hardwired for Destruction", "description": "When you spend Ruin to re-roll all failing dice for a Hexmark Destroyer's Ballistic Skill Test, results of 3 and 4 count as Icons and results of 5 and 6 count as Exalted Icons." }
+    ],
+    "determination": "-",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 8,
+    "size": "Large",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "lychguard",
+    "name": "LYCHGUARD",
+    "description": "Unswervingly loyal, Lychguard act as the retinue and personal guard to Necron nobility. Wielding massive scythes crackling with eldritch energies and capable of slicing through any material, their presence is as much symbolic as military, and typically indicates that a commander is taking a personal interest in the battle. They are also responsible for defending their Lord from the various internal enemies of a Necron court, and will unthinkingly place themselves in harm's way to protect any individual they have been instructed to defend.\n\nLychguard operate in units, very seldom being left to their own devices. The extreme engrammatic programming they undergo means that they are left with little imagination, but their battle instincts are well honed and each has millennia of combat experience to call on. Should their lord ask it of them, they will not hesitate to sacrifice their lives to cover their escape from a threatening situation or soften up a particularly dangerous foe.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
+    "keywords": ["NECRON", "<DYNASTY>"],
+    "attributes": { "S": 7, "T": 7, "A": 4, "I": 4, "Wil": 4, "Int": 2, "Fel": 1 },
+    "resilience": { "value": 12, "note": "4 AR" },
+    "defence": 3,
+    "wounds": 13,
+    "shock": 7,
+    "skills": "Default 4, Awareness 8 (Passive 4), Intimidation 8, Weapon Skill 8",
+    "bonuses": [
+      { "name": "Living Metal", "description": "At the start of each of this Threat's turns it regains 1 Wound and 1 Shock." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Warscythe", "stats": "11 +5 ED / AP -4 / 2m / Brutal" },
+      { "type": "ANNIHILATION", "name": "Self Destruct", "description": "When this Threat dies, roll a d6. If you roll a Complication, the threat explodes using the following profile: 12 +5 ED / Blast (10), Rad (1)." },
+      { "type": "REACTION", "name": "Guardian Protocols", "description": "Lychguard may use their Reaction to intercept any ranged attack targeting a Threat that they share a <DYNASTY> Keyword within 3m, forcing them to target the Lychguard instead." }
+    ],
+    "determination": "Spend 1 Ruin to roll 7d6.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 8,
+    "size": "Huge",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "flayed_one",
+    "name": "FLAYED ONE",
+    "description": "Even the most power-hungry of Necron nobles would think twice about allowing these abominations to fight alongside their armies, but the Flayed Ones are drawn to battle whether they are wanted or not. Suffering from the death-curse of the ancient C'tan, Llandu'gor, the Flayed Ones are monstrous travesties of the Necron form, wielding assemblages of blades, and draped in the blood drenched skins of their foes. Infected with the engrammatic 'flayer' virus', they display a terrible thirst for blood, which as androids they cannot slake, although this doesn't stop them trying in gruesome fashion. Their internal systems also swarm with corrupted nanoscarabs known as bloodswarms, which mean that even should a foe survive their strike, it will continue to signal its location. The Flayed Ones have been banished to a region known as the Bone Kingdom of Dazak, but they appear to have mastered some form of abhorrent teleportation technology, appearing alone or admist Necron forces across the galaxy.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
+    "keywords": ["NECRON", "FLAYER"],
+    "attributes": { "S": 5, "T": 5, "A": 4, "I": 5, "Wil": 3, "Int": 1, "Fel": 1 },
+    "resilience": { "value": 9, "note": "3 AR" },
+    "defence": 4,
+    "wounds": 9,
+    "shock": 5,
+    "skills": "Default 3, Awareness 4 (Passive 2), Weapon Skill 8",
+    "bonuses": [
+      { "name": "Flesh Hunger", "description": "This Threat's attacks against organic targets have the Brutal weapon trait." },
+      { "name": "Second Strike", "description": "This Threat reduces the Multi-Attack penalty by 2 DN, as though it had the Dual Wield Talent (Wrath & Glory, page 133)." }
+    ],
+    "abilities": [
+      { "type": "BATTLECRY", "name": "Terrifying Dimensional Translocation", "description": "Flayed Ones can cut their way through reality to teleport into combat no closer than 10m to any Agent. All opponents of the Flayed One must make a DN 3 Initiative Test or are Ambushed. Additionally, all opponents of the Flayed One must make a DN 3 Fear Test." },
+      { "type": "ACTION", "name": "Flayer Claws", "stats": "8 +5 ED / AP -1 / 1m / Rending (2)" },
+      { "type": "COMPLICATION", "name": "Feeding Frenzy", "description": "When a Flayed One rolls a Complication in a situation where blood has been spilt, they spend their next turn wallowing in gore. Anyone seeing this display must make a DN 3 Fear Test." },
+      { "type": "ANNIHILATION", "name": "Reanimation Protocols", "description": "When this Threat is destroyed, roll a d6. If the result is an Exalted Icon, it is resurrected with 1 Wound and 1 Shock." }
+    ],
+    "determination": "Spend 1 Ruin to roll 5d6.",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 5,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "cryptothrall",
+    "name": "CRYPTOTHRALL",
+    "description": "These hunched humanoid creatures fulfil much the same role as servitors do for Tech-Priest within the Imperium. Mindless mechanical drones, they provide their Cryptek masters with physical labour and close protection, but have very little cognitive power of their own. In fact, without a Cryptek nearby to slave them to its neural network, a Cryptothralls' abilities are extremely limited.\n\nWhen a Cryptek must travel somewhere dangerous, they will be accompanied by a pair of Cryptothralls, using them as ablative protection or sacrificing their existence to achieve a goal without a second thought. Despite their disposable nature Cryptothralls are well armed, and are quite fearsome in short-range or close-combat. Their forearm blades are capable of scything through armour easily, while their single large eye can project potent bolts of energy.\n\nCryptek Anephteh has been known to engage in a game similar to Regicide, but using living Cryptothralls as the 'pieces' and watching them destroy each other.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
+    "keywords": ["NECRON", "[DYNASTY]", "CANOPTEK"],
+    "attributes": { "S": 6, "T": 6, "A": 3, "I": 4, "Wil": 1, "Int": 1, "Fel": 1 },
+    "resilience": { "value": 10, "note": "3 AR" },
+    "defence": 3,
+    "wounds": 8,
+    "shock": 2,
+    "skills": "Default 3, Athletics 8, Awareness 6 (Passive 2), Ballistic Skill 4, Weapon Skill 4",
+    "bonuses": [
+      { "name": "Living Metal", "description": "At the start of each of this Threat's turns it regains 1 Wound and 1 Shock." },
+      { "name": "Networked", "description": "When within 10m of a Threat with the CRYPTEK Keyword, a Cryptothrall can move and take actions normally. When a Cryptothrall is not networked, a Cryptothrall will not move and only takes Actions to defend itself to deter attackers." },
+      { "name": "Systematic Vigour", "description": "Networked Cryptothralls gain +3 bonus dice to attack Tests and reduce the Multi-Attack penalty by 2 DN when making melee attacks, as though they had the Dual Wield Talent (Wrath & Glory, page 133)." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Scouring Eye", "stats": "12 +3 ED / AP -2 / 6 - 12 - 18 / Salvo 1" },
+      { "type": "ACTION", "name": "Scythed Limbs", "stats": "9 +4 ED / AP -1 / 1m" },
+      { "type": "REACTION", "name": "Protection Protocol", "description": "When Networked a Cryptothrall can use their reaction to force any ranged attack made against a character with the CRYPTEK Keyword within 3m to target them instead." },
+      { "type": "ANNIHILATION", "name": "Reanimation Protocols", "description": "When this Threat is destroyed, roll a d6. If the result is an Exalted Icon, it is resurrected with 1 Wound and 1 Shock." }
+    ],
+    "determination": "Spend 1 Ruin to roll 6d6.",
+    "conviction": 1,
+    "resolve": 1,
+    "speed": 5,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "skorpekh_destroyer",
+    "name": "SKORPEKH DESTROYER",
+    "description": "Heavily modified by unscrupulous Crypteks, Skorpekh Destroyers have replaced their lower half with a tripod of insectile metal legs and their arms with enormous Hyperphase Threshers. This allows them to whirl through battle, cutting apart their foes in a maddening dance. Needless to say, most other Necrons regard them as insane, but they are well regarded within the Destroyer Cults. Most dynasties grudgingly allow Skorpekh Destroyers to act as shock troops, unleashing them to carve through dense enemy formations or breach strongholds. While their actions are undeniably effective, the growing presence of the Destroyer Cult within Necron society is deeply troubling to most Necrons capable of independent thought. The high casualties sustained by units such as the Skorpekh Destroyer are a relief to most of the Phaerons, but it doesn't stop many more members of the Destroyer Cults clamouring to replace them when they fall.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
+    "keywords": ["NECRON", "[DYNASTY]", "DESTROYER"],
+    "attributes": { "S": 9, "T": 9, "A": 5, "I": 5, "Wil": 4, "Int": 3, "Fel": 1 },
+    "resilience": { "value": 14, "note": "4 AR" },
+    "defence": 4,
+    "wounds": 17,
+    "shock": 8,
+    "skills": "Default 5, Athletics 10, Awareness 8 (Passive 4), Ballistic Skill 8, Weapon Skill 8",
+    "bonuses": [
+      { "name": "Living Metal", "description": "At the start of each of this Threat's turns it regains 1 Wound and 1 Shock." },
+      { "name": "Whirling Onslaught", "description": "If this Threat makes a melee attack on its turn it may use the Parry Trait of its melee weapon to gain +1 Defence against ranged attacks." },
+      { "name": "Second Strike", "description": "This Threat reduces the Multi-Attack penalty by 2 DN, as though it had the Dual Wield Talent (Wrath & Glory, page 133)." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Hyperphase Threshers", "stats": "12 +4 ED / AP -3 / 1m / Parry" },
+      { "type": "RUIN", "name": "Hardwired for Destruction", "description": "When you spend Ruin to re-roll all failing dice for a Skorpekh Destroyer's attack test, results of 3 and 4 count as Icons and results of 5 and 6 count as Exalted Icons." },
+      { "type": "ANNIHILATION", "name": "Reanimation Protocols", "description": "When this Threat is destroyed, roll a d6. If the result is an Exalted Icon, it is resurrected with 1 Wound and 1 Shock." }
+    ],
+    "determination": "Spend 1 Ruin to roll 9d6.",
+    "conviction": 4,
+    "resolve": 3,
+    "speed": 8,
+    "size": "Large",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "canoptek_plasmacyte",
+    "name": "CANOPTEK PLASMACYTE",
+    "description": "These constructs were created to tend to the Necrons during the Great Sleep, repairing corrupted engrams in the minds of their slumbering masters. Most of them still follow this purpose, but with the rise of the Destroyer Cults, they have begun to appear on the battlefield with a new purpose. Maddened by their need to kill, Cult members often deliberately have the Canoptek Plasmacyte inject them with infectious, sentient energy which burns their minds but drives them to ever-greater heights of slaughter.\n\nAn extremely dangerous practice, many Destroyers have ended up mindless shells, or driven themselves to destruction while under the influence of this energy.\n\nStrange machines, Plasmacytes float on a trio of insectile legs; their bulbous body is surrounded with tentacular appendages, one of which terminates in a sharp proboscis. Not constructed with combat in mind, the proboscis is their only real weapon. Plasmacytes scurry after the Destroyer hordes in combat, only darting forward to offer injections when ordered.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
+    "keywords": ["NECRON", "[DYNASTY]", "CANOPTEK"],
+    "attributes": { "S": 4, "T": 5, "A": 3, "I": 3, "Wil": 2, "Int": 2, "Fel": 1 },
+    "resilience": { "value": 9, "note": "3 AR" },
+    "defence": 2,
+    "wounds": 7,
+    "shock": 3,
+    "skills": "Default 3, Awareness 6 (Passive 3), Ballistic Skill 5, Tech 8, Weapon Skill 5",
+    "bonuses": [
+      { "name": "Recall Protocol", "description": "If the Canoptek Plasmacyte starts its Turn more than 6m from a Threat with a matching [DYNASTY] Keyword and the DESTROYER Keyword it disappears as it is recalled into a hyperspace dimension." }
+    ],
+    "abilities": [
+      { "type": "BATTLECRY", "name": "Dimensional Translocation", "description": "The Canoptek Plasmacyte emerges from a hyperspace dimension, appearing within 6m of a Threat with a matching [DYNASTY] Keyword and the DESTROYER Keyword and immediately takes its turn." },
+      { "type": "ACTION", "name": "Monomolecular Proboscis", "stats": "6 +3 ED / AP -1 / Agonising" },
+      { "type": "ACTION", "name": "Infused Madness", "description": "A Threat with the DESTROYER Keyword gains +4 bonus dice to melee attack Tests and +1 bonus Strength until the start of the Canoptek Plasmacyte. Additionally, roll 1d6 — if the result is a Complication, the target suffers 1d3 Mortal Wounds." },
+      { "type": "REACTION", "name": "Evasion Protocols", "description": "If a Canoptek Plasmacyte is within 3m of a Threat with the DESTROYER Keyword it can use its Reaction to move behind it when targeted by a ranged attack Test, forcing the attack to target the Threat with the DESTROYER Keyword." }
+    ],
+    "determination": "Spend 1 Ruin to roll 5d6.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 8,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "ophydian_destroyer",
+    "name": "OPHYDIAN DESTROYER",
+    "description": "Like a vile fusion between Necron and Canoptek Wraith, Ophydians are a repellent abomination produced for the Destroyer Cults. Bristling with bladed limbs, Ophydians are capable of cutting and phasing through the ground to emerge in the heart of enemy formations and strongholds. Once they've entered combat, all subtlety is gone and they simply swarm towards the nearest target to rend it with their blades.\n\nOphydians hunt in packs, and while they seem completely frenzied, there is an eerie kind of coordination to the endless threshing and slicing of their limbs. As with all Destroyer Cults, other Necrons find their presence disturbing, but the Ophydians in particular seem to be almost insectile in their mannerisms. Other Necrons find Ophydian Destroyers to be repugnant, their forms echoing aspects of servile Canoptek Wraiths and reviled Flayed Ones. None dispute that the result is a form optimised for murder.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
+    "keywords": ["NECRON", "[DYNASTY]", "DESTROYER"],
+    "attributes": { "S": 5, "T": 5, "A": 3, "I": 4, "Wil": 2, "Int": 1, "Fel": 1 },
+    "resilience": { "value": 8, "note": "3 AR" },
+    "defence": 3,
+    "wounds": 7,
+    "shock": 3,
+    "skills": "Default 3, Athletics 6, Awareness 4 (Passive 2), Weapon Skill 7",
+    "bonuses": [
+      { "name": "Living Metal", "description": "At the start of each of this Threat's turns it regains 1 Wound and 1 Shock." },
+      { "name": "Second Strike", "description": "This Threat reduces the Multi-Attack penalty by 2 DN when it attacks with both its Hyperphase Threshers and Ophydian Claws, as though it had the Dual Wield Talent (Wrath & Glory, page 133)." },
+      { "name": "Tunneller", "description": "This Threat can tunnel underground whilst moving. While this Threat is underground it cannot be targeted by attack Tests." }
+    ],
+    "abilities": [
+      { "type": "BATTLECRY", "name": "Tunnelling Horrors", "description": "Ophydian Destroyers emerge from tunnelling. All opponents of the Ophydian Destroyer must make a DN 2 Initiative Test or are Ambushed." },
+      { "type": "ACTION", "name": "Hyperphase Threshers", "stats": "8 + 3 ED / AP -4 / 1m" },
+      { "type": "ACTION", "name": "Ophydian Claws", "stats": "7 +3 ED / AP -1 / 1m" },
+      { "type": "RUIN", "name": "Hardwired for Destruction", "description": "When you spend Ruin to re-roll all failing dice for a Ophydian Destroyer's Weapon Skill Test, results of 3 and 4 count as Icons and results of 5 and 6 count as Exalted Icons." },
+      { "type": "REACTION", "name": "Whipcoil Bodies", "description": "When targeted by a melee attack, an Ophydian Destroyer can use its Reaction to increase its Defence by +1." },
+      { "type": "ANNIHILATION", "name": "Reanimation Protocols", "description": "When this Threat is destroyed, roll a d6. If the result is an Exalted Icon, it is resurrected with 1 Wound and 1 Shock." }
+    ],
+    "determination": "Spend 1 Ruin to roll 5d6.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 10,
+    "speedNote": "Tunnelling",
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "triarch_praetorian",
+    "name": "TRIARCH PRAETORIAN",
+    "description": "Once the Triarch Praetorians were the guardians of Necrontyr culture and the judges of honour and worthiness. Even Phaerons had to accept the judgement of the Triarchs on matters of honour and custom. While most of the Necrons entered the Great Sleep, the Triarch Praetorians stayed awake. Partly they did this as penance for their perceived failures, and partly to ensure the safety of the Necron species during their slumber.\n\nOver millions of years they visited many different emerging species, trying to mould them into suitable vassals for when the Necrons emerged once more. Now that the Necrons are awakening, the Praetorians are attempting to help as many tomb-worlds as possible, once more re-inserting themselves into dynastic politics.\n\nPraetorians tend to hover over the battlefield, awaiting a worthy foe to face or a lapse in honour to punish. When they do strike, there is very little that can stand against them.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
+    "keywords": ["NECRON", "TRIARCH"],
+    "attributes": { "S": 6, "T": 7, "A": 4, "I": 5, "Wil": 6, "Int": 4, "Fel": 3 },
+    "resilience": { "value": 12, "note": "4 AR" },
+    "defence": 4,
+    "wounds": 13,
+    "shock": 9,
+    "skills": "Default 6, Awareness 8 (Passive 4), Ballistic Skill 8, Leadership 8, Weapon Skill 8",
+    "bonuses": [
+      { "name": "Living Metal", "description": "At the start of each of this Threat's turns it regains 1 Wound and 1 Shock." },
+      { "name": "Honour Above All", "description": "If an Agent can convince a Triarch Praetorian to engage them in honourable single combat and defeats them, they will ensure they are not attacked by other Necrons to the best of their abilities for the length of a Necrontyr day, provided the Agent does not attack any Necrons." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Rod of Covenant (shooting)", "stats": "12 +2 ED / AP -3 / 6 - 12 - 18 / Salvo 1" },
+      { "type": "ACTION", "name": "Rod of Covenant (melee)", "stats": "9 +4 ED / AP -3 / 2m" },
+      { "type": "ANNIHILATION", "name": "Reanimation Protocols", "description": "When this Threat is destroyed, roll a d6. If the result is an Exalted Icon, it is resurrected with 1 Wound and 1 Shock." }
+    ],
+    "determination": "Spend 1 Ruin to roll 7d6.",
+    "conviction": 6,
+    "resolve": 5,
+    "speed": 10,
+    "speedNote": "Fly",
+    "size": "Avg",
+    "mobAbilities": [
+      { "name": "Dynastic Defenders", "description": "A Mob of Triarch Praetorians typically engages by swooping down into the fray from above. This type of Charge increases their Defence by +1 until the start of their next Turn." }
+    ],
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "canoptek_wraith",
+    "name": "CANOPTEK WRAITH",
+    "description": "Originally created to repair inaccessible internal systems, Canoptek Wraiths quickly became adapted for use in reconnaissance and assassination once their utility was realised. Equipped with exotic technology, Wraiths can adjust their dimensional frequency to allow themselves to become intangible. The same field also allows their claws to pass through enemy armour without hindrance.\n\nDuring the Great Sleep, Wraiths kept watch over the silent Necron tombs, alerting defence networks to the presence of intruders and then picking them off one at a time. Since then they have become boogeymen to many different species — horrible spectres that slip out of solid surfaces to ambush and slaughter before writhing away again. The dynasties rely on multitudes of such creatures to provide intelligence on their foes, and the Wraith's ability to phase through solid objects means there is nowhere it cannot reach or strike.\n\nThis ability to strike seemingly from nowhere is often devastating to enemy morale, and among the Necron's enemies hushed tales are sometimes told of intangible monsters hunting soldiers through the darkened corridors of their own fortresses.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
+    "keywords": ["NECRON", "[DYNASTY]", "CANOPTEK"],
+    "attributes": { "S": 5, "T": 6, "A": 5, "I": 4, "Wil": 2, "Int": 1, "Fel": 1 },
+    "resilience": { "value": 12, "note": "2 AR" },
+    "defence": 3,
+    "wounds": 8,
+    "shock": 3,
+    "skills": "Default 3, Athletics 6, Awareness 4 (Passive 2), Weapon Skill 7",
+    "bonuses": [
+      { "name": "Dimensional Destabilisation", "description": "Canoptek Wraiths can move through solid objects, treating them as Difficult Terrain." },
+      { "name": "Living Metal", "description": "At the start of each of this Threat's turns it regains 1 Wound and 1 Shock." }
+    ],
+    "abilities": [
+      { "type": "BATTLECRY", "name": "Lurking Horrors", "description": "Canoptek Wraiths can enter combat by emerging from a solid object. All opponents of the Hexmark Destroyer must make a DN 2 Initiative Test or are Ambushed. Additionally, all opponents of the Hexmark Destroyer must make a DN 2 Fear Test." },
+      { "type": "ACTION", "name": "Vicious Claws", "stats": "10 +5 ED / AP -3 / Range 1" },
+      { "type": "ANNIHILATION", "name": "Reanimation Protocols", "description": "When this Threat is destroyed, roll a d6. If the result is an Exalted Icon, it is resurrected with 1 Wound and 1 Shock." }
+    ],
+    "determination": "Spend 1 Ruin to roll 6d6.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 12,
+    "size": "Avg",
+    "mobAbilities": [
+      { "name": "Fearful Host", "description": "A Mob of Canoptek Wraiths that uses Lurking Horrors adds +2 to both the Initiative and Fear Test." }
+    ],
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "lokhust_destroyer",
+    "name": "LOKHUST DESTROYER",
+    "description": "Lokhust's represent the most powerful modifications made by the Destroyer Cults, essentially converting them into the equivalent of a light tank. The Lokhust's head is heavily rebuilt, while one arm is replaced with a fearsome Gauss cannon and their legs with a powerful repulsor raft which can carry them quickly into battle. The repulsor system also stabilises the Necron's body, so that it can fire the mighty cannon without being wildly spun around.\n\nDestroyers who perform particularly well in combat may receive even further upgrades, becoming a Heavy Lokhust Destroyer, and receiving access to Gauss Destructor weaponry. Lokhust Destroyers cluster around such powerful figures hoping to gain their approval, sweeping across the battlefield in groups, raining death on fortifications and vehicles.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
+    "keywords": ["NECRON", "[DYNASTY]", "DESTROYER CULT"],
+    "attributes": { "S": 5, "T": 6, "A": 3, "I": 3, "Wil": 3, "Int": 2, "Fel": 1 },
+    "resilience": { "value": 13, "note": "4 AR" },
+    "defence": 2,
+    "wounds": 9,
+    "shock": 7,
+    "skills": "Default 5, Ballistic Skill 6",
+    "bonuses": [
+      { "name": "Living Metal", "description": "At the start of each of this Threat's turns it regains 1 Wound and 1 Shock." }
+    ],
+    "abilities": [
+      { "type": "COMPLICATION", "name": "Kill Frenzy", "description": "When a Lokhust Destroyer rolls a complication, they become utterly obsessed with destroying one random enemy they can see. It will focus all efforts on chasing and attacking that target." },
+      { "type": "ACTION", "name": "Gauss Cannon", "stats": "14 + 3ED / AP-3 / 12-24-36 / Salvo 1" },
+      { "type": "RUIN", "name": "Reanimation Protocols", "description": "When a Lokhust Destroyer is killed but not destroyed outright, spend 1 Ruin to return them to life with 1 Wound." }
+    ],
+    "determination": "Spend 1 Ruin to roll 6d6.",
+    "conviction": 6,
+    "resolve": "-",
+    "speed": 9,
+    "speedNote": "Fly",
+    "size": "Large",
+    "mobActions": [
+      { "name": "Repulsor Slipstream", "description": "Mobs of Lokhust Destroyers add +1 to their Movement rate." }
+    ],
+    "mobAbilities": [
+      { "name": "Heavy", "description": "If a Mob of Lokhust Destroyers enters play with 5 or more members, one of them will be equipped with a Gauss Destructor: 18 + 6ED / AP -4 / 18 - 36 - 54 / Salvo 1." }
+    ],
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "canoptek_doomstalker",
+    "name": "CANOPTEK DOOMSTALKER",
+    "description": "These large, gangly insectile constructs function as mobile weapon platforms for their Necron masters. While they see extensive use in battle, they are also used as 'watchdogs' for sensitive areas like Necron armouries. As with all Canopteks, they have no true mind, and will follow their orders to the letter.\n\nTypically a Canoptek Doomstalker mounts an artillery piece known as a Doomsday Blaster which it can fire while moving, or root itself down to engage a much more powerful and long-ranged mode. It also carries a pair of Gauss-Flayers for fending off infantry attacks, and will engage a potent self-destruct mechanism if damaged beyond repair.\n\nGiven the peculiar challenges that the Canoptek Doomstalker presents to opponents, some Astra Militarum regiments that face them regularly have taken to forming specialised units to hunt and destroy them. The cost has proved high, yet from the handful of survivors from these units some interesting insights into the Doomstalker's tactical and physical vulnerabilities have been gained.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
+    "keywords": ["NECRON", "[DYNASTY]", "CANOPTEK"],
+    "attributes": { "S": 9, "T": 10, "A": 4, "I": 3, "Wil": 3, "Int": 2, "Fel": 1 },
+    "resilience": { "value": 17, "note": "4 AR, Containment Field: AR 2*" },
+    "defence": 2,
+    "wounds": 18,
+    "shock": 7,
+    "skills": "Default 4, Awareness 6 (Passive 3), Ballistic Skill 8",
+    "bonuses": [
+      { "name": "Living Metal", "description": "At the start of each of this Threat's turns it regains 1 Wound and 1 Shock." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Doomsday Blaster (Low Power)", "stats": "15 +2 ED / AP -2 / 12 - 24 - 36 / Salvo 1 / Reliable, Mounted (Huge)" },
+      { "type": "ACTION", "name": "Doomsday Blaster (High Power)", "stats": "19 +2 ED / AP -5 / 24 - 48 - 72 / Salvo 1 / Reliable, Mounted (Huge)", "description": "The Doomsday Blaster can only be fired in High Power mode if the Canoptek Stalker has not moved this Turn." },
+      { "type": "ACTION", "name": "Twin Gauss Flayer", "stats": "10 + 1 ED / AP -1 / 12 - 24 - 36 / Salvo 4, Rapid Fire (4)" },
+      { "type": "REACTION", "name": "Sentinel Construct", "description": "Once per Round when any enemy moves within range of a Canoptek Doomstalker's Twin Gauss Flayer it can fire the Twin Gauss Flayer." },
+      { "type": "ANNIHILATION", "name": "Explosive", "description": "When a Canoptek Doomstalker is destroyed, roll 1d6. If you roll a Complication or an Exalted Icon, the Canoptek Doomstalker explodes with the following profile: 16 +4 ED / Blast (10)." }
+    ],
+    "determination": "Spend 1 Ruin to roll 10d6.",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 10,
+    "size": "Huge",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "xv8_crisis_battlesuit_shasui",
+    "name": "XV8 CRISIS BATTLESUIT SHAS'UI",
+    "description": "The XV8 Crisis Battlesuit incorporates some of the most advanced technology developed by the Earth Caste. Standing more than twice as tall as the average Fire Warrior, and piloted only by experienced Shas'ui, it is a striking presence on any battlefield. The XV8 can maintain contact with T'au troops through sophisticated communication systems, even while rapidly traversing the battlefield by use of its jet packs to take out the next high-priority target.\n\nOnly experienced Fire Warriors Shas'ui, who have proven their skill and courage, may don the Her'ex'evre — the Mantle of Heroes — and become battlesuit pilots. They often show favour for the XV8 as a combat and command platform, for its mobility, versatility, and firepower. In addition to its adaptable heavy weapons loadout, a Crisis Battlesuit's drone controllers allow additional customization, and can make it into a veritable one-T'au army that strikes terror behind enemy lines. However, if the XV8's strengths lie in its mobility, so do its weaknesses. A Shas'ui piloting their XV8 too boldly can easily find themselves outmatched when cut off from a route of retreat. XV8 operators must always ride that razor's edge to make best use of their battlesuit's capability — piloting it is a dangerous thrill.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
+    "keywords": ["T'AU"],
+    "attributes": { "S": 7, "T": 7, "A": 8, "I": 8, "Wil": 5, "Int": 3, "Fel": 4 },
+    "resilience": { "value": 13, "note": "5 AR" },
+    "defence": 6,
+    "wounds": 15,
+    "shock": 9,
+    "skills": "Default 6, Ballistic Skill 8, Pilot 8",
+    "bonuses": [
+      { "name": "Manoeuvring Jet Packs", "description": "The XV8 can make a controlled descent from any height and never takes damage from falling. The XV8 has a Long Jump and High Jump distance of 10m and can make these jumps as part of their movement without making Athletics (S) Tests." },
+      { "name": "Champion", "description": "This Threat may use Ruin Actions and has 2 personal Ruin." },
+      { "name": "Drone Controller", "description": "The XV8 can control up to two Tactical Support Drones." },
+      { "name": "Twin-linked Weapons", "description": "When the XV8 is equipped with two weapons of the same type, it can fire both weapons once on its turn without suffering Multi-Attack DN penalties." },
+      { "name": "XV8 Powered Battlesuit", "description": "The XV8 Crisis Battlesuit increases the wearers Strength, Toughness, Agility, and Initiative Attribute Bonuses by +4. These increases have been applied to this statblock." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Burst Cannon", "stats": "11 +3 ED / Range 9 - 18 - 27 / Salvo 2 / Assault, Heavy (5), Rapid Fire (2), Reliable" },
+      { "type": "RUIN", "name": "Jet Pack Jump", "description": "Spend 1 Ruin. The XV8 gains a Speed of 12 (Fly) for its turn." }
+    ],
+    "determination": "Spend 1 Ruin to roll 7d6.",
+    "conviction": 5,
+    "resolve": 4,
+    "speed": 10,
+    "size": "Large",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "xv95_ghostkeel_battlesuit_shasvre",
+    "name": "XV95 GHOSTKEEL BATTLESUIT SHAS'VRE",
+    "description": "As one of the smallest T'au battlesuits in regular deployment, the XV25 stealth suit neither packs the impressive punch nor boasts the durability under fire of the larger models. Nonetheless, the mere rumour of its presence in the area of operation strikes fear into experienced Imperial guardsmen. A sudden burst of fire that wipes out a squad without warning, a markerlight illuminating a position out of nowhere to herald the impact of a seeker missile, a crucial communications station or supply depot blowing up without warning — these are all they see of a skilled XV25 Stealth Battlesuit operator.\n\nThe XV25 was designed by the Earth Caste for one purpose: just large enough to fit the newest generation of stealth field generators, it is a ghost on the battlefield. Operating behind enemy lines, these battlesuits are piloted by Fire Caste warriors often considered peculiarly aloof and even antisocial by their fellow T'au. These very qualities mark them as perfect infiltrators and saboteurs of course, and their independent thinking has produced more than a few revered tacticians. Operating outside of the tight-knit formations of the Fire Caste, however, sometimes for weeks on end, still makes them somewhat suspect among their kin.",
+    "tierThreat": { "1": "A", "2": "A", "3": "A", "4": "A" },
+    "keywords": ["T'AU"],
+    "attributes": { "S": 8, "T": 10, "A": 9, "I": 9, "Wil": 7, "Int": 5, "Fel": 4 },
+    "resilience": { "value": 11, "note": "5 AR" },
+    "defence": 6,
+    "wounds": 18,
+    "shock": 11,
+    "skills": "Default 7, Awareness 10 (Passive 5), Ballistic Skill 12, Leadership 10, Pilot 12, Stealth 12, Weapon Skill 9",
+    "bonuses": [
+      { "name": "Champion", "description": "This Threat may use Ruin Actions and has 3 personal Ruin." },
+      { "name": "Drone Controller", "description": "The XV95 can control up to two Stealth Drones." },
+      { "name": "Twin-linked Weapons", "description": "When the XV95 is equipped with two weapons of the same type, it can fire both weapons once on its turn without suffering Multi-Attack DN penalties." },
+      { "name": "Manoeuvring Jet Packs", "description": "The XV95 can make a controlled descent from any height and never takes damage from falling. The XV95 has a Long Jump and High Jump distance of 12m and can make these jumps as part of their movement without making Athletics (S) Tests." },
+      { "name": "XV95 Powered Battlesuit", "description": "The XV95 Ghostkeel Battlesuit increases the wearers Strength, Agility, and Initiative Attribute Bonuses by +4, and the wearers Toughness Bonus by +5. These increases have been applied to this statblock." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Fusion Collider", "stats": "18 +2 ED / AP -4 / Range 12 - 24 - 36 / Salvo 1 / Melta, Heavy (8), Rapid Fire (2)" },
+      { "type": "ACTION", "name": "2 T'au Flamers", "stats": "10 +4 ED / 6 - 12 - 18 / Assault, Flamer" },
+      { "type": "ACTION", "name": "Ghostkeel Fists", "stats": "10 +4 / AP -1" },
+      { "type": "RUIN", "name": "Jet Pack Jump", "description": "Spend 1 Ruin. The XV95 gains a Speed of 20 (Fly) for its turn." },
+      { "type": "RUIN", "name": "Early Warning Override", "description": "Spend 1 Ruin. As a reflexive action, make a ranged attack." },
+      { "type": "ANNIHILATION", "name": "Explodes", "description": "When a XV95 Ghostkeel Battlesuit is destroyed, roll 1d6. If you roll a Complication, the XV95 Ghostkeel Battlesuit explodes with the following profile: 16 +4 ED / Blast (12)." }
+    ],
+    "determination": "Electrowarfare Suite: Spend 1 Ruin to roll 10d6. Any Wounds negated by an Exalted Icon are ignored instead of being converted to Shock.",
+    "conviction": 6,
+    "resolve": 5,
+    "speed": 12,
+    "size": "Huge",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "xv25_stealth_battlesuit_shasui",
+    "name": "XV25 STEALTH BATTLESUIT SHAS'UI",
+    "description": "As one of the smallest T'au battlesuits in regular deployment, the XV25 stealth suit neither packs the impressive punch nor boasts the durability under fire of the larger models. Nonetheless, the mere rumour of its presence in the area of operation strikes fear into experienced Imperial guardsmen. A sudden burst of fire that wipes out a squad without warning, a markerlight illuminating a position out of nowhere to herald the impact of a seeker missile, a crucial communications station or supply depot blowing up without warning — these are all they see of a skilled XV25 Stealth Battlesuit operator.\n\nThe XV25 was designed by the Earth Caste for one purpose: just large enough to fit the newest generation of stealth field generators, it is a ghost on the battlefield. Operating behind enemy lines, these battlesuits are piloted by Fire Caste warriors often considered peculiarly aloof and even antisocial by their fellow T'au. These very qualities mark them as perfect infiltrators and saboteurs of course, and their independent thinking has produced more than a few revered tacticians. Operating outside of the tight-knit formations of the Fire Caste, however, sometimes for weeks on end, still makes them somewhat suspect among their kin.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "T" },
+    "keywords": ["T'AU"],
+    "attributes": { "S": 5, "T": 5, "A": 6, "I": 6, "Wil": 3, "Int": 4, "Fel": 3 },
+    "resilience": { "value": 10, "note": "4 AR" },
+    "defence": 5,
+    "wounds": 9,
+    "shock": 5,
+    "skills": "Default 5, Awareness 8 (passive 4), Ballistic Skill 8, Pilot 7, Stealth 10",
+    "bonuses": [
+      { "name": "Camouflage Fields", "description": "This Threat has +3 bonus Defence against ranged attacks." },
+      { "name": "Champion", "description": "This Threat may use Ruin Actions and has 1 personal Ruin." },
+      { "name": "Drone Controller", "description": "This Threat can control 1 Tactical Support Drone." },
+      { "name": "XV25 Powered Battlesuit", "description": "The XV25 Stealth Battlesuit increases the wearers Strength, Toughness, Agility, and Initiative Attribute Bonuses by +2. These increases have been applied to this statblock." }
+    ],
+    "abilities": [
+      { "type": "BATTLECRY", "name": "Stealth Infiltrator", "description": "A XV25 Stealth Battlesuit Shas'ui will typically attack from Stealth, using their Camouflage fields to remain hidden. When they emerge from hiding they Seize the Initiative without spending Ruin and all opponents of the XV25 Stealth Battlesuit Shas'ui must make a DN 4 Initiative Test or are Ambushed." },
+      { "type": "ACTION", "name": "Burst Cannon", "stats": "11 +3 ED / Range 9 - 18 - 27 / Salvo 2 / Assault, Heavy (5), Rapid Fire (2), Reliable" },
+      { "type": "RUIN", "name": "Fade Away", "description": "Spend 1 Ruin. The XV25 makes a Stealth (A) Test as a Free Action. It resets its Stealth Score with the result." },
+      { "type": "RUIN", "name": "Jet Pack Jump", "description": "Spend 1 Ruin. The XV25 gains a Speed of 12 (Fly) for its turn." }
+    ],
+    "determination": "Spend 1 Ruin to roll 5d6.",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 8,
+    "size": "Avg",
+    "mobOptions": [
+      { "name": "Four-Strong Team", "description": "In a Mob of four or more XV25 Stealth Suits, one XV25 can exchange their Burst Cannon for a Fusion Blaster: 16 +1 ED / AP -4 / Range 9 - 18 - 24 / Salvo 1 / Melta, Heavy (5), Rapid Fire (2)" }
+    ],
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "fire_warrior",
+    "name": "FIRE WARRIOR",
+    "description": "Fire Warriors are the reliable backbone of the T'au forces. They are highly disciplined and well-trained professional soldiers, recruited from the Fire Caste. Fire Warrior infantry makes up the majority of most T'au armies, and every Fire Caste recruit starts out among their ranks. They are all equipped with either the standard T'au pulse rifle or carbines, powerful long-ranged weapons that can be devastatingly more effective than the Imperial equivalent standard-issue Lasgun. T'au weapons training emphasises precision. Fire Warriors prefer to mass fire from a stationary position, to pick off enemies before they can get into melee range.\n\nHolding the line requires Fire Warriors to operate in close-knit squads, where every soldier can rely on their fellows. Should even one among the squad's discipline break under fire, all may be lost. Their specialised training means Fire Warriors are less effective in close combat, where their only defence is symbolic: a Bonding Knife, which every one of them carries. This is an essential weapon but its main use lies before combat, not during. The mutual trust of all Fire Warriors is emphasised in a ritual ceremony known as Ta'lissera, where they become one blood through use of the Bonding Knife.",
+    "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["T'AU"],
+    "attributes": { "S": 2, "T": 2, "A": 3, "I": 3, "Wil": 3, "Int": 2, "Fel": 3 },
+    "resilience": { "value": 6, "note": "3 AR" },
+    "defence": 2,
+    "wounds": 4,
+    "shock": 4,
+    "skills": "Default 3, Athletics 4, Awareness 6 (Passive 3), Ballistic Skill 6, Stealth 4",
+    "abilities": [
+      { "type": "ACTION", "name": "Pulse Rifle", "stats": "12 +2 ED / AP -1 / Range 18 - 36 - 54 / Salvo 2 / Rapid Fire (1), Reliable" },
+      { "type": "ACTION", "name": "Pulse Carbine", "stats": "12 +2 ED / Range 12 - 24 - 36 / Salvo 2 / Assault, Rapid Fire (2), Reliable" },
+      { "type": "ACTION", "name": "Pulse Pistol", "stats": "12 +2 ED / Range 6 - 12 - 18 / Salvo 1 / Pistol, Reliable" },
+      { "type": "ACTION", "name": "Bonding Knife", "stats": "4 +2 ED / Range 1" }
+    ],
+    "determination": "Spend 1 Ruin to roll 2d6.",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 6,
+    "size": "Avg",
+    "mobOptions": [
+      { "name": "Eight-Strong Strike Team", "description": "A Mob of eight or more Fire Warriors can control one Tactical Support Drone." },
+      { "name": "Sixteen-Strong Strike Team", "description": "A Mob of sixteen or more Fire Warriors can control two Tactical Support Drones." }
+    ],
+    "mobAbilities": [
+      { "name": "Focused Fire", "description": "This Mob gains bonus dice equal to the Tier of the game x2 when all individuals target the same individual with a ranged attack." },
+      { "name": "Ta'lissera", "description": "A Mob of Fire Warriors gains +1 Conviction and Resolve." }
+    ],
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "firesight_marksman",
+    "name": "FIRESIGHT MARKSMAN",
+    "description": "If the central tenet of T'au war doctrine is to attack from extreme range, in order to deny the enemy any ability to fight back effectively, then the Firesight Marksman must be considered the culmination of this principle. To maximise the abilities of a skilled marksman, they are not themselves aiming a singular sniper rifle, but instead controlling a group of Sniper Drones.\n\nThis arrangement allows the marksman to remain at a distance from targets which effective shots would typically be impossible, by moving in their remote drones. This is made possible through some of the most sophisticated targeting sensors and drone uplinks the Earth Caste can provide outside of a battlesuit.\n\nDespite their best efforts, the resulting portable unit is still extremely bulky, all but eliminating the possibility of effective manoeuvring once a Firesight Marksman has taken up their position. Fortunately, a personal stealth field affords the marksman some protection. A skilled marksman further obscures their position by varying the angles at which their drones engage the enemy. The Firesight Marksman thus combines enormous striking potential with a flexibility not typically encountered in a sniper — at the price of extreme vulnerability should their position be discovered.",
+    "tierThreat": { "1": "E", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["T'AU"],
+    "attributes": { "S": 2, "T": 3, "A": 3, "I": 3, "Wil": 3, "Int": 3, "Fel": 2 },
+    "resilience": { "value": 7, "note": "3 AR" },
+    "defence": 2,
+    "wounds": 5,
+    "shock": 4,
+    "skills": "Default 3, Awareness 8 (Passive 4), Ballistic Skill 10, Stealth 8, Survival 4, Tech 6",
+    "bonuses": [
+      { "name": "Firesight Targeting Platform", "description": "The Firesight Marksman can link with up to three Sniper Drones at a range of up to 1km; a Sniper Drone cannot be linked to more than one Firesight Marksman. While linked, the Firesight Marksman can issue commands to the Sniper Drones as a Free Action." },
+      { "name": "Personal Stealth Field", "description": "If this Threat does not move on its turn, attacks from more than 12m away suffer a +3 DN penalty." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Pulse Pistol", "stats": "12 +2 ED / Range 6 - 12 - 18 / Salvo 1 / Pistol, Reliable" },
+      { "type": "ACTION", "name": "Fire Markerlight", "description": "This Threat illuminates an individual within 36m with a Markerlight. Until the start of this Threat's next turn, any Threat with the T'AU Keyword gains +2 bonus dice to ranged attack Tests targeting the individual affected by the Markerlight. The effects of Markerlights do not stack." }
+    ],
+    "determination": "Spend 1 Ruin to roll 2d6.",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 6,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "sniper_drone",
+    "name": "SNIPER DRONE",
+    "description": "The Sniper Drone is deployed to support the Firesight Marksman, extending their deadly reach across the battlefield. Equipped with a Longshot Pulse Rifle and a Markerlight, these drones can engage targets at extreme range while their controller remains safely concealed.",
+    "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["T'AU", "DRONE"],
+    "attributes": { "S": 2, "T": 4, "A": 4, "I": 3, "Wil": 1, "Int": 2, "Fel": 1 },
+    "resilience": { "value": 8, "note": "3 AR" },
+    "defence": 3,
+    "wounds": 6,
+    "shock": "-",
+    "skills": "Default 2, Ballistic Skill 6",
+    "bonuses": [
+      { "name": "Artificial Helper", "description": "A Sniper Drone cannot perform any Actions except Attack, Multi-Attack, and Reload. It can only attack one additional time when performing a Multi-Attack. If disconnected from the Firelight Marksman Uplink, the Sniper Drone will do nothing on its turn, and only take movements and Actions to preserve itself." },
+      { "name": "Drone", "description": "This Threat is immune to the Bleeding, Exhausted, Poisoned, and Prone Conditions, cannot Suffocate, and cannot roll Determination. It is unaffected by any abilities that target the mind and never needs to make a Resolve Test to continue fighting, provided it is still connected via a Firelight Marksman Uplink." },
+      { "name": "Firelight Marksman Uplink", "description": "While linked to a Firesight Marksman, the Sniper Drone has Ballistic Skill 10." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Longshot Pulse Rifle", "stats": "12 +2 ED / AP -2 / Range 24 - 48 - 72 / Salvo 2 / Rapid Fire (2), Reliable, Sniper (2)" },
+      { "type": "ACTION", "name": "Fire Markerlight", "description": "This Threat illuminates an individual within 36m with a Markerlight. Until the start of this Threat's next turn, any Threat with the T'AU Keyword gains +2 bonus dice to ranged attack Tests targeting the individual affected by the Markerlight. The effects of Markerlights do not stack." },
+      { "type": "WRATH", "name": "Hit to Vitals", "description": "When a Sniper Drone linked to a Firesight Marksman rolls a Wrath Critical as part of an Attack, the target suffers the Bleeding Condition." }
+    ],
+    "determination": "-",
+    "conviction": 1,
+    "resolve": 1,
+    "speed": 10,
+    "speedNote": "Fly",
+    "size": "Small",
+    "mobAbilities": [
+      { "name": "Linked AIs", "description": "A Mob of 3 or more Sniper Drones has Intelligence 3, Default Skill 3, and Ballistic Skill 8." }
+    ],
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "pathfinder",
+    "name": "PATHFINDER",
+    "description": "Pathfinder teams are the eyes and ears of the Fire Caste. The T'au rely on occupying favourable firing positions with their Fire Warrior teams from which they can make best use of their superior range. Accurate battlefield information, therefore, is essential for success. The Fire Caste thus requires specialised cadres who scout the battlefield for enemies approaching from blind spots in their firing lines, and to find the most advantageous positions in the ever-shifting environment of combat.\n\nCompetition to be admitted to the ranks of the Pathfinders is fierce, despite their less prominent role in combat. The T'au value stealth and cunning just as much as martial skill, and even more importantly is that Pathfinder assignments are often riskier than those of the average Fire Warrior, as they must operate independently and often in close contact with the enemy. Becoming a Pathfinder is thus considered highly honourable, and a direct path to Shas'ui. Pathfinder teams are equipped with state-of-the-art encrypted communication devices, to relay their observations back to those other T'au units whose lives depend on that information. Otherwise, Pathfinders travel light, with silenced weaponry and armour that emphasises quietness and mobility over protection.",
+    "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["T'AU"],
+    "attributes": { "S": 2, "T": 2, "A": 4, "I": 3, "Wil": 2, "Int": 3, "Fel": 2 },
+    "resilience": { "value": 5, "note": "2 AR" },
+    "defence": 2,
+    "wounds": 4,
+    "shock": 3,
+    "skills": "Default 3, Athletics 4, Awareness 8 (Passive 4), Ballistic Skill 6, Stealth 8",
+    "bonuses": [
+      { "name": "Orbital Uplink", "description": "The Pathfinder can broadcast encrypted voice messages and relay its position to any other Threat with the T'AU Keyword within 100 kilometres." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Fire Markerlight", "description": "This Threat illuminates an individual within 36m with a Markerlight. Until the start of this Threat's next turn, any Threat with the T'AU Keyword gains +2 bonus dice to ranged attack Tests targeting the individual affected by the Markerlight. The effects of Markerlights do not stack." },
+      { "type": "ACTION", "name": "Pulse Carbine", "stats": "12 +2 ED / Range 12 - 24 - 36 / Salvo 2 / Assault, Rapid Fire (2), Reliable" },
+      { "type": "ACTION", "name": "Pulse Pistol", "stats": "12 +2 ED / Range 6 - 12 - 18 / Salvo 1 / Pistol, Reliable" },
+      { "type": "RUIN", "name": "Neuroweb System Jammer", "description": "Spend 1 Ruin to target an individual or Mob within 20m. The DN of all ranged attack Tests the target makes is increased by +2." }
+    ],
+    "determination": "Spend 1 Ruin to roll 2d6.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 7,
+    "size": "Avg",
+    "mobOptions": [
+      { "name": "Four-Strong Pathfinder Team", "description": "A Mob of eight or more Pathfinders can control one Tactical Support Drone, and one Pathfinder can exchange their Pulse Carbine for a Rail Rifle with a tripod: 16 +2 ED / AP -4 / Range 15 - 30 - 45 / Salvo 1 / Sniper (2), Heavy (6), Reliable" }
+    ],
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "gun_drone",
+    "name": "GUN DRONE",
+    "description": "The gun drone design is as basic as it is efficient: twin-linked pulse carbines mounted on an antigrav unit, with a short-range uplink to direct the drone. Their AIs, too, are of strictly limited capability, as their function is straightforward: lock onto a target and destroy it. Gun drones are most commonly mounted on T'au vehicles, such as the Devilfish, from where they can be detached to support landed troops while remaining under direct control by the pilot.\n\nHowever, T'au field commanders have discovered that linking the AIs of several Gun Drones provides just enough independence for a squadron of these simple-minded automatons to lay down smart fire support in tactically critical situations. Since gun drones are so basic, they are cheap to produce and generally considered expendable. When a Fire Warrior team must leave its entrenched position, a Gun Drone squadron can be deployed to cover them — as the first to emerge, the drones draw fire and are unlikely to survive for long, but better them than a valuable team of Fire Warriors. Gun Drone squadrons are also often deployed to probe enemy positions, or harass enemy lines to soften them up in preparation for an assault.",
+    "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["T'AU", "DRONE"],
+    "attributes": { "S": 2, "T": 4, "A": 4, "I": 3, "Wil": 1, "Int": 2, "Fel": 1 },
+    "resilience": { "value": 8, "note": "3 AR" },
+    "defence": 3,
+    "wounds": 3,
+    "shock": "-",
+    "skills": "Default 1, Ballistic Skill 3",
+    "bonuses": [
+      { "name": "Artificial Helper", "description": "This Threat cannot perform any Actions except Attack, Multi-Attack, and Reload. It can only attack one additional time when performing a Multi-Attack." },
+      { "name": "Drone", "description": "This Threat is immune to the Bleeding, Exhausted, Poisoned, and Prone Conditions, cannot Suffocate, and cannot roll Determination. It is unaffected by any abilities that target the mind and never needs to make a Resolve Test to continue fighting." },
+      { "name": "Twin-linked Weapons", "description": "The first additional attack of the Gun Drone when performing a Multi-Attack does not suffer any penalties when both attacks are made against the same target." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "2 Pulse Carbines", "stats": "12 +2 ED / Range 12 - 24 - 36 / Salvo 2 / Assault, Rapid Fire (2), Reliable" },
+      { "type": "REACTION", "name": "Programmed Sacrifice", "description": "When a Threat with the T'AU Keyword within 5m of the Gun Drone is targeted by a ranged attack, the Gun Drone can move to interpose itself, suffering the attack instead." }
+    ],
+    "determination": "-",
+    "conviction": 1,
+    "resolve": 1,
+    "speed": 10,
+    "speedNote": "Fly",
+    "size": "Small",
+    "mobAbilities": [
+      { "name": "Linked AIs", "description": "A squadron of 8 or more Gun Drones has Ballistic Skill 6." }
+    ],
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "mb3_recon_drone",
+    "name": "MB3 RECON DRONE",
+    "description": "To support the ever expanding T'au Empire, the Earth Caste has developed the MB3 Recon Drone. It is the largest drone the T'au regularly employ, and fitted with a sophisticated AI that allows it to operate without supervision for extended periods of time. Its main role is to scout far ahead of T'au troops, sometimes in conjunction with Pathfinder teams, but more often completely independently, as the T'au lack of manpower makes it impossible to cover all areas of interest.\n\nIn this role, the MB3 must make judgement calls of how to proceed, and its processing power borders on what many tech-priests would consider heretical. They would surely be worried by reports that some Pathfinders, operating isolated for weeks except for the company of a Recon Drone, converse with their MB3 as with an old friend.\n\nDue to their high cost during production, MB3's are programmed to disengage and preserve themselves when encountering overwhelming opposition. However to be able to fulfil their role effectively they are mounted with an anti-infantry burst cannon that allows them to dispatch light resistance. MB3s can relay their findings and position across vast distances, calling in T'au troops where required.",
+    "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["T'AU", "DRONE"],
+    "attributes": { "S": 2, "T": 5, "A": 4, "I": 3, "Wil": 1, "Int": 2, "Fel": 1 },
+    "resilience": { "value": 9, "note": "3 AR" },
+    "defence": 2,
+    "wounds": 7,
+    "shock": "-",
+    "skills": "Default 3, Awareness 6 (Passive 3), Ballistic Skill 6, Stealth 6",
+    "bonuses": [
+      { "name": "Drone", "description": "This Threat is immune to the Bleeding, Exhausted, Poisoned, and Prone Conditions, cannot Suffocate, and cannot roll Determination." },
+      { "name": "Orbital Uplink", "description": "The MB3 can broadcast encrypted voice messages and relay its position to any other Threat with the T'AU Keyword within 100 kilometres." },
+      { "name": "Recon Suite", "description": "This Threat and any other Threats with the T'AU Keyword within 6m gain +2 bonus dice when targeting an individual in cover." },
+      { "name": "Sensor Suite", "description": "The MB3 constantly generates a three-dimensional map of all terrain within 50m of itself. It detects all life signs that aren't specifically shielded, and the discharge of any las, plasma, melta, or flame weapon within this area; the MB3 knows the number and direction of these phenomena, but not their exact position." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Burst Cannon", "stats": "11 +3 ED / Range 9 - 18 - 27 / Salvo 2 / Assault, Heavy (5), Rapid Fire (2), Reliable" }
+    ],
+    "determination": "-",
+    "conviction": 1,
+    "resolve": 1,
+    "speed": 10,
+    "speedNote": "Fly",
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "kroot_carnivore",
+    "name": "KROOT CARNIVORE",
+    "description": "A squad of Kroot Carnivores is terrifying to behold — if their prey even manages to detect them before they jump out of the shadows, all sharpened beaks and tearing claws. Kroot warriors are called 'carnivores' with good reason — they feast on those fallen in battle, even if it includes their own dead. The terror instilled by this reputation is a weapon in its own right.\n\nThese groups of hunters are the most commonly encountered Kroot outside of their home-world Pech, and indeed likely the most numerous T'au auxiliaries by a wide margin. While they share a special bond of blood and honour with the T'au, by whom they are valued just as much as Fire Warriors, they are perfectly willing to serve as mercenaries for other factions.\n\nKroot Carnivores are armed with the bladed Kroot staff rifles, modelled on their traditional combat sticks. They fire this weapon competently enough, but their main strength lies in close-quarters combat. A common Kroot tactic is to stealth as close to prey as possible, and then bridge the remaining distance with a vicious charge, peppering their foes with bullets before tearing into them with blade and beak.",
+    "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["KROOT"],
+    "attributes": { "S": 5, "T": 3, "A": 4, "I": 4, "Wil": 3, "Int": 2, "Fel": 2 },
+    "resilience": { "value": 4, "note": "0 AR" },
+    "defence": 3,
+    "wounds": 5,
+    "shock": 4,
+    "skills": "Default 3, Athletics 6, Awareness 6 (Passive 3), Ballistic Skill 5, Stealth 6, Survival 6, Weapon Skill 6",
+    "bonuses": [
+      { "name": "Feasting Fighters", "description": "Whenever the Kroot Carnivore slays a creature that doesn't have the CHAOS, T'AU, or TYRANID Keywords and is made of biological matter, the Kroot Carnivore can spend an Action to feast and regain 1d3 Wounds and 1d6 Shock." },
+      { "name": "Stealthy Hunters", "description": "While in cover this Threat has +2 bonus Defence." }
+    ],
+    "abilities": [
+      { "type": "BATTLECRY", "name": "Ambushing Predators", "description": "This Threat has 10 Speed on its first turn." },
+      { "type": "ACTION", "name": "Kroot Rifle", "stats": "8 +1 ED / Range 12 - 24 - 36 / Salvo 2 / Rapid Fire (1)" },
+      { "type": "ACTION", "name": "Kroot Rifle (melee)", "stats": "9 +4 ED / Range 1" }
+    ],
+    "determination": "Spend 1 Ruin to roll 3d6.",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 7,
+    "size": "Avg",
+    "mobOptions": [
+      { "name": "You Are Prey", "description": "All opponents that can see a Mob of 10 or more Kroot Carnivores must make a DN 2 Fear Test." }
+    ],
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "kroot_shaper",
+    "name": "KROOT SHAPER",
+    "description": "The Kroot's most unique ability, to adopt the physical characteristics of the prey they consume, while a great strength also presents incalculable risks. It is the responsibility of the Kroot Shapers to ensure that Kroot physiology does not catastrophically deteriorate or radiate into chaotically divergent forms — which can easily result from indiscriminate gorging. Due to the deep cultural significance consuming their prey as well as their own dead has to the Kroot, this gives the shapers great military, political, and spiritual authority.\n\nShapers lead Kroot Carnivores in combat, much like T'au Shas'ui lead Fire Warriors, allowing them to seek out foes with useful physiological characteristics. The shapers direct what is consumed by whom, to produce lines that ensure the Kroot prosper — this 'shaping' is aided by their ability to sample a prey's genetic make-up. Based on this capability to 'taste' a creature's biological essence, the shapers have declared Tyranids and beings mutated by Chaos 'inedible' — a term that signifies great revulsion and taboo among the Kroot. The shapers' instinctual access to genetic information seems to go as far as to allow them to access their ancestors' genetic memory in visions, to guide them in times of crisis.",
+    "tierThreat": { "1": "A", "2": "E", "3": "E", "4": "T" },
+    "keywords": ["KROOT"],
+    "attributes": { "S": 5, "T": 5, "A": 4, "I": 4, "Wil": 6, "Int": 3, "Fel": 4 },
+    "resilience": { "value": 6, "note": "0 AR" },
+    "defence": 3,
+    "wounds": 9,
+    "shock": 8,
+    "skills": "Default 4, Athletics 8, Awareness 8 (Passive 4), Ballistic Skill 6, Cunning 4, Stealth 6, Survival 10, Weapon Skill 8",
+    "bonuses": [
+      { "name": "Champion", "description": "This Threat may use Ruin Actions and has 3 personal Ruin." },
+      { "name": "Stealthy Hunters", "description": "While in cover this Threat has +2 bonus Defence." },
+      { "name": "The Shaper Commands", "description": "All Threats with the KROOT Keyword within 10m of the Kroot Shaper gain +2 bonus dice to all attack Tests." },
+      { "name": "Wisest of Their Kind", "description": "Threats with the KROOT keyword within 10m of the Kroot Shaper use the Kroot Shaper's Conviction and Resolve in place of their own, if their own is lower." }
+    ],
+    "abilities": [
+      { "type": "BATTLECRY", "name": "Ambushing Predators", "description": "This Threat has 10 Speed on its first turn." },
+      { "type": "ACTION", "name": "Shaper Kroot Rifle", "stats": "8 +1 ED / Range 12 - 24 - 36 / Salvo 3 / Rapid Fire (2)" },
+      { "type": "ACTION", "name": "Ritual Blade", "stats": "7 +3 ED / AP -1 / Range 1 / Inflict (Bleeding 1)" },
+      { "type": "RUIN", "name": "Just a Taste", "description": "Spend 1 Ruin immediately after hitting a creature with the Ritual Knife. The Kroot Shaper learns all physical characteristics of the target, gaining +2 bonus dice to all further Attacks against it." }
+    ],
+    "determination": "Visions of the Ancestors: Spend 1 Ruin to roll 5d6. Any Wounds negated by an Exalted Icon are ignored instead of being converted to Shock.",
+    "conviction": 6,
+    "resolve": 5,
+    "speed": 7,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "kroot_hounds",
+    "name": "KROOT HOUNDS",
+    "description": "Kroot Hounds are the answer to the question: what if Kroot were allowed to fully indulge their hunter's instincts and shape themselves into the perfect pack predator? The Kroot use them as trackers on the hunt, as the hound's senses exceed even those of the most skilled Kroot Carnivore. In addition to the hound's keen eyesight, their entire spine ridge is covered in quills studded with sensory apparatus. By raising these quills up, Kroot Hounds can feel the vibrations in the air that herald the movement of their prey. They can sample a wide range of molecules wafting on the wind, far in excess of what any ordinary sense of smell could detect. Once they know their target's location, they tug their quills in tight to produce a sleek shape, ideal for the pursuit.\n\nWhile highly intelligent, and able to follow complex commands, it is also clear why the shapers consider the Kroot Hound a dead end: they are irascible and difficult to control — even experienced handlers have been killed by hounds they raised from pups. The Kroot thus often allow hounds to roam free in war, unleashing their instincts on the enemy without the danger of handling them directly.",
+    "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["KROOT", "BEAST"],
+    "attributes": { "S": 3, "T": 3, "A": 4, "I": 4, "Wil": 1, "Int": 1, "Fel": 1 },
+    "resilience": { "value": 4, "note": "0 AR" },
+    "defence": 3,
+    "wounds": 5,
+    "shock": 2,
+    "skills": "Default 2, Athletics 5, Awareness 5 (Passive 3), Stealth 6, Weapon Skill 6",
+    "bonuses": [
+      { "name": "Sensory Ganglia", "description": "The Kroot Hound can make a DN 3 Awareness Test as a Free Action to sniff out any biological creatures within 30m. On a success, it learns their exact positions. The Kroot Hound cannot move during a turn on which it is using these senses." },
+      { "name": "Stealthy Hunters", "description": "While in cover this Threat has +2 bonus Defence." }
+    ],
+    "abilities": [
+      { "type": "BATTLECRY", "name": "Ambushing Predators", "description": "This Threat has 10 Speed on its first turn." },
+      { "type": "ACTION", "name": "Ripping Fangs", "stats": "5 +3 ED / AP -1 / Range 1 / Brutal" },
+      { "type": "COMPLICATION", "name": "Frenzy", "description": "When a Kroot Hound rolls a Complication, it becomes Frenzied and regards everyone in sight as an enemy. An individual with the KROOT Keyword can make a DN 3 Leadership Test to end this Frenzied Condition." },
+      { "type": "RUIN", "name": "Voracious Predators", "description": "When you spend Ruin to re-roll all failing dice for a Kroot Hound's Weapon Skill Test, results of 3 and 4 count as Icons and results of 5 and 6 count as Exalted Icons." }
+    ],
+    "determination": "Spend 1 Ruin to roll 3d6.",
+    "conviction": 1,
+    "resolve": 1,
+    "speed": 12,
+    "size": "Avg",
+    "mobAbilities": [
+      { "name": "Prowling Pack", "description": "A Mob of 10 or more Kroot Hounds gains +2 Speed and +2 bonus dice to Athletics, Awareness, and Stealth Tests." }
+    ],
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "krootox",
+    "name": "KROOTOX",
+    "description": "The lumbering Krootox is one of the few entirely dead-end branches of Kroot evolution. Unlike the vicious Kroot Hounds, they are relatively easy to tame and quite docile — until whipped into a battle frenzy by a Kroot herder, that is. Once roused to anger, a Krootox charging forward on the knuckles of its muscle-packed arms can quickly shatter formations of enemy infantry. The herders ride their beast into combat, with a heavy cannon mounted on its back. In many ways, the Krootox thus fulfils the roles of a biological tank, and its thick hide is almost as well armoured.\n\nDue to their limited intelligence and simple, brutish nature, Krootox are thankfully easy to control. Bonded to a steady rider, they stay calm even in the heat of battle and can provide reliable heavy fire support as easily as they can wreck havoc among enemy lines. The Krootox' are also fiercely loyal and will fight valiantly to defend their handler and packmates. Some have even been observed stubbornly fighting against insurmountable odds to defend the shattered remains of their handlers killed in combat.",
+    "tierThreat": { "1": "A", "2": "E", "3": "T", "4": "T" },
+    "keywords": ["KROOT"],
+    "attributes": { "S": 8, "T": 7, "A": 2, "I": 2, "Wil": 3, "Int": 1, "Fel": 2 },
+    "resilience": { "value": 10, "note": "2 AR" },
+    "defence": 1,
+    "wounds": 11,
+    "shock": 5,
+    "skills": "Athletics 10, Awareness 4 (Passive 2), Ballistic Skill 5, Weapon Skill 7",
+    "bonuses": [
+      { "name": "Handler", "description": "The Krootox is ridden by a Kroot handler, who uses the statistics of a Kroot Carnivore. The riding Kroot Carnivore and the Krootox must both use their Action to fire the Kroot Gun. The Kroot Carnivore can be targeted separately to the Krootox. If a Kroot Carnivore is not riding the Krootox the Kroot Gun cannot be fired, and COMPLICATION: Riderless immediately activates." }
+    ],
+    "abilities": [
+      { "type": "BATTLECRY", "name": "Ambushing Predators", "description": "This Threat has 10 Speed on its first turn." },
+      { "type": "ACTION", "name": "Kroot Gun", "stats": "14 +2 ED / AP -1 / Range 24 - 48 - 72 / Salvo 1 / Heavy (8)" },
+      { "type": "ACTION", "name": "Krootox Fists", "stats": "10 +4 ED / AP -2 / Range 1 / Brutal" },
+      { "type": "COMPLICATION", "name": "Riderless", "description": "The Krootox will stand over and fight to defend its rider however it must make a DN 2 Willpower Test. If it fails, it immediately becomes Frenzied, attempting to charge the nearest Threat. An individual with the KROOT Keyword can attempt a DN 3 Leadership Test to calm a Frenzied Krootox, and may then mount it using their movement." }
+    ],
+    "determination": "Spend 1 Ruin to roll 7d6.",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 7,
+    "size": "Large",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "pechra",
+    "name": "PECH'RA",
+    "description": "These carnivorous, bird-like creatures have a short curved beak for tearing flesh, thick grey and blue plumage and four independent eyes. Native to the Kroot ancestral homeworld of Pech, where almost all creatures share a distant ancestral link the Pech'ra shares the same beak and feather-analogue quills observable in many Kroot lines. Raised by Kroot Trackers from an egg they are known to form intense and productive relationships with their handlers.\n\nWhen fully grown and bonded with a Kroot Tracker the Pech'ra soars high into the air on their densely feathered wings, its four eyes are capable of spotting and tracking prey at incredible distances. Once spotted the Pech'ra alerts its handler to their prey's presence with shrill cries and low swooping dives ensuring its handler can quickly dispatch the target and preventing them from being able to seek shelter.",
+    "tierThreat": { "1": "E", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["KROOT"],
+    "attributes": { "S": 1, "T": 1, "A": 6, "I": 4, "Wil": 3, "Int": 1, "Fel": 2 },
+    "resilience": { "value": 2, "note": "0 AR" },
+    "defence": 4,
+    "wounds": 3,
+    "shock": 4,
+    "skills": "Awareness 8 (Passive 4), Stealth 8, Weapon Skill 6",
+    "bonuses": [
+      { "name": "Good Omen", "description": "Threats with the KROOT Keyword within 2m of the Kroothawk gain +1 bonus dice to all Tests." },
+      { "name": "Skirmisher", "description": "Reflexive attacks made against this Threat suffer a +2 DN Penalty." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Serrated Beak", "stats": "3 +4 ED / Range 1 / Silent" }
+    ],
+    "determination": "Spend 1 Ruin to roll 1d6.",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 10,
+    "speedNote": "Fly",
+    "size": "Small",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "knarloc",
+    "name": "KNARLOC",
+    "description": "Sinuous muscles ripple beneath the smooth skin of the Knarloc, and every part of its anatomy seems designed for one purpose: to kill. Their fearsome beak can crunch through Space Marine armour, their talons rip Imperial guardsmen limb from limb, and their muscular legs propel them into battle even across the roughest of terrain. Their cunning makes these predators even more terrifying, as they are perhaps second only to the Kroot Carnivores and their shapers in intelligence among the myriad Kroot lines. Finally, as if one Knarloc wasn't a grim enough prospect, they typically hunt in packs of half a dozen or more.\n\nKnarlocs fulfil a role that would be taken up by light tanks in other forces, and due to them having evolved as apex predators in the jungles of Pech, can traverse difficult terrain more easily and stealthily than any mechanised vehicle.",
+    "tierThreat": { "1": "A", "2": "E", "3": "T", "4": "T" },
+    "keywords": ["KROOT"],
+    "attributes": { "S": 5, "T": 8, "A": 3, "I": 4, "Wil": 3, "Int": 1, "Fel": 3 },
+    "resilience": { "value": 9, "note": "2 AR" },
+    "defence": 2,
+    "wounds": 10,
+    "shock": 5,
+    "skills": "Athletics 8, Awareness 4 (Passive 2), Weapon Skill 6",
+    "bonuses": [
+      { "name": "Bonded Rider", "description": "A Knarloc is typically ridden by a bonded rider, who uses the statistics of a Kroot Carnivore. The bonded rider may take actions as normal while mounted, and can be targeted separately to the Knarloc. If the bonded rider is killed or otherwise removed from the Knarloc during combat, COMPLICATION: Riderless immediately activates." },
+      { "name": "Loping Stride", "description": "When this Threat runs or charges, they have Speed 20 instead of Speed 14." },
+      { "name": "Second Strike", "description": "This Threat reduces the Multi-Attack penalty by 2 DN, as though it had the Dual Wield Talent (Wrath & Glory, page 133)." },
+      { "name": "Thunderous Pounce", "description": "This Threat gains +2 Strength when it charges." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Knarloc Beak & Talons", "stats": "10 +5 / AP -2 / Range 1 / Brutal" },
+      { "type": "COMPLICATION", "name": "Riderless", "description": "The Knarloc must make a DN 1 Willpower Test. If it fails, it throws off its rider if it has one, and immediately becomes Frenzied, attempting to violently destroy all enemies in sight. The Frenzied Condition ends if all the Knarloc's enemies are destroyed or no longer visible, or if an individual with the KROOT Keyword succeeds on a DN 4 Leadership Test, at which point the Kroot may mount the Knarloc using their movement." }
+    ],
+    "determination": "Spend 1 Ruin to roll 8d6.",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 7,
+    "size": "Large",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "great_knarloc",
+    "name": "GREAT KNARLOC",
+    "description": "What could be more terrible to encounter in battle than a Knarloc? To the dismay of the Imperial guard, the Kroot bloodlines provide an answer: the Great Knarloc, four-times the size and ten-times the weight of its smaller cousin. Fortunately, these beasts don't form hunting packs as their smaller brethren do.\n\nKroot handlers don't shy away even from taming these distant evolutionary relatives, and young Great Knarlocs reared in captivity are surprisingly docile. To the Kroot, they are often most useful as beasts of burden — with their enormous strength and seemingly endless endurance, they can carry entire Kroot encampments from place to place, through even the roughest terrain. Great Knarlocs are thus central to the amazing self-sufficiency and mobility of Kroot armies on campaign.\n\nThis is not to say that Kroot wouldn't unleash the terrible fury of Great Knarlocs. Even tamed ones are prone to unpredictable bouts of aggression, which is why they are always kept muzzled and chained — right up until battle, when they are goaded towards the enemy. For these occasions, the Kroot mount heavy weapons on their backs — even though they can rip open battle tanks perfectly well with their beaks.",
+    "tierThreat": { "1": "A", "2": "A", "3": "A", "4": "A" },
+    "keywords": ["KROOT"],
+    "attributes": { "S": 15, "T": 13, "A": 3, "I": 5, "Wil": 5, "Int": 1, "Fel": 2 },
+    "resilience": { "value": 16, "note": "2 AR" },
+    "defence": 2,
+    "wounds": 20,
+    "shock": 9,
+    "skills": "Awareness 4 (Passive 2), Weapon Skill 8",
+    "bonuses": [
+      { "name": "Baggage Harness", "description": "Threats within 2m of the Great Knarloc can gain 1 Reload for a weapon with the KROOT Keyword as a free action by pulling them from the Great Knarloc' Baggage Harness." },
+      { "name": "Crushing Strike", "description": "When this Threat charges, all individuals within 2m must make a DN 3 Initiative Test or suffer 1d6 Mortal Wounds." },
+      { "name": "Handlers", "description": "The Great Knarloc is typically ridden by two handlers, who use the statistics of Kroot Carnivores. One handler may take actions as normal, while the other operates the Kroot Bolt Thrower. The Kroot Carnivores can be targeted separately to the Great Knarloc. If both handlers die or are otherwise removed from the Great Knarloc, COMPLICATION: Lost Control immediately activates." },
+      { "name": "Loping Stride", "description": "When this Threat runs or charges, they have Speed 20 instead of Speed 14." }
+    ],
+    "abilities": [
+      { "type": "BATTLECRY", "name": "Great Knarloc Roar", "description": "All opponents of the Great Knarloc must make a DN 5 Fear Test." },
+      { "type": "ACTION", "name": "Great Knarloc Beak & Talons", "stats": "18 +6 ED / AP -4 / Range 2m" },
+      { "type": "ACTION", "name": "Kroot Bolt Thrower", "stats": "16 +3 ED / AP -1 / Range 18 - 36 - 54 / Salvo 1 / Assault, Brutal, Heavy (10)" },
+      { "type": "COMPLICATION", "name": "Lost Control", "description": "Whenever the Greater Knarloc or one of its handlers rolls a Complication, the Greater Knarloc becomes Frenzied. While Frenzied, the Great Knarloc will attempt to kill and eat everything in sight, including its own handlers if there are no other suitable individuals within 10m. An individual with the KROOT Keyword can attempt a DN 8 Leadership Test to calm a Frenzied Great Knarloc, and may then mount it using their movement." }
+    ],
+    "determination": "Spend 1 Ruin to roll 13d6.",
+    "conviction": 5,
+    "resolve": 4,
+    "speed": 7,
+    "size": "Huge",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "vespid_strain_leader",
+    "name": "VESPID STRAIN LEADER",
+    "description": "Vespid society is organised along typical hierarchal lines and further subdivided into so-called 'strains', each of which is controlled by one individual: the strain leader. This highly hierarchical structure serves the T'au well, as it means that not every individual has to be convinced separately of the Greater Good — once a strain leader is on their side, so are all the other Vespid under their direction. This also means that the T'au only have to provide their high-tech communion helmets to the strain leaders — a good thing, as they are difficult to produce.\n\nThe strain leaders guide other Vespid in battle, relaying the wishes of T'au commanders to every individual in their own language, which has proven so impenetrable to outsiders. Except for this communion helmet, strain leaders are not better equipped and are indistinguishable from other Vespid — for all their strict hierarchy, the Vespid seem to be a strangely egalitarian society. This, if true, is something they share with the T'au, and it is perhaps the basis of their mutual understanding. What strain leaders provide, however, is a vastly improved level of coordination and reliability to the troops under their command.",
+    "tierThreat": { "1": "E", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["VESPID"],
+    "attributes": { "S": 5, "T": 6, "A": 5, "I": 3, "Wil": 4, "Int": 3, "Fel": 1 },
+    "resilience": { "value": 10, "note": "3 AR" },
+    "defence": 2,
+    "wounds": 8,
+    "shock": 3,
+    "skills": "Default 3, Awareness 8 (Passive 4), Ballistic Skill 6, Leadership 6, Pilot 6, Survival 6, Weapon Skill 6",
+    "bonuses": [
+      { "name": "Communion Helmet", "description": "The Vespid Strain Leader can communicate with and receive commands from any Troop with the <T'AU> Keyword. It never needs to make a Resolve Test to continue fighting while there is a Threat with the <T'AU> Keyword within 10m. This bonus also applies to any Vespid Stingwings within 10m of the Vespid Strain Leader." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Neutron Blaster", "stats": "12 +4 ED / AP -3 / Range 9 - 18 - 27 / Salvo 1 / Arc (2), Assault, Melta" },
+      { "type": "ACTION", "name": "Stingwing Claws", "stats": "7 +2 ED / AP -1 / Range 1" },
+      { "type": "ANNIHILATION", "name": "Sonic Feedback", "description": "Any Vespid Stingwing within 10m of the Vespid Strain Leader becomes Frenzied." }
+    ],
+    "determination": "Spend 1 Ruin to roll 6d6.",
+    "conviction": 4,
+    "resolve": 3,
+    "speed": 14,
+    "speedNote": "Fly",
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "vespid_stingwing",
+    "name": "VESPID STINGWING",
+    "description": "The staple force of the Vespids in T'au war complements, Stingwings are highly mobile, by virtue of their hyper-sonic beating wings. They are deployed in support of T'au units who can keep up with them, such as Crisis Battlesuits, or those in desperate need of mobile anti-armor firepower, such as Pathfinder teams. The Vespid's signature weapon is the neutron blaster, based on their unique crystal technology and blended with T'au ingenuity. This exotic weapon literally strips atoms off its target and while it may slow-acting, its effect is reliable and constant, and neither ceramite nor flesh can withstand it. The neutron blaster is surprisingly light for a weapon with such devastating effect, but can only be operated by Vespid, due to the constant harmonic feedback modulation the crystals require.\n\nA distinct and severe potential difficulty with Stingwings employed in the service of the T'au is the complete and utter impossibility of direct communication with them. Only Vespid Strain Leaders are equipped with the rare Vespid communion helmets, which facilitates understanding. Vespid Stingwings who become isolated from their strain leader can become very confused and, worryingly, even hostile to their allies.",
+    "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["VESPID"],
+    "attributes": { "S": 5, "T": 5, "A": 5, "I": 3, "Wil": 2, "Int": 2, "Fel": 1 },
+    "resilience": { "value": 9, "note": "3 AR" },
+    "defence": 2,
+    "wounds": 7,
+    "shock": 3,
+    "skills": "Default 3, Awareness 6 (Passive 3), Ballistic Skill 6, Pilot 6, Survival 5, Weapon Skill 6",
+    "bonuses": [
+      { "name": "Alien Mind", "description": "When anyone attempts to communicate with or issue a command to a Vespid Stingwing without a Vespid Strain Leader within 10m, they must succeed on a DN 10 Leadership (Wil) Test. On a failure, the Vespid Stingwing is unresponsive. A Complication on the Test causes the Vespid Stingwing to attack whoever made the communication attempt." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Neutron Blaster", "stats": "12 +4 ED / AP -3 / Range 9 - 18 - 27 / Salvo 1 / Arc (2), Assault, Melta" },
+      { "type": "ACTION", "name": "Stingwing Claws", "stats": "7 +2 ED / AP -1 / Range 1" }
+    ],
+    "determination": "Spend 1 Ruin to roll 5d6.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 14,
+    "speedNote": "Fly",
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
   }
 ]
