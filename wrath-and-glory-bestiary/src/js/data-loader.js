@@ -115,16 +115,21 @@ const DataLoader = {
             );
         }
 
-        // Filter by threat levels
+        // Filter by tier and threat levels
         if (criteria.threatLevels && criteria.threatLevels.length > 0) {
             threats = threats.filter(t => {
-                // Check if any of the threat's tier levels match the selected levels
-                if (t.tierThreat) {
+                if (!t.tierThreat) return false;
+
+                if (criteria.selectedTier) {
+                    // If a specific tier is selected, check only that tier's threat level
+                    const tierLevel = t.tierThreat[criteria.selectedTier];
+                    return tierLevel && criteria.threatLevels.includes(tierLevel);
+                } else {
+                    // If no tier selected (all tiers), check if any tier matches
                     return Object.values(t.tierThreat).some(level =>
                         criteria.threatLevels.includes(level)
                     );
                 }
-                return false;
             });
         }
 

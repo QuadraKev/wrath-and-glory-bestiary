@@ -5,6 +5,7 @@ const ThreatsTab = {
     selectedWeaponId: null,
     filters: {
         search: '',
+        selectedTier: 'all',
         threatLevels: ['T', 'E', 'A'],
         keywords: []
     },
@@ -15,6 +16,15 @@ const ThreatsTab = {
         searchInput.addEventListener('input', (e) => {
             this.filters.search = e.target.value;
             this.renderThreatList();
+        });
+
+        // Initialize tier filters
+        const tierFilters = document.querySelectorAll('#tier-filters input[type="radio"]');
+        tierFilters.forEach(radio => {
+            radio.addEventListener('change', (e) => {
+                this.filters.selectedTier = e.target.dataset.tier;
+                this.renderThreatList();
+            });
         });
 
         // Initialize threat level filters
@@ -90,6 +100,12 @@ const ThreatsTab = {
         document.getElementById('search-input').value = '';
         this.filters.search = '';
 
+        // Reset tier filter to "all"
+        document.querySelectorAll('#tier-filters input[type="radio"]').forEach(radio => {
+            radio.checked = radio.dataset.tier === 'all';
+        });
+        this.filters.selectedTier = 'all';
+
         // Reset threat level filters
         document.querySelectorAll('#threat-level-filters input[type="checkbox"]').forEach(cb => {
             cb.checked = true;
@@ -106,11 +122,15 @@ const ThreatsTab = {
     },
 
     renderThreatList() {
-        const threats = DataLoader.filterThreats({
+        let threats = DataLoader.filterThreats({
             search: this.filters.search,
+            selectedTier: this.filters.selectedTier !== 'all' ? this.filters.selectedTier : null,
             threatLevels: this.filters.threatLevels.length > 0 ? this.filters.threatLevels : null,
             keywords: this.filters.keywords.length > 0 ? this.filters.keywords : null
         });
+
+        // Sort threats alphabetically by name
+        threats = threats.sort((a, b) => a.name.localeCompare(b.name));
 
         const container = document.getElementById('threat-list');
 
@@ -124,7 +144,7 @@ const ThreatsTab = {
         }
 
         container.innerHTML = threats.map(threat => {
-            const tierBadges = this.renderTierBadges(threat.tierThreat);
+            const tierBadges = this.renderTierBadges(threat.tierThreat, this.filters.selectedTier);
             const keywords = threat.keywords || [];
 
             return `
@@ -149,10 +169,19 @@ const ThreatsTab = {
         });
     },
 
-    renderTierBadges(tierThreat) {
+    renderTierBadges(tierThreat, selectedTier = 'all') {
         if (!tierThreat) return '';
 
-        // Get unique threat levels
+        if (selectedTier && selectedTier !== 'all') {
+            // Show only the selected tier's threat level
+            const level = tierThreat[selectedTier];
+            if (level) {
+                return `<span class="threat-tier-badge">${level}</span>`;
+            }
+            return '';
+        }
+
+        // Show unique threat levels across all tiers
         const levels = new Set(Object.values(tierThreat));
         return Array.from(levels).map(level =>
             `<span class="threat-tier-badge">${level}</span>`
