@@ -4843,5 +4843,850 @@
     "speedNote": "Fly",
     "size": "Avg",
     "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "dreadnought",
+    "name": "DREADNOUGHT",
+    "description": "Rampaging across war zones, Dreadnoughts carve out great swathes of destruction from the enemy ranks, wielding an array of brutal weaponry.\n\nTo be interned within the sarcophagus of a Dreadnought is both a great honour and a terrible fate. Returned from the very abyss of death, the remaining biological matter is bonded with the machine spirit of these mighty war machines, allowing them to wage war on the enemies of the Chapter for centuries to come.\n\nThe immense size and destructive capabilities of a Dreadnought mean that they are usually reserved for the most fierce and deadly battlefields, however a Player and GM may decide that the return of a deceased Space Marine Agent in the role of a Dreadnought could serve as a poignant and vengeful ending.",
+    "tierThreat": { "1": "A", "2": "A", "3": "A", "4": "E" },
+    "keywords": ["ADEPTUS ASTARTES"],
+    "attributes": { "S": 9, "T": 9, "A": 3, "I": 6, "Wil": 4, "Int": 4, "Fel": 2 },
+    "resilience": { "value": 18, "note": "8 AR" },
+    "defence": 5,
+    "wounds": 17,
+    "shock": 8,
+    "skills": "Default 8, Awareness 10 (Passive 5), Athletics 10, Ballistic Skill 10, Weapon Skill 10",
+    "bonuses": [
+      { "name": "Second Strike", "description": "This Threat reduces the Multi-Attack penalty by 2DN, as though it had the Dual Wield Talent." }
+    ],
+    "abilities": [
+      { "type": "REACTION", "name": "Furioso", "description": "Whenever this Threat fails a Resolve Test roll 1d6. If you roll an icon, the Dreadnought becomes Frenzied, ignoring any penalties and taking an additional Action." },
+      { "type": "ACTION", "name": "Dreadnought Power Fist", "stats": "12 +4 ED / AP -2 / Range 1 / Rending (2)" },
+      { "type": "ACTION", "name": "Plasma Cannon", "stats": "15 +2 ED / AP -3 / Range 18-36-54 / Salvo 3 / Heavy (8), Supercharge" },
+      { "type": "ACTION", "name": "Heavy Bolter", "stats": "12 +2 ED / AP -1 / Range 18-36-54 / Salvo 3 / Brutal, Heavy (4), Rapid Fire (4)" },
+      { "type": "ACTION", "name": "Twin-Linked Lascannon", "stats": "18 +3 ED / AP -3 / Range 24-48-72 / Salvo 1 / Heavy (8), Reliable" },
+      { "type": "ACTION", "name": "Multi-Melta", "stats": "16 +3 ED / AP -4 / Range 12-24-36 / Salvo 1 / Heavy (8), Melta" }
+    ],
+    "determination": "Lightning Reflexes. Spend 1 Ruin to roll 6d6. This Threat can roll Determination against Mortal Wounds.",
+    "conviction": 4,
+    "resolve": 3,
+    "speed": 8,
+    "size": "Large",
+    "source": "Vow of Absolution"
+  },
+  {
+    "id": "redemptor_dreadnought",
+    "name": "REDEMPTOR DREADNOUGHT",
+    "description": "It means that the few remaining Absolvers Dreadnoughts are generally deployed well away from other Imperial assets, as they can barely discern friend from foe as they unleash their unbridled fury upon the battlefield. Only once they have rampaged and destroyed everything in sight does their rage subside somewhat, and the Techmarines can begin to attempt the soothing rites that will return these metal leviathans to slumber. When a Dreadnought falls in combat, the Chapter carefully recovers and repairs the chassis, ready for a new occupant. However stoic the next marine proves, it will not be long before they, too, descend into berserker madness.",
+    "tierThreat": { "1": "A", "2": "A", "3": "A", "4": "E" },
+    "keywords": ["ADEPTUS ASTARTES", "PRIMARIS"],
+    "attributes": { "S": 10, "T": 10, "A": 4, "I": 6, "Wil": 4, "Int": 4, "Fel": 2 },
+    "resilience": { "value": 20, "note": "9 AR" },
+    "defence": 5,
+    "wounds": 20,
+    "shock": 9,
+    "skills": "Default 8, Awareness 10 (Passive 5), Athletics 10, Ballistic Skill 10, Weapon Skill 12",
+    "bonuses": [
+      { "name": "Second Strike", "description": "This Threat reduces the Multi-Attack penalty by 2DN, as though it had the Dual Wield Talent." }
+    ],
+    "abilities": [
+      { "type": "BATTLECRY", "name": "Raging Redemption", "description": "The Redemptor Dreadnought Seizes the Initiative without spending a point of Ruin and Charges. It gains an additional +2 bonus die to its attack Test as part of the Charge." },
+      { "type": "ACTION", "name": "Redemptor Fist", "stats": "12 +4 ED / AP -3 / Range 1 / Rending (2)" },
+      { "type": "ACTION", "name": "Macro Plasma Incinerator", "stats": "18 +3 ED / AP -3 / Range 18-36-54 / Salvo 2 / Heavy (6), Supercharge" },
+      { "type": "ACTION", "name": "Heavy Flamer", "stats": "12 +2 ED / AP -1 / Range 4-8-12 / Salvo 2 / Flamer, Heavy (6)" },
+      { "type": "ACTION", "name": "Icarus Rocket Pod", "stats": "12 +5 ED / AP -2 / Range 18-36-54 / Blast (6)" },
+      { "type": "ACTION", "name": "Storm Bolter", "stats": "10 +1 ED / Range 12-24-36 / Salvo 4 / Brutal, Heavy (3), Rapid Fire (3)" }
+    ],
+    "determination": "Lightning Reflexes. Spend 1 Ruin to roll 6d6. This Threat can roll Determination against Mortal Wounds.",
+    "conviction": 4,
+    "resolve": 3,
+    "speed": 8,
+    "size": "Large",
+    "source": "Vow of Absolution"
+  },
+  {
+    "id": "brother_sgt_hofniel",
+    "name": "BROTHER SGT HOFNIEL",
+    "tierThreat": { "1": "A", "2": "E", "3": "T", "4": "T" },
+    "keywords": ["ADEPTUS ASTARTES", "IMPERIUM", "ABSOLVERS CHAPTER"],
+    "attributes": { "S": 5, "T": 6, "A": 5, "I": 5, "Wil": 4, "Int": 4, "Fel": 2 },
+    "resilience": { "value": 13, "note": "Power Armour: 6 AR" },
+    "defence": 4,
+    "wounds": 12,
+    "shock": 7,
+    "skills": "Athletics 4, Awareness 3, Ballistic Skill 6, Intimidation 2, Investigation 1, Leadership 3, Scholar 1, Stealth 4, Survival 2, Weapon Skill 5",
+    "bonuses": [
+      { "name": "Talents", "description": "Duty Until Death, Angel of Death, Gilead Combat Veteran" }
+    ],
+    "equipment": "Astartes Combat Knife, Auspex, Boltgun, Chainsword, 3 Frag Grenades, 3 Krak Grenades, Mk 8 Power Armour",
+    "abilities": [
+      { "type": "ABILITY", "name": "Savage Echoes", "description": "You may reroll Double Rank dice once per melee attack Test." },
+      { "type": "ABILITY", "name": "Defender of Humanity", "description": "+Rank Icons to any successful attack against a Mob." },
+      { "type": "ABILITY", "name": "Honour the Chapter", "description": "You are subject to the orders of your Chapter Master, and must honour the beliefs and traditions of your chapter increase final Resolve by +1." },
+      { "type": "ABILITY", "name": "Space Marine Implants", "description": "You are immune to the Bleeding Condition. You gain +1 bonus die to any Test related to one of the 19 implants if deemed appropriate by the GM." }
+    ],
+    "determination": "Spend 1 Ruin to roll 6d6.",
+    "conviction": 4,
+    "resolve": 4,
+    "speed": 7,
+    "size": "Avg",
+    "source": "Vow of Absolution"
+  },
+  {
+    "id": "brother_puriel",
+    "name": "BROTHER PURIEL",
+    "description": "As the only member of Righteous Will who is not native to the Gilead System, Brother Puriel recognises that his life experience is decidedly different from his battle-brothers. Puriel was born on the death world Newmann's Folly, where survival depended upon skill at arms and very limited technology. An Absolvers Chaplain recruited him to the Chapter after seeing him battle a massive felinoid in defence of a group of younger children. The Chaplain interceded to save the group from the enormous predator, almost certainly saving their lives. Seeing the child's grit, he brought him back to Castle Grigori to become an aspirant. During Puriel's training, he demonstrated such an affinity for close combat that several trainers expressed concern for his susceptibility to the Red Thirst.\n\nPuriel has served the Absolvers for nearly a century, a significant portion of which was spent as a dedicated member of an Assault Squad. Within Righteous Will, he serves as the primary melee combat specialist. He revels in the visceral feel of hand-to-hand combat, preferring to use his chainsword over any ranged weapons. In tactical discussions, Puriel advocates strongly for melee approaches and routinely advocates for plans that focus upon a stealthier approach that includes close combat. He feels that this is the purest way to dispense the Emperor's judgement. While he also advocates that focusing on close combat preserves necessary resources, even he would have to admit that this is not his primary motive.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
+    "keywords": ["ADEPTUS ASTARTES", "IMPERIUM", "ABSOLVERS CHAPTER"],
+    "attributes": { "S": 6, "T": 5, "A": 5, "I": 6, "Wil": 3, "Int": 3, "Fel": 1 },
+    "resilience": { "value": 12, "note": "Power Armour: 6 AR" },
+    "defence": 5,
+    "wounds": 11,
+    "shock": 7,
+    "skills": "Athletics 5, Awareness 4, Ballistic Skill 5, Intimidation 3, Stealth 3, Survival 1, Weapon Skill 6",
+    "bonuses": [
+      { "name": "Talents", "description": "Gilead Combat Veteran, Whirlwind of Rage" }
+    ],
+    "equipment": "Astartes Combat Knife, Chainsword, 3 Frag Grenades, Hand Flamer, Mk 8 Power Armour",
+    "abilities": [
+      { "type": "ABILITY", "name": "Savage Echoes", "description": "You may reroll Double Rank dice once per melee attack Test." },
+      { "type": "ABILITY", "name": "Defender of Humanity", "description": "+Rank Icons to any successful attack against a Mob." },
+      { "type": "ABILITY", "name": "Honour the Chapter", "description": "You are subject to the orders of your Chapter Master, and must honour the beliefs and traditions of your Chapter increase final Resolve by +1." },
+      { "type": "ABILITY", "name": "Space Marine Implants", "description": "You are immune to the Bleeding Condition. You gain +1 bonus die to any Test related to one of the 19 implants if deemed appropriate by the GM." }
+    ],
+    "determination": "Spend 1 Ruin to roll 5d6.",
+    "conviction": 3,
+    "resolve": 3,
+    "speed": 7,
+    "size": "Avg",
+    "source": "Vow of Absolution"
+  },
+  {
+    "id": "brother_briathos",
+    "name": "BROTHER BRIATHOS",
+    "description": "With nearly a decade of service as a member of Righteous Will, Brother Briathos is the longest standing member of the Kill Team. During those years, he has seen all the other members lost — some to reassignment and others to the vagaries of war. Throughout his time, his primary focus has remained the study and execution of the Codex Astartes. Briathos has exceptionally strong feelings, even by Adeptus Astartes standards, about internalising Guilliman's writings and applying them to all things. This application goes far beyond military matters, extending to all phases of life, including routine discussions with the fellow members of his Kill Team and those outside of it. He often quotes the Codex in conversation, using it as a key point in driving home his — or rather, the Primarch's — perspective on the discussion. Of course, his battle-brothers do not always agree with his interpretation or application.\n\nBriathos is most accomplished with his bolter, embracing the idea that it is the weapon most applicable in the broadest range of circumstances. Because of this, he spends additional time drilling with the weapon, and encourages the Kill Team's other members to join him in extra practice sessions. Briathos also enjoys performing routine maintenance on his bolter, as well as his other gear. He often assists his peers with the basic upkeep on their wargear, though this is probably at least partially to make certain that they are keeping all their equipment up to Codex requirements.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
+    "keywords": ["ADEPTUS ASTARTES", "IMPERIUM", "ABSOLVERS CHAPTER"],
+    "attributes": { "S": 5, "T": 5, "A": 5, "I": 5, "Wil": 3, "Int": 3, "Fel": 3 },
+    "resilience": { "value": 12, "note": "Power Armour: 6 AR" },
+    "defence": 4,
+    "wounds": 11,
+    "shock": 7,
+    "skills": "Athletics 5, Awareness 4, Ballistic Skill 7, Insight 2, Intimidation 3, Medicae 2, Stealth 3, Survival 1, Tech 2, Weapon Skill 4",
+    "bonuses": [
+      { "name": "Talents", "description": "Deadshot, Trademark Weapon" }
+    ],
+    "equipment": "Astartes Combat Knife, Boltgun, 3 Frag Grenades, Hellfire Rounds, 3 Krak Grenades, Mk 8 Power Armour",
+    "abilities": [
+      { "type": "ABILITY", "name": "Savage Echoes", "description": "You may reroll Double Rank dice once per melee attack Test." },
+      { "type": "ABILITY", "name": "Defender of Humanity", "description": "+Rank Icons to any successful attack against a Mob." },
+      { "type": "ABILITY", "name": "Honour the Chapter", "description": "You are subject to the orders of your Chapter Master, and must honour the beliefs and traditions of your chapter increase final Resolve by +1." },
+      { "type": "ABILITY", "name": "Space Marine Implants", "description": "You are immune to the Bleeding Condition. You gain +1 bonus die to any Test related to one of the 19 implants if deemed appropriate by the GM." }
+    ],
+    "determination": "Spend 1 Ruin to roll 5d6.",
+    "conviction": 3,
+    "resolve": 3,
+    "speed": 7,
+    "size": "Avg",
+    "source": "Vow of Absolution"
+  },
+  {
+    "id": "brother_marmaroth",
+    "name": "BROTHER MARMAROTH",
+    "description": "After completing his initiation, Brother Marmaroth was immediately assigned to replace a fallen member of Kill Team Righteous Will. In the months since, he has acquitted himself admirably. Marmaroth was particularly adept at infiltration and demolition missions during his service as a Scout, prior to completing his initiation. Those aptitudes have led him to build closer connections with both Brothers Puriel and Rogziel. During missions, he often works closely with one or both, providing backup for melee engagements or assisting when missions call for the deployment of ordnance.\n\nMarmaroth joined the Righteous Will as a direct replacement; his role within the team was to assume that of the fallen battle-brother ensuring any risk of performance loss was kept to a minimum. As a result, Brother Marmaroth must carry and use a flamer as his primary weapon. While he is competent with this weapon, he far prefers to wield his combat knife or bolt pistol. His greatest challenge has been learning to adapt to the flamer's utility, and while he still prefers the greater precision of his Astartes Combat Knife he has come to appreciate the devastation a gout of blazing promethium can provide. Despite his preferences, he has increased the amount of focus time drilling with the flamer and has enhanced his proficiency with the weapon. He longs to also experiment in using promethium in conjunction with his demolitions training, but has not yet had an opportunity.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
+    "keywords": ["ADEPTUS ASTARTES", "IMPERIUM", "ABSOLVERS CHAPTER"],
+    "attributes": { "S": 5, "T": 5, "A": 6, "I": 5, "Wil": 3, "Int": 3, "Fel": 2 },
+    "resilience": { "value": 12, "note": "Power Armour: 6 AR" },
+    "defence": 4,
+    "wounds": 6,
+    "shock": 7,
+    "skills": "Athletics 6, Awareness 4, Ballistic Skill 5, Intimidation 2, Stealth 4, Survival 2, Tech 2, Weapon Skill 4",
+    "bonuses": [
+      { "name": "Talents", "description": "Promethium Proficiency, Silent" }
+    ],
+    "equipment": "Astartes Combat Knife, Bolt Pistol, Flamer, 3 Frag Grenades, 3 Krak Grenades, Mk 8 Power Armour, Melta Bomb",
+    "abilities": [
+      { "type": "ABILITY", "name": "Savage Echoes", "description": "You may reroll Double Rank dice once per melee attack Test." },
+      { "type": "ABILITY", "name": "Defender of Humanity", "description": "+Rank Icons to any successful attack against a Mob." },
+      { "type": "ABILITY", "name": "Honour the Chapter", "description": "You are subject to the orders of your Chapter Master, and must honour the beliefs and traditions of your chapter increase final Resolve by +1." },
+      { "type": "ABILITY", "name": "Space Marine Implants", "description": "You are immune to the Bleeding Condition. You gain +1 bonus die to any Test related to one of the 19 implants if deemed appropriate by the GM." }
+    ],
+    "determination": "Spend 1 Ruin to roll 5d6.",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 7,
+    "size": "Avg",
+    "source": "Vow of Absolution"
+  },
+  {
+    "id": "brother_rogziel",
+    "name": "BROTHER ROGZIEL",
+    "description": "Brother Rogziel has served Kill Team Righteous Will as the demolitions and heavy weapons expert for several years. He is loath to adhere to the Absolvers' recent directives regarding supply conservation, instead preferring to be absolutely certain that threats are unequivocally eradicated. Where a single round might be enough to kill an opponent, he prefers to use two, to leave no question about their fate. He often makes light of this, insisting that he is not an Apothecary, so wishes to remain confident that his foes are properly dispatched.\n\nSince his assignment to the squad, this belief has led to an increase in collateral damages. This is particularly true on missions where the assignments explicitly call for demolitions work. Brother Rogziel seems to have an unusual knack for getting exceptional performance out of the ordnance he uses. His squadmates suspect that this might have to do with a tendency to exploit any other combustible materials that might be available, invariably finding a way to utilise any volatile substances nearby to augment the overall effectiveness of his equipment. In more candid moments, Brother Rogziel readily admits to the fellow members of the Righteous Will that his Sanguine Vision includes him dying amid an explosion. He has chosen not to share further details of his fate with his battle-brothers, lest he leave them unreasonably concerned.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
+    "keywords": ["ADEPTUS ASTARTES", "IMPERIUM", "ABSOLVERS CHAPTER"],
+    "attributes": { "S": 5, "T": 6, "A": 5, "I": 5, "Wil": 3, "Int": 3, "Fel": 2 },
+    "resilience": { "value": 13, "note": "Power Armour: 6 AR" },
+    "defence": 4,
+    "wounds": 12,
+    "shock": 7,
+    "skills": "Athletics 4, Awareness 4, Ballistic Skill 6, Cunning 3, Intimidation 1, Stealth 4, Survival 2, Tech 4, Weapon Skill 4",
+    "bonuses": [
+      { "name": "Talents", "description": "Gilead Combat Veteran, Trademark Weapon - Missile Launcher" }
+    ],
+    "equipment": "Astartes Combat Knife, Bolt Pistol, 3 Frag Grenades, 3 Krak Grenades, Missile Launcher with Frag and Krak missiles, Mk 8 Power Armour",
+    "abilities": [
+      { "type": "ABILITY", "name": "Savage Echoes", "description": "You may reroll Double Rank dice once per melee attack Test." },
+      { "type": "ABILITY", "name": "Defender of Humanity", "description": "+Rank Icons to any successful attack against a Mob." },
+      { "type": "ABILITY", "name": "Honour the Chapter", "description": "You are subject to the orders of your Chapter Master, and must honour the beliefs and traditions of your chapter increase final Resolve by +1." },
+      { "type": "ABILITY", "name": "Space Marine Implants", "description": "You are immune to the Bleeding Condition. You gain +1 bonus die to any Test related to one of the 19 implants if deemed appropriate by the GM." }
+    ],
+    "determination": "Spend 1 Ruin to roll 6d6.",
+    "conviction": 3,
+    "resolve": 3,
+    "speed": 7,
+    "size": "Avg",
+    "source": "Vow of Absolution"
+  },
+  {
+    "id": "psychneuein",
+    "name": "PSYCHNEUEIN",
+    "description": "Native to the immaterium, they enter realspace in order to breed by psychically implanting their eggs in the brains of injured, latent or weak-willed Psykers, usually with fatal results. Swarms are commonly made up of equal numbers of juvenile queens and drones.",
+    "tierThreat": { "1": "E", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["XENOS", "CHAOS"],
+    "attributes": { "S": 4, "T": 4, "A": 4, "I": 4, "Wil": 4, "Int": 1, "Fel": 1 },
+    "resilience": { "value": 6, "note": "Chitinous plating, 2 AR" },
+    "defence": 3,
+    "wounds": 6,
+    "shock": 6,
+    "skills": "Awareness 6 (Passive 3), Psychic Mastery 3, Agility 4, Stealth 4, Weapon Skill 5",
+    "bonuses": [
+      { "name": "Mindless", "description": "This Threat automatically passes Resolve Tests." }
+    ],
+    "abilities": [
+      { "type": "ABILITY", "name": "Psychic Drone", "description": "Anyone hearing the droning of a swarm of Psychneuein must make a DN 5 Fear Test." },
+      { "type": "ABILITY", "name": "Wings", "description": "This Threat can fly at Speed 10. A DN 5 Agility roll must be made to remain in the air when injured." },
+      { "type": "RUIN", "name": "Implantation (juvenile queens only)", "description": "Range 18. Spend 1 Ruin to attempt to psychically lay eggs in the mind of an agent with the PSYKER trait. Roll Psychic Mastery vs the target's Willpower. If the Psychneuein is successful, a clutch of d6 eggs are implanted in the target's head, and unless removed (requiring a Medicae roll, DN 8) will messily hatch 2d6 hours later, with fatal results for the host." },
+      { "type": "ACTION", "name": "Bite", "stats": "13 +4 ED / AP -2 / Range 1" },
+      { "type": "ACTION", "name": "Sting (drones only)", "stats": "13 +2 ED / AP -4 / Range 1. Anyone with the PSYKER trait stung by a Psychneuein Drone immediately rolls a DN 6 Toughness Test. On a failure they immediately roll on the Perils of the Warp table." }
+    ],
+    "determination": "Spend 1 Ruin to roll 3d6.",
+    "conviction": 5,
+    "resolve": 4,
+    "speed": 10,
+    "size": "Avg",
+    "source": "Redacted Records I"
+  },
+  {
+    "id": "corrupted_scribes",
+    "name": "CORRUPTED SCRIBES",
+    "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["CHAOS", "TZEENTCH"],
+    "attributes": { "S": 1, "T": 1, "A": 1, "I": 2, "Wil": 1, "Int": 3, "Fel": 2 },
+    "resilience": { "value": 4, "note": "Tattered Robes: 0 AR" },
+    "defence": 1,
+    "wounds": 3,
+    "shock": 2,
+    "skills": "Default 2, Awareness 3 (Passive 2)",
+    "bonuses": [
+      { "name": "Mindless", "description": "This Threat automatically passes Resolve Tests." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Feeble Hands", "stats": "1 +1 ED / melee range" },
+      { "type": "RUIN", "name": "Convergence of the Damned", "description": "Spend 1 Ruin to draw an additional 10 corrupted scribes into combat." }
+    ],
+    "determination": "Spend 1 Ruin to roll 1d6.",
+    "conviction": 1,
+    "resolve": 1,
+    "speed": 5,
+    "size": "Avg",
+    "source": "Redacted Records I"
+  },
+  {
+    "id": "jacobin_grizari",
+    "name": "JACOBIN GRIZARI",
+    "tierThreat": { "1": "E", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["GENESTEALER CULT", "IMPERIUM", "SCUM"],
+    "attributes": { "S": 2, "T": 2, "A": 3, "I": 4, "Wil": 5, "Int": 3, "Fel": 6 },
+    "resilience": { "value": 6, "note": "Flak Coat: 3 AR" },
+    "defence": 3,
+    "wounds": 6,
+    "shock": 7,
+    "skills": "Default 6, Awareness 6 (Passive 3), Ballistic Skill 4, Cunning 10, Deception 10, Insight 10, Persuasion 10, Stealth 6, Weapon Skill 5",
+    "bonuses": [
+      { "name": "Talents", "description": "Has the Talents Jargon [Scholar] and Scum Savvy." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Lasgun", "stats": "7 +1 ED / Range 12-24-36 / Salvo 2 / Rapid Fire (1), Reliable" },
+      { "type": "ACTION", "name": "Frag Grenade (1 Ammo)", "stats": "10 +4 ED / Range 12 / Salvo - / Blast (Medium)" },
+      { "type": "ACTION", "name": "Knife", "stats": "5 +2 ED / Range 1" },
+      { "type": "REACTION", "name": "Sidestep", "description": "Sidestep Talent" }
+    ],
+    "determination": "Spend 1 Ruin to roll 2d6.",
+    "conviction": 5,
+    "resolve": 4,
+    "speed": 6,
+    "size": "Avg",
+    "source": "Redacted Records I"
+  },
+  {
+    "id": "slaughter_servitor_processor",
+    "name": "SLAUGHTER SERVITOR (PROCESSOR)",
+    "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["ADEPTUS MECHANICUS", "IMPERIUM", "SERVITOR"],
+    "attributes": { "S": 4, "T": 3, "A": 2, "I": 2, "Wil": 1, "Int": 1, "Fel": 1 },
+    "resilience": { "value": 8, "note": "Grafted Plates: 4 AR" },
+    "defence": 1,
+    "wounds": 5,
+    "skills": "Default 5, Weapon Skill 6",
+    "bonuses": [
+      { "name": "Iron Soul", "description": "This Threat is unaffected by Abilities that target the mind, and never needs to make a Resolve Test to continue fighting." },
+      { "name": "Coordinated Slaughter", "description": "When this Threat hits a target with its electro-prod, it can then make a single move towards the target and make an attack with its spiker. When performing this attack, this Threat does not suffer any penalties for making a Multi-Attack." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Spiker", "stats": "10 +1 ED / AP -3 / Range 1 / Agonising, Brutal, Unwieldy (2)" },
+      { "type": "ACTION", "name": "Electro-Prod", "stats": "10 +1 ED / AP -1 / Range 18 / Inflict (Vulnerable)" },
+      { "type": "COMPLICATION", "name": "Gristle in the Gears", "description": "The Slaughter Servitor is Exhausted for 1 Round. This can be negated by the Slaughter Servitor spending an action and succeeding at a DN 3 Athletics (Str) Test." }
+    ],
+    "determination": "Spend 1 Ruin to roll 3d6.",
+    "conviction": 1,
+    "resolve": 1,
+    "speed": 5,
+    "size": "Avg",
+    "source": "Redacted Records I"
+  },
+  {
+    "id": "slaughter_servitor_corral",
+    "name": "SLAUGHTER SERVITOR (CORRAL)",
+    "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["ADEPTUS MECHANICUS", "IMPERIUM", "SERVITOR"],
+    "attributes": { "S": 4, "T": 4, "A": 1, "I": 2, "Wil": 1, "Int": 1, "Fel": 1 },
+    "resilience": { "value": 10, "note": "Heavy Plates: 5 AR" },
+    "defence": 1,
+    "wounds": 8,
+    "skills": "Default 5, Athletics 7, Weapon Skill 6",
+    "bonuses": [
+      { "name": "Iron Soul", "description": "This Threat is unaffected by Abilities that target the mind, and never needs to make a Resolve Test to continue fighting." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Hydraulic Claws", "stats": "9 +3 ED / Range 1 / Brutal, Unwieldy (2)" },
+      { "type": "ACTION", "name": "Vice Grip", "description": "The Slaughter Servitor makes an Athletics Interaction Attack. If this check succeeds the target is Restrained for 1 round." },
+      { "type": "COMPLICATION", "name": "Gristle in the Gears", "description": "The Slaughter Servitor is Exhausted for 1 Round. This can be negated by the Slaughter Servitor spending an action and succeeding at a DN 3 Athletics (Str) Test." }
+    ],
+    "determination": "Spend 1 Ruin to roll 4d6.",
+    "conviction": 1,
+    "resolve": 1,
+    "speed": 5,
+    "size": "Large",
+    "source": "Redacted Records I"
+  },
+  {
+    "id": "slaughter_servitor_excoriator",
+    "name": "SLAUGHTER SERVITOR (EXCORIATOR)",
+    "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["ADEPTUS MECHANICUS", "IMPERIUM", "SERVITOR"],
+    "attributes": { "S": 4, "T": 3, "A": 3, "I": 3, "Wil": 1, "Int": 1, "Fel": 1 },
+    "resilience": { "value": 7, "note": "Grafted Plates: 4 AR" },
+    "defence": 2,
+    "wounds": 5,
+    "skills": "Default 5, Weapon Skill 7",
+    "bonuses": [
+      { "name": "Iron Soul", "description": "This Threat is unaffected by Abilities that target the mind, and never needs to make a Resolve Test to continue fighting." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Blade Arms", "stats": "9 +3 ED / AP -2 / Range 1 / Agonising, Inflict (Bleeding [1])" },
+      { "type": "WRATH", "name": "Horrifying Flaying", "description": "If this Threat rolls a Wrath Critical as part of an attack with its blade arms, the target increases the Bleeding Condition to 2." },
+      { "type": "COMPLICATION", "name": "Dulled Blades", "description": "The Slaughter Servitor reduces its blade arms attack damage to 9 +1 ED for 1 Round." }
+    ],
+    "determination": "Spend 1 Ruin to roll 3d6.",
+    "conviction": 1,
+    "resolve": 1,
+    "speed": 5,
+    "size": "Avg",
+    "source": "Redacted Records I"
+  },
+  {
+    "id": "eternity_watch",
+    "name": "ETERNITY WATCH",
+    "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["ADEPTUS MECHANICUS", "AVACHRUS FORGE WORLD", "IMPERIAL"],
+    "attributes": { "S": 2, "T": 2, "A": 2, "I": 2, "Wil": 1, "Int": 4, "Fel": 3 },
+    "resilience": { "value": 5, "note": "Implants and void-suits: 2 AR" },
+    "defence": 1,
+    "wounds": 5,
+    "shock": 3,
+    "skills": "Default 3, Scholar 6, Tech 6, Awareness 6",
+    "bonuses": [
+      { "name": "In Defence of Science", "description": "When fighting to protect the great work, members of the Eternity Watch are immune to Fear and have +2 dice on all Actions." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Mastercrafted Las Pistol", "stats": "10 +1 ED / Range 6-12-18 / Salvo 1 / Pistol, Reliable" }
+    ],
+    "determination": "Spend 1 Ruin to roll 2d6.",
+    "conviction": 1,
+    "resolve": 1,
+    "speed": 5,
+    "size": "Avg",
+    "source": "Redacted Records I"
+  },
+  {
+    "id": "machinae_fractus",
+    "name": "MACHINAE FRACTUS",
+    "description": "The Machinae are a horrible fusion of man and machine, but not as the Omnissiah intended. They shamble relentlessly towards enemies, heedless of their own lives. When an enemy falls in battle, some of them are tasked with carrying away the remains to be processed into more abominations.",
+    "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["ADEPTUS MECHANICUS", "CHAOS", "HERETIC"],
+    "attributes": { "S": 3, "T": 3, "A": 2, "I": 2, "Wil": 2, "Int": 3, "Fel": 1 },
+    "resilience": { "value": 5, "note": "Implants: 2 AR" },
+    "defence": 1,
+    "wounds": 6,
+    "skills": "Default 3, Awareness 4 (Passive 2), Ballistic Skill 3, Medicae 4, Weapon Skill 4",
+    "bonuses": [
+      { "name": "Beyond Human Frailties", "description": "Ignore penalties for being Heavily Injured." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Frag Cannon", "stats": "7 +2 ED / Range 8-16-24 / Salvo - / Agonising" },
+      { "type": "ACTION", "name": "Crude Augmetic Limb", "stats": "6 +3 ED / Range 1 / Unwieldy 1" },
+      { "type": "BATTLECRY", "name": "Cybernetic Abomination", "description": "Anyone that can see this Threat must make a DN 2 Fear Test." },
+      { "type": "REACTION", "name": "Body Snatcher", "description": "If anybody reaches Dying within 3m of a Fractus, the Fractus may immediately pick them up and make a Movement Action to carry them away." }
+    ],
+    "determination": "Spend 1 Ruin to roll 3d6.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 5,
+    "size": "Avg",
+    "source": "Redacted Records I"
+  },
+  {
+    "id": "sundered_wheel_cultist",
+    "name": "SUNDERED WHEEL CULTIST",
+    "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["ADEPTUS MECHANICUS", "CHAOS", "HERETIC"],
+    "attributes": { "S": 3, "T": 2, "A": 2, "I": 2, "Wil": 2, "Int": 3, "Fel": 2 },
+    "resilience": { "value": 4, "note": "Protective Worksuit: 1 AR" },
+    "defence": 1,
+    "wounds": 4,
+    "shock": 4,
+    "skills": "Default 3, Athletics 4, Awareness 3 (Passive 1), Tech 5, Weapon Skill 3",
+    "bonuses": [
+      { "name": "Labour Augmetics", "description": "Add +4 dice for Tests to lift heavy loads and ignore the penalty for using Heavy weapons." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Improperly Used Tool", "stats": "4 +2 ED / Range 1" },
+      { "type": "BATTLECRY", "name": "Cybernetic Abomination", "description": "Anyone that can see this Threat must make a DN 2 Fear Test." }
+    ],
+    "determination": "Spend 1 Ruin to roll 2d6.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 5,
+    "size": "Avg",
+    "source": "Redacted Records I"
+  },
+  {
+    "id": "helixus_harvester_tech_priest",
+    "name": "HELIXUS HARVESTER TECH-PRIEST",
+    "description": "Harvesters are unused to dealing with outsiders and are awkward and uncomfortable when forced to do so, but are unthinkingly ruthless and eerily efficient when given a clear task to perform. They move with almost insectile grace, and are much stronger than their delicate frame would suggest.",
+    "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["ADEPTUS MECHANICUS", "HERETIC", "IMPERIUM"],
+    "attributes": { "S": 3, "T": 3, "A": 3, "I": 3, "Wil": 2, "Int": 3, "Fel": 1 },
+    "resilience": { "value": 6, "note": "Heavy Vatsuit: 2 AR" },
+    "defence": 1,
+    "wounds": 6,
+    "shock": 4,
+    "skills": "Default 3, Athletics 4, Awareness 3 (Passive 1), Ballistic Skill 4, Medicae 4, Tech 4, Weapon Skill 5",
+    "bonuses": [
+      { "name": "Cranial Augmetics", "description": "Sealed internal air supply. Ignore any penalties to Tests for visual conditions." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Tranq-Gas Blower", "stats": "6 +1 ED / AP -1 / Range 5-10-15 / Salvo 2 / Inflict (Exhausted 4), Spread" },
+      { "type": "ACTION", "name": "Vat Hook", "stats": "5 +2 ED / Range 2 / Agonising" }
+    ],
+    "determination": "Spend 1 Ruin to roll 3d6.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 5,
+    "size": "Avg",
+    "source": "Redacted Records I"
+  },
+  {
+    "id": "iron_feeder",
+    "name": "IRON FEEDER",
+    "description": "If you can get a good look at an Iron Feeder, it's probably a distraction so another one can sneak up and stab you. They're patient and stealthy, but when they strike it's quick and ruthless. They work together unless the odds turn against them — at that point it's each Feeder for themselves. They covet augmetics, and will attack such targets for preference. They speak highly mangled Gothic.",
+    "tierThreat": { "1": "E", "2": "E", "3": "T", "4": "T" },
+    "keywords": ["MUTANT", "HERETIC"],
+    "attributes": { "S": 4, "T": 4, "A": 4, "I": 4, "Wil": 3, "Int": 3, "Fel": 2 },
+    "resilience": { "value": 7, "note": "Mutated skin & scrap armour plating: 2 AR" },
+    "defence": 1,
+    "wounds": 6,
+    "shock": 4,
+    "skills": "Default 4, Awareness 6, Stealth 6, Survival 6, Tech 3, Weapon Skill 7",
+    "bonuses": [
+      { "name": "Favoured Prey", "description": "If the target of this Threat's attack has any Augmetics, add +1 ED to any melee attack." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Scrapmetal Shard", "stats": "6 +1 ED / AP -2 / Range 1" },
+      { "type": "REACTION", "name": "Scatter", "description": "Once per Round, when another Iron Feeder within 10m of this Threat is killed, this Threat can take an immediate Movement Action." },
+      { "type": "RUIN", "name": "Shadow Strike", "description": "When an Iron Feeder succeeds in a melee attack as part of an ambush, the GM can add +1 ED per point of Ruin they choose to spend." }
+    ],
+    "determination": "Spend 1 Ruin to roll 4d6.",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 7,
+    "size": "Avg",
+    "source": "Redacted Records I"
+  },
+  {
+    "id": "heralds_of_the_azure_flame",
+    "name": "HERALDS OF THE AZURE FLAME",
+    "description": "Heralds are spindly Humans with thin hair and pale skin. Most have minor mutations and cult markings hidden beneath their azure robes. Arrogant and spiteful, they believe they have been robbed of their birthright. Due to their power, they are prone to underestimating others and are fond of the sound of their own voices.",
+    "tierThreat": { "1": "A", "2": "E", "3": "T", "4": "T" },
+    "keywords": ["CHAOS", "HERETIC", "PSYKER", "TZEENTCH"],
+    "attributes": { "S": 2, "T": 2, "A": 3, "I": 3, "Wil": 6, "Int": 4, "Fel": 3 },
+    "resilience": { "value": 7, "note": "Warp-charms, 4 AR" },
+    "defence": 2,
+    "wounds": 4,
+    "shock": 8,
+    "skills": "Default 4, Psychic Mastery 9, Psyniscience 10",
+    "bonuses": [
+      { "name": "Servants of the Flame", "description": "Heralds are immune to any flamers or fires that are not sanctified." },
+      { "name": "Sacrificial Flame", "description": "Each round before combat begins a Herald can choose to sacrifice up to 3 loyal Cultists within 20m, who burst into blue flames. This causes the DN of all attacks or powers used against the Herald to increase by an amount equal to the number of Cultists sacrificed." },
+      { "name": "A Thousand-Thousand Charms", "description": "Within their lair, all Heralds receive +1 Defence, +1 Determination and may ignore a single 1 on the Wrath Die of each Psychic Mastery Test. All Psykers roll an extra Wrath Die on each Psychic Mastery Test they make." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Sorcerer", "description": "The Herald uses any of the Pyromancy abilities or the Dark Flame psychic ability. Their corruption level counts as 4." },
+      { "type": "ACTION", "name": "Daemon Stave", "stats": "9 +2 ED / AP -1 / Range 2 / Force, Inflict (On Fire), Parry" }
+    ],
+    "determination": "Spend 1 Ruin to roll 2d6.",
+    "conviction": 6,
+    "resolve": 5,
+    "speed": 6,
+    "size": "Avg",
+    "source": "Redacted Records I"
+  },
+  {
+    "id": "order_of_the_throne_knight_paladin",
+    "name": "ORDER OF THE THRONE KNIGHT PALADIN",
+    "description": "Ancient, pitted and battered, a Knight of the Order of the Throne sports beautifully customised carapace armour depicting scenes of battle and valour.",
+    "tierThreat": { "1": "M", "2": "M", "3": "M", "4": "A" },
+    "keywords": ["IMPERIUM", "QUESTOR MECHANICUS"],
+    "attributes": { "S": 16, "T": 11, "A": 3, "I": 4, "Wil": 7, "Int": 3, "Fel": 2 },
+    "resilience": { "value": 22, "note": "Adamantium Armour: 7 AR, Ion Shield: 3* AR" },
+    "defence": 3,
+    "wounds": 30,
+    "shock": 20,
+    "skills": "Default 3, Awareness 5 (Passive 2), Ballistic Skill 5, Weapon Skill 8",
+    "bonuses": [
+      { "name": "Pilot", "description": "When crewed by an expert Order of the Throne pilot, the Knight gains +2 dice on all Actions pertinent to combat. Every time the Knight takes damage, the pilot takes 1d3 Shock." },
+      { "name": "Juggernaut", "description": "Can make a Stomp attack as a Free Action once per round if all they do is Move." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Reaper Chainsword", "stats": "22 +6 ED / AP -3 / Range 5m / Heavy 10" },
+      { "type": "ACTION", "name": "Battle Cannon", "stats": "18 +2 ED / AP -3 / Range 30/60/90 / Salvo 3 / Heavy 12, Rapid Fire 2" },
+      { "type": "ACTION", "name": "Stomp", "stats": "18 +6 ED / AP 0 / Range 3m / Blast 6" },
+      { "type": "BATTLECRY", "name": "War Horns", "description": "A great echoing roar issues from the machine, forcing everyone who can hear it to make a DN 4 Terror Test." }
+    ],
+    "determination": "Roll 11d6 (Monstrous Creature).",
+    "conviction": 7,
+    "resolve": 6,
+    "speed": 12,
+    "size": "Gargantuan",
+    "source": "Redacted Records I"
+  },
+  {
+    "id": "escutcheon_assassin",
+    "name": "ESCUTCHEON ASSASSIN",
+    "description": "Well dressed, polite and measured, the Escutcheon Assassin seems quite above reproach. They are methodical, well-informed, and patient — willing to take time in order to make their executions look like accidents. Few of them know more than one immediate superior, and they usually work alone. If in danger of capture, they may well use their suicide pills.",
+    "tierThreat": { "1": "E", "2": "E", "3": "T", "4": "T" },
+    "keywords": ["IMPERIAL"],
+    "attributes": { "S": 3, "T": 3, "A": 4, "I": 4, "Wil": 5, "Int": 4, "Fel": 4 },
+    "resilience": { "value": 6, "note": "Armoured Clothing, 2 AR" },
+    "defence": 3,
+    "defenceNote": "4 with Parry",
+    "wounds": 8,
+    "shock": 12,
+    "skills": "Default 5, Awareness 6 (Passive 3), Ballistic Skill 7, Stealth 7, Weapon Skill 7",
+    "bonuses": [
+      { "name": "Well Connected", "description": "The Assassin can spend 1 Ruin to be cleared of almost any criminal charges by Nethrean authorities and released. Anything incriminating will be covered up." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Sword-cane", "stats": "5 +2 ED / AP -3 / Agonising, Parry" },
+      { "type": "ACTION", "name": "Needler", "stats": "8 +2 ED / Range 6/12/18 / Salvo 1 / Agonising, Inflict (Poisoned 4), Pistol, Silent" },
+      { "type": "REACTION", "name": "Suicide Pill", "description": "If captured by enemies, the Assassin will most likely attempt suicide. It would require an immediate DN 7 Medicae (Int) Test to save their life." }
+    ],
+    "determination": "Spend 1 Ruin to roll 3d6.",
+    "conviction": 5,
+    "resolve": 4,
+    "speed": 6,
+    "size": "Avg",
+    "source": "Redacted Records I"
+  },
+  {
+    "id": "epicurean_bodyguard",
+    "name": "EPICUREAN BODYGUARD",
+    "description": "Epicureans are debauched, titled, and indolent. They sneer at anybody who doesn't measure up to their standards. For the most part they rely on their wealth and influence to protect themselves, but each one keeps a loyal food-taster and bodyguard close to their side to wait upon them and protect them from harm.",
+    "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["HERETIC", "IMPERIAL"],
+    "attributes": { "S": 2, "T": 3, "A": 3, "I": 3, "Wil": 2, "Int": 3, "Fel": 4 },
+    "resilience": { "value": 5, "note": "Armoured Clothing: 1 AR" },
+    "defence": 2,
+    "wounds": 6,
+    "shock": 4,
+    "skills": "Default 4, Ballistic Skill 5, Weapon Skill 5",
+    "abilities": [
+      { "type": "ACTION", "name": "Mono-Sword", "stats": "6 +2 ED / AP -1 / Range 1 / Parry" },
+      { "type": "ACTION", "name": "Duelling Las", "stats": "7 +2 ED / AP -1 / Range 4-8-12 / Salvo 0 / Pistol, Reliable" }
+    ],
+    "determination": "Spend 1 Ruin to roll 3d6.",
+    "conviction": 5,
+    "resolve": 4,
+    "speed": 6,
+    "size": "Avg",
+    "source": "Redacted Records I"
+  },
+  {
+    "id": "worshipful_rootfolk",
+    "name": "WORSHIPFUL ROOTFOLK",
+    "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["HERETIC", "IMPERIAL"],
+    "attributes": { "S": 4, "T": 4, "A": 2, "I": 2, "Wil": 2, "Int": 2, "Fel": 2 },
+    "resilience": { "value": 5 },
+    "defence": 1,
+    "wounds": 8,
+    "shock": 4,
+    "skills": "Default 3",
+    "bonuses": [
+      { "name": "Servant of the Roots", "description": "When defending or spreading giftroot, the cultist gains +1d6 on all Actions." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Agricultural Implement", "stats": "7 +1 ED / Range 2 / Inflict (Prone)" },
+      { "type": "ACTION", "name": "Thrown Rock", "stats": "6 +1 ED / Range 16m" }
+    ],
+    "determination": "Spend 1 Ruin to roll 4d6.",
+    "conviction": 5,
+    "resolve": 4,
+    "speed": 6,
+    "size": "Avg",
+    "source": "Redacted Records I"
+  },
+  {
+    "id": "duke_of_putrescence",
+    "name": "DUKE OF PUTRESCENCE (BLIGHTLORD CHAMPION)",
+    "tierThreat": { "1": "A", "2": "A", "3": "A", "4": "A" },
+    "keywords": ["CHAOS", "ADEPTUS ASTARTES", "NURGLE", "MARK OF NURGLE"],
+    "attributes": { "S": 9, "T": 9, "A": 5, "I": 5, "Wil": 6, "Int": 4, "Fel": 3 },
+    "resilience": { "value": 17, "note": "Diseased Terminator Armour: 3 AR + 4* AR" },
+    "defence": 4,
+    "wounds": 19,
+    "shock": 11,
+    "skills": "Default 7, Awareness 9 (Passive 5), Ballistic Skill 10, Cunning 8, Intimidation 8, Leadership 10, Weapon Skill 10",
+    "bonuses": [
+      { "name": "Architect of Ruin", "description": "The GM gains 1 point of Ruin at the start of each of this Threat's turns." },
+      { "name": "Champion", "description": "This Threat may use Ruin Actions and has 2 personal Ruin." },
+      { "name": "Cumbersome Armour", "description": "This Threat may not Run or Sprint." },
+      { "name": "Mark of Chaos", "description": "This Threat has a Mark of Chaos [Nurgle]. Toughness bonus is included above." },
+      { "name": "Space Marine Implants", "description": "Gain bonus dice and options for actions from Space Marine Implants." }
+    ],
+    "abilities": [
+      { "type": "BATTLECRY", "name": "Frightful Form", "description": "Anyone who can see this Threat must make a DN 3 Fear Test." },
+      { "type": "ACTION", "name": "Blight Launcher", "stats": "13 +1 ED / AP -2 / Range 12-24-36 / Salvo 0 / Inflict (Poison 4)" },
+      { "type": "ACTION", "name": "Axe Legartis", "stats": "14 +6 ED / AP -3 / Brutal, Rending (2), Inflict (Poison 2)" },
+      { "type": "RUIN", "name": "Veteran of the Long War", "description": "Spend 1 Ruin to add the game's Tier as ED to all attacks this Threat makes this Round." },
+      { "type": "RUIN", "name": "Death to the False Emperor!", "description": "Spend 1 Ruin to Charge, gaining +2 bonus dice to the attack Test." },
+      { "type": "REACTION", "name": "Noxious Discharge", "description": "Whenever this Threat takes a Wound, roll a d6. If you roll an Icon, a mix of virulent gases and toxic effluent spills from the Wound. The Noxious Discharge hits every target Engaged with the Death Guard. Noxious Discharge: 2 +4 ED / AP -4 / Blast (4), Inflict (Poison 4)" }
+    ],
+    "determination": "Disgustingly Resilient. You do not need to spend Ruin to roll Determination for this Threat. Roll 8d6. This Threat can roll Determination against Mortal Wounds.",
+    "conviction": 6,
+    "resolve": 5,
+    "speed": 7,
+    "size": "Large",
+    "source": "Redacted Records II"
+  },
+  {
+    "id": "kastelan_robot",
+    "name": "KASTELAN ROBOT",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
+    "keywords": ["IMPERIUM", "ADEPTUS MECHANICUS", "LEGIO CYBERNETICA", "ROBOT", "[FORGE WORLD]"],
+    "attributes": { "S": 8, "T": 10, "A": 2, "I": 2, "Wil": 1, "Int": 1, "Fel": 1 },
+    "resilience": { "value": 16 },
+    "defence": 1,
+    "wounds": 16,
+    "skills": "Default 3, Awareness 4 (Passive 2), Ballistic Skill 6, Weapon Skill 6",
+    "bonuses": [
+      { "name": "Battle Protocols", "description": "By default, the Kastelan Robot's Aegis Protocol is active. As an Action, an individual with the Tech Skill can make a DN 10 Tech Test to change the Kastelan Robot's Battle Protocol. An individual with the Reprogrammer ability can make this Test as a Simple Action at DN 5. Aegis Protocol: The Kastelan Robot's Resilience increases to 20. Conqueror Protocol: The Kastelan Robot's Weapon Skill increases to 10 and it gains +2 bonus dice when it Charges. Protector Protocol: The Kastelan Robot's Speed is reduced to 0, its Ballistic Skill is increased by 2, and its Resilience is increased to 18." },
+      { "name": "Robot", "description": "This Threat is unaffected by abilities that target the mind, and never needs to make a Resolve Test to continue fighting. Additionally, this Threat is immune to the Bleeding, Blinded, Exhausted, Fear, Pinned, Poisoned, and Terror Conditions." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Heavy Phosphor Blaster", "stats": "13 +2 ED / AP -2 / Range 18-36-54 / Salvo 1 / Melta, Heavy (8)" },
+      { "type": "ACTION", "name": "Incendine Combustor", "stats": "12 +2 ED / AP -2 / Range 6-12-18 / Salvo 2 / Flamer, Heavy (8)" },
+      { "type": "ACTION", "name": "Kastelan Fist", "stats": "15 +4 ED / AP -3 / Range 1 / Brutal" },
+      { "type": "COMPLICATION", "name": "Dataslot Disruption", "description": "If the Kastelan Robot rolls a Complication or a Complication is rolled on a Tech Test targeting the Kastelan, roll 1d6. If the result is another Complication, the Kastelan Robot uses its next Action to move its Speed in a random direction as dictated by the Scattering rules and attacks the nearest individual. If the result is not a Complication, the Kastelan Robot's Battle Protocol changes as determined by the GM. When a Complication is triggered, any character with the ADEPTUS MECHANICUS Keyword within 10m can attempt a DN 10 Tech Test to prevent this effect. This Tech Test is DN 5 for individuals with the Reprogrammer ability." },
+      { "type": "ANNIHILATION", "name": "Explodes", "description": "When this Threat is destroyed, roll 1d6. If you roll a Complication, the Threat explodes with the following profile: 12 +6 ED / Blast (6)." }
+    ],
+    "determination": "Repulsor Grid. Spend 1 Ruin to roll 10d6. Whenever this Threat rolls Determination against a ranged attack they may Shift Exalted Icons to deal 1 Mortal Wound to the attacker for every Exalted Icon Shifted.",
+    "conviction": 1,
+    "resolve": 1,
+    "speed": 8,
+    "size": "Large",
+    "source": "Redacted Records II"
+  },
+  {
+    "id": "raider_cybercanid",
+    "name": "RAIDER CYBERCANID",
+    "tierThreat": { "1": "E", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["IMPERIUM", "ADEPTUS MECHANICUS", "SERBERYS", "[FORGE WORLD]"],
+    "attributes": { "S": 4, "T": 6, "A": 3, "I": 4, "Wil": 3, "Int": 1, "Fel": 1 },
+    "resilience": { "value": 11, "note": "Serberys Auto-cuirass" },
+    "defence": 3,
+    "wounds": 8,
+    "shock": 4,
+    "skills": "Athletics 6, Awareness 5, Intimidation 5, Stealth 4, Weapon Skill 7",
+    "bonuses": [
+      { "name": "Cybercanid", "description": "This Threat ignores Difficult Terrain." },
+      { "name": "Gyro-stabilised Saddle", "description": "Whenever the Cybercanid is being ridden by its bonded Serberys rider, the bonded Serberys rider may reroll any Wrath Die that rolls a Complication, and must take the second result." },
+      { "name": "Noospheric Link", "description": "Whenever the Raider Cybercanid is being ridden by its bonded Serberys rider, the bonded Serberys rider may use its movement to command the Raider Cybercanid to move and take an Action." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Clawed Limbs", "stats": "8 +3 ED / Range 1 / Brutal" }
+    ],
+    "determination": "Enhanced Bionics. Spend 1 Ruin (or Wrath, if the cyber-beast is your mount) to roll 6d6. This Threat can roll Determination against Mortal Wounds.",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 12,
+    "size": "Large",
+    "source": "Redacted Records II"
+  },
+  {
+    "id": "sulphurhound_cybercanid",
+    "name": "SULPHURHOUND CYBERCANID",
+    "tierThreat": { "1": "E", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["IMPERIUM", "ADEPTUS MECHANICUS", "SERBERYS", "[FORGE WORLD]"],
+    "attributes": { "S": 4, "T": 6, "A": 3, "I": 3, "Wil": 3, "Int": 1, "Fel": 1 },
+    "resilience": { "value": 11, "note": "Serberys Auto-cuirass" },
+    "defence": 2,
+    "wounds": 8,
+    "shock": 4,
+    "skills": "Athletics 6, Awareness 4 (Passive 2), Ballistic Skill 6, Intimidation 5, Weapon Skill 6",
+    "bonuses": [
+      { "name": "Cybercanid", "description": "This Threat ignores Difficult Terrain." },
+      { "name": "Gyro-stabilised Saddle", "description": "Whenever the Cybercanid is being ridden by its bonded Serberys rider, the bonded Serberys rider may reroll any Wrath Die that rolls a Complication." },
+      { "name": "Noospheric Link", "description": "Whenever the Cybercanid is being ridden by its bonded Serberys rider, the bonded Serberys rider may use its movement to command the Cybercanid to move and take an Action." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Clawed Limbs", "stats": "8 +3 ED / Range 1 / Brutal" },
+      { "type": "ACTION", "name": "Sulphur Breath", "stats": "10 +2 ED / AP -2 / Range 6-12-18 / Salvo 0 / Assault, Flamer" }
+    ],
+    "determination": "Enhanced Bionics. Spend 1 Ruin (or Wrath, if the cyber-beast is your mount) to roll 6d6. This Threat can roll Determination against Mortal Wounds.",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 12,
+    "size": "Large",
+    "source": "Redacted Records II"
+  },
+  {
+    "id": "oily_squig",
+    "name": "OILY SQUIG",
+    "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["ORK", "SQUIG"],
+    "attributes": { "S": 2, "T": 1, "A": 1, "I": 1, "Wil": 1, "Int": 1, "Fel": 1 },
+    "resilience": { "value": 2 },
+    "defence": 3,
+    "wounds": 3,
+    "shock": 2,
+    "skills": "Default 1, Athletics 2, Ballistic Skill 2, Weapon Skill 3",
+    "bonuses": [
+      { "name": "Filled with Oil", "description": "If an Oily Squig is damaged by a weapon with the FLAME or EXPLOSIVE Keywords it explodes with the following profile: 7 +4 ED / Blast (4), Inflict (On Fire). This explosion causes any other Oily Squigs caught in the radius to explode in the same manner." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Oily Squig Bite", "stats": "5 +2 ED / AP -1 / Melee Range / Brutal" },
+      { "type": "ACTION", "name": "Spew Oil", "description": "Make a Ballistic Skill Test against a target within 10m. If successful, the Oily Squig spews oil, covering the target and the area in a line to the target with flammable oil. The target must succeed on a DN 3 Agility Test or fall Prone as they slip on the oil." }
+    ],
+    "determination": "Spend 1 Ruin to roll 1d6.",
+    "conviction": 1,
+    "resolve": 1,
+    "speed": 4,
+    "size": "Tiny",
+    "mobAbilities": "A Swarm of Teeth and Claws: A Mob of Squigs gains +1 bonus Icon to any Resolve Tests. This increases by +1 for every ten Squigs.",
+    "mobOptions": "COMPLICATION: Vicious by Nature. Whenever the Mob rolls a Complication, the squigs inflict 1d3 Shock on themselves. Add 1d3 Shock to this damage for every ten Squigs in the Mob.",
+    "source": "Redacted Records II"
+  },
+  {
+    "id": "oracular_attendant",
+    "name": "THE ORACULAR ATTENDANT",
+    "description": "This servitor is of an incredibly advanced pattern unseen in the Gilead system before or since, and was created with a single purpose — the maintenance of the Orrery itself. It can only speak in binaric cant, but its intelligence level skirts close to the acceptable limits for an independent piece of machinery.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
+    "keywords": ["ADEPTUS MECHANICUS", "SERVITOR"],
+    "attributes": { "S": 6, "T": 6, "A": 2, "I": 2, "Wil": 4, "Int": 3, "Fel": 1 },
+    "resilience": { "value": 11, "note": "Grafted Metal Plates, 2 AR" },
+    "defence": 1,
+    "wounds": 9,
+    "shock": 6,
+    "skills": "Default 3, Ballistic Skill 4, Tech 5, Weapon Skill 5",
+    "bonuses": [
+      { "name": "Iron Soul", "description": "This Threat is unaffected by abilities that target the mind, and never needs to make Resolve tests to continue fighting." },
+      { "name": "Hatches & Tunnels", "description": "Within the Orrery complex, the Attendant has numerous secret tunnels for moving around. It gains +5 Dice to Stealth checks to Surprise intruders." },
+      { "name": "Guardian", "description": "The Attendant is tied to the noosphere of the Orrery complex, and receives +2 Dice to Awareness (Int) Tests and +4 Dice to Tech (Int) Tests to repair the Orrery while within its walls." }
+    ],
+    "abilities": [
+      { "type": "BATTLECRY", "name": "Hidden Defences", "description": "Within the Orrery complex, the Attendant can activate a variety of hidden defences. On the first round of combat it activates a hidden gun platform (effectively an immobile Combat Servitor)." },
+      { "type": "ACTION", "name": "Arc Maul", "stats": "12 +3 ED / AP -2 / Range 1 / Arc (3), Brutal" },
+      { "type": "ACTION", "name": "Flechette Blaster", "stats": "8 +2 ED / Range 6-12-18 / Salvo 2 / Pistol, Rapid Fire (4)" },
+      { "type": "ANNIHILATION", "name": "Repair Protocol Gamma 19", "description": "Should the Attendant be destroyed while the Orrery still functions, automated systems will attempt to trap a Human subject and create a new Attendant from spare parts. This takes 1d6 hours." }
+    ],
+    "determination": "Spend 1 Ruin to roll 5d6.",
+    "conviction": 4,
+    "resolve": 3,
+    "speed": 5,
+    "size": "Avg",
+    "source": "Redacted Records II"
+  },
+  {
+    "id": "magos_luxus",
+    "name": "MAGOS LUXUS",
+    "tierThreat": { "1": "E", "2": "E", "3": "T", "4": "T" },
+    "keywords": ["IMPERIUM", "ADEPTUS MECHANICUS", "NECRON"],
+    "attributes": { "S": 3, "T": 3, "A": 3, "I": 2, "Wil": 4, "Int": 6, "Fel": 2 },
+    "resilience": { "value": 6, "note": "Implants: 2 AR" },
+    "defence": 1,
+    "wounds": 5,
+    "shock": 4,
+    "skills": "Default 4, Athletics 6, Awareness 6 (Passive 3), Ballistic Skill 6, Tech 9, Weapon Skill 5",
+    "bonuses": [
+      { "name": "Autonomous Targeting", "description": "Each round, this Threat can make a standard ranged attack Action as a Free Action." },
+      { "name": "Diffractor Field", "description": "The Magos Luxus is protected by an arcane energy field. This grants him +5 Defence against LAS weapon attacks." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Luminous Beamer", "stats": "13 +3 ED / AP -2 / Range 12-24-36 / Salvo 2 / Reliable, Rending (2)" },
+      { "type": "ACTION", "name": "Lashing Mechadendrite", "stats": "5 +2 ED / Range 1 / Brutal" },
+      { "type": "REACTION", "name": "Point Defence Lasers", "description": "As a Reaction to any PROJECTILE attack, the Magos can make an opposed Ballistic Skill (AGI) Test. If he succeeds the projectile is vapourised harmlessly." }
+    ],
+    "determination": "Extensive Augmetics. Spend 1 Ruin to roll 5d6.",
+    "conviction": 4,
+    "resolve": 3,
+    "speed": 6,
+    "size": "Avg",
+    "source": "Redacted Records II"
+  },
+  {
+    "id": "squig_church_of_steel",
+    "name": "SQUIG (HEAVY SQUIG LAUNCHA)",
+    "description": "Squig Launcher ammunition is a living, conscious being. Its effect on the battlefield has been simplified to that of a projectile, but if you wish to run a squiggly beast as a combatant, you can use this profile.",
+    "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["ORK", "SQUIG"],
+    "attributes": { "S": 2, "T": 2, "A": 1, "I": 2, "Wil": 1, "Int": 1, "Fel": 1 },
+    "resilience": { "value": 3 },
+    "defence": 1,
+    "wounds": 4,
+    "shock": 2,
+    "skills": "Default 2, Athletics 4, Weapon Skill 4",
+    "abilities": [
+      { "type": "ACTION", "name": "Bitey Squig Bite", "stats": "10 +2 ED / AP -3 / Melee Range / Brutal" },
+      { "type": "ACTION", "name": "Bile Squig Vomit", "stats": "10 +3 ED / Range 8 / Flamer, Inflict (Poison 2)" },
+      { "type": "ACTION", "name": "Boom Squig Explosion", "stats": "14 +4 ED / AP -1 / Blast 4 / Using this Action kills the Squig." }
+    ],
+    "determination": "Spend 1 Ruin to roll 2d6.",
+    "conviction": 1,
+    "resolve": 1,
+    "speed": 5,
+    "size": "Small",
+    "source": "Church of Steel"
   }
 ]
