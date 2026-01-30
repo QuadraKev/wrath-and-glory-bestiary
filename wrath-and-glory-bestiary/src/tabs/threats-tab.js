@@ -7,7 +7,7 @@ const ThreatsTab = {
         search: '',
         selectedTier: 'all',
         threatLevels: ['T', 'E', 'A'],
-        keywords: []
+        factions: []
     },
 
     init() {
@@ -18,13 +18,11 @@ const ThreatsTab = {
             this.renderThreatList();
         });
 
-        // Initialize tier filters
-        const tierFilters = document.querySelectorAll('#tier-filters input[type="radio"]');
-        tierFilters.forEach(radio => {
-            radio.addEventListener('change', (e) => {
-                this.filters.selectedTier = e.target.dataset.tier;
-                this.renderThreatList();
-            });
+        // Initialize tier filter dropdown
+        const tierFilter = document.getElementById('tier-filter');
+        tierFilter.addEventListener('change', (e) => {
+            this.filters.selectedTier = e.target.value;
+            this.renderThreatList();
         });
 
         // Initialize threat level filters
@@ -41,8 +39,8 @@ const ThreatsTab = {
             this.clearFilters();
         });
 
-        // Populate keyword filters
-        this.populateKeywordFilters();
+        // Populate faction filters
+        this.populateFactionFilters();
 
         // Render initial threat list
         this.renderThreatList();
@@ -55,21 +53,21 @@ const ThreatsTab = {
         }
     },
 
-    populateKeywordFilters() {
-        const keywords = DataLoader.getAllKeywords();
-        const container = document.getElementById('keyword-filters');
+    populateFactionFilters() {
+        const factions = DataLoader.getAllFactions();
+        const container = document.getElementById('faction-filters');
 
-        container.innerHTML = keywords.map(keyword => `
+        container.innerHTML = factions.map(faction => `
             <label class="checkbox-label">
-                <input type="checkbox" data-keyword="${keyword}">
-                <span>${keyword}</span>
+                <input type="checkbox" data-faction="${faction}">
+                <span>${faction}</span>
             </label>
         `).join('');
 
         // Add event listeners
         container.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
             checkbox.addEventListener('change', () => {
-                this.updateKeywordFilters();
+                this.updateFactionFilters();
                 this.renderThreatList();
             });
         });
@@ -85,38 +83,22 @@ const ThreatsTab = {
         });
     },
 
-    updateKeywordFilters() {
-        const checkboxes = document.querySelectorAll('#keyword-filters input[type="checkbox"]');
-        this.filters.keywords = [];
+    updateFactionFilters() {
+        const checkboxes = document.querySelectorAll('#faction-filters input[type="checkbox"]');
+        this.filters.factions = [];
         checkboxes.forEach(cb => {
             if (cb.checked) {
-                this.filters.keywords.push(cb.dataset.keyword);
+                this.filters.factions.push(cb.dataset.faction);
             }
         });
     },
 
     clearFilters() {
-        // Clear search
-        document.getElementById('search-input').value = '';
-        this.filters.search = '';
-
-        // Reset tier filter to "all"
-        document.querySelectorAll('#tier-filters input[type="radio"]').forEach(radio => {
-            radio.checked = radio.dataset.tier === 'all';
-        });
-        this.filters.selectedTier = 'all';
-
-        // Reset threat level filters
-        document.querySelectorAll('#threat-level-filters input[type="checkbox"]').forEach(cb => {
-            cb.checked = true;
-        });
-        this.filters.threatLevels = ['T', 'E', 'A'];
-
-        // Clear keyword filters
-        document.querySelectorAll('#keyword-filters input[type="checkbox"]').forEach(cb => {
+        // Reset faction filters only
+        document.querySelectorAll('#faction-filters input[type="checkbox"]').forEach(cb => {
             cb.checked = false;
         });
-        this.filters.keywords = [];
+        this.filters.factions = [];
 
         this.renderThreatList();
     },
@@ -126,7 +108,7 @@ const ThreatsTab = {
             search: this.filters.search,
             selectedTier: this.filters.selectedTier !== 'all' ? this.filters.selectedTier : null,
             threatLevels: this.filters.threatLevels.length > 0 ? this.filters.threatLevels : null,
-            keywords: this.filters.keywords.length > 0 ? this.filters.keywords : null
+            factions: this.filters.factions.length > 0 ? this.filters.factions : null
         });
 
         // Sort threats alphabetically by name
@@ -273,6 +255,9 @@ const ThreatsTab = {
         // Build abilities section
         const abilitiesHtml = this.renderAbilities(threat.abilities, currentWeapon);
 
+        // Build bonuses section
+        const bonusesHtml = this.renderBonuses(threat.bonuses);
+
         // Build determination row
         const determinationHtml = this.renderDeterminationRow(threat.determination);
 
@@ -319,6 +304,8 @@ const ThreatsTab = {
                             ${abilitiesHtml}
                         </div>
 
+                        ${bonusesHtml}
+
                         ${determinationHtml}
 
                         ${bottomStatsTable}
@@ -358,7 +345,7 @@ const ThreatsTab = {
 
         const attrOrder = ['S', 'T', 'A', 'I', 'Wil', 'Int', 'Fel'];
         const attrNames = {
-            'S': 'S', 'T': 'T', 'A': 'A', 'I': 'I',
+            'S': 'STR', 'T': 'TOU', 'A': 'AGI', 'I': 'INI',
             'Wil': 'WIL', 'Int': 'INT', 'Fel': 'FEL'
         };
 
@@ -387,7 +374,7 @@ const ThreatsTab = {
             <div class="resilience-row">
                 <span class="resilience-label">Resilience</span><br>
                 <span class="resilience-value">${value}</span>
-                ${note ? `<span class="resilience-note"> (${note})</span>` : ''}
+                ${note ? `<span class="resilience-note" data-glossary-enhance> (${note})</span>` : ''}
             </div>
         `;
     },
@@ -419,7 +406,7 @@ const ThreatsTab = {
         return `
             <div class="skills-row">
                 <span class="skills-label">SKILLS:</span>
-                <span class="skills-value">${skills}</span>
+                <span class="skills-value" data-glossary-enhance>${skills}</span>
             </div>
         `;
     },
@@ -449,8 +436,8 @@ const ThreatsTab = {
                 <div class="ability-item">
                     <div>
                         <span class="ability-type">${ability.type}:</span>
-                        <span class="ability-name">${ability.name}</span>
-                        ${statsHtml ? `<span class="ability-stats">${statsHtml}</span>` : ''}
+                        <span class="ability-name" data-glossary-enhance>${ability.name}</span>
+                        ${statsHtml ? `<span class="ability-stats" data-glossary-enhance>${statsHtml}</span>` : ''}
                     </div>
                     ${descHtml}
                 </div>
@@ -473,13 +460,31 @@ const ThreatsTab = {
         return result;
     },
 
+    renderBonuses(bonuses) {
+        if (!bonuses || bonuses.length === 0) return '';
+
+        const bonusItems = bonuses.map(bonus => `
+            <div class="bonus-item">
+                <span class="bonus-name" data-glossary-enhance>${bonus.name}:</span>
+                <span class="bonus-description" data-glossary-enhance>${bonus.description}</span>
+            </div>
+        `).join('');
+
+        return `
+            <div class="bonuses-section">
+                <div class="bonuses-header">Bonuses</div>
+                ${bonusItems}
+            </div>
+        `;
+    },
+
     renderDeterminationRow(determination) {
         if (!determination) return '';
 
         return `
             <div class="determination-row">
                 <span class="determination-label">DETERMINATION:</span>
-                <span class="determination-value">${determination}</span>
+                <span class="determination-value" data-glossary-enhance>${determination}</span>
             </div>
         `;
     },
@@ -567,7 +572,7 @@ const ThreatsTab = {
                 ${weapon.traits && weapon.traits.length > 0 ? `
                 <div class="stat-row">
                     <span class="stat-label">Traits</span>
-                    <span class="stat-value">${weapon.traits.join(', ')}</span>
+                    <span class="stat-value" data-glossary-enhance>${weapon.traits.join(', ')}</span>
                 </div>
                 ` : ''}
             </div>

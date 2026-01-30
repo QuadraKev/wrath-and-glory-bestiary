@@ -4,6 +4,28 @@ const DataLoader = {
     // Cache for loaded data
     cache: {},
 
+    // Faction definitions - maps faction names to keywords that indicate membership
+    factionKeywordMap: {
+        'Adeptus Astartes': ['ADEPTUS ASTARTES', '[CHAPTER]'],
+        'Adeptus Mechanicus': ['ADEPTUS MECHANICUS', '[FORGE WORLD]', 'QUESTOR MECHANICUS', 'LEGIO CYBERNETICA', 'SERBERYS', 'AVACHRUS FORGE WORLD'],
+        'Aeldari': ['AELDARI', 'ASURYANI', '[CRAFTWORLD]', 'HARLEQUIN', '[MASQUE]', 'ANHRATHE', 'ASPECT WARRIOR', 'WRAITH CONSTRUCT'],
+        'Chaos': ['CHAOS', 'DAEMON', '[MARK OF CHAOS]', '[LEGION]'],
+        'Drukhari': ['DRUKHARI', '[KABAL]', '[COTERIE]', '[COVEN]', '[HAEMONCULUS COVEN]', '[WYCH CULT]', 'COURT OF THE ARCHON', 'PAIN ENGINE'],
+        'Genestealer Cult': ['GENESTEALER CULT', 'GENESTEALER'],
+        'Heretic': ['HERETIC'],
+        'Imperium': ['IMPERIUM', 'IMPERIAL', 'MUTANT', 'SCUM', 'SERVITOR'],
+        'Khorne': ['KHORNE'],
+        'Kroot': ['KROOT'],
+        'Necron': ['NECRON', '[DYNASTY]', 'CANOPTEK', 'CRYPTEK', 'DESTROYER', 'DESTROYER CULT', 'FLAYER', 'TRIARCH'],
+        'Nurgle': ['NURGLE', 'MARK OF NURGLE'],
+        'Ork': ['ORK', '[CLAN]', 'GROT', 'SQUIG'],
+        'Primaris': ['PRIMARIS'],
+        'Slaanesh': ['SLAANESH'],
+        "T'au": ["T'AU", 'VESPID', 'DRONE'],
+        'Tyranid': ['TYRANID'],
+        'Tzeentch': ['TZEENTCH']
+    },
+
     // Load a single data file
     async loadFile(filename) {
         if (this.cache[filename]) {
@@ -102,6 +124,30 @@ const DataLoader = {
         return Array.from(keywordSet).sort();
     },
 
+    // Get all faction names (sorted)
+    getAllFactions() {
+        return Object.keys(this.factionKeywordMap).sort();
+    },
+
+    // Get factions for a specific threat based on its keywords
+    getThreatFactions(threat) {
+        if (!threat || !threat.keywords) return [];
+
+        const factions = [];
+        const threatKeywords = threat.keywords.map(kw => kw.toUpperCase());
+
+        for (const [faction, factionKeywords] of Object.entries(this.factionKeywordMap)) {
+            const hasFaction = factionKeywords.some(fkw =>
+                threatKeywords.some(tkw => tkw === fkw.toUpperCase() || tkw.includes(fkw.toUpperCase()))
+            );
+            if (hasFaction) {
+                factions.push(faction);
+            }
+        }
+
+        return factions;
+    },
+
     // Filter threats by criteria
     filterThreats(criteria = {}) {
         let threats = this.getAllThreats();
@@ -138,6 +184,14 @@ const DataLoader = {
             threats = threats.filter(t => {
                 if (!t.keywords) return false;
                 return criteria.keywords.some(kw => t.keywords.includes(kw));
+            });
+        }
+
+        // Filter by factions
+        if (criteria.factions && criteria.factions.length > 0) {
+            threats = threats.filter(t => {
+                const threatFactions = this.getThreatFactions(t);
+                return criteria.factions.some(f => threatFactions.includes(f));
             });
         }
 

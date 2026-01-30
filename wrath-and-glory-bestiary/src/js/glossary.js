@@ -87,6 +87,14 @@ const Glossary = {
                 this.addTermVariations(value.name, { type: 'keyword', key, ...value });
             }
         }
+
+        // Add talents
+        if (this.data.talents) {
+            for (const [key, value] of Object.entries(this.data.talents)) {
+                this.termMap.set(value.name.toLowerCase(), { type: 'talent', key, ...value });
+                this.addTermVariations(value.name, { type: 'talent', key, ...value });
+            }
+        }
     },
 
     addTermVariations(name, data) {
@@ -197,6 +205,8 @@ const Glossary = {
             termData = this.data.characterTerms[key];
         } else if (type === 'combatTerm' && this.data.combatTerms[key]) {
             termData = this.data.combatTerms[key];
+        } else if (type === 'talent' && this.data.talents[key]) {
+            termData = this.data.talents[key];
         }
 
         if (termData) {
@@ -214,6 +224,7 @@ const Glossary = {
         else if (type === 'keyword') typeLabel = 'Keyword';
         else if (type === 'characterTerm') typeLabel = 'Character Term';
         else if (type === 'combatTerm') typeLabel = 'Combat Rule';
+        else if (type === 'talent') typeLabel = 'Talent';
 
         const processedDescription = this.processText(termData.description);
 

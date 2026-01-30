@@ -712,5 +712,51 @@
       "name": "Corruption",
       "description": "A Trait tracking your exposure to the forces of Chaos. Starts at 0 and increases from Warp exposure, daemonic contact, and other corrupting influences. High Corruption can lead to mental afflictions, physical mutations, and worse."
     }
+  },
+  "talents": {
+    "dual_wield": {
+      "name": "Dual Wield",
+      "description": "You can wield two weapons with uncanny accuracy. When you wield one weapon in each hand, the DN penalty for using the Multi-Attack option is reduced by 2. Each weapon must have the Pistol Trait or be a one-handed melee weapon. You may also use a different weapon you are wielding for each of your Multi-Attacks, rolling damage separately for each weapon."
+    },
+    "duty_until_death": {
+      "name": "Duty Until Death",
+      "description": "Your ardent faith in the Emperor allows you to push beyond the limits of injury to act in His will, at a cost to your physical form. Whenever you suffer more Wounds than your Max Wounds, you can use this Talent. You may take your next Turn normally; you begin Dying at the end of that Turn. You may choose to take your next Turn immediately after activating this Talent, potentially interrupting an enemy's Turn. If you roll a Complication on any Test, you take a Traumatic Wound."
+    },
+    "jargon": {
+      "name": "Jargon",
+      "description": "You're knowledgeable enough on a particular subject to open your mouth and let the information flow out. The mystifying slang, precise vernacular, and strange idioms are enough to stupefy the unlearned and make fast friends of strangers who share your passion. When you take this Talent, you must pick which Skill it applies to. During any social encounter you can make a Skill Test using your Jargon Skill. If you succeed and the target is interested or trained in the Skill, they are likely to become more friendly to you. If the target doesn't share your knowledge and slang, they stand stupefied whilst you babble."
+    },
+    "scum_savvy": {
+      "name": "Scum Savvy",
+      "description": "Long years of disreputable carousing during business deals with shady individuals have trained you to effectively fleece the lawless and process potentially dangerous chem substances. You gain +Double Rank bonus dice to any Test related to resisting the effects of chemicals. You gain +Rank bonus dice when making Cunning (Fel) Tests."
+    },
+    "angel_of_death": {
+      "name": "Angel of Death",
+      "description": "You exemplify the role of the Space Marine as the Emperor's Angel of Death. You gain benefits when engaging enemies of the Imperium in righteous combat."
+    },
+    "deadshot": {
+      "name": "Deadshot",
+      "description": "You have exceptional accuracy with ranged weapons. You gain bonus dice or reduced DN penalties when making ranged attacks under specific conditions."
+    },
+    "gilead_combat_veteran": {
+      "name": "Gilead Combat Veteran",
+      "description": "You have extensive combat experience in the Gilead System. You gain bonuses in combat situations based on your veteran status."
+    },
+    "promethium_proficiency": {
+      "name": "Promethium Proficiency",
+      "description": "You are skilled in the use of flame-based weapons. You gain bonuses when using weapons with the Flamer trait."
+    },
+    "silent": {
+      "name": "Silent",
+      "description": "You move with exceptional stealth. You gain bonus dice to Stealth Tests and may move at full Speed without penalties to your Stealth Score."
+    },
+    "trademark_weapon": {
+      "name": "Trademark Weapon",
+      "description": "You have bonded with a specific weapon, gaining increased proficiency with it. You gain bonus dice when using your Trademark Weapon."
+    },
+    "whirlwind_of_rage": {
+      "name": "Whirlwind of Rage",
+      "description": "You fight with unmatched fury in close combat. You gain bonuses when making melee attacks, especially when outnumbered or facing multiple opponents."
+    }
   }
 }

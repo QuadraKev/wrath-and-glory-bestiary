@@ -45,28 +45,13 @@
 
                     <div class="sidebar-section">
                         <label class="filter-label">Tier</label>
-                        <div id="tier-filters" class="filter-group tier-filter-group">
-                            <label class="checkbox-label">
-                                <input type="radio" name="tier-filter" data-tier="all" checked>
-                                <span>All Tiers</span>
-                            </label>
-                            <label class="checkbox-label">
-                                <input type="radio" name="tier-filter" data-tier="1">
-                                <span>Tier 1</span>
-                            </label>
-                            <label class="checkbox-label">
-                                <input type="radio" name="tier-filter" data-tier="2">
-                                <span>Tier 2</span>
-                            </label>
-                            <label class="checkbox-label">
-                                <input type="radio" name="tier-filter" data-tier="3">
-                                <span>Tier 3</span>
-                            </label>
-                            <label class="checkbox-label">
-                                <input type="radio" name="tier-filter" data-tier="4">
-                                <span>Tier 4</span>
-                            </label>
-                        </div>
+                        <select id="tier-filter" class="filter-select">
+                            <option value="all">All Tiers</option>
+                            <option value="1">Tier 1</option>
+                            <option value="2">Tier 2</option>
+                            <option value="3">Tier 3</option>
+                            <option value="4">Tier 4</option>
+                        </select>
                     </div>
 
                     <div class="sidebar-section">
@@ -87,15 +72,15 @@
                         </div>
                     </div>
 
-                    <div class="sidebar-section">
-                        <label class="filter-label">Keywords</label>
-                        <div id="keyword-filters" class="filter-group keyword-filter-group">
+                    <div class="sidebar-section faction-section">
+                        <label class="filter-label">Faction</label>
+                        <div id="faction-filters" class="filter-group faction-filter-group">
                             <!-- Populated by JavaScript -->
                         </div>
                     </div>
 
                     <div class="sidebar-section">
-                        <button id="btn-clear-filters" class="btn-secondary">Clear Filters</button>
+                        <button id="btn-clear-filters" class="btn-secondary">Reset Factions</button>
                     </div>
                 </aside>
 
