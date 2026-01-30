@@ -1651,6 +1651,36 @@
     "source": "Threat Assessment: Xenos"
   },
   {
+    "id": "way_seeker",
+    "name": "WAY SEEKER",
+    "description": "Way Seekers are powerful psykers who serve among the Corsair fleets. Unlike their Craftworld brethren who follow the strict disciplines of the Asuryani Path, Way Seekers have embraced the freedom of the Anhrathe, combining their psychic talents with the reckless abandon that defines the Corsairs.\n\nProtected by their Ghosthelms from the dangers of the Warp, Way Seekers channel their powers to protect their crewmates and devastate their enemies. They are valued members of any Corsair fleet, their witch sight piercing the veils of deception that enemies might hide behind.",
+    "tierThreat": { "1": "A", "2": "E", "3": "T", "4": "T" },
+    "keywords": ["AELDARI", "ANHRATHE", "DRUKHARI", "PSYKER", "[COTERIE]"],
+    "attributes": { "S": 3, "T": 3, "A": 4, "I": 5, "Wil": 7, "Int": 4, "Fel": 3 },
+    "resilience": { "value": 7, "note": "3 AR" },
+    "defence": 4,
+    "wounds": 7,
+    "shock": 9,
+    "skills": "Default 6, Athletics 7, Awareness 8 (Passive 4), Ballistic Skill 7, Pilot 8, Psychic Mastery 10, Weapon Skill 7",
+    "bonuses": [
+      { "name": "Intense Emotions", "description": "This Threat takes a penalty of +1 DN to all Resolve Tests." },
+      { "name": "Ghosthelm", "description": "This Threat never rolls on the Perils of the Warp table. They always use the Bound Power Level (+0 Wrath Die)." },
+      { "name": "Reckless Abandon", "description": "This Threat's attacks gain +4 bonus dice during All-Out Attacks." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Shuriken Pistol", "stats": "10 +1 ED / Range 6-12-18 / Salvo 2 / Pistol, Rending (3)" },
+      { "type": "ACTION", "name": "Witch Staff", "stats": "10 +3 ED / AP -1 / Range 2 / Force, Warp Weapon" },
+      { "type": "ACTION", "name": "Witch Sight", "description": "The Way Seeker knows the following Psychic Powers: Protect/Jinx, Quicken/Restrain, Smite." },
+      { "type": "RUIN", "name": "Soul Channel", "description": "Spend 1 Ruin to activate a Psychic Power or Deny the Witch." }
+    ],
+    "determination": "Spend 1 Ruin to roll 3d6.",
+    "conviction": 7,
+    "resolve": 6,
+    "speed": 8,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
     "id": "soul_weaver",
     "name": "SOUL WEAVER",
     "description": "As travellers far from the confines of the Craftworlds, exploring lost Maiden Worlds, or the ruins of their ancient civilisation, the Anhrathe recover Spirit Stones of long dead Aeldari. Amongst the Corsairs, the Soul Weavers are psykers who use their talent to speak to the spirits held within these relics, learning from them forgotten secrets, lost arts, and borrowing their former strength in life to bestow it temporarily upon others.\n\nThe Soul Weavers commune with their fallen ancestors and honour the dead. Far from the Infinity Circuits of the Craftworlds, the Soul Weavers take the time to care for each Spirit Stone in their care.",
