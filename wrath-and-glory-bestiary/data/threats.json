@@ -1963,5 +1963,1075 @@
     "speed": 8,
     "size": "Avg",
     "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "archon",
+    "name": "ARCHON",
+    "description": "The Archons represents the highest echelons of Drukhari society. Ruling over the warring Kabals of Commorragh with a relentless malice they are the epitome of the ruinous barbarism at the heart of the Drukhari. Noble and elegant, yet unabashadley cruel, each Archon wields the power to capture and enslave without discrimination, able to put entire planets to the sword or lash at their whim, marshalling the combined forces of the Dark City alongside vicious mercenaries to unleash incomparable terror and suffering.\n\nAs all Drukhari are vain and egotistical, craving power and influence, the Archons position is under constant threat from those beneath them. This means the Archons employ a vast retinue of the most deadly and loyal of their kin and trusted outsiders to stand vigilant by their side. Even with this protection, only the most cunning and ruthless survive to ascend to true positions of influence.\n\nHaving long feasted on the suffering to sustain their millennia long existence, the Archons must launch more and more raids into Realspace as now only the most sadistic of atrocities can breathe life back into their withered souls.",
+    "tierThreat": { "1": "A", "2": "A", "3": "A", "4": "A" },
+    "keywords": ["DRUKHARI", "[KABAL]"],
+    "attributes": { "S": 4, "T": 4, "A": 6, "I": 6, "Wil": 7, "Int": 7, "Fel": 5 },
+    "resilience": { "value": 8, "note": "4 AR" },
+    "defence": 5,
+    "wounds": 14,
+    "shock": 12,
+    "skills": "Default 8, Awareness 6 (Passive 5), Ballistic Skill 10, Cunning 10, Intimidation 12, Leadership 12, Weapon Skill 12",
+    "bonuses": [
+      { "name": "Champion", "description": "This Threat may use Ruin Actions and has 4 personal Ruin." },
+      { "name": "Court of the Archon", "description": "Whenever this Threat suffers Mortal Wounds they may instead allocate them to any ally within 10m with the COURT OF THE ARCHON Keyword." },
+      { "name": "Power from Pain: Flensing Fury", "description": "If this Threat deals a Wound it gains +1 bonus dice to melee attack Tests until the end of its next Turn." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Splinter Pistol", "stats": "7 +1 ED / Range 6-12-18 / Salvo 1 / Inflict (Poisoned, 3), Pistol" },
+      { "type": "ACTION", "name": "Power Sword", "stats": "9 +4 ED / AP -3 / Parry" },
+      { "type": "REACTION", "name": "No Escape", "description": "When this Threat makes a Reaction Attack with a melee weapon they do so with +2 bonus dice." },
+      { "type": "REACTION", "name": "Shadowfield", "description": "As a reaction to being attacked, this Threat can activate its Shadowfield to gain +8* AR. The Shadowfield cannot be used again until it is recharged over the course of an hour." },
+      { "type": "RUIN", "name": "Overlord", "description": "Spend 1 Ruin. Until the end of the Archon's next Turn, the Archon and all allied individuals with a matching [KABAL] Keyword within 5m may reroll all failing dice on any attack Test they make as though they had spent Ruin." }
+    ],
+    "determination": "Spend 1 Ruin to roll 6d6. (Dodge: This Threat uses Agility instead of Toughness to roll Determination and can roll against Mortal Wounds.)",
+    "conviction": 7,
+    "resolve": 6,
+    "speed": 8,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "succubus",
+    "name": "SUCCUBUS",
+    "description": "Held in awed reverence by the denizens of Commorragh for not only their unnatural beauty but also their unparalleled brutality and bloodletting in combat, the Ynnitach or \"Brides of Death\" are the ruling overseers of the deadly gladiatorial Wych Cults. Each Wych Cult is ruled over by one of these Succubi, balancing the gruelling agenda of the arena against offering their service to indulge in deadly Realspace raids. Each Succubus must also maintain her position, as her 'sisters' plot and scheme around her, most commonly with an authoritative decapitation, delivered in a single, cruel stroke.\n\nVain and egotistical, even by the standard of the Drukhari, the Succubi actively seek out ways to prove their superiority, frequently joining their kin for raids into Realspace. In these raids the Succubi can indulge their murderous art without restraint, perfecting the most elegant of decapitating strikes to the uproarious approval of their kin. The Succubus revel in their kin's awe of their artistry and the rejuvenating terror they wreak upon their unfortunate victims.",
+    "tierThreat": { "1": "A", "2": "A", "3": "A", "4": "A" },
+    "keywords": ["DRUKHARI", "[WYCH CULT]"],
+    "attributes": { "S": 4, "T": 4, "A": 6, "I": 7, "Wil": 7, "Int": 6, "Fel": 5 },
+    "resilience": { "value": 6, "note": "1 AR" },
+    "defence": 6,
+    "wounds": 12,
+    "shock": 11,
+    "skills": "Default 7, Athletics 12, Awareness 10 (Passive 5), Intimidation 12, Leadership 12, Ballistic Skill 10, Cunning 8, Weapon Skill 14",
+    "bonuses": [
+      { "name": "Champion", "description": "This Threat may use Ruin Actions and has 3 personal Ruin." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Agoniser", "stats": "8 +4 ED / AP -2 / Range 4 / Agonising, Inflict (Poisoned, 5)" },
+      { "type": "ACTION", "name": "Archite Glaive", "stats": "10 +4 ED / AP -3 / Range 1 / Unwieldy (2)" },
+      { "type": "RUIN", "name": "Brides of Death", "description": "All Threats that share a WYCH CULT Keyword within 5 metres of the Succubus gain +2 bonus dice to any Weapon Skill (I) Tests until the end of the Succubus' next Turn." },
+      { "type": "REACTION", "name": "No Escape", "description": "When this Threat makes a Reaction Attack with a melee weapon they do so with +2 bonus dice." }
+    ],
+    "determination": "Spend 1 Ruin to roll 6d6. (Lightning Dodge: This Threat uses Agility instead of Toughness to roll Determination, and can roll determination against Mortal Wounds.)",
+    "conviction": 7,
+    "resolve": 6,
+    "speed": 8,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "wych",
+    "name": "WYCH",
+    "description": "In the Drukhari tongue these gladiatorial murderesses are known as the Hekatarii, and belong to the deadly Wych Cults of the Dark City. They delight in delivering brutal murder with elegant showmanship, much to the delight of uproarious and sadistic crowds of baying, bloodthirsty spectators.\n\nRuled over by the most vain and vicious of their kind known as a Ynnitach, each Wych Cult maintains its own arena within the twisting spires of Commorragh. It is on these viscera saturated sands that the Wyches ply their deadly art. These nightly spectacles of wanton bloodletting against tortured captives, Warp spawned beasts, or even each other ensure a well-deserved reputation for depravity.\n\nWhen employed by the Archons and Kabals of Commorragh to join them in their raids into Realspace the Wych Cults easily stand out alongside their Kablite kin. With Haemonculi crafted elixirs and combat stimulants pulsing in their veins Wyches maim and murder indiscriminately. There are few who can match them in close quarters as they dance a balletic path through the enemy, blades flashing as they sever limbs and revel in the screams of the dying.",
+    "tierThreat": { "1": "E", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["DRUKHARI", "[WYCH CULT]"],
+    "attributes": { "S": 3, "T": 3, "A": 3, "I": 5, "Wil": 3, "Int": 2, "Fel": 1 },
+    "resilience": { "value": 4, "note": "1 AR" },
+    "defence": 4,
+    "wounds": 7,
+    "shock": 5,
+    "skills": "Default 3, Athletics 8, Awareness 6 (Passive 3), Ballistic Skill 4, Weapon Skill 11",
+    "bonuses": [
+      { "name": "Power from Pain: Flensing Fury", "description": "If this Threat deals a Wound it gains +3 bonus dice to Weapon Skill (I) Tests until the end of its next Turn." }
+    ],
+    "abilities": [
+      { "type": "BATTLECRY", "name": "Torturous Acrobatics", "description": "The Wych moves to their target then uses a Multi-Action to make an Athletics (S) Interaction Attack attempting to make them Vulnerable, followed by a melee attack with their Hekatarii Blade." },
+      { "type": "ACTION", "name": "Splinter Pistol", "stats": "7 +1 ED / Range 6-12-18 / Salvo 1 / Inflict (Poisoned 3), Pistol" },
+      { "type": "ACTION", "name": "Hekatarii Blade", "stats": "7 +4 ED / AP -1 / Range 1 / Parry" },
+      { "type": "ACTION", "name": "Plasma Grenade (1)", "stats": "12 +5 ED / AP -1 / Range 8 / Blast (8), Inflict (Blinded)" },
+      { "type": "REACTION", "name": "No Escape", "description": "When this Threat makes a Reaction Attack with a melee weapon they do so with +2 bonus dice." }
+    ],
+    "determination": "Spend 1 Ruin to roll 3d6. (Dodge: This Threat uses Agility instead of Toughness to roll Determination.)",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 8,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "haemonculus",
+    "name": "HAEMONCULUS",
+    "description": "Mutilated and twisted into a horrific mockery of their own kin the Haemonculi are among the most depraved of the Drukhari. Specializing in the arcane art of flesh carving and surgical augmentation, their bodies are twisted and contorted beyond compare. Their spines are reformed, elongated to better house relocated internal organs while bones are replaced or removed entirely. Various high-yield elixir injectors are arranged on disjointed mechanical and biological appendages that loom behind them, while secondary arms wield an array of vicious looking implements of surgery and torture. Their blood pulses with an opulent blend of stimulants and sense enhancing drugs and their arcane arts have even granted them a deranged form of immortality.\n\nThey have dedicated their long dark existences to refining their malevolent vices. They are master torturers, capable of keeping captives in excruciating agonies for centuries, experts in the pain that can be inflicted by the careful application of toxins and stimulants. Above all else they are insane crafters of flesh, creating untold horrors of vat grown biomass surgically blended with the machine, and given will by the dark alchemy of the Haemonculus themselves. When these creatures finally creak to awful un-life, they will wreak havoc wherever their masters desire.",
+    "tierThreat": { "1": "A", "2": "A", "3": "A", "4": "A" },
+    "keywords": ["DRUKHARI", "[COVEN]"],
+    "attributes": { "S": 3, "T": 5, "A": 5, "I": 5, "Wil": 7, "Int": 8, "Fel": 3 },
+    "resilience": { "value": 9, "note": "3 AR" },
+    "defence": 4,
+    "wounds": 13,
+    "shock": 11,
+    "skills": "Default 8, Awareness 10 (Passive 5), Ballistic Skill 8, Medicae 12, Scholar 10, Tech 12, Weapon Skill 12",
+    "bonuses": [
+      { "name": "Champion", "description": "This Threat may use Ruin Actions and has 3 personal Ruin." },
+      { "name": "Fleshcraft", "description": "A Haemonculus twists their own flesh into a horrific and deadly warform, giving them 4 arms, each with a specific purpose on the battlefield. On its Turn, a Haemonculus may attack once with each of its 4 weapons without suffering a DN penalty. The Haemonculus can sacrifice its attack with its Haemonculus Tools to make a Medicae Test on a target it shares the [COVEN] Keyword with within 2m." },
+      { "name": "Master of Pain", "description": "A Haemonculus has inflicted such violations upon their own flesh that enemy attacks are barely a cause for concern. The Haemonculus gains +2 Resilience (already included above). Additionally, whenever a Haemonculus heals another creature's Wounds, the Haemonculus may choose to heal up to 4 additional Wounds by inflicting an equal amount of Shock damage." },
+      { "name": "Torture Artist", "description": "This Threat gains +2 bonus dice to any Test made to torture an individual." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Stinger Pistol", "stats": "6 +2 ED / Range 6-12-18 / Salvo 2 / Pistol / Inflict (Poison 2), Rending (4)" },
+      { "type": "ACTION", "name": "Haemonculus Tools", "stats": "7 +3 ED / Range 3 / Inflict (Poisoned 2), Rending (4)" },
+      { "type": "ACTION", "name": "Scissorhand", "stats": "6 +2 ED / AP -2 / Range 1 / Inflict (Poisoned 14)" },
+      { "type": "ACTION", "name": "Ichor Injector", "stats": "4 +4 ED / Range 1 / Inflict (Poisoned 4), Rending (4)" }
+    ],
+    "determination": "Spend 1 Ruin to roll 5d6. (Insensible to Pain: Any Wounds negated by Determination are ignored instead of being converted to Shock.)",
+    "conviction": 7,
+    "resolve": 6,
+    "speed": 8,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "wrack",
+    "name": "WRACK",
+    "description": "As the centuries pass and the blood-stained excess of the Dark City begins to bore its inhabitants, the Drukhari will seek out new and even more debauched experiences to indulge and savour. To this end, some Drukhari willingly give themselves up to the Covens of the Haemonculi to be torn apart and surgically rebuilt as instruments of suffering and death.\n\nThese beings are known as Wracks and act as servants and bodyguards to their Haemonculi masters, surgically crafted to serve within the darkened lairs of the flesh crafting Covens.\n\nThey serve as both apprentices and living experiments to their masters. In battle they are willing to defend their foul overlords with their lives, in the vain hope of one day ascending to the inner circle of the Haemonculis coven. Wielding a plethora of terrifying instruments of torture, they are inured and oblivious to their own suffering.\n\nEach Wrack is a living example of their master's foul \"artistry\" and the barbarous depths they seek to explore with their work.",
+    "tierThreat": { "1": "E", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["DRUKHARI", "[COVEN]"],
+    "attributes": { "S": 3, "T": 5, "A": 3, "I": 3, "Wil": 3, "Int": 2, "Fel": 1 },
+    "resilience": { "value": 6, "note": "0 AR" },
+    "defence": 2,
+    "wounds": 9,
+    "shock": 5,
+    "skills": "Default 4, Awareness 2 (Passive 1), Ballistic Skill 7, Weapon Skill 7",
+    "bonuses": [
+      { "name": "Power from Pain: Inured to Suffering", "description": "If this Threat deals a Wound it gains +1 bonus dice to Determination Tests until the end of its next Turn." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Wrack Blades", "stats": "8 +2 ED / Range 1 / Parry" }
+    ],
+    "determination": "Spend 1 Ruin to roll 2d6. (Insensible to Pain: Any Wounds negated by Determination are ignored instead of being converted to Shock.)",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 7,
+    "size": "Avg",
+    "mobOptions": "For every 5 Wracks in a Mob, one may be equipped with either of the following:\n• Liquifier Gun: 10 +1 ED / AP -2 / Range 6-12-18 / Salvo 2 / Assault, Flamer, Melta\n• Ossefactor: 6 +3 ED / AP -3 / Range 12-24-36 / Salvo 1 / Agonising, Rad (4)",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "sslyth",
+    "name": "SSLYTH",
+    "description": "Within the darkened lair of the Drukhari Archon, loyalty and trust are rare commodities. Treachery and ambition are second nature to the ever-aspirant ranks of the Kabals, so to ensure their security and enforce their will the Archons turn to vicious serpentine mercenaries known as the Sslyth.\n\nThe Sslyth are an intelligent serpent-like species of unknown origin. While not exclusively employed by the Drukhari, their reliable nature and willingness to accept slaves as payment ensures a constant demand for their services in Commorragh where they find easy employment as mercenaries and bodyguards among the Kabals.\n\nThe Sslyth are particularly suited for combat. Their humanoid-like torso has two independently functioning sets of arms, each capable of firing and reloading simultaneously or capable of carrying an array of deadly blades. This maelstrom of death is propelled on a hulking serpent-tailed lower half, their bodies encased in thick, armored scales that glisten with a slick pearlescence.\n\nTheir combined reputation for savage violence and purchased loyalty guarantees the Sslyth are never far from the retinue of the Archons of Commorragh's dark Kabals.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "T" },
+    "keywords": ["DRUKHARI", "COURT OF THE ARCHON", "[KABAL]"],
+    "attributes": { "S": 6, "T": 4, "A": 3, "I": 4, "Wil": 3, "Int": 3, "Fel": 1 },
+    "resilience": { "value": 6, "note": "3 AR" },
+    "defence": 2,
+    "wounds": 8,
+    "shock": 5,
+    "skills": "Default 6, Athletics 8, Awareness 6 (Passive 3), Ballistic Skill 8, Weapon Skill 8",
+    "bonuses": [
+      { "name": "Sslyth Limbs", "description": "A Sslyth has 2 sets of limbs, reducing the Multi-Attack and Multi-Action penalty by 2 DN." }
+    ],
+    "abilities": [
+      { "type": "BATTLECRY", "name": "Frightful Form", "description": "Anyone that can see this Threat must make a DN 1 Fear Test." },
+      { "type": "ACTION", "name": "Splinter Pistol", "stats": "7 +1 ED / Range 6-12-18 / Salvo 1 / Inflict (Poisoned, 3), Pistol" },
+      { "type": "ACTION", "name": "Shardcarbine", "stats": "7 +1 ED / Range 9-18-27 / Salvo 2 / Inflict (Poisoned, 6), Rapid Fire (2)" },
+      { "type": "ACTION", "name": "Sslyth battle-blade", "stats": "9 +3 ED / Range 1 / Parry" },
+      { "type": "REACTION", "name": "Cold Blooded Bodyguard", "description": "When an Archon the Sslyth is the bodyguard of within 8m is targeted by an attack, this Threat may interpose themself as a reaction and become the new target for the attack." }
+    ],
+    "determination": "Spend 1 Ruin to roll 4d6. (Resilient Species: Any Wounds negated by Determination are ignored instead of being converted to Shock.)",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 8,
+    "size": "Large",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "kabalite_warrior",
+    "name": "KABALITE WARRIOR",
+    "description": "The Drukhari are born into a world of violence and cruelty — taught to fight, deceive, and murder from birth in order to survive on the blood-soaked streets of their home city. Those that prove themselves both devious and vicious enough to survive Commorragh quickly find themselves fighting for power among the ranks of the various Kabals.\n\nThe cruelest of these Drukhari soon carve themselves a bloody path to being able to serve as Kabalite Warriors. Encased in the segmented, barbed armour of their Kabal and wielding a variety of instruments of death, these warriors serve as the main force in the Drukhari raids into Realspace. Formed into devastating raiding parties these Kabalite Warriors strike without warning and with merciless intent, butchering, and enslaving as their dark masters will.\n\nLike the rest of their Drukhari kindred the Kabalite Warriors are without forgiveness or remorse. Lead into battle by the cruelest among them, they are sustained by the torment of others and delight in the agonized screams of their victims.",
+    "tierThreat": { "1": "E", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["DRUKHARI", "[KABAL]"],
+    "attributes": { "S": 3, "T": 3, "A": 4, "I": 4, "Wil": 3, "Int": 3, "Fel": 2 },
+    "resilience": { "value": 6, "note": "3 AR" },
+    "defence": 3,
+    "wounds": 7,
+    "shock": 5,
+    "skills": "Default 5, Awareness 6 (Passive 3), Ballistic Skill 8, Weapon Skill 9",
+    "bonuses": [
+      { "name": "Power from Pain: Eager to Flay", "description": "If this Threat deals a Wound it gains +3 Speed until the end of its next Turn." },
+      { "name": "Prey on the Weak", "description": "This Threat gains +2 bonus dice to any Test targeting a Wounded individual." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Splinter Rifle", "stats": "7 +1 ED / Range 12-24-36 / Salvo 2 / Inflict (Poisoned, 3), Rapid Fire (2)" },
+      { "type": "ACTION", "name": "Sword", "stats": "6 +2 ED / Range 1 / Parry" }
+    ],
+    "determination": "Spend 1 Ruin to roll 2d6.",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 8,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "incubi",
+    "name": "INCUBI",
+    "description": "The Incubi of the Dark City swear no allegiance to the Kabals or Wych Cults of Commorragh. Inside their polished obsidian shrines, they dedicate themselves entirely to the icy focusing of their hatred and the perfecting of the killing strike in a malicious parody of the warrior paths of their Asuryani kindred.\n\nHaving witnessed the bodies of the weak burned before the altar of Khaine, the Aeldari God of War, aspiring Incubi must earn their place among the Dark City's most fearsome and elite warriors. After a gruelling and extensive training period, aspiring Incubi wielding the deadly Klaives of their order, must seek out and murder an Aspect Warrior of their Asuryani kin and present their shattered Soulstone to the shrines Hierarch.\n\nWith this dark ritual complete the broken stone is remade and set upon the newly elevated Incubus armour where it emanates a nascent aura of fear and evil.\n\nThe Incubi are often employed by the Archons of the Kabals, their single-minded dedication, mercenary nature and uncharacteristic trustworthiness making them exceptional bodyguards against the constant stream of assassins and usurpers. This, combined with the considerable expense at which their services are bought, serves to enhance their employer's reputation among the courts of the Dark City.",
+    "tierThreat": { "1": "A", "2": "E", "3": "E", "4": "T" },
+    "keywords": ["DRUKHARI", "COURT OF THE ARCHON"],
+    "attributes": { "S": 3, "T": 3, "A": 5, "I": 6, "Wil": 4, "Int": 3, "Fel": 2 },
+    "resilience": { "value": 9, "note": "5 AR" },
+    "defence": 5,
+    "wounds": 9,
+    "shock": 7,
+    "skills": "Default 5, Athletics 6, Awareness 8 (Passive 4), Intimidate 8, Leadership 6, Weapon Skill 11",
+    "bonuses": [
+      { "name": "Champion", "description": "This Threat may use Ruin Actions and has 2 personal Ruin." },
+      { "name": "Power from Pain: Mantle of Agony", "description": "If this Threat deals a Wound it gains +2 bonus dice to Intimidation Tests until the end of its next Turn." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Klaive", "stats": "8 +7 ED / AP -3 / Parry, Brutal" },
+      { "type": "WRATH", "name": "Lethal Precision", "description": "When an Incubus successfully hits with a Wrath Critical in melee they deal +4 Mortal Wounds." },
+      { "type": "RUIN", "name": "Tormentors", "description": "Spend 1 Ruin to target an individual or a Mob. The Incubus makes an Intimidation Test opposed by its target's Leadership. If the Incubus wins, the target suffers the Fear Condition." }
+    ],
+    "determination": "Spend 1 Ruin to roll 3d6.",
+    "conviction": 4,
+    "resolve": 3,
+    "speed": 7,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "mandrake",
+    "name": "MANDRAKE",
+    "description": "Drukhari society is founded, thrives upon, and reveres callous sadism. Yet within the abhorrent megalopolis of the Dark City the shadow skinned Mandrakes of the shadowed depths of Commorragh, known as the Aelindrach, command an unusual reverence. They are feared not only by the untold billions of denizens that inhabit the realms of Realspace but even by other Drukhari.\n\nThe origins of the Mandrakes are unknown, although often speculated upon. Some believe they are the foul and cursed offspring of baleful unions involving ancient Aeldari, while others think they are spawned from a nightmarish shadow realm beyond the Webway. Their true origins may never be known, having long been lost to the passing millennia.\n\nWith their shifting, shadow-like form pulsing with sickly green arcane runes and draped only in the tanned flesh of those who dare cross them, Mandrakes pull themselves from the shadows, capable of appearing and vanishing wherever the light fails to illuminate the darkness. Wielding baleful sickles and capable of turning the very life essence of their enemies against them, unleashed in wicked blasts of ice-cold spectral fire the Mandrakes are nightmares given shape, hungry to taste the suffering of others.",
+    "tierThreat": { "1": "A", "2": "E", "3": "E", "4": "T" },
+    "keywords": ["DRUKHARI"],
+    "attributes": { "S": 5, "T": 3, "A": 4, "I": 4, "Wil": 4, "Int": 2, "Fel": 1 },
+    "resilience": { "value": 7, "note": "3 AR" },
+    "defence": 5,
+    "wounds": 7,
+    "shock": 6,
+    "skills": "Default 3, Awareness 4 (Passive 2), Ballistic Skill 8, Intimidation 6, Stealth 9, Weapon Skill 8",
+    "bonuses": [
+      { "name": "Power From Pain", "description": "If this Threat deals a Wound, it gains +2 bonus dice to Weapon Skill Tests until the end of its next Turn." },
+      { "name": "Shrouded From Sight", "description": "A Mandrake's shadowy form gives them +2 Defence." }
+    ],
+    "abilities": [
+      { "type": "BATTLECRY", "name": "From Out of the Shadows", "description": "The Mandrake emerges from the shadows. All opponents of the Mandrake must make a DN 2 Initiative Test or are Ambushed. Additionally, all opponents of the Mandrake must make a DN 2 Fear Test." },
+      { "type": "ACTION", "name": "Baleblast", "stats": "10 +2 ED / Range 9-18-27 / Salvo 1 / Assault, Rending (2), Spread" },
+      { "type": "ACTION", "name": "Glimmersteel Blade", "stats": "9 +3 ED / AP -1 / Range 1 / Parry" },
+      { "type": "RUIN", "name": "Fade Away", "description": "Spend 1 Ruin. The Mandrake disappears into the shadows. At the start of its next Turn, the Mandrake may appear from any shadow within 1km using its BATTLECRY: From Out of the Shadows." }
+    ],
+    "determination": "Spend 1 Ruin to roll 3d6.",
+    "conviction": 4,
+    "resolve": 3,
+    "speed": 8,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "grotesque",
+    "name": "GROTESQUE",
+    "description": "While some Drukhari willingly give their bodies over to the crazed machinations of the Haemonculi, to be reborn as winged Scourges or terrifying Wracks, a much more horrifying fate awaits those captured unwillingly from Realspace. Finding themselves laid out upon the Haemoncullis' blood-slicked slab their bodies are broken and remade into wicked instruments of violence and death by the deranged Flesh Carvers of Commorragh.\n\nThe Grotesque comes to reflect the twisted, execrable will of its creator, the madness of the Haemonculi rendered in a vile amalgamation of flesh and machine. Left with little will, they are mindlessly dedicated to their creators. These swollen monstrosities shamble morosely in a state of mindless compliance until ordered to kill by their dark masters.\n\nOnce roused the twisted form of the Grotesque is flushed with a cacophony of potent elixirs, combat stimulants and worse, sending them into a frenzied bloodlust. Unleashed, they turn their unnatural strength and mechanically augmented blades to butcher until the will of their creator is satisfied.",
+    "tierThreat": { "1": "E", "2": "E", "3": "E", "4": "T" },
+    "keywords": ["DRUKHARI"],
+    "attributes": { "S": 6, "T": 7, "A": 2, "I": 4, "Wil": 2, "Int": 2, "Fel": 1 },
+    "resilience": { "value": 9, "note": "4 AR" },
+    "defence": 2,
+    "wounds": 11,
+    "shock": 4,
+    "skills": "Default 3, Awareness 4 (Passive 2), Ballistic Skill 4, Weapon Skill 8",
+    "bonuses": [
+      { "name": "Power From Pain: Inured To Suffering", "description": "If this Threat deals a Wound it gains +1 bonus dice to Determination Tests until the end of its next Turn." },
+      { "name": "Lobotomized", "description": "This Threat is barely sentient and acts out the will of its dark master relentlessly. It ignores abilities that target the mind and never needs to make a Resolve Test to continue fighting." }
+    ],
+    "abilities": [
+      { "type": "BATTLECRY", "name": "Frightful Form", "description": "Anyone that can see this Threat must make a DN 2 Fear Test." },
+      { "type": "ACTION", "name": "Flesh Gauntlet", "stats": "11 +3 ED / Range 1 / Agonising" },
+      { "type": "ACTION", "name": "Liquifier Gun", "stats": "10 +1 ED / AP -2 / Range 6-12-18 / Salvo 2 / Assault, Flamer, Melta" },
+      { "type": "ACTION", "name": "Monstrous Cleaver", "stats": "11 +6 ED / Range 1 / Brutal" }
+    ],
+    "determination": "Spend 1 Ruin to roll 7d6. (Insensible to Pain: Any Wounds negated by Determination are ignored instead of being converted to Shock.)",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 7,
+    "size": "Large",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "beastmaster",
+    "name": "BEASTMASTER",
+    "description": "Beastmasters can be found soaring high over the viscera-soaked blood sands of the Wych Cult arenas or weaving over Realspace raiding parties on their thrumming skyboards. Clad in ancient shamanic masks and wielding the excruciating lash of the Agonizer they drive forward a vile menagerie of beasts and other warp-spawned fiends.\n\nFrom the very earliest of days of the Dark City these Drukhari have long proved a favourite of its blood thirsty denizens and have remained a firm favourite of the arenas depraved crowds over the millennia. Beloved as the beasts they control maim and kill to the bloodthirsty cheers of the Drukhari. Yet when not being showered with adulation in the skies above the arena the Beastmasters live a solitary existence, purposefully dedicated to the subjugation of the many horrors of the Galaxy.\n\nBlessed with a natural dominance and further enhanced by multitudes of sonic emitters and pheromone transmitters embedded in their ancient helms, they display mastery and control over a vast wide range of creatures, from screeching Razorwings to monstrous Clawed Fiends. Their ability to goad and provoke the many creatures they control on to acts of extreme violence ensures the swelling bloodlust of the Wych Cults coliseums is never left unsated.",
+    "tierThreat": { "1": "A", "2": "E", "3": "E", "4": "T" },
+    "keywords": ["DRUKHARI"],
+    "attributes": { "S": 3, "T": 5, "A": 6, "I": 4, "Wil": 4, "Int": 3, "Fel": 2 },
+    "resilience": { "value": 7, "note": "1 AR" },
+    "defence": 3,
+    "wounds": 11,
+    "shock": 7,
+    "skills": "Default 5, Athletics 6, Awareness 6 (Passive 3), Ballistic Skill 8, Intimidation 8, Leadership 8, Pilot 8, Weapon Skill 8",
+    "bonuses": [
+      { "name": "Champion", "description": "This Threat may use Ruin Actions and has 2 personal Ruin." },
+      { "name": "Beastmaster", "description": "Allied creatures with the BEAST Keyword within 10m of the Beastmaster gain +2 bonus dice to Conviction, Resolve, and attack Tests." },
+      { "name": "Power From Pain: Flensing Fury", "description": "If this Threat deals a Wound it gains +1 bonus dice to melee attack Tests until the end of its next Turn." },
+      { "name": "Skyboard", "description": "Whilst mounted on a Skyboard the Beastmaster can Fly at Speed 12 and fire its Splinter Pods as though they were wielding them as a ranged weapon. If the Skyboard is damaged, the Beastmaster rolls a Complication, or attempts any kind of difficult aerial manoeuvre, he must succeed on a DN 4 Pilot (A) Test or the Skyboard crashes in a random direction according to the Scattering rules. Crashing deals a minimum of d3 Shock and may trigger falling damage." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Agoniser", "stats": "7 +4 ED / AP -2 / Range 4 / Agonising, Inflict (Poisoned, 3)" },
+      { "type": "ACTION", "name": "Splinter Pods", "stats": "8 +2 ED / Range 9-18-27 / Salvo 3 / Agonising, Assault, Inflict (Poisoned 3)" },
+      { "type": "RUIN", "name": "Whips of the Master", "description": "Spend 1 Ruin to target an allied creature with the BEAST Keyword within 4m. The target suffers 1 Shock damage, but gains +2 bonus dice to all melee attacks and +2 Speed until the end of its next turn." }
+    ],
+    "determination": "Spend 1 Ruin to roll 5d6.",
+    "conviction": 4,
+    "resolve": 3,
+    "speed": 8,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "clawed_fiend",
+    "name": "CLAWED FIEND",
+    "description": "These hulking forms of sinewed musculature and dense, lice-ridden fur boast heightened senses and a devastating array of poniard-like teeth and claws. Driven forward under the baleful glare of the Beastmasters the Clawed Fiend is a towering behemoth of death and destruction.\n\nMultiple eyes dotted across its thick, stunted skull can perceive the faintest movement across multiple spectrums whilst its prominent ears are capable of detecting any sound, regardless of the surrounding carnage. The swollen frame of the Clawed Fiend allows it to propel and maneuver at unnatural speeds for its hulking size, while its muscular front limbs are easily capable of tearing a man in half.\n\nIf wounded they devolve into an uncontrollable rage, caused by the stench of their own foul blood filling their hypersensitive nostrils. Only by the considerable effort of their Drukhari masters or their demise can these creatures be brought to heel.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
+    "keywords": ["DRUKHARI", "BEAST"],
+    "attributes": { "S": 6, "T": 6, "A": 5, "I": 5, "Wil": 2, "Int": 1, "Fel": 1 },
+    "resilience": { "value": 7, "note": "0 AR" },
+    "defence": 3,
+    "wounds": 10,
+    "shock": 4,
+    "skills": "Default 4, Athletics 8, Awareness 6 (Passive 3), Intimidation 6, Stealth 4, Survival 5, Weapon Skill 6",
+    "bonuses": [
+      { "name": "Hunting Senses", "description": "This Threat suffers no penalty to Tests due to darkness." }
+    ],
+    "abilities": [
+      { "type": "BATTLECRY", "name": "Fearsome Beast", "description": "Anyone that can see this Threat must make a DN 3 Fear Test." },
+      { "type": "ACTION", "name": "Clawed Fists", "stats": "6 +3 ED / AP -1 / Range 2 / Brutal" },
+      { "type": "WRATH", "name": "Tail Spike", "description": "The Clawed Fiend makes an immediate attack with its Tail Spike at any target in range. 5 +2 ED / AP -1 / Range 4 / Rending (1)" },
+      { "type": "REACTION", "name": "Berserk Rage", "description": "Whenever this Threat suffers a Wound, roll 1d6. If you roll an Icon, this Threat gains 1 personal Ruin. If you roll an Exalted Icon, this Threat gains 2 personal Ruin." }
+    ],
+    "determination": "Spend 1 Ruin to roll 6d6. (Dodge)",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 10,
+    "size": "Large",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "razorwing_flock",
+    "name": "RAZORWING FLOCK",
+    "description": "With curved beaks and blade sharp wings the vicious avian predator known as the Razorwing are widespread throughout the Galaxy. Famed for their hunger for flesh and bone alike they can devour every last morsel of their prey. Intelligent and vicious, they are a firm and well-known favorite of the Beastmaster hunts of the Wych Cults and great flocks of the creatures can often be seen accompanying their shamanic masters in Realspace raids.\n\nPossessed of an incredible speed, it is claimed that an adult Razorwing can boast a wingspan of up to thirteen feet. They are capable of descending on their prey with the lightning speed and ferocity of an Imperial fighter craft. The Razorwing is covered in iridescent feathers, each coming to a hard knifepoint at their tip. Their beaks and claws are equally sharp and capable enough to render armor and flesh with ease.\n\nRazorwing flocks descend on their prey with wanton ferocity, their initial impact splintering armor and tearing flesh as beak and claw rip their victim asunder. Holding blood-soaked viscera aloft the flock proudly displays their kill to their watching master before devouring them completely.",
+    "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["DRUKHARI", "BEAST"],
+    "attributes": { "S": 1, "T": 1, "A": 3, "I": 3, "Wil": 2, "Int": 1, "Fel": 1 },
+    "resilience": { "value": 3, "note": "0 AR" },
+    "defence": 3,
+    "wounds": 3,
+    "shock": 3,
+    "skills": "Default 4, Awareness 6 (Passive 3), Weapon Skill 3",
+    "abilities": [
+      { "type": "ACTION", "name": "Razorfeathers", "stats": "3 +2 ED / AP -1 / Range 1" }
+    ],
+    "determination": "Spend 1 Ruin to roll 1d6.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 12,
+    "speedNote": "Flight",
+    "size": "Small",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "khymerae",
+    "name": "KHYMERAE",
+    "description": "Spawned as the raw energy of the Immaterrium coalesces around the psychic resonance from the nightmares of sentient beings, the Khymerae are the embodiment of the daemonic nature of the Warp. Being wrought from these sinister energies means that the Khymerae lack definitive form in Realspace, phasing between existence and the Warp at will and capable of appearing without warning.\n\nThe beasts have a form vaguely reminiscent of felids of ancient Terra but covered in thick ropes of slick musculature which glistens as if wet with blood. Sets of unblinking black eyes peer from their bare skeletal heads while reaching hinged arms of hardened bone and glistening sinew arc forward from their shoulder blades to snap at their prey.\n\nDrukhari Beastmasters embark on terrifying Dreamquests in order to tame these stalking predators. This psychic quest is a dangerous one, laden with portentous rituals required to finally tame a creature capable of phasing beyond the bounds of reality.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "T" },
+    "keywords": ["DRUKHARI", "BEAST"],
+    "attributes": { "S": 5, "T": 5, "A": 5, "I": 6, "Wil": 2, "Int": 1, "Fel": 1 },
+    "resilience": { "value": 8, "note": "*2 AR (Otherworldly)" },
+    "defence": 5,
+    "wounds": 9,
+    "shock": 4,
+    "skills": "Default 3, Athletics 7, Awareness 6 (Passive 3), Stealth 6, Weapon Skill 8",
+    "bonuses": [
+      { "name": "Otherworldly", "description": "The Khymerae shifts between the physical world and the Warp with ease, blows passing straight through its incorporeal form. Khymerae have +2 AR*." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Claws and Talons", "stats": "9 +3 ED / AP -1 / Range 1" }
+    ],
+    "determination": "Spend 1 Ruin to roll 5d6. (Phased Defence: This Threat can roll determination against Mortal Wounds.)",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 10,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "hellion",
+    "name": "HELLION",
+    "description": "Screeching into battle atop their bladed skyboards the young delinquents and exiled outcasts that make up the Hellions of Commorragh are arrogant and violent in the extreme. These airborne killers form into marauding gangs and are regarded as little more than feral street scum by other Drukhari. With precise strikes from their brutal Hellglaives they maim while maniacally screaming foul taunts, goading each other to more extravagant and vulgar acts of violence.\n\nOn the blood-slicked streets of the Dark City these Hellion gangs maintain fierce rivalries, not only between themselves but with the Scourges and Reavers of the upper spires, whom they regard with bitter resentment. Hellions, like all Drukhari, are driven and motivated by the pursuit of power and their own egotistical vanity. While fiercely independent they are known to make deals to join Kabalite raiding parties or appear in the arenas of the Wych Cults to further their own ambitions.\n\nWith a cacophony of combat drugs and sense heightening stimulants coursing through their veins Hellions engage and excel in blood-stained spectacle, daring each other into ever more spectacular acts of aerial carnage for their own perverse amusement.",
+    "tierThreat": { "1": "E", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["DRUKHARI", "[WYCH CULT]"],
+    "attributes": { "S": 3, "T": 4, "A": 4, "I": 4, "Wil": 2, "Int": 3, "Fel": 1 },
+    "resilience": { "value": 7, "note": "2 AR" },
+    "defence": 3,
+    "wounds": 10,
+    "shock": 5,
+    "skills": "Default 4, Awareness 8 (Passive 4), Ballistic Skill 9, Pilot 10, Weapon Skill 8",
+    "bonuses": [
+      { "name": "Hit and Run", "description": "The Hellion does not provoke Reflexive Attacks when moving out of Engagement." },
+      { "name": "Power From Pain: Flensing Fury", "description": "If this Threat deals a Wound it gains +1 bonus dice to melee attack Tests until the end of its next Turn." },
+      { "name": "Skyboard", "description": "Whilst mounted on a Skyboard the Hellion can Fly at Speed 12 and fire its Splinter Pods as though they were wielding them as a ranged weapon. If the Skyboard is damaged, the Hellion rolls a Complication, or attempts any kind of difficult aerial manoeuvre, he must succeed on a DN 4 Pilot (A) Test or the Skyboard crashes in a random direction according to the Scattering rules. Crashing deals a minimum of d3 Shock and may trigger falling damage." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Hellion Assault", "description": "Whilst mounted on a Skyboard a Hellion may charge as a Combat Action and Fall Back as a simple Action." },
+      { "type": "ACTION", "name": "Hellglaive", "stats": "8 +4 ED / AP -4 / Range 2" },
+      { "type": "ACTION", "name": "Splinter Pods", "stats": "8 +2 ED / Range 9-18-27 / Salvo 3 / Agonising, Assault, Inflict (Poisoned 3)" },
+      { "type": "RUIN", "name": "Whips of the Master", "description": "Spend 1 Ruin to target an allied creature with the BEAST Keyword within 4m. The target suffers 1 Shock damage, but gains +2 bonus dice to all melee attacks and +2 Speed until the end of its next turn." }
+    ],
+    "determination": "Spend 1 Ruin to roll 4d6.",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 7,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "scourge",
+    "name": "SCOURGE",
+    "description": "Acting as dark couriers, trafficking in the secrets of Commorragh's ruling elites and as winged mercenaries equipped with the very best weapons, the Scourges of the upper spires form an integral part of both Drukhari society and raiding parties into Realspace.\n\nThese most ambitious Drukhari seek out the scalpel of the twisted Haemonculi. If they are capable of paying the price, be it simple wealth or a much darker, esoteric demand, then the lengthy and excruciating process of transformation begins. The pain engine, known as the Talos, first hollows the bones of the aspiring Scourge, reducing their weight to near nothingness. Whipcord vat-grown muscles are grafted onto wings.\n\nFiercely protective of their expensive augmentation and exquisite trappings, the Scourges soar far above the battlefield, unleashing their devastating weaponry as a hawk would, swooping down to savour each kill.",
+    "tierThreat": { "1": "E", "2": "E", "3": "T", "4": "T" },
+    "keywords": ["DRUKHARI"],
+    "attributes": { "S": 3, "T": 3, "A": 6, "I": 5, "Wil": 4, "Int": 3, "Fel": 1 },
+    "resilience": { "value": 8, "note": "*4 AR" },
+    "defence": 4,
+    "wounds": 9,
+    "shock": 7,
+    "skills": "Default 5, Awareness 10 (Passive 5), Ballistic Skill 8, Pilot 10, Weapon Skill 8",
+    "bonuses": [
+      { "name": "Power of Pain: Eager To Flay", "description": "If this Threat deals a Wound it gains +2 Speed until the end of its next Turn." },
+      { "name": "Winged", "description": "Scourges have wings, allowing them to Fly at Speed 14 using their movement." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Shardcarbine", "stats": "7 +2 ED / Range 9-18-27 / Salvo 2 / Assault, Inflict (Poisoned 3)" },
+      { "type": "ACTION", "name": "Plasma Grenade (2)", "stats": "12 +5 ED / AP -1 / Range 8 / Blast (8), Inflict (Blinded)" },
+      { "type": "BATTLECRY", "name": "Winged Strike", "description": "The Scourge descends from high in the sky. All opponents of the Scourge must make a DN 3 Initiative Test or are Ambushed." }
+    ],
+    "determination": "Spend 1 Ruin to roll 3d6.",
+    "conviction": 4,
+    "resolve": 3,
+    "speed": 14,
+    "speedNote": "Fly",
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "talos",
+    "name": "TALOS",
+    "description": "Of the multitudes of unhinged creations spawned by the flesh crafting Haemonculi, the most well known are a variety of gruesome Pain Engine known as the Talos. A twisted amalgamation of organic biomass and mechanical components and granted a semblance of sentience by its creator, these Talos are heavily armed and serve as surgical assistants, unforgiving torturers, and instruments of war.\n\nIn combat the Talos is often employed as a bodyguard to their dark creator. Drifting forward under the droning hum of anti-gravitic engines, each Talos is adorned with a vast array of instruments of death. Its front section consists of two great armoured claw arms, lined with a nightmarish assortment of scalpels, barbed hooks, and toxin injectors. A great mechanical tail looms from its rear section encased in the same thick black carapace as the palid fleshy mass of its torso. The machine's underside is lined with various surgical blades and tools, capable of dissecting and absorbing the very essence of those unlucky enough to be caught in its grasp in mere seconds, much to the amusement of the watching Haemonculi.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
+    "keywords": ["DRUKHARI", "PAIN ENGINE", "[HAEMONCULUS COVEN]"],
+    "attributes": { "S": 10, "T": 10, "A": 2, "I": 4, "Wil": 6, "Int": 2, "Fel": 1 },
+    "resilience": { "value": 13, "note": "3 AR" },
+    "defence": 2,
+    "wounds": 20,
+    "shock": 11,
+    "skills": "Default 4, Awareness 6 (Passive 3), Ballistic Skill 7, Weapon Skill 9",
+    "bonuses": [
+      { "name": "Lobotomized", "description": "This Threat is barely sentient and acts out the will of its dark master relentlessly. It ignores abilities that target the mind and never needs to make a Resolve Test to continue fighting." },
+      { "name": "Pain Engine", "description": "Drukhari constructs are immune to the Blinded, Fear, Poisoned, and Terror Conditions." },
+      { "name": "Second Strike", "description": "This Threat reduces the Multi-Attack penalty by 2DN, as though it had the Dual Wield Talent (Wrath & Glory, page 133)." },
+      { "name": "Power From Pain: Flensing Fury", "description": "If this Threat deals a Wound it gains +1 bonus dice to melee attack Tests until the end of its next Turn." }
+    ],
+    "abilities": [
+      { "type": "BATTLECRY", "name": "Frightful Form", "description": "Anyone that can see this Threat must make a DN 3 Fear Test." },
+      { "type": "ACTION", "name": "Splinter Cannon", "stats": "9 +3 ED / AP -1 / Range 18-36-54 / Salvo 1 / Brutal, Inflict (Poisoned 3)" },
+      { "type": "ACTION", "name": "Macro-scalpel", "stats": "15 +5 ED / AP -3 / Range 1" },
+      { "type": "ANNIHILATION", "name": "Explosive Death", "description": "When this Threat dies, roll a d6. If you roll a Complication, the threat explodes using the following profile: 11 +4 ED / Blast (8)" }
+    ],
+    "determination": "Spend 1 Ruin to roll 10d6. (Insensible to Pain: Any Wounds negated by Determination are ignored instead of being converted to Shock.)",
+    "conviction": 6,
+    "resolve": 5,
+    "speed": 8,
+    "speedNote": "Fly",
+    "size": "Large",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "cronos",
+    "name": "CRONOS",
+    "description": "Like other Pain Engines, the Cronos is composed of an anemic, stimulant flushed organic biomass sutured to various mechanical components, constructed under the insane contrivances of the flesh carving Haemonculi. However, while the Talos is designed to function and serve in a variety of dark roles for their masters, the octopoid limbs of the Cronos engine are designed with a specific, twisted purpose...\n\nSemi-sentient, the Cronos follows its Haemonculi creator, drifting into battle on anti-gravitic motors and covered in a thick armored carapace. Below, mechanical tentacles trail behind it, bound together with sinew and nerve, ready to reach out and grab hold of its prey.\n\nHolding its unfortunate victims in its vice grip the Cronos siphons its very lifeforce, before processing and dissipating the stolen raw energy outward. This excruciating process creates a revitalizing field for nearby Drukhari, who bask in the malevolent, rejuvenating energies emitted by the Cronos. Once drained the withered husk of its victim is discarded before the Cronos drifts onward in search of fresh victims and life essence to plunder.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
+    "keywords": ["DRUKHARI", "PAIN ENGINE"],
+    "attributes": { "S": 8, "T": 10, "A": 4, "I": 4, "Wil": 6, "Int": 2, "Fel": 1 },
+    "resilience": { "value": 14, "note": "3 AR" },
+    "defence": 2,
+    "wounds": 20,
+    "shock": 11,
+    "skills": "Default 4, Awareness 6 (Passive 3), Ballistic Skill 9, Weapon Skill 7",
+    "bonuses": [
+      { "name": "Lobotomized", "description": "This Threat is barely sentient and acts out the will of its dark master relentlessly. It ignores abilities that target the mind and never needs to make a Resolve Test to continue fighting." },
+      { "name": "Pain Engine", "description": "Drukhari constructs are immune to the Blinded, Fear, Poisoned, and Terror Conditions." },
+      { "name": "Power From Pain: Flensing Fury", "description": "If this Threat deals a Wound it gains +1 bonus dice to melee attack Tests until the end of its next Turn." },
+      { "name": "Second Strike", "description": "This Threat reduces the Multi-Attack penalty by 2DN, as though it had the Dual Wield Talent (Wrath & Glory, page 133)." }
+    ],
+    "abilities": [
+      { "type": "BATTLECRY", "name": "Frightful Form", "description": "Anyone that can see this Threat must make a DN 3 Fear Test." },
+      { "type": "ACTION", "name": "Spirit-Leech Tentacles", "stats": "11 +3 ED / AP -2 / Range 1 / Brutal, Inflict (Vulnerable)" },
+      { "type": "ACTION", "name": "Spirit Syphon", "stats": "12 +2 ED / AP -2 / Range 6-12-24 / Salvo 1 / Assault, Brutal, Flamer" },
+      { "type": "RUIN", "name": "Reservoir Of Pain", "description": "Spend 1 Ruin to select one target with the DRUKHARI Keyword within 10m. That target recovers 1 Wound for every Wound the Cronos caused on its last Turn." },
+      { "type": "ANNIHILATION", "name": "Explosive Death", "description": "When this Threat dies, roll a d6. If you roll a Complication, the threat explodes using the following profile: 11 +4 ED / Blast (8)" }
+    ],
+    "determination": "Spend 1 Ruin to roll 10d6. (Insensible to Pain: Any Wounds negated by Determination are ignored instead of being converted to Shock.)",
+    "conviction": 6,
+    "resolve": 5,
+    "speed": 8,
+    "speedNote": "Fly",
+    "size": "Large",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "warboss",
+    "name": "WARBOSS",
+    "description": "Warbosses are the enormous, hulking brutes that rise to the position of leader among the Orks via the brutal application of cunning and the cunning application of brutality. Initially rising to lead mobz of Boyz and Nobz, the stronger and more renowned among the Orks a Warboss becomes induces more and more Orks to their banner, eventually swelling to the great system consuming WAAAGHS! Charging into battle, they carve a path of carnage and destruction to the delight of the fighting forces under their command.\n\nThese masses of muscle rip through enemy lines barking orders and crushing any enemy unfortunate enough to come within reach. Warbosses insist on being equipped with the biggest, most brutal weapons and armour available. Many wear Mega Armour, an almost unnecessary compliment to their already incredibly tough hides. Such is their prodigious bulk that weapons are sometimes mounted a Warboss in Mega Armour, the indignity of a grot sitting atop ones shoulder more than outweighed by the torrents of fire that their Big Shootas are capable of.",
+    "tierThreat": { "1": "A", "2": "A", "3": "A", "4": "A" },
+    "keywords": ["ORK", "[CLAN]"],
+    "attributes": { "S": 12, "T": 8, "A": 3, "I": 5, "Wil": 6, "Int": 2, "Fel": 3 },
+    "resilience": { "value": 17, "note": "8 AR" },
+    "defence": 3,
+    "wounds": 16,
+    "shock": 10,
+    "skills": "Default 5, Awareness 6 (Passive 3), Ballistic Skill 6, Intimidation 10, Leadership 8, Weapon Skill 10",
+    "bonuses": [
+      { "name": "Brutal Presence", "description": "All Orks that share a CLAN Keyword with the Warboss within 10m gain +2 bonus dice and ED to melee attack Tests." },
+      { "name": "Champion", "description": "This Threat may use Ruin actions and has 4 personal Ruin." },
+      { "name": "Dead Tough", "description": "This Threat has +1* AR." },
+      { "name": "'Ere We Go!", "description": "If this Threat is Engaged at the start of its Turn, it gains +2 damage to melee attacks." },
+      { "name": "Grot Gunner", "description": "A subservient Grot rides the Warboss' Mega Armour and wields a mounted Big Shoota. The Grot Gunner fires the Big Shoota using its own action, but uses the Warboss' Ballistic Skill. The Grot can be targeted separately to the Warboss. If a Grot is not riding the Mega Armour, the Big Shoota cannot be fired." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "'Uge Choppa", "stats": "19 +6 ED / AP -3 / Range 2" },
+      { "type": "ACTION", "name": "Big Shoota", "stats": "12 +2 ED / Range 18-36-54 / Salvo 3 / Assault, Waaagh!" },
+      { "type": "RUIN", "name": "I'm Da WarBoss!", "description": "Spend 1 Ruin. The Warboss and all allies with the ORK Keyword within 10 metres gain an additional +2 bonus dice to Weapon Skill (I) Tests until the end of the Warboss' next Turn." },
+      { "type": "REACTION", "name": "Orks Is Never Defeated", "description": "Whenever a Threat with the ORK Keyword dies within 10 metres of the Warboss, the Warboss may sacrifice 1 Shock. If it does, the Ork Threat may make an immediate attack before it dies." }
+    ],
+    "determination": "Spend 1 Ruin to roll 8d6.",
+    "conviction": 6,
+    "resolve": 5,
+    "speed": 5,
+    "speedNote": "May not Run or Sprint",
+    "size": "Large",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "big_mek",
+    "name": "BIG MEK",
+    "description": "When an Ork has proven their competence not only with the business end of a Choppa but with the spanner as well, they may have earned the title of Big Mek. These hulking, brutish engineers typically command the clan's less accomplished Mek Boyz. They usually task their underlings with producing the shootas, trukks, and other sundries every Ork needs, while they concerns themselves with their own speshul projects.\n\nStomping towards the fury of combat beneath a ramshackle arrangement of haphazardly welded plates looted from their last big fight the Big Meks of the Orks build their own kustom battle armor for distributing carnage. These surprisingly resilient armoured suits are loaded to excess with 'eavy firepower and the unhinged inventions of their owner, that they gleefully unleash onto the battlefield. Most of the time it's even pointed at the enemy!\n\nDisplaying the pinnacle of Ork technology. Bolt rounds and Las fire frizzle and crack against powerful Kustom Force Field generators and several inches of solid metal plate and in response the Big Mek unleashes devastating firepower.",
+    "tierThreat": { "1": "A", "2": "A", "3": "A", "4": "A" },
+    "keywords": ["ORK", "[CLAN]"],
+    "attributes": { "S": 9, "T": 6, "A": 3, "I": 3, "Wil": 4, "Int": 2, "Fel": 1 },
+    "resilience": { "value": 14, "note": "7 AR" },
+    "defence": 2,
+    "wounds": 14,
+    "shock": 8,
+    "skills": "Default 4, Awareness 6 (Passive 3), Ballistic Skill 6, Weapon Skill 9, Tech 9",
+    "bonuses": [
+      { "name": "'Ere We Go!", "description": "If this Threat is Engaged at the start of its Turn, it gains +2 damage to melee attacks." },
+      { "name": "Kombi-Rokkit", "description": "The Big Mek can Multi Attack with their Shoota and Rokkit Launcher. If they do, they make their Attack Test with an additional +1 DN penalty." },
+      { "name": "Kombi-Skorcha", "description": "The Big Mek can Multi Attack with their Skorcha and Shoota. If they do, they make their Attack Test with an additional +1 DN penalty." },
+      { "name": "Grot Oiler", "description": "The Big Mek reduces the DN of a repair test by 2. This destroys the Grot Oiler." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Mekanik", "description": "A Big Mek can attempt to repair any damaged piece of equipment with the ORK Keyword within 1 metre as a Simple Action. They can also Reload a weapon as a Free Action." },
+      { "type": "ACTION", "name": "Kustom Mega-Blasta", "stats": "16 +1d6 ED / AP -3 / Range 12-24-36 / Salvo 1 / Blast (4), Heavy (5), Waaagh!" },
+      { "type": "ACTION", "name": "Power Klaw", "stats": "15 +5 ED / AP -3 / Range 1 / Brutal, Unwieldy (3), Waaagh!" },
+      { "type": "ACTION", "name": "Kombi-rokkit Shoota", "stats": "10 +1 ED / Range 9-18-27 / Salvo 2 / Assault, Waaagh!" },
+      { "type": "ACTION", "name": "Kombi-rokkit Rokkit", "stats": "16 +1d3 ED / AP -2 / Range 12-24-36 / Salvo - / Assault, Blast (4)" },
+      { "type": "ACTION", "name": "Kombi-skorcha Shoota", "stats": "10 +1 ED / Range 9-18-27 / Salvo 2 / Assault, Waaagh!" },
+      { "type": "ACTION", "name": "Kombi-skorcha Skorcha", "stats": "12 +2 ED / AP -1 / Range 4-8-12 / Salvo 2 / Flamer, Heavy (6)" },
+      { "type": "RUIN", "name": "Orky Upgradez", "description": "As a Free Action, the Mek may spend 1 Ruin to tinker with a ranged weapon within 1 metre. The weapon gains +1d3 ED and +1d3 AP for its next attack. The next time the weapon is fired, a Complication triggers if the Wrath Die lands on a 1, 2, or 3." }
+    ],
+    "determination": "Spend 1 Ruin to roll 6d6.",
+    "conviction": 4,
+    "resolve": 3,
+    "speed": 4,
+    "speedNote": "May not Run or Sprint",
+    "size": "Large",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "meganob",
+    "name": "MEGANOB",
+    "description": "Bigger, more brutal, and especially violent Orks are known as Nobs. They become leaders among the ramshackle mobs of Boyz as they rampage across the battlefield. Ork Nobs that find themselves in possession of a considerable amount of Teef, or who are capable of bullying the right Mekboy, commission massive armored suits known among the Orks as Mega Armour.\n\nMega armor comprises massive slabs of metal, bashed roughly into shape and powered by pistons and sheer brute strength. It is intimidatingly resilient and can mount an array of potent weaponry. It is also usually worn to battle by toof-rich Nobz who would be scary enough even were they not each wearing their own Ork-portable bunker.\n\nLeaving rancid plumes of black engine smoke in their wake the Mega Nobz stomp forward, eager to prove the value of their immense metal exoskeletons in bloody, gore-filled examples of destruction.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "E" },
+    "keywords": ["ORK", "[CLAN]"],
+    "attributes": { "S": 10, "T": 6, "A": 2, "I": 4, "Wil": 3, "Int": 1, "Fel": 2 },
+    "resilience": { "value": 15, "note": "7 AR" },
+    "defence": 3,
+    "wounds": 10,
+    "shock": 5,
+    "skills": "Default 6, Awareness 2 (Passive 1), Ballistic Skill 4, Weapon Skill 10",
+    "bonuses": [
+      { "name": "Champion", "description": "This Threat may use Ruin Actions and has 3 personal Ruin." },
+      { "name": "'Ere We Go!", "description": "If this Threat is Engaged at the start of its Turn, it gains +2 damage to melee attacks." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Kustom Shoota", "stats": "10 +1d3 ED / Range 9-18-27 / Salvo 2 / Kustom" },
+      { "type": "ACTION", "name": "Power Klaw", "stats": "16 +5 ED / AP -3 / Range 1 / Brutal, Unwieldy (3), Waaagh!" },
+      { "type": "RUIN", "name": "I'm Da Boss!", "description": "Spend 1 Ruin. All allies with the ORK Keyword within 10 metres gain +2 bonus dice to Weapon Skill (I) Tests." },
+      { "type": "REACTION", "name": "Orks Is Never Defeated", "description": "Whenever a Threat with the ORK Keyword dies within 10 metres of the Meganob, the Nob may sacrifice 1 Shock. If it does, the ORK Threat may make an immediate attack before it dies." }
+    ],
+    "determination": "Spend 1 Ruin to roll 4d6.",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 6,
+    "speedNote": "May not Run or Sprint",
+    "size": "Large",
+    "mobAbilities": "Mob Rule: A Mob of Meganobz gains +1 bonus Icon to any Resolve Tests. This increases by +1 for every ten Nobz.",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "weirdboy",
+    "name": "WEIRDBOY",
+    "description": "Every Ork feels the nascent energies of the Waaagh! However, only the Weirdboyz can channel it. However deliberate this action is a source of debate. As their Ork kin engage in acts of furious butchery around them Weirdboyz channel the building energy around battling Orks, unleashing it in bursts of terrifying psychic energy.\n\nMany Weirdboyz carry a copper staff as a primitive method of control. The staff acts as a release valve, letting out psychic pressure before the Weirdboy bursts. This process is horribly painful for the Weirdboy and can prove deadly for if too much energy builds before they can release it causes their head to explode. Since the gestalt vigour of the Orks builds up constantly, most Weirdboyz avoid other Orks as much as possible. This often includes during combat, and many Weirdboyz wind up dragged onto the battlefield kicking and screaming against their will. Of course, this only riles up the rest of the greenskins, which, in a vicious cycle, gives the Weirdboy more power and agitates them further. Most Warbosses are kunnin' enough to give the Weirdboy room once sparks start flying.",
+    "tierThreat": { "1": "A", "2": "E", "3": "E", "4": "T" },
+    "keywords": ["ORK", "[CLAN]"],
+    "attributes": { "S": 6, "T": 6, "A": 2, "I": 3, "Wil": 5, "Int": 1, "Fel": 1 },
+    "resilience": { "value": 7, "note": "0 AR" },
+    "defence": 2,
+    "wounds": 10,
+    "shock": 7,
+    "skills": "Default 4, Awareness 4 (Passive 2), Ballistic Skill 3, Psychic Mastery 10, Weapon Skill 7",
+    "bonuses": [
+      { "name": "'Ere We Go!", "description": "If this Threat is Engaged at the start of its Turn, it gains +2 damage to melee attacks." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Power of the Waaagh!", "description": "The Weirdboy attempts to activate Smite or a Power of the Waaagh! psychic power: Da 'Eadbanger (DN Target's Defence, Range 35m - Target one enemy and make a Psychic Mastery (Wil) Test against their Defence; if successful the target suffers 1d3 Mortal Wounds), Warpath (DN 5, Range 20m radius - All ORKS within radius gain +1 bonus dice to melee tests, Sustained), Da Krunch (DN 10, Range 35m - Targets stomped by the enormous boot take 12 +2 ED damage and must make a DN 4 Agility test to avoid being Pinned)." },
+      { "type": "ACTION", "name": "Weirdboy Staff", "stats": "9 +1 ED / AP -1 / Range 2 / Force, Waaagh!" }
+    ],
+    "determination": "Spend 1 Ruin to roll 6d6.",
+    "conviction": 5,
+    "resolve": 4,
+    "speed": 6,
+    "size": "Avg",
+    "mobAbilities": "Waaagh! Energy: While there are 20 or more Orks within 12 meters of the Weirdboy, if they successfully activate a psychic power, they may immediately attempt to activate another.",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "flash_gitz",
+    "name": "FLASH GITZ",
+    "description": "Certain Ork Nobs become obsessed with the notion of more Dakka. Becoming single mindedly focused on constantly improving upon and upgrading the amount of Dakka available to them, they carry the biggest and bestest Shootas they can. These varied weapons are known as Snazzguns among the Orks for their garish and over the top appearance and needless decoration. The Orks who wield them are called Flash Gitz, and tend to form into mobs of like-minded individuals.\n\nOther Orks generally despise Flash Gitz, seeing them as self-important show offs too good to make do with an honest shoota or reliable choppa. As a result, many Flash Gitz leave their clans behind, finding a home in the Freebooter Warbands. These Orks usually live admittedly brief lives of violent piracy, but there is never a shortage of opportunities for a Flash Git to put his ostentatious weaponry to use. Successful Freebooters typically accumulate quite a few teef, which the Flash Gitz inevitably expend on even more over-the-top additions to their beloved snazzguns.",
+    "tierThreat": { "1": "A", "2": "A", "3": "E", "4": "T" },
+    "keywords": ["ORK", "[CLAN]"],
+    "attributes": { "S": 6, "T": 6, "A": 2, "I": 3, "Wil": 3, "Int": 1, "Fel": 2 },
+    "resilience": { "value": 11, "note": "4 AR" },
+    "defence": 2,
+    "wounds": 10,
+    "shock": 5,
+    "skills": "Default 5, Awareness 4 (Passive 2), Ballistic Skill 6, Weapon Skill 9",
+    "bonuses": [
+      { "name": "Addicted to Dakka", "description": "This Threat always counts as an Adversary for the purposes of determining how much Ammo it has." },
+      { "name": "'Ere We Go!", "description": "If this Threat is Engaged at the start of its Turn, it gains +2 damage to melee attacks." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Slugga", "stats": "10 +1 ED / Range 6-12-18 / Salvo 1 / Pistol, Waaagh!" },
+      { "type": "ACTION", "name": "Snazzgun", "stats": "12 +2 ED / AP -2 / Range 12-24-36 / Salvo 3 / Heavy (4), Kustom" },
+      { "type": "ACTION", "name": "Choppa", "stats": "9 +3 ED / Reliable, Waaagh!" },
+      { "type": "ACTION", "name": "Stikkbombz (2)", "stats": "9 +5 ED / Range 24 / Blast (6)" }
+    ],
+    "determination": "Spend 1 Ruin to roll 6d6.",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 5,
+    "size": "Avg",
+    "mobOptions": "For every ten Flash Gitz in the Mob one may have a Gitfinda Squig: The Flash Git gains a +4 bonus dice to ranged attack tests. The Gitfinda Squig uses the same statistics as a Squig, but cannot attack.",
+    "mobAbilities": "Mob Rule: A Mob of Flash Gitz gains +1 bonus Icon to any Resolve Tests. This increases by +1 for every ten Flash Gitz.",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "stormboy",
+    "name": "STORMBOY",
+    "description": "Orks are, by nature, violent and aggressive. They are happiest when wildly swinging a Choppa and as a society they care very little for rules or the establishment of any social order beyond might iz right. Orks age rapidly, growing into the hulking brutes capable of ripping a man apart in an exceptionally short period of time. Yet while most Orks quickly find their place in society at the end of a well-placed punch or kick, the most rebellious and anti-Ork thinking of these rebels seek out the training of the Stormboyz camps.\n\nHere these young Orks learn to embrace their rebellious ways, much to the wanton disdain of most Orks. Stormboyz are frequently mocked for their acts of juvenile rebellion, from taking orders and shining their boots to marching about, discussing strategy and even following a battleplan. Yet when that plan is 'strap on a high powered rokkit and hurtle into the enemy bellowing WAAAGH!', most Orks would agree that it may have some merit.",
+    "tierThreat": { "1": "E", "2": "E", "3": "T", "4": "T" },
+    "keywords": ["ORK", "[CLAN]"],
+    "attributes": { "S": 4, "T": 6, "A": 3, "I": 3, "Wil": 2, "Int": 1, "Fel": 3 },
+    "resilience": { "value": 6, "note": "0 AR" },
+    "defence": 2,
+    "wounds": 8,
+    "shock": 3,
+    "skills": "Default 5, Awareness 4 (Passive 2), Ballistic Skill 5, Pilot 6, Weapon Skill 7",
+    "bonuses": [
+      { "name": "'Ere We Go!", "description": "If this Threat is Engaged at the start of its Turn, it gains +2 damage to melee attacks." },
+      { "name": "Full Throttle", "description": "When the Stormboy uses a Rokkit Pack to move, they can choose to activate Full Throttle to fly at triple their Speed for the rest of their Turn. They also gain +Rank bonus dice to Intimidation, Leadership, and Weapon Skill Tests whilst Full Throttle is active. If the Stormboy crashes whilst Full Throttle is Active they suffer a minimum of 1d6 Shock and 1 Mortal Wound, plus falling damage (Wrath & Glory, page 201)." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Slugga", "stats": "10 +1 ED / Range 6-12-18 / Salvo 1 / Pistol, Waaagh!" },
+      { "type": "ACTION", "name": "Choppa", "stats": "7 +3 ED / Reliable, Waaagh!" },
+      { "type": "ACTION", "name": "Stikkbombz (2)", "stats": "9 +5 ED / Range 16 / Blast (6)" }
+    ],
+    "determination": "Spend 1 Ruin to roll 6d6.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 6,
+    "speedNote": "Fly",
+    "size": "Avg",
+    "mobOptions": "A Mob of 10 or more Stormboyz can be led by a Boss Nob with a Power Claw instead of a Choppa: Power Klaw: 10 +5 ED / AP -3 / Range 1 / Brutal, Unwieldy (3), Waaagh!",
+    "mobAbilities": "Mob Rule: A Mob of Stormboyz gains +1 bonus Icon to any Resolve Tests. This increases by +1 for every ten Stormboyz.",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "tankbusta",
+    "name": "TANKBUSTA",
+    "description": "As Orks become hyper fixated on the root cause of mayhem they enjoy the most they band into mobs with similar thinking greenskins. Huge swarms of Orks form together, utterly focused on some precise method of destruction that makes sense to them alone. A classic example of these hyper focused mobs are the Ork groups known as Tankbustas. Addicted to the sheer thrill of watching enemy tanks and war machines explode and delighting in the ensuing chaos these Orks are used by their Warboss as anti-armour troops, keeping the deadliest of their enemies guns away from the hordes of rampaging Boyz.\n\nTankbustas stalk enemy vehicles like game hunters. Making liberal use of numerous Rokkit launchas to blast targets from range; high explosive tank hammers swung by true short-term thinkers; short-fused bomb squigs strapped with explosives; all combine to help the Tankbustas to bring down their targets before ripping oily trophies from the still blazing wrecks. Stripping what they can from the slain wreckage before putting the looted scrap to use, turning it into more makeshift explosives and hunting out even bigger and deadlier targets.",
+    "tierThreat": { "1": "A", "2": "E", "3": "T", "4": "T" },
+    "keywords": ["ORK", "[CLAN]"],
+    "attributes": { "S": 5, "T": 6, "A": 2, "I": 3, "Wil": 2, "Int": 2, "Fel": 1 },
+    "resilience": { "value": 7, "note": "0 AR" },
+    "defence": 2,
+    "wounds": 8,
+    "shock": 3,
+    "skills": "Default 5, Awareness 4 (Passive 2), Ballistic Skill 4, Weapon Skill 7",
+    "bonuses": [
+      { "name": "'Ere We Go!", "description": "If this Threat is Engaged at the start of its Turn, it gains +2 damage to melee attacks." },
+      { "name": "Tank Hunters", "description": "This Threat gains +2 bonus dice to any Test related to the destruction of vehicles." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Rokkit Launcher", "stats": "16 +1d3 ED / AP -2 / Range 12-24-36 / Salvo - / Blast (4)" },
+      { "type": "RUIN", "name": "Tankhammer", "stats": "14 +5 ED / AP -2 / Range 1 / Blast (6)" }
+    ],
+    "determination": "Spend 1 Ruin to roll 2d6.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 6,
+    "size": "Avg",
+    "mobAbilities": "Mob Rule: A Mob of Tankbustas gains +1 bonus Icon to any Resolve Tests. This increases by +1 for every ten Tankbustas.",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "beast_snagga_boy",
+    "name": "BEAST SNAGGA BOY",
+    "description": "Unique to the feral hordes dedicated to Da Old Ways these Orks spend their lives hunting down bigger and more deadlier beasts of other species. While some Orks come to have an innate knowledge of Mekanikz or medicine, others come to reject this wisdom, preferring instead to focus on what they see as traditional Ork kultur. Riding and hunting fearsome beasts, fighting a decent enemy, and spreading general mayhem are the only things these Orks truly care for.\n\nWhile some of these Boyz ride into battle upon snarling, drooling Squigs they've beaten into subservience, they are just as likely to form huge angry throngs, single mindedly rushing forward to bring Choppas into their enemies.\n\nBig, brutal, and belligerent, Beast Snagga Boyz are a force to be reckoned with. From the cannonball-like shells of their thump guns, to the inescapable hooks of their choppas, Beast Snaggas excel in softening up their prey, dragging them down, then ripping them bodily to bits.",
+    "tierThreat": { "1": "E", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["ORK", "[CLAN]"],
+    "attributes": { "S": 5, "T": 5, "A": 2, "I": 2, "Wil": 2, "Int": 1, "Fel": 1 },
+    "resilience": { "value": 7, "note": "1 AR" },
+    "defence": 1,
+    "wounds": 7,
+    "shock": 3,
+    "skills": "Default 2, Awareness 3 (Passive 2), Ballistic Skill 3, Intimidation 4, Weapon Skill 6",
+    "bonuses": [
+      { "name": "Beast Snagga", "description": "This Threat gains +2 bonus dice to attacks on targets with the BEAST or SQUIG Keywords." },
+      { "name": "'Ere We Go!", "description": "If this Threat is Engaged at the start of its Turn, it gains +2 damage to melee attacks." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Slugga", "stats": "10 +1 ED / Range 6-12-18 / Salvo 1 / Pistol, Waaagh!" },
+      { "type": "ACTION", "name": "Choppa", "stats": "8 +3 ED / Range 1 / Reliable, Waaagh!" }
+    ],
+    "determination": "Spend 1 Ruin to roll 5d6.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 6,
+    "size": "Avg",
+    "mobOptions": "A mob of 10 or more Beast Snagga Boyz can be led by a Beast Snagga Nob, who has +1 Toughness, Wounds, and Resilience, and replaces their Choppa with a Power Snappa: 10 +5 ED / AP -2 / Range 1 / Waaagh! Additionally, one Beast Snagga Boy in the Mob may be equipped with the following: Thump Gun: 13 +2 ED / AP -1 / Range 9-18-27 / Salvo 1 / Spread, Waaagh!",
+    "mobAbilities": "Mob Rule: A Mob of Beast Snagga Boyz gains +1 bonus Icon to any Resolve Tests. This increases by +1 for every ten Boyz.",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "runtherd",
+    "name": "RUNTHERD",
+    "description": "The majority of Orks rarely display any form of patience, seeing anything that requires careful consideration or long-term planning as both an affront to Gork and Mork and as a needlessly futile exercise — especially when a well-placed Choppa can garner similar results. Runtherds are a notable exception to this, capable of taking on the tiresome task of managing a warband's grots and snots.\n\nWhile the vast majority of Orks are destined for a life of fightin', it is the Runtherds that ensure a warbands continued survival. The most basic and essential tasks in Ork society, such as cultivating fungus or rearing Squigs, fall to Gretchin and Snotlings. However, neither are particularly inclined towards productivity, so it falls to the Runtherdz to squeeze some work out of them. Through painstaking effort the Runtherdz train their charges to perform the sort of tasks that any Ork could complete, but almost none want to.\n\nOf course, Runtherdz don't refrain from battle entirely — they are Orks after all. When war looms the Runtherdz gather up their favourite Grabba Stikk and prod their dimunitive charges into action. Brimming with something akin to pride, the Runtherdz arm the Gretchin they have trained, point them towards the enemy, and send them off to almost certain death.",
+    "tierThreat": { "1": "E", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["ORK", "[CLAN]"],
+    "attributes": { "S": 4, "T": 6, "A": 2, "I": 2, "Wil": 3, "Int": 1, "Fel": 3 },
+    "resilience": { "value": 7, "note": "0 AR" },
+    "defence": 1,
+    "wounds": 10,
+    "shock": 5,
+    "skills": "Default 5, Awareness 4 (Passive 2), Ballistic Skill 4, Cunning 6, Intimidation 6, Persuasion 5, Weapon Skill 7",
+    "bonuses": [
+      { "name": "'Ere We Go!", "description": "If this Threat is Engaged at the start of its Turn, it gains +2 damage to melee attacks." },
+      { "name": "Fight, Ya Runts!", "description": "If the Runtherd makes a successful melee attack against a Mob of Grots, that Mob gains +3 bonus dice to their next attack Test." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Grabba Stikk", "stats": "7 +3 ED / Range 2 / Waaagh!" },
+      { "type": "ACTION", "name": "Grot-Prod", "stats": "7 +2 ED / AP -1 / Range 2 / Agonising, Unwieldy (2), Waaagh!" },
+      { "type": "ACTION", "name": "Grot Lash", "stats": "5 +1 ED / Range 4 / Agonising" }
+    ],
+    "determination": "Spend 1 Ruin to roll 6d6.",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 6,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "gretchin",
+    "name": "GRETCHIN",
+    "description": "Gretchin — also called Grots — are the diminutive sub-class of Orks that function as the lowest tier of Orkoid society. They may be unwashed, ill-tempered, and foul, but that hardly makes them odd amongst the Orks. What does is their much smaller stature, abject cowardice, and low-level cunning.\n\nGretchin scrape together a meagre existence by taking on tasks no self respecting Ork would bother with. They roast squig meat, brew lethally potent fungus beer, and otherwise struggle to be too useful to stomp on out of hand. Gretchin are hardly well suited to combat, but in large numbers they can sometimes contribute.",
+    "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["ORK", "[CLAN]"],
+    "attributes": { "S": 1, "T": 1, "A": 3, "I": 3, "Wil": 2, "Int": 2, "Fel": 1 },
+    "resilience": { "value": 2, "note": "0 AR" },
+    "defence": 3,
+    "wounds": 2,
+    "shock": 3,
+    "skills": "Default 3, Awareness 4 (Passive 2), Ballistic Skill 5",
+    "abilities": [
+      { "type": "ACTION", "name": "Grot Blasta", "stats": "7 +1 ED / Range 6-12-18 / Salvo 1 / Pistol" },
+      { "type": "ACTION", "name": "Combat Knife", "stats": "3 +2 ED / Range 1" }
+    ],
+    "determination": "Spend 1 Ruin to roll 3d6.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 5,
+    "size": "Small",
+    "mobAbilities": "Surprisingly Dangerous in Large Numbers: In Mobs of ten or more, Gretchin reroll all die results of 1 on Ballistic Skill (A) Tests, excluding Complications.",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "squighog_boyz",
+    "name": "SQUIGHOG BOYZ",
+    "description": "Hurtling towards enemy lines atop vicious, snarling, and thick skulled Smasha Squigs, these Orks have chosen tooth, claw, and muscle over anything as fancy as a Trukk or Shoota. Squighog Boyz are usually found at the frontlines, smashing through enemy defenses with a ferocious impact that shatters armour and bone alike. If a foe should sensibly choose to flee, the Squighog Boyz are only too happy to use their mount's speed to run them down.\n\nDue to the pugnacious nature of their chosen mounts only the most aggressive and thick skinned of the Beast Snaggas can wrangle these beasts under control, but when they do they employ them to devastating effect wielding an array of brutally sharp Choppas and crude explosives to puncture through enemy lines and armour with ease.\n\nWith their mounts snorting and saddlegitz hanging on for dear life, Squighog Boyz thunder into the fight. They fling rokkit-propelled stikkas, hitting with enough force to pierce plate armour, then employ muscle, weight, momentum and sheer belligerence to squash those foes still standing to a paste.",
+    "tierThreat": { "1": "A", "2": "E", "3": "E", "4": "T" },
+    "keywords": ["ORK", "[CLAN]"],
+    "attributes": { "S": 6, "T": 6, "A": 2, "I": 3, "Wil": 2, "Int": 1, "Fel": 2 },
+    "resilience": { "value": 8, "note": "1 AR" },
+    "defence": 2,
+    "wounds": 10,
+    "shock": 4,
+    "skills": "Default 3, Awareness 4 (Passive 2), Ballistic Skill 4, Pilot 6, Weapon Skill 8",
+    "bonuses": [
+      { "name": "'Ere We Go!", "description": "If this Threat is Engaged at the start of its Turn, it gains +2 damage to melee attacks." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Slugga", "stats": "10 +1 ED / Range 6-12-18 / Salvo 1 / Pistol, Waaagh!" },
+      { "type": "ACTION", "name": "Stikka (2)", "stats": "9 +3 ED / AP -2 / Melee Range 2, Thrown 6-12-18 / Waaagh!" }
+    ],
+    "determination": "Spend 1 Ruin to roll 6d6.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 6,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "squighog",
+    "name": "SQUIGHOG",
+    "description": "Squighogs are vicious mounts used by Beast Snagga Boyz. Their thick skulls and powerful jaws make them devastating in a charge.",
+    "tierThreat": { "1": "E", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["ORK", "SQUIG"],
+    "attributes": { "S": 6, "T": 6, "A": 1, "I": 3, "Wil": 1, "Int": 1, "Fel": 1 },
+    "resilience": { "value": 8, "note": "1 AR" },
+    "defence": 2,
+    "wounds": 10,
+    "shock": 3,
+    "skills": "Default 4, Athletics 5, Awareness 4 (Passive 2), Weapon Skill 8",
+    "bonuses": [
+      { "name": "Furious Charge", "description": "When the Squighog Charges, it gains an additional +1 bonus dice to melee attack Tests, as do any individuals riding it." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Squighog Jaws", "stats": "9 +3 ED / AP -2 / Range 1 / Brutal" }
+    ],
+    "determination": "Spend 1 Ruin to roll 6d6.",
+    "conviction": 1,
+    "resolve": 1,
+    "speed": 10,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "squig",
+    "name": "SQUIG",
+    "description": "Violence and aggression, combined with an unbridled enthusiasm makes these rotund balls of claws and teeth a distinct menace. Known by the Orks as Squigs, these creatures are thought to be the most basic form of Orkoid life. Their presence is seen by those informed enough to recognise them as the beginnings of an Ork infestation. Typically tended to — and sometimes fed on — Snotlings, Squigs serve a number of purposes. Some are simply eaten, a dangerous game that provides a temporary distraction for the larger Orks, while others are used as mounts or trained to accompany their masters into combat. The variety found among squigs is truly vast, and those Imperial scribes who have attempted to document it have largely given up or been driven mad.\n\nWhile Squigs are bred and raised for specific purposes, all are vicious and aggressive by nature. With rows of bladed teeth, razor sharp claws, and an insatiable hunger, herds of Squigs are often set loose upon an enemy. While they do occasionally devour their handlers in a flurry of gnashing teeth, most Orks consider either outcome highly entertaining.",
+    "tierThreat": { "1": "T", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["ORK", "SQUIG"],
+    "attributes": { "S": 2, "T": 2, "A": 1, "I": 2, "Wil": 1, "Int": 1, "Fel": 1 },
+    "resilience": { "value": 3, "note": "0 AR" },
+    "defence": 1,
+    "wounds": 4,
+    "shock": 2,
+    "skills": "Default 5, Athletics 4, Awareness 2 (Passive 1), Ballistic Skill 3, Weapon Skill 4",
+    "abilities": [
+      { "type": "ACTION", "name": "Bitey Squig Bite", "stats": "5 +4 ED / AP -3 / Range 1 / Brutal" },
+      { "type": "ACTION", "name": "Squig Vomit", "stats": "10 +3 ED / Range 8 / Salvo 0 / Flamer, Inflict (Poison 2)" }
+    ],
+    "determination": "Spend 1 Ruin to roll 2d6.",
+    "conviction": 1,
+    "resolve": 1,
+    "speed": 5,
+    "size": "Small",
+    "mobOptions": "A Swarm of Teeth and Claws: A Mob of Squigs gains +1 bonus Icon to any Resolve Tests. This increases by +1 for every ten Squigs.",
+    "mobAbilities": "COMPLICATION: Vicious by Nature: Whenever the Mob rolls a Complication, the Squig attacks the nearest Ork and inflicts 1d3 Shock on itself.",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "smasha_squig",
+    "name": "SMASHA SQUIG",
+    "description": "Smasha Squigs are larger, more aggressive variants of Squigs used as mounts by Ork Nobz and Beast Snagga leaders.",
+    "tierThreat": { "1": "E", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["ORK", "SQUIG"],
+    "attributes": { "S": 7, "T": 7, "A": 1, "I": 3, "Wil": 1, "Int": 1, "Fel": 1 },
+    "resilience": { "value": 3, "note": "0 AR" },
+    "defence": 1,
+    "wounds": 4,
+    "shock": 2,
+    "skills": "Default 4, Athletics 6, Awareness 4 (Passive 2), Weapon Skill 9",
+    "bonuses": [
+      { "name": "Mount", "description": "A Smasha Squig may be ridden by any Ork that can keep it under control, typically a Nob. The Smasha Squig and any rider take their Turn together using the Smasha Squig's movement, and each have their own Action. The rider and Smasha Squig can each be targeted separately." },
+      { "name": "Smasha 'Ead", "description": "When the Smasha Squig Charges, it gains an additional +2 bonus dice to melee attack Tests, as do any individuals riding it. Additionally, if the Smasha Squig successfully hits someone with a Charge, they must succeed on a contested Strength Test or be knocked backwards 7m and be knocked Prone." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Smasha Squig Jaws", "stats": "13 +3 ED / AP -1 / Range 1 / Brutal" },
+      { "type": "COMPLICATION", "name": "Rampage", "description": "The Smasha Squig immediately becomes Frenzied, and focuses all its efforts on killing and eating the nearest individual. If an individual is Mounted on the Smasha Squig they may make a DN 3 Pilot Test to prevent the Smasha Squig from going Frenzied. If they fail, they may become its first target, but may use their Action to repeat the Test on their Turn." }
+    ],
+    "determination": "Spend 1 Ruin to roll 7d6.",
+    "conviction": 1,
+    "resolve": 1,
+    "speed": 10,
+    "size": "Avg",
+    "mobOptions": "A Swarm of Teeth and Claws: A Mob of Squigs gains +1 bonus Icon to any Resolve Tests. This increases by +1 for every ten Squigs.",
+    "mobAbilities": "COMPLICATION: Vicious by Nature: Whenever the Mob rolls a Complication, the Squig attacks the nearest Ork and inflicts 1d3 Shock. Add 1d3 Shock to this damage for every ten Squigs in the Mob.",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "loota",
+    "name": "LOOTA",
+    "description": "Lootas grub together every toof and fistful of scrap they can, then use the former to pay the Meks to turn the latter into very, very large guns. These haphazard assortments of barrels and drums of bullets are called Deffguns by the Lootas. They turn these Deffguns on the enemy with gleeful abandon, unleashing such prodigious — if erratic — hails of fire that they can stop a battletank in its tracks or scythe down squads of infantry with devastating ease before swooping in and taking anything that might be of value or use that isn't welded to the floor.\n\nOpting to employ as much Dakka as they can wrangle together, via any means they see fit often results in other members of Ork society taking a dim view on the Loota and they tend to gravitate towards Warbands led by a Big Mek or among the hordes of the Death Skulls Clan, both of which appreciate and accept their light-fingered approach to the acquirement of more Dakka.",
+    "tierThreat": { "1": "E", "2": "E", "3": "T", "4": "T" },
+    "keywords": ["ORK", "[CLAN]"],
+    "attributes": { "S": 5, "T": 6, "A": 2, "I": 2, "Wil": 1, "Int": 2, "Fel": 1 },
+    "resilience": { "value": 6, "note": "0 AR" },
+    "defence": 1,
+    "wounds": 7,
+    "shock": 2,
+    "skills": "Default 5, Awareness 4 (Passive 2), Ballistic Skill 3, Weapon Skill 6, Tech 3",
+    "bonuses": [
+      { "name": "'Ere We Go!", "description": "If this Threat is Engaged at the start of its Turn, it gains +2 damage to melee attacks." },
+      { "name": "Gubbinz Grabba", "description": "The Loota gains +2 bonus dice to any Tests to loot or salvage." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Deffgun", "stats": "15 +2 ED / AP -1 / Range 24-48-72 / Salvo 2 / Cumbersome, Bulk (1), Heavy (5), Waaagh!" }
+    ],
+    "determination": "Spend 1 Ruin to roll 2d6.",
+    "conviction": 1,
+    "resolve": 1,
+    "speed": 5,
+    "size": "Avg",
+    "mobAbilities": "Mob Rule: A Mob of Lootas gains +1 bonus Icon to any Resolve Tests. This increases by +1 for every ten Lootas.",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "mek",
+    "name": "MEK",
+    "description": "Blessed with an innate knowledge of how Ork technology is both constructed and functions, Mekaniks — or just Mek Boyz — form the industrial backbone of Ork warbands and Clans. From simple Choppas and Shootas to the shambling, smoke spewing roar of the Speed Freeks engines and the gravity defying Fighta-Bommers that soar across the skies the Mek Boyz are responsible for the technological needs of the Orks.\n\nAble to look beyond simple immediate violence the Mek Boyz are often attended to by a skittering horde of Grotz, eager to appease, or at least avoid a well-aimed spanner from their engineer overlords as they toil on whatever deranged creation they are working on.\n\nAny Mekboy worth his spanners knows how to patch and repair greenskin vehicles, artillery pieces and the like even amidst the furore of combat. Meks are also handy for a spot of good old-fashioned dakka and close-quarters violence, taking to the field armed to the teeth with kustom weaponry that they invented themselves.",
+    "tierThreat": { "1": "E", "2": "T", "3": "T", "4": "T" },
+    "keywords": ["ORK", "[CLAN]"],
+    "attributes": { "S": 5, "T": 6, "A": 3, "I": 3, "Wil": 2, "Int": 2, "Fel": 1 },
+    "resilience": { "value": 7, "note": "0 AR" },
+    "defence": 2,
+    "wounds": 10,
+    "shock": 4,
+    "skills": "Default 4, Awareness 6 (Passive 3), Ballistic Skill 6, Tech 7, Weapon Skill 8",
+    "bonuses": [
+      { "name": "'Ere We Go!", "description": "If this Threat is Engaged at the start of its Turn, it gains +2 damage to melee attacks." },
+      { "name": "Grot Oiler", "description": "The Grot Oiler can be sacrificed to add +3 bonus dice to any Tech Test." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Mekanik", "description": "A Mek can attempt to repair any damaged piece of equipment with the ORK Keyword within 1 metre as a Simple Action. They can also Reload a weapon as a Free Action." },
+      { "type": "ACTION", "name": "Kustom Mega-Slugga", "stats": "10 +1d3 ED / AP -3 / Range 6-12-18 / Salvo 1 / Blast (4), Pistol, Waaagh!" },
+      { "type": "ACTION", "name": "Choppa", "stats": "8 +3 ED / Reliable, Waaagh!" },
+      { "type": "RUIN", "name": "Orky Upgradez", "description": "As a Free Action, the Mek may spend 1 Ruin to tinker with a ranged weapon within 1 metre. The weapon gains +1d3 ED and +1d3 AP for its next attack. The next time the weapon is fired, a Complication triggers if the Wrath Die lands on a 1, 2, or 3." }
+    ],
+    "determination": "Spend 1 Ruin to roll 6d6.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 6,
+    "size": "Avg",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "deff_dread",
+    "name": "DEFF DREAD",
+    "description": "The results of an insane collaborative effort from both a Mekboy and a Painboy a Deff Dread is rattling shambolic war machine operated by an aspirational Ork cybernetically grafted to the machine. Lurching forward on piston powered legs the Deff Dread is arrayed with a wide range of Ork favourites, from multiple Big Shootas to spinning buzz saw blades and snapping Klaws. Unleashed in battle these machines quickly sow panic as they rampage through enemy lines, sending the accompanying mobs of Orks wild as they observe and bask in the mayhem!\n\nWhen the duo of Mekboy and Painboy undertake the construction of one of these monstrosities hundreds of Orks clamour to volunteer. Being wired into a Deff Dread affords strength, resilience, and a terrifying array of vicious weaponry. Of course, the reality of being stuck in a metal box for life soon gets old, but the pilots' resulting unhinged ferocity only serves to make Deff Dreads all the more dangerous in battle.",
+    "tierThreat": { "1": "A", "2": "A", "3": "A", "4": "E" },
+    "keywords": ["ORK", "[CLAN]"],
+    "attributes": { "S": 7, "T": 9, "A": 2, "I": 4, "Wil": 4, "Int": 2, "Fel": 1 },
+    "resilience": { "value": 16, "note": "6 AR" },
+    "defence": 3,
+    "wounds": 17,
+    "shock": 8,
+    "skills": "Default 5, Awareness 6 (Passive 3), Ballistic Skill 6, Intimidation 8, Weapon Skill 8",
+    "abilities": [
+      { "type": "ACTION", "name": "Big Shoota", "stats": "12 +2 ED / Range 18-36-54 / Salvo 3 / Assault, Waaagh!" },
+      { "type": "ACTION", "name": "Dread Klaw", "stats": "15 +5 ED / AP -3 / Range 2 / Brutal, Unwieldy (3), Waaagh!" },
+      { "type": "ANNIHILATION", "name": "Explosive", "description": "When a Deff Dread dies, roll a d6. If you roll a Complication, the Deff Dread explodes. Deff Dread Explosion: 15 +5 ED / Blast (8)" }
+    ],
+    "determination": "Spend 1 Ruin or sacrifice 1 AR to roll 9d6. (Ramshackle)",
+    "conviction": 4,
+    "resolve": 3,
+    "speed": 6,
+    "size": "Huge",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "morkanaut",
+    "name": "MORKANAUT",
+    "description": "The Orks have no dedicated tabernacle to their Gods, no great altars, or religious ceremonies. They instead prefer to worship via the delivery and violent continuation of the two values their Gods revere above all else — Brutality and Cunning. To this end the hulking form of the Morkanaut serves as both an extremely capable and devastating weapon and as a towering effigy to the God of Cunning, Mork. These giant walkers stomp onward, crushing enemies underfoot or unleashing the bizarre accoutrement of outrageous, and patently dangerous weapons bolted to it.\n\nUsually piloted by the exiled Badmek who built it, a Morkanaut is a hulking combat walker with a dash of Mork-esque knowwotz applied. Its kustom force field wreathes the armoured war engine in a protective energy bubble, allowing the Morkanaut to unleash its array of kustom weapons and assorted dakka with impunity, sending panicked terror among those assembled to repel the ever-encroaching green tides.",
+    "tierThreat": { "1": "A", "2": "A", "3": "A", "4": "A" },
+    "keywords": ["ORK", "[CLAN]"],
+    "attributes": { "S": 13, "T": 13, "A": 2, "I": 4, "Wil": 5, "Int": 3, "Fel": 1 },
+    "resilience": { "value": 18, "note": "4 AR" },
+    "defence": 3,
+    "wounds": 23,
+    "shock": 10,
+    "skills": "Default 5, Awareness 6 (Passive 3), Ballistic Skill 7, Intimidation 10, Weapon Skill 9",
+    "bonuses": [
+      { "name": "Big 'n' Stompy", "description": "When the Morkanaut Charges it can move through any Huge or smaller individuals, forcing them to make a DN 2 Agility Test or suffer 1d6 Mortal Wounds." },
+      { "name": "Transport", "description": "If you are using the rules for vehicles from Church of Steel, a Morkanaut has 1 Nob Pilot, 1 Nob Crew, and space for 6 Passengers." },
+      { "name": "Champion", "description": "This Threat may use Ruin Actions and has 3 personal Ruin." },
+      { "name": "Wall of Dakka", "description": "The Morkanaut can fire each of its ranged weapons once as a Multi-attack without suffering a DN penalty." },
+      { "name": "'Ere We Go!", "description": "If this Threat is Engaged at the start of its Turn, it gains +2 damage to melee attacks." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Kustom Mega-Blasta", "stats": "16 +1d6 ED / AP -3 / Range 12-24-36 / Salvo 1 / Blast (4), Heavy (5), Waaagh!" },
+      { "type": "ACTION", "name": "Kustom Mega-Zappa", "stats": "17 +2d3 ED / AP -3 / Range 18-36-54 / Salvo 1 / Blast (4), Heavy (5), Waaagh!" },
+      { "type": "ACTION", "name": "Rokkit Launcha (6)", "stats": "16 +1d3 ED / AP -2 / Range 12-24-36 / Salvo - / Assault, Blast (4)" },
+      { "type": "ACTION", "name": "Twin Big Shoota", "stats": "12 +2 ED / Range 18-36-54 / Salvo 6 / Assault, Waaagh!" },
+      { "type": "ACTION", "name": "Klaw of Gork (or possibly Mork) - Crush", "stats": "21 +6 ED / AP -4 / Range 4 / Unwieldy (3), Waaagh!" },
+      { "type": "ACTION", "name": "Klaw of Gork (or possibly Mork) - Smash", "stats": "12 +1 ED / AP -2 / Range 4 / Waaagh! (Can Smash 3 times without Multi-attack penalty)" },
+      { "type": "COMPLICATION", "name": "Kustom Weapon Overload", "description": "If the Morkanaut rolls a Complication on a ranged attack Test using either its Kustom Mega-Blasta or Kustom Mega-Zappa, it suffers 1d3 Mortal Wounds." },
+      { "type": "ANNIHILATION", "name": "Explosive", "description": "When a Morkanaut dies, roll a d6. If you roll a Complication, the Morkanaut explodes. Morkanaut Explosion: 18 +6 ED / Blast (15)" }
+    ],
+    "determination": "Spend 1 Ruin to roll 13d6.",
+    "conviction": 5,
+    "resolve": 4,
+    "speed": 8,
+    "size": "Gargantuan",
+    "source": "Threat Assessment: Xenos"
+  },
+  {
+    "id": "gorkanaut",
+    "name": "GORKANAUT",
+    "description": "Built from a vast array of scrap, loot and held together with rusted rivets and nails the Gorkanaut is the pinnacle of the Mekboyz technical know-wotz. A gargantuan, shambling titan of Ork menace that spreads fear and panic alongside uncountable rounds of ammunition. These immense killing machines are built with the enthusiastic single mindedness that is unique to their Mek creators as they dedicate themselves completely to the construction of these great, battle-ready idols to their god of brutality, Gork.\n\nOutcast Nobz, excessively truculent even by the standards of Orks, pilot these lumbering war engines, following the echoing call of the Great Waaagh! out across the stars in search of the biggest and most violent engagements. They are welcomed by Ork warbands wherever they go, a creaking, war born effigy to their most belligerent of Gods. Those that face these terrifying constructs seldom live to tell of their horror, ripped asunder as the Gorkanaut unleashes punishing hails of devastating firepower, shattering bones in the grasp of their enormous, piston-powered klaws or simply crushing anything in its way under their massive steel feet.",
+    "tierThreat": { "1": "A", "2": "A", "3": "A", "4": "A" },
+    "keywords": ["ORK", "[CLAN]"],
+    "attributes": { "S": 14, "T": 12, "A": 2, "I": 4, "Wil": 5, "Int": 3, "Fel": 1 },
+    "resilience": { "value": 17, "note": "4 AR" },
+    "defence": 3,
+    "wounds": 22,
+    "shock": 10,
+    "skills": "Default 5, Awareness 6 (Passive 3), Ballistic Skill 6, Intimidation 10, Weapon Skill 10",
+    "bonuses": [
+      { "name": "Big 'n' Stompy", "description": "When the Gorkanaut Charges it can move through any Huge or smaller individuals, forcing them to make a DN 2 Agility Test or suffer 1d6 Mortal Wounds." },
+      { "name": "Champion", "description": "This Threat may use Ruin Actions and has 3 personal Ruin." },
+      { "name": "'Ere We Go!", "description": "If this Threat is Engaged at the start of its Turn, it gains +2 damage to melee attacks." },
+      { "name": "Transport", "description": "If you are using the rules for vehicles from Church of Steel, a Gorkanaut has 1 Nob Pilot, 1 Nob Crew, and space for 6 Passengers." }
+    ],
+    "abilities": [
+      { "type": "ACTION", "name": "Deffstorm Mega-Shoota", "stats": "14 +2 ED / AP -1 / Range 18-36-54 / Salvo 4 / Mounted (Large), Rapid Fire (2), Waaagh!" },
+      { "type": "ACTION", "name": "Rokkit Launcha (6)", "stats": "16 +1d3 ED / AP -2 / Range 12-24-36 / Salvo - / Assault, Blast (4)" },
+      { "type": "ACTION", "name": "Skorcha", "stats": "12 +1 ED / AP -1 / Range 6-12-18 / Salvo 2 / Flamer, Mounted (Huge)" },
+      { "type": "ACTION", "name": "Twin Big Shoota", "stats": "12 +2 ED / Range 18-36-54 / Salvo 6 / Assault, Waaagh!" },
+      { "type": "ACTION", "name": "Klaw of Gork (or possibly Mork) - Crush", "stats": "22 +6 ED / AP -4 / Range 4 / Unwieldy (3), Waaagh!" },
+      { "type": "ACTION", "name": "Klaw of Gork (or possibly Mork) - Smash", "stats": "13 +1 ED / AP -2 / Range 4 / Waaagh! (Can Smash 3 times without Multi-attack penalty)" },
+      { "type": "ANNIHILATION", "name": "Explosive", "description": "When a Gorkanaut dies, roll a d6. If you roll a Complication, the Gorkanaut explodes. Gorkanaut Explosion: 18 +6 ED / Blast (15)" }
+    ],
+    "determination": "Spend 1 Ruin to roll 12d6.",
+    "conviction": 5,
+    "resolve": 4,
+    "speed": 8,
+    "size": "Gargantuan",
+    "source": "Threat Assessment: Xenos"
   }
 ]
