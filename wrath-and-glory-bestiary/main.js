@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain } = require('electron');
+const { app, BrowserWindow, ipcMain, dialog } = require('electron');
 const path = require('path');
 const fs = require('fs');
 
@@ -10,6 +10,9 @@ function getDataPath() {
     console.log(`[Main] Data path: ${dataPath}, isPackaged: ${app.isPackaged}`);
     return dataPath;
 }
+
+// Track if we're force closing (user chose Don't Save or already saved)
+let forceClose = false;
 
 function createWindow() {
     mainWindow = new BrowserWindow({
@@ -35,6 +38,19 @@ function createWindow() {
 
     // Remove menu bar for cleaner look
     mainWindow.setMenuBarVisibility(false);
+
+    // Handle close event to check for unsaved changes
+    mainWindow.on('close', async (e) => {
+        if (forceClose) {
+            return; // Allow close
+        }
+
+        // Prevent default close
+        e.preventDefault();
+
+        // Ask renderer if there are unsaved changes
+        mainWindow.webContents.send('check-unsaved-changes');
+    });
 }
 
 app.whenReady().then(() => {
@@ -75,4 +91,109 @@ ipcMain.handle('load-game-data', async (event, filename) => {
         console.error(`[Main] Error loading ${filename}:`, error);
         return null;
     }
+});
+
+// Save encounter to file
+ipcMain.handle('save-encounter-file', async (event, encounterData, suggestedName) => {
+    try {
+        const result = await dialog.showSaveDialog(mainWindow, {
+            title: 'Save Encounter',
+            defaultPath: suggestedName ? `${suggestedName}.encounter` : 'encounter.encounter',
+            filters: [
+                { name: 'Encounter Files', extensions: ['encounter'] }
+            ]
+        });
+
+        if (result.canceled || !result.filePath) {
+            return { success: false, canceled: true };
+        }
+
+        fs.writeFileSync(result.filePath, JSON.stringify(encounterData, null, 2), 'utf8');
+        const fileName = path.basename(result.filePath, '.encounter');
+        console.log(`[Main] Encounter saved to: ${result.filePath}`);
+        return { success: true, filePath: result.filePath, fileName: fileName };
+    } catch (error) {
+        console.error('[Main] Error saving encounter:', error);
+        return { success: false, error: error.message };
+    }
+});
+
+// Load encounter from file
+ipcMain.handle('load-encounter-file', async (event) => {
+    try {
+        const result = await dialog.showOpenDialog(mainWindow, {
+            title: 'Load Encounter',
+            filters: [
+                { name: 'Encounter Files', extensions: ['encounter'] }
+            ],
+            properties: ['openFile']
+        });
+
+        if (result.canceled || result.filePaths.length === 0) {
+            return { success: false, canceled: true };
+        }
+
+        const filePath = result.filePaths[0];
+        const data = fs.readFileSync(filePath, 'utf8');
+        const parsed = JSON.parse(data);
+        const fileName = path.basename(filePath, '.encounter');
+        console.log(`[Main] Encounter loaded from: ${filePath}`);
+        return { success: true, data: parsed, fileName: fileName };
+    } catch (error) {
+        console.error('[Main] Error loading encounter:', error);
+        return { success: false, error: error.message };
+    }
+});
+
+// Handle response from renderer about unsaved changes
+ipcMain.on('unsaved-changes-response', async (event, hasUnsavedChanges, encounterData) => {
+    if (!hasUnsavedChanges) {
+        // No unsaved changes, just close
+        forceClose = true;
+        mainWindow.close();
+        return;
+    }
+
+    // Show Save/Don't Save/Cancel dialog
+    const result = await dialog.showMessageBox(mainWindow, {
+        type: 'warning',
+        buttons: ['Save', "Don't Save", 'Cancel'],
+        defaultId: 0,
+        cancelId: 2,
+        title: 'Unsaved Changes',
+        message: 'You have unsaved changes to your encounter.',
+        detail: 'Do you want to save before closing?'
+    });
+
+    if (result.response === 0) {
+        // Save
+        const suggestedName = encounterData.settings?.name || 'encounter';
+        const saveResult = await dialog.showSaveDialog(mainWindow, {
+            title: 'Save Encounter',
+            defaultPath: `${suggestedName}.encounter`,
+            filters: [
+                { name: 'Encounter Files', extensions: ['encounter'] }
+            ]
+        });
+
+        if (saveResult.canceled || !saveResult.filePath) {
+            // User canceled save, don't close
+            return;
+        }
+
+        try {
+            fs.writeFileSync(saveResult.filePath, JSON.stringify(encounterData, null, 2), 'utf8');
+            console.log(`[Main] Encounter saved before close: ${saveResult.filePath}`);
+            forceClose = true;
+            mainWindow.close();
+        } catch (error) {
+            console.error('[Main] Error saving encounter before close:', error);
+            dialog.showErrorBox('Save Error', `Failed to save encounter: ${error.message}`);
+        }
+    } else if (result.response === 1) {
+        // Don't Save - close without saving
+        forceClose = true;
+        mainWindow.close();
+    }
+    // Cancel (response === 2) - do nothing, don't close
 });

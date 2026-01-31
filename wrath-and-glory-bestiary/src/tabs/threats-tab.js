@@ -229,6 +229,75 @@ const ThreatsTab = {
                 this.renderThreatDetail(threatId);
             });
         }
+
+        // Attach add to encounter handlers
+        this.bindAddToEncounterEvents(container, threatId);
+    },
+
+    bindAddToEncounterEvents(container, threatId) {
+        const addBtn = container.querySelector('#threat-add-to-encounter-btn');
+        const quantityInput = container.querySelector('#threat-add-quantity');
+        const mobCheckbox = container.querySelector('#threat-add-as-mob');
+        const mobLabel = container.querySelector('#threat-mob-label');
+
+        if (!addBtn) return;
+
+        const threat = DataLoader.getThreat(threatId);
+        const canEverBeMob = EncounterState.canEverBeMob(threat);
+
+        // Update mob checkbox visibility based on whether threat can ever be a mob and quantity
+        const updateMobVisibility = () => {
+            const quantity = parseInt(quantityInput.value) || 1;
+            if (canEverBeMob && quantity > 1) {
+                mobLabel.classList.remove('hidden');
+            } else {
+                mobLabel.classList.add('hidden');
+                mobCheckbox.checked = false;
+            }
+        };
+
+        quantityInput.addEventListener('input', updateMobVisibility);
+        updateMobVisibility();
+
+        // Add to encounter button
+        addBtn.addEventListener('click', () => {
+            const quantity = parseInt(quantityInput.value) || 1;
+            const asMob = mobCheckbox.checked && canEverBeMob && quantity > 1;
+
+            const ids = EncounterState.addIndividual(threatId, quantity, asMob);
+
+            if (ids.length > 0) {
+                // Show confirmation
+                const mobText = asMob ? ' as a mob' : '';
+                this.showAddedNotification(`Added ${quantity}x ${threat.name}${mobText} to encounter`);
+
+                // Reset quantity
+                quantityInput.value = '1';
+                mobCheckbox.checked = false;
+                updateMobVisibility();
+            }
+        });
+    },
+
+    showAddedNotification(message) {
+        // Remove any existing notification
+        const existing = document.querySelector('.add-notification');
+        if (existing) existing.remove();
+
+        // Create notification
+        const notification = document.createElement('div');
+        notification.className = 'add-notification';
+        notification.textContent = message;
+        document.body.appendChild(notification);
+
+        // Animate in
+        setTimeout(() => notification.classList.add('show'), 10);
+
+        // Remove after 2 seconds
+        setTimeout(() => {
+            notification.classList.remove('show');
+            setTimeout(() => notification.remove(), 300);
+        }, 2000);
     },
 
     renderThreatCard(threat, currentWeapon) {
@@ -267,10 +336,16 @@ const ThreatsTab = {
         // Build weapon selector
         const weaponSelectorHtml = this.renderWeaponSelector(threat, currentWeapon);
 
+        // Build add to encounter controls (for header)
+        const addToEncounterHtml = this.renderAddToEncounterHeader(threat);
+
         return `
             <div class="threat-card">
                 <div class="threat-card-header">
-                    <h2 class="threat-card-title">${threat.name}</h2>
+                    <div class="threat-card-header-top">
+                        <h2 class="threat-card-title">${threat.name}</h2>
+                        ${addToEncounterHtml}
+                    </div>
                     ${threat.quote ? `
                         <p class="threat-card-quote">${threat.quote}</p>
                         ${threat.attribution ? `<p class="threat-card-attribution">—${threat.attribution}</p>` : ''}
@@ -313,6 +388,23 @@ const ThreatsTab = {
                         ${weaponSelectorHtml}
                     </div>
                 </div>
+            </div>
+        `;
+    },
+
+    renderAddToEncounterHeader(threat) {
+        return `
+            <div class="add-to-encounter-header-controls">
+                <div class="add-to-encounter-row">
+                    <input type="number" id="threat-add-quantity" class="header-quantity" value="1" min="1" max="20" title="Quantity">
+                    <button id="threat-add-to-encounter-btn" class="header-add-btn" data-threat-id="${threat.id}">
+                        + Add
+                    </button>
+                </div>
+                <label class="header-mob-checkbox hidden" id="threat-mob-label">
+                    <input type="checkbox" id="threat-add-as-mob">
+                    <span>Add as Mob</span>
+                </label>
             </div>
         `;
     },

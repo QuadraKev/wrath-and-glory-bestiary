@@ -16,17 +16,34 @@ const App = {
         await Glossary.init();
         console.log('Glossary initialized.');
 
+        // Initialize encounter state
+        EncounterState.init();
+        console.log('Encounter state initialized.');
+
+        // Set up close confirmation listener
+        this.initCloseConfirmation();
+
         // Initialize UI components
         this.initTabNavigation();
 
         // Initialize tab modules
         ThreatsTab.init();
         GlossaryTab.init();
+        EncounterTab.init();
 
         // Update threat count
         this.updateThreatCount();
 
         console.log('Application initialized.');
+    },
+
+    // Initialize close confirmation handler
+    initCloseConfirmation() {
+        window.api.onCheckUnsavedChanges(() => {
+            const hasChanges = EncounterState.hasUnsavedChanges() && !EncounterState.isEmpty();
+            const encounterData = hasChanges ? EncounterState.getEncounterData() : null;
+            window.api.respondUnsavedChanges(hasChanges, encounterData);
+        });
     },
 
     // Initialize top tab navigation
@@ -58,6 +75,8 @@ const App = {
             GlossaryTab.refresh();
         } else if (tabName === 'threats') {
             ThreatsTab.refresh();
+        } else if (tabName === 'encounter') {
+            EncounterTab.refresh();
         }
     },
 

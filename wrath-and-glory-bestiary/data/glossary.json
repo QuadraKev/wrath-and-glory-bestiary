@@ -278,7 +278,7 @@
     },
     "dn": {
       "name": "DN (Difficulty Number)",
-      "description": "The Difficulty Number represents how hard a Test is. You need to roll a number of Icons equal to or greater than the DN to succeed. DN 1-2 is easy, DN 3-4 is average, DN 5-6 is hard, and DN 7+ is very difficult."
+      "description": "The Difficulty Number (DN) is the number of Icons you need to pass a Test. If you roll equal to or greater than the DN, you've succeeded! DN 1 is Easy, DN 3 is Standard, DN 5 is Challenging, DN 7 is Difficult, and DN 9 is Extreme."
     },
     "ed": {
       "name": "ED (Extra Damage)",
@@ -288,13 +288,9 @@
       "name": "Exalted Icon",
       "description": "An Exalted Icon is rolled when you get a 6 on a die. It counts as 2 Icons instead of 1. Exalted Icons can also be 'shifted' to activate special effects or weapon traits."
     },
-    "fear_test": {
-      "name": "Fear Test",
-      "description": "When confronted with something terrifying, you must make a Fear Test. Roll Willpower + Resolve against the DN specified by the source. If you fail, you gain the Fear Condition. Some sources may inflict the Terror Condition instead."
-    },
     "glory": {
       "name": "Glory",
-      "description": "Glory is a shared party resource. The party starts each session with Glory equal to half the party size (rounded up). Glory can be spent to gain bonus dice, Seize the Initiative, or activate special abilities. The GM can award Glory for impressive actions."
+      "description": "Glory is a resource you can earn and spend as a group to overcome the terrifying obstacles of the 41st Millennium. You and your party begin each session with 0 Glory in your collective pool. Any player can Shift an Exalted Icon to add 1 Glory to the pool, and rolling a Wrath Critical adds 1 Glory. Glory can be spent to add bonus dice to a Test, Seize the Initiative, increase damage, or increase the severity of a Critical Hit."
     },
     "icon": {
       "name": "Icon",
@@ -310,7 +306,7 @@
     },
     "rank": {
       "name": "Rank",
-      "description": "Your Rank represents your overall power level and experience. Rank ranges from 1 to 5. Many abilities scale with Rank, such as '+Rank bonus dice' meaning you add dice equal to your Rank value."
+      "description": "Your Rank is a measure of your aptitude in your Tier. Some of your abilities and Talents may be modified by your Rank. Unless the GM says otherwise, you start at Rank 1. Your Rank increases every time you earn a total of 40 XP (Rank 2 at 40 XP, Rank 3 at 80 XP). Your Rank can't decrease, and can't go above the maximum of 3."
     },
     "regroup": {
       "name": "Regroup",
@@ -328,13 +324,17 @@
       "name": "Shock",
       "description": "Shock represents mental and physical fatigue. When you suffer damage that exceeds your Resilience but doesn't cause Wounds, you take Shock instead. When your Shock exceeds your Max Shock, excess damage becomes Wounds."
     },
+    "shifting": {
+      "name": "Shifting",
+      "description": "When there is an Exalted Icon (a result of 6 on a die) in a Test's results, you might be able to remove it for special benefits. This is called Shifting. If you can remove an Exalted Icon from the results of a Test and there are still enough Icons to meet or exceed the DN, you can Shift that Exalted Icon. There is no limit to the amount of Exalted Icons you can Shift, as long as there are still enough Icons left in the results to meet or exceed the DN. You can Shift a Wrath Critical just like any other Exalted Icon; the effects of the Wrath Critical (gaining Glory and triggering a Critical Hit) trigger even if you Shift it. Common uses for Shifting include: Shifting for Extra Damage (+1 ED per Shift on attacks), Shifting for Glory (add 1 Glory to the pool, once per Test), Gain Information (1 answer per Shift), Improve Quality (make the result better), or Improve Speed (reduce time taken)."
+    },
     "tier": {
       "name": "Tier",
-      "description": "The campaign Tier (1-5) represents the power level of the game. Higher Tier games have access to more powerful archetypes, more starting XP, and face greater threats. Tier also affects Wound calculations and other derived stats."
+      "description": "Your Tier is the power level of your group. Higher Tier groups face more perilous adventures and deadlier threats. There are 4 Tiers of play in Wrath & Glory (1-4). Higher Tiers correspond to higher power levels and access to more powerful archetypes. Tier also affects Wound calculations and other derived stats."
     },
     "wrath": {
       "name": "Wrath",
-      "description": "Wrath is a personal resource each character has. You start each session with 2 Wrath. You can spend Wrath to reroll all dice on a Test (once per Test), add +1 to damage, or activate certain abilities. You gain Wrath from Glory or special abilities."
+      "description": "Wrath Points represent your inner fire, your will to succeed, and the Emperor's light shining on you for one lucky moment. You start every session with 2 Wrath Points. You can spend a Wrath Point to: Reroll Failures (reroll every 1, 2, and 3 in your dice pool, once per Test); Make a Narrative Declaration (add a minor narrative element to the scene); or Restore Shock (recover Shock equal to your Rank + your Tier as an Action)."
     },
     "wrath_die": {
       "name": "Wrath Die",
@@ -454,7 +454,7 @@
     },
     "invulnerable": {
       "name": "Invulnerable",
-      "description": "This armour's protection cannot be negated by Armour Penetration (AP). The full Armour Rating always applies regardless of the attacker's AP value."
+      "description": "Any Armour Rating marked with an asterisk (*) is Invulnerable. If you are wearing Invulnerable Armour, AP does not affect your Resilience."
     },
     "ere_we_go": {
       "name": "'Ere We Go",
@@ -462,13 +462,13 @@
     },
     "fear_armor": {
       "name": "Fear",
-      "description": "This armour's appearance is terrifying. Enemies viewing you for the first time must make a Fear Test with a DN equal to the Fear rating or gain the Fear Condition."
+      "description": "[AI-GENERATED] This armour's appearance is terrifying. Enemies viewing you for the first time must make a Fear Test with a DN equal to the Fear rating or gain the Fear Condition."
     }
   },
   "weaponTraits": {
     "arc": {
       "name": "Arc",
-      "description": "Arc weapons discharge electrical energy. When you hit a target, they must make a Toughness Test (DN equal to the Arc rating) or become Staggered."
+      "description": "The deadly electrical discharge of Arc weapons scrambles vehicle technology. Arc weapons gain +ED equal to their rating when you use them to attack a vehicle."
     },
     "assault": {
       "name": "Assault",
@@ -548,7 +548,7 @@
     },
     "two_handed": {
       "name": "Two-Handed",
-      "description": "This weapon requires both hands to wield effectively. You cannot use a shield or another weapon while wielding this weapon."
+      "description": "A weapon that requires two hands to wield."
     },
     "unwieldy": {
       "name": "Unwieldy",
@@ -713,50 +713,426 @@
       "description": "A Trait tracking your exposure to the forces of Chaos. Starts at 0 and increases from Warp exposure, daemonic contact, and other corrupting influences. High Corruption can lead to mental afflictions, physical mutations, and worse."
     }
   },
-  "talents": {
-    "dual_wield": {
-      "name": "Dual Wield",
-      "description": "You can wield two weapons with uncanny accuracy. When you wield one weapon in each hand, the DN penalty for using the Multi-Attack option is reduced by 2. Each weapon must have the Pistol Trait or be a one-handed melee weapon. You may also use a different weapon you are wielding for each of your Multi-Attacks, rolling damage separately for each weapon."
+  "psychicPowers": {
+    "smite": {
+      "name": "Smite",
+      "discipline": "Universal",
+      "dn": "Target's Defence",
+      "cost": 0,
+      "description": "<b>Discipline:</b> Universal<br><b>DN:</b> Target's Defence<br><b>XP Cost:</b> 0<br><b>Keywords:</b> PSYCHIC<br><br><b>Effect:</b> Target one enemy within 35m and make a Psychic Mastery (Wil) Test against their Defence. If successful, the target suffers 1d3 Mortal Wounds. Potency [3]: +1 Mortal Wound."
     },
-    "duty_until_death": {
-      "name": "Duty Until Death",
-      "description": "Your ardent faith in the Emperor allows you to push beyond the limits of injury to act in His will, at a cost to your physical form. Whenever you suffer more Wounds than your Max Wounds, you can use this Talent. You may take your next Turn normally; you begin Dying at the end of that Turn. You may choose to take your next Turn immediately after activating this Talent, potentially interrupting an enemy's Turn. If you roll a Complication on any Test, you take a Traumatic Wound."
+    "chameleon": {
+      "name": "Chameleon",
+      "discipline": "Minor",
+      "dn": "5",
+      "cost": 8,
+      "description": "<b>Discipline:</b> Minor<br><b>DN:</b> 5<br><b>XP Cost:</b> 8<br><b>Keywords:</b> PSYCHIC<br><br><b>Effect:</b> While sustained, you gain +5 bonus dice to Stealth (A) Tests and +1 to your Defence against ranged attacks."
     },
-    "jargon": {
-      "name": "Jargon",
-      "description": "You're knowledgeable enough on a particular subject to open your mouth and let the information flow out. The mystifying slang, precise vernacular, and strange idioms are enough to stupefy the unlearned and make fast friends of strangers who share your passion. When you take this Talent, you must pick which Skill it applies to. During any social encounter you can make a Skill Test using your Jargon Skill. If you succeed and the target is interested or trained in the Skill, they are likely to become more friendly to you. If the target doesn't share your knowledge and slang, they stand stupefied whilst you babble."
+    "compel": {
+      "name": "Compel",
+      "discipline": "Minor",
+      "dn": "5",
+      "cost": 10,
+      "description": "<b>Discipline:</b> Minor<br><b>DN:</b> 5<br><b>XP Cost:</b> 10<br><b>Keywords:</b> PSYCHIC<br><br><b>Effect:</b> Implant a simple command in the mind of a nearby creature within 5m. Target must pass DN 4 Willpower Test or is compelled to obey."
     },
-    "scum_savvy": {
-      "name": "Scum Savvy",
-      "description": "Long years of disreputable carousing during business deals with shady individuals have trained you to effectively fleece the lawless and process potentially dangerous chem substances. You gain +Double Rank bonus dice to any Test related to resisting the effects of chemicals. You gain +Rank bonus dice when making Cunning (Fel) Tests."
+    "invoke_luck": {
+      "name": "Invoke Luck",
+      "discipline": "Minor",
+      "dn": "4",
+      "cost": 10,
+      "description": "<b>Discipline:</b> Minor<br><b>DN:</b> 4<br><b>XP Cost:</b> 10<br><b>Keywords:</b> PSYCHIC<br><br><b>Effect:</b> For 1 Round, you may choose to gain +1 bonus dice to one Test you make."
     },
-    "angel_of_death": {
-      "name": "Angel of Death",
-      "description": "You exemplify the role of the Space Marine as the Emperor's Angel of Death. You gain benefits when engaging enemies of the Imperium in righteous combat."
+    "inflict_pain": {
+      "name": "Inflict Pain",
+      "discipline": "Minor",
+      "dn": "4",
+      "cost": 8,
+      "description": "<b>Discipline:</b> Minor<br><b>DN:</b> 4<br><b>XP Cost:</b> 8<br><b>Keywords:</b> PSYCHIC<br><br><b>Effect:</b> Target within 5m immediately takes 1d3 Shock and must make DN 3 Willpower Test or be Staggered. Sustained."
     },
-    "deadshot": {
-      "name": "Deadshot",
-      "description": "You have exceptional accuracy with ranged weapons. You gain bonus dice or reduced DN penalties when making ranged attacks under specific conditions."
+    "conjure_flame": {
+      "name": "Conjure Flame",
+      "discipline": "Minor",
+      "dn": "4",
+      "cost": 10,
+      "description": "<b>Discipline:</b> Minor<br><b>DN:</b> 4<br><b>XP Cost:</b> 10<br><b>Keywords:</b> FIRE, PSYCHIC<br><br><b>Effect:</b> Conjure a simple flame that can be used to ignite combustible materials or as a weapon dealing 8+1 ED damage."
     },
-    "gilead_combat_veteran": {
-      "name": "Gilead Combat Veteran",
-      "description": "You have extensive combat experience in the Gilead System. You gain bonuses in combat situations based on your veteran status."
+    "dull_pain": {
+      "name": "Dull Pain",
+      "discipline": "Minor",
+      "dn": "4",
+      "cost": 8,
+      "description": "<b>Discipline:</b> Minor<br><b>DN:</b> 4<br><b>XP Cost:</b> 8<br><b>Keywords:</b> PSYCHIC<br><br><b>Effect:</b> Target within 5m reduces all Shock suffered by 1 while sustained."
     },
-    "promethium_proficiency": {
-      "name": "Promethium Proficiency",
-      "description": "You are skilled in the use of flame-based weapons. You gain bonuses when using weapons with the Flamer trait."
+    "flash_bang": {
+      "name": "Flash Bang",
+      "discipline": "Minor",
+      "dn": "4",
+      "cost": 8,
+      "description": "<b>Discipline:</b> Minor<br><b>DN:</b> 4<br><b>XP Cost:</b> 8<br><b>Keywords:</b> PSYCHIC<br><br><b>Effect:</b> Everyone within 5m must make DN 3 Toughness Test or take 1 Shock and be Blinded for 1 round."
     },
-    "silent": {
-      "name": "Silent",
-      "description": "You move with exceptional stealth. You gain bonus dice to Stealth Tests and may move at full Speed without penalties to your Stealth Score."
+    "hover": {
+      "name": "Hover",
+      "discipline": "Minor",
+      "dn": "4",
+      "cost": 7,
+      "description": "<b>Discipline:</b> Minor<br><b>DN:</b> 4<br><b>XP Cost:</b> 7<br><b>Keywords:</b> PSYCHIC<br><br><b>Effect:</b> You can float freely, hovering or moving slowly up or down (1/2 Speed). Sustained."
     },
-    "trademark_weapon": {
-      "name": "Trademark Weapon",
-      "description": "You have bonded with a specific weapon, gaining increased proficiency with it. You gain bonus dice when using your Trademark Weapon."
+    "phantom_grip": {
+      "name": "Phantom Grip",
+      "discipline": "Minor",
+      "dn": "4",
+      "cost": 8,
+      "description": "<b>Discipline:</b> Minor<br><b>DN:</b> 4<br><b>XP Cost:</b> 8<br><b>Keywords:</b> KINETIC, PSYCHIC<br><br><b>Effect:</b> Manifest invisible phantom hands within 10m to perform tasks. Strength and Agility equal to your Willpower."
     },
-    "whirlwind_of_rage": {
-      "name": "Whirlwind of Rage",
-      "description": "You fight with unmatched fury in close combat. You gain bonuses when making melee attacks, especially when outnumbered or facing multiple opponents."
+    "mental_force": {
+      "name": "Mental Force",
+      "discipline": "Minor",
+      "dn": "3",
+      "cost": 8,
+      "description": "<b>Discipline:</b> Minor<br><b>DN:</b> 3<br><b>XP Cost:</b> 8<br><b>Keywords:</b> KINETIC, PSYCHIC<br><br><b>Effect:</b> Shove a target within 15m. Target must make DN 4 Agility Test or be knocked Prone."
+    },
+    "psychic_torch": {
+      "name": "Psychic Torch",
+      "discipline": "Minor",
+      "dn": "2",
+      "cost": 5,
+      "description": "<b>Discipline:</b> Minor<br><b>DN:</b> 2<br><b>XP Cost:</b> 5<br><b>Keywords:</b> KINETIC, PSYCHIC<br><br><b>Effect:</b> Conjure a floating orb of glowing light within 5m. Sustained."
+    },
+    "enfeeble": {
+      "name": "Enfeeble",
+      "discipline": "Biomancy",
+      "dn": "Target's Defence",
+      "cost": 15,
+      "description": "<b>Discipline:</b> Biomancy<br><b>DN:</b> Target's Defence<br><b>XP Cost:</b> 15<br><b>Keywords:</b> PSYCHIC<br><br><b>Effect:</b> Target within 10m has Strength reduced by 1 and suffers 1 Shock at the beginning of each turn while sustained."
+    },
+    "life_leech": {
+      "name": "Life Leech",
+      "discipline": "Biomancy",
+      "dn": "Target's Defence",
+      "cost": 15,
+      "description": "<b>Discipline:</b> Biomancy<br><b>DN:</b> Target's Defence<br><b>XP Cost:</b> 15<br><b>Keywords:</b> PSYCHIC<br><br><b>Effect:</b> Target within 5m suffers 1d6 Shock and 1d3 Wounds. You heal half the amount inflicted."
+    },
+    "warp_speed": {
+      "name": "Warp Speed",
+      "discipline": "Biomancy",
+      "dn": "7",
+      "cost": 15,
+      "description": "<b>Discipline:</b> Biomancy<br><b>DN:</b> 7<br><b>XP Cost:</b> 15<br><b>Keywords:</b> PSYCHIC<br><br><b>Effect:</b> Speed is doubled, take one additional Action per round, +1 Defence, act first every Round. Suffer 1d3+1 Shock per round sustained."
+    },
+    "regeneration": {
+      "name": "Regeneration",
+      "discipline": "Biomancy",
+      "dn": "8",
+      "cost": 15,
+      "description": "<b>Discipline:</b> Biomancy<br><b>DN:</b> 8<br><b>XP Cost:</b> 15<br><b>Keywords:</b> PSYCHIC<br><br><b>Effect:</b> While sustained, heal 1 Wound per Round (or 1 Shock if at max Wounds)."
+    },
+    "forewarning": {
+      "name": "Forewarning",
+      "discipline": "Divination",
+      "dn": "6",
+      "cost": 15,
+      "description": "<b>Discipline:</b> Divination<br><b>DN:</b> 6<br><b>XP Cost:</b> 15<br><b>Keywords:</b> PSYCHIC<br><br><b>Effect:</b> Seize the Initiative once without spending Glory, gain +1 Defence for the combat."
+    },
+    "prescience": {
+      "name": "Prescience",
+      "discipline": "Divination",
+      "dn": "7",
+      "cost": 15,
+      "description": "<b>Discipline:</b> Divination<br><b>DN:</b> 7<br><b>XP Cost:</b> 15<br><b>Keywords:</b> PSYCHIC<br><br><b>Effect:</b> Reroll 1 die (not Wrath) in any Tests for the scene. May ask one question about the future."
+    },
+    "misfortune": {
+      "name": "Misfortune",
+      "discipline": "Divination",
+      "dn": "Target's Defence",
+      "cost": 15,
+      "description": "<b>Discipline:</b> Divination<br><b>DN:</b> Target's Defence<br><b>XP Cost:</b> 15<br><b>Keywords:</b> PSYCHIC<br><br><b>Effect:</b> Target within 30m becomes Vulnerable (1) and Hindered (1) while sustained."
+    },
+    "fiery_form": {
+      "name": "Fiery Form",
+      "discipline": "Pyromancy",
+      "dn": "7",
+      "cost": 15,
+      "description": "<b>Discipline:</b> Pyromancy<br><b>DN:</b> 7<br><b>XP Cost:</b> 15<br><b>Keywords:</b> FIRE, PSYCHIC<br><br><b>Effect:</b> Burst into flame. All creatures within 2m take 10+1 ED damage. +1 Defence, immune to FIRE/MELTA damage."
+    },
+    "flame_breath": {
+      "name": "Flame Breath",
+      "discipline": "Pyromancy",
+      "dn": "5",
+      "cost": 5,
+      "description": "<b>Discipline:</b> Pyromancy<br><b>DN:</b> 5<br><b>XP Cost:</b> 5<br><b>Keywords:</b> FIRE, PSYCHIC<br><br><b>Effect:</b> Spew a gout of warpfire in a 5m line with the Flamer Trait."
+    },
+    "molten_beam": {
+      "name": "Molten Beam",
+      "discipline": "Pyromancy",
+      "dn": "Target's Defence",
+      "cost": 20,
+      "description": "<b>Discipline:</b> Pyromancy<br><b>DN:</b> Target's Defence<br><b>XP Cost:</b> 20<br><b>Keywords:</b> FIRE, PSYCHIC<br><br><b>Effect:</b> Release a beam traveling 10m. Targets suffer 18+2 ED damage and must pass DN 4 Initiative Test or be On Fire."
+    },
+    "spontaneous_combustion": {
+      "name": "Spontaneous Combustion",
+      "discipline": "Pyromancy",
+      "dn": "Target's Defence",
+      "cost": 10,
+      "description": "<b>Discipline:</b> Pyromancy<br><b>DN:</b> Target's Defence<br><b>XP Cost:</b> 10<br><b>Keywords:</b> FIRE, PSYCHIC<br><br><b>Effect:</b> Targets within 20m suffer 12+1 ED damage and must make DN 4 Agility Test or be On Fire."
+    },
+    "assail": {
+      "name": "Assail",
+      "discipline": "Telekinesis",
+      "dn": "Target's Defence",
+      "cost": 10,
+      "description": "<b>Discipline:</b> Telekinesis<br><b>DN:</b> Target's Defence<br><b>XP Cost:</b> 10<br><b>Keywords:</b> KINETIC, PSYCHIC<br><br><b>Effect:</b> Uproot a large object and smite enemies within 20m for 10+1 ED damage."
+    },
+    "crush": {
+      "name": "Crush",
+      "discipline": "Telekinesis",
+      "dn": "Target's Defence",
+      "cost": 10,
+      "description": "<b>Discipline:</b> Telekinesis<br><b>DN:</b> Target's Defence<br><b>XP Cost:</b> 10<br><b>Keywords:</b> KINETIC, PSYCHIC<br><br><b>Effect:</b> Target within 20m takes 10+1 ED damage and must pass DN 5 Strength/Willpower or be Restrained. 10+1 ED each turn sustained."
+    },
+    "levitation": {
+      "name": "Levitation",
+      "discipline": "Telekinesis",
+      "dn": "5",
+      "cost": 8,
+      "description": "<b>Discipline:</b> Telekinesis<br><b>DN:</b> 5<br><b>XP Cost:</b> 8<br><b>Keywords:</b> KINETIC, PSYCHIC<br><br><b>Effect:</b> Fly freely at normal Speed while sustained. Suffer 1 Shock per hour sustained."
+    },
+    "telekinetic_dome": {
+      "name": "Telekinetic Dome",
+      "discipline": "Telekinesis",
+      "dn": "5",
+      "cost": 15,
+      "description": "<b>Discipline:</b> Telekinesis<br><b>DN:</b> 5<br><b>XP Cost:</b> 15<br><b>Keywords:</b> KINETIC, PSYCHIC<br><br><b>Effect:</b> Gain +2 Resilience and may roll Determination against Mortal Wounds. 1 Shock per minute sustained."
+    },
+    "shock_wave": {
+      "name": "Shock Wave",
+      "discipline": "Telekinesis",
+      "dn": "7",
+      "cost": 15,
+      "description": "<b>Discipline:</b> Telekinesis<br><b>DN:</b> 7<br><b>XP Cost:</b> 15<br><b>Keywords:</b> KINETIC, PSYCHIC<br><br><b>Effect:</b> All creatures within 5m take 12+1 ED damage and must pass DN 5 Agility Test or be Prone."
+    },
+    "telepathy_power": {
+      "name": "Telepathy",
+      "discipline": "Telepathy",
+      "dn": "3",
+      "cost": 5,
+      "description": "<b>Discipline:</b> Telepathy<br><b>DN:</b> 3<br><b>XP Cost:</b> 5<br><b>Keywords:</b> TELEPATHY, PSYCHIC<br><br><b>Effect:</b> Communicate mentally with targets within 100m. Can eavesdrop on surface thoughts."
+    },
+    "psychic_shriek": {
+      "name": "Psychic Shriek",
+      "discipline": "Telepathy",
+      "dn": "Target's Willpower",
+      "cost": 10,
+      "description": "<b>Discipline:</b> Telepathy<br><b>DN:</b> Target's Willpower<br><b>XP Cost:</b> 10<br><b>Keywords:</b> PSYCHIC<br><br><b>Effect:</b> Target within 50m takes 1d3+3 Shock and must pass DN 5 Willpower Test or be Staggered."
+    },
+    "terrify": {
+      "name": "Terrify",
+      "discipline": "Telepathy",
+      "dn": "5",
+      "cost": 15,
+      "description": "<b>Discipline:</b> Telepathy<br><b>DN:</b> 5<br><b>XP Cost:</b> 15<br><b>Keywords:</b> TELEPATHY, PSYCHIC<br><br><b>Effect:</b> All enemies within 10m must make a DN 5 Fear Test."
+    },
+    "fog_the_mind": {
+      "name": "Fog the Mind",
+      "discipline": "Telepathy",
+      "dn": "4",
+      "cost": 15,
+      "description": "<b>Discipline:</b> Telepathy<br><b>DN:</b> 4<br><b>XP Cost:</b> 15<br><b>Keywords:</b> TELEPATHY, PSYCHIC<br><br><b>Effect:</b> Enemies within 10m must pass DN 6 Willpower Test or be Hindered (2) and Staggered. 1 Shock per round sustained."
+    },
+    "mind_probe": {
+      "name": "Mind Probe",
+      "discipline": "Telepathy",
+      "dn": "Target's Willpower",
+      "cost": 15,
+      "description": "<b>Discipline:</b> Telepathy<br><b>DN:</b> Target's Willpower<br><b>XP Cost:</b> 15<br><b>Keywords:</b> TELEPATHY, PSYCHIC<br><br><b>Effect:</b> Win Opposed Willpower to probe target's mind within 30m. Ask one question per turn sustained."
+    },
+    "conceal_reveal": {
+      "name": "Conceal / Reveal",
+      "discipline": "Runes of Battle",
+      "dn": "5",
+      "cost": 20,
+      "description": "<b>Discipline:</b> Runes of Battle<br><b>DN:</b> 5<br><b>XP Cost:</b> 20<br><b>Keywords:</b> AELDARI, PSYCHIC<br><br><b>Effect:</b> Conceal: +1 Defence and +1 Stealth for you and allies within 5m. Reveal: Enemies in Blast (6) can't benefit from cover."
+    },
+    "embolden_horrify": {
+      "name": "Embolden / Horrify",
+      "discipline": "Runes of Battle",
+      "dn": "5",
+      "cost": 20,
+      "description": "<b>Discipline:</b> Runes of Battle<br><b>DN:</b> 5<br><b>XP Cost:</b> 20<br><b>Keywords:</b> AELDARI, PSYCHIC<br><br><b>Effect:</b> Embolden: +1 bonus die to Resolve for allies within 5m. Horrify: +1 DN to Resolve for enemies in Blast (6)."
+    },
+    "empower_enervate": {
+      "name": "Empower / Enervate",
+      "discipline": "Runes of Battle",
+      "dn": "7",
+      "cost": 30,
+      "description": "<b>Discipline:</b> Runes of Battle<br><b>DN:</b> 7<br><b>XP Cost:</b> 30<br><b>Keywords:</b> AELDARI, PSYCHIC<br><br><b>Effect:</b> Empower: +1 ED to melee attacks for allies within 5m. Enervate: -1 ED to melee for enemies in Blast (6)."
+    },
+    "enhance_drain": {
+      "name": "Enhance / Drain",
+      "discipline": "Runes of Battle",
+      "dn": "7",
+      "cost": 30,
+      "description": "<b>Discipline:</b> Runes of Battle<br><b>DN:</b> 7<br><b>XP Cost:</b> 30<br><b>Keywords:</b> AELDARI, PSYCHIC<br><br><b>Effect:</b> Enhance: +1 bonus die to Weapon Skill for allies within 5m. Drain: +1 DN to Weapon Skill for enemies in Blast (6)."
+    },
+    "protect_jinx": {
+      "name": "Protect / Jinx",
+      "discipline": "Runes of Battle",
+      "dn": "5",
+      "cost": 20,
+      "description": "<b>Discipline:</b> Runes of Battle<br><b>DN:</b> 5<br><b>XP Cost:</b> 20<br><b>Keywords:</b> AELDARI, PSYCHIC<br><br><b>Effect:</b> Protect: +1 Resilience for allies within 5m. Jinx: -1 Resilience for enemies in Blast (6)."
+    },
+    "quicken_restrain": {
+      "name": "Quicken / Restrain",
+      "discipline": "Runes of Battle",
+      "dn": "5",
+      "cost": 20,
+      "description": "<b>Discipline:</b> Runes of Battle<br><b>DN:</b> 5<br><b>XP Cost:</b> 20<br><b>Keywords:</b> AELDARI, PSYCHIC<br><br><b>Effect:</b> Quicken: Additional Movement for allies within 5m. Restrain: Enemies in Blast (6) move as in Difficult Terrain."
+    },
+    "repair_ruin": {
+      "name": "Repair/Ruin",
+      "discipline": "Bonesinging",
+      "dn": "5",
+      "cost": 20,
+      "description": "<b>Discipline:</b> Bonesinging<br><b>DN:</b> 5<br><b>XP Cost:</b> 20<br><b>Keywords:</b> AELDARI, ASURYANI, YNNARI, PSYCHIC<br><br><b>Effect:</b> Repair: Restore 2 Wounds to a piece of wraithbone or wraithbone construct. Ruin: Inflict 2 Wounds on a piece of wraithbone. Potency: [1] +1 Wound. [3] Inflict a Mortal Wound on a wraithbone construct."
+    },
+    "conjure_wraithbone": {
+      "name": "Conjure Wraithbone",
+      "discipline": "Bonesinging",
+      "dn": "5",
+      "cost": 25,
+      "description": "<b>Discipline:</b> Bonesinging<br><b>DN:</b> 5<br><b>XP Cost:</b> 25<br><b>Keywords:</b> AELDARI, ASURYANI, YNNARI, PSYCHIC<br><br><b>Effect:</b> Create a simple wraithbone shape. Shield: flat surface up to 3m diameter. Spear: up to 3m long. Spine: sharp spurs 1m high covering 10 square meters, area becomes Difficult Terrain. Potency: [1] +10m range or +1 sq meter. [3] Create additional piece."
+    },
+    "shape_reshape": {
+      "name": "Shape/Reshape",
+      "discipline": "Bonesinging",
+      "dn": "6",
+      "cost": 20,
+      "description": "<b>Discipline:</b> Bonesinging<br><b>DN:</b> 6<br><b>XP Cost:</b> 20<br><b>Keywords:</b> AELDARI, ASURYANI, YNNARI, PSYCHIC<br><br><b>Effect:</b> Guide the shape of existing wraithbone. A Round: join pieces or simple shapes. A Scene: complex forms or armour plates. A Day: sophisticated shapes with moving parts. Affects up to 10 sq metres. Potency: [2] +5 sq metres. [3] Exceptional quality, -1 DN for further manipulations."
+    },
+    "fog_of_dreams": {
+      "name": "Fog of Dreams",
+      "discipline": "Phantasmancy",
+      "dn": "5",
+      "cost": 15,
+      "description": "<b>Discipline:</b> Phantasmancy<br><b>DN:</b> 5<br><b>XP Cost:</b> 15<br><b>Keywords:</b> AELDARI, PSYCHIC<br><br><b>Effect:</b> While sustained, you and allies with HARLEQUIN [MASQUE] Keyword gain +1 Defence and +1 bonus die to Stealth Tests. Potency: [3] +1 Defence and +1d Stealth. [2] Range increased to 30m."
+    },
+    "mirror_of_minds": {
+      "name": "Mirror of Minds",
+      "discipline": "Phantasmancy",
+      "dn": "8",
+      "cost": 30,
+      "description": "<b>Discipline:</b> Phantasmancy<br><b>DN:</b> 8<br><b>XP Cost:</b> 30<br><b>Keywords:</b> AELDARI, PSYCHIC<br><br><b>Effect:</b> Target suffers 12+1 ED damage and must pass DN 5 Willpower or Psychic Mastery Test or suffer 1d3 Mortal Wounds. Potency: [3] +2 ED damage. [2] Target must also make DN 3 Fear Test."
+    },
+    "shards_of_light": {
+      "name": "Shards of Light",
+      "discipline": "Phantasmancy",
+      "dn": "Target's Defence",
+      "cost": 25,
+      "description": "<b>Discipline:</b> Phantasmancy<br><b>DN:</b> Target's Defence<br><b>XP Cost:</b> 25<br><b>Keywords:</b> AELDARI, PSYCHIC<br><br><b>Effect:</b> Polychrome shards travel 10m in a straight line. Targets suffer 12+2 ED damage and must pass DN 4 Willpower or Psychic Mastery Test or gain Blinded. Potency: [2] +1 DN, may also gain Prone. [1] +10m range."
+    },
+    "twilight_pathways": {
+      "name": "Twilight Pathways",
+      "discipline": "Phantasmancy",
+      "dn": "6",
+      "cost": 25,
+      "description": "<b>Discipline:</b> Phantasmancy<br><b>DN:</b> 6<br><b>XP Cost:</b> 25<br><b>Keywords:</b> AELDARI, PSYCHIC<br><br><b>Effect:</b> Target ally with HARLEQUIN [MASQUE] Keyword may take one additional Action per Round while sustained. Potency: [1] Target acts first in every Round. [2] Target also gains +1 Defence."
+    },
+    "veil_of_tears": {
+      "name": "Veil of Tears",
+      "discipline": "Phantasmancy",
+      "dn": "8",
+      "cost": 25,
+      "description": "<b>Discipline:</b> Phantasmancy<br><b>DN:</b> 8<br><b>XP Cost:</b> 25<br><b>Keywords:</b> AELDARI, PSYCHIC<br><br><b>Effect:</b> Characters with HARLEQUIN [MASQUE] Keyword within range gain +2 Defence and +2 bonus dice to Stealth Tests until next Turn. Potency: [3] Activation reduced to an Action. [2] Range increased to 30m."
+    },
+    "webway_dance": {
+      "name": "Webway Dance",
+      "discipline": "Phantasmancy",
+      "dn": "9",
+      "cost": 25,
+      "description": "<b>Discipline:</b> Phantasmancy<br><b>DN:</b> 9<br><b>XP Cost:</b> 25<br><b>Keywords:</b> AELDARI, PSYCHIC<br><br><b>Effect:</b> While sustained, allies with HARLEQUIN [MASQUE] Keyword may reroll failed Determination rolls. Potency: [3] Allies may make additional Move Action. [2] +1 bonus die to Stealth Tests."
+    },
+    "doom": {
+      "name": "Doom",
+      "discipline": "Runes of Fate",
+      "dn": "Target's Defence",
+      "cost": 25,
+      "description": "<b>Discipline:</b> Runes of Fate<br><b>DN:</b> Target's Defence<br><b>XP Cost:</b> 25<br><b>Keywords:</b> AELDARI, PSYCHIC<br><br><b>Effect:</b> While sustained, target suffers -1 Base Resilience and +1 DN to Resolve Tests. Potency: [3] Additional -1 Resilience. [2] Additional +1 DN to Resolve."
+    },
+    "executioner": {
+      "name": "Executioner",
+      "discipline": "Runes of Fate",
+      "dn": "8",
+      "cost": 30,
+      "description": "<b>Discipline:</b> Runes of Fate<br><b>DN:</b> 8<br><b>XP Cost:</b> 30<br><b>Keywords:</b> AELDARI, PSYCHIC<br><br><b>Effect:</b> Summon a vengeful astral doppelganger. Target suffers 14+2 ED damage and must pass DN 3 Fear Test. Potency: [3] +2 ED damage. [2] +1 DN to Fear Test."
+    },
+    "fortune": {
+      "name": "Fortune",
+      "discipline": "Runes of Fate",
+      "dn": "5",
+      "cost": 20,
+      "description": "<b>Discipline:</b> Runes of Fate<br><b>DN:</b> 5<br><b>XP Cost:</b> 20<br><b>Keywords:</b> AELDARI, PSYCHIC<br><br><b>Effect:</b> You and all AELDARI allies gain +1 Defence until next Turn. Potency: [2] Additional +1 Defence. [1] +1 Round duration."
+    },
+    "guide": {
+      "name": "Guide",
+      "discipline": "Runes of Fate",
+      "dn": "6",
+      "cost": 15,
+      "description": "<b>Discipline:</b> Runes of Fate<br><b>DN:</b> 6<br><b>XP Cost:</b> 15<br><b>Keywords:</b> AELDARI, PSYCHIC<br><br><b>Effect:</b> You and all AELDARI allies within range gain +2 bonus dice to Ballistic Skill Tests until next Turn. Potency: [2] Additional +2 bonus dice. [1] +10m range."
+    },
+    "mind_war": {
+      "name": "Mind War",
+      "discipline": "Runes of Fate",
+      "dn": "Target's Willpower (Opposed Test)",
+      "cost": 20,
+      "description": "<b>Discipline:</b> Runes of Fate<br><b>DN:</b> Target's Willpower (Opposed Test)<br><b>XP Cost:</b> 20<br><b>Keywords:</b> AELDARI, PSYCHIC<br><br><b>Effect:</b> Make Opposed Willpower Test. If you succeed, target suffers 1d3 Mortal Wounds. Potency: [2] +1 Mortal Wound. [1] Activation reduced to an Action."
+    },
+    "will_of_asuryan": {
+      "name": "Will of Asuryan",
+      "discipline": "Runes of Fate",
+      "dn": "8",
+      "cost": 30,
+      "description": "<b>Discipline:</b> Runes of Fate<br><b>DN:</b> 8<br><b>XP Cost:</b> 30<br><b>Keywords:</b> AELDARI, PSYCHIC<br><br><b>Effect:</b> While sustained, you and all AELDARI allies within range gain +2 Resilience and may roll Determination against Mortal Wounds. Potency: [2] +1 Resilience. [1] +10m Range."
+    },
+    "crushing_orb": {
+      "name": "Crushing Orb",
+      "discipline": "Runes of Fortune",
+      "dn": "Target's Defence",
+      "cost": 25,
+      "description": "<b>Discipline:</b> Runes of Fortune<br><b>DN:</b> Target's Defence<br><b>XP Cost:</b> 25<br><b>Keywords:</b> AELDARI, PSYCHIC<br><br><b>Effect:</b> Target gains Restrained and suffers 10+2 ED damage. Must pass DN 3 Strength or Psychic Mastery to escape; failure deals additional 10+2 ED per Round sustained. Potency: [2] +1 DN to escape. [1] +1 ED damage."
+    },
+    "fateful_divergence": {
+      "name": "Fateful Divergence",
+      "discipline": "Runes of Fortune",
+      "dn": "6",
+      "cost": 30,
+      "description": "<b>Discipline:</b> Runes of Fortune<br><b>DN:</b> 6<br><b>XP Cost:</b> 30<br><b>Keywords:</b> AELDARI, PSYCHIC<br><br><b>Effect:</b> Any AELDARI within range may reroll one failed Determination roll until next Turn. Potency: [3] +2 bonus dice when rerolling. [2] +1 bonus dice when rerolling."
+    },
+    "focus_will": {
+      "name": "Focus Will",
+      "discipline": "Runes of Fortune",
+      "dn": "5",
+      "cost": 15,
+      "description": "<b>Discipline:</b> Runes of Fortune<br><b>DN:</b> 5<br><b>XP Cost:</b> 15<br><b>Keywords:</b> AELDARI, PSYCHIC<br><br><b>Effect:</b> Target gains +2 bonus dice to next Deny the Witch attempt. Potency: [2] Target also gains +1 to all Psychic Mastery Tests until next Turn."
+    },
+    "ghostwalk": {
+      "name": "Ghostwalk",
+      "discipline": "Runes of Fortune",
+      "dn": "4",
+      "cost": 15,
+      "description": "<b>Discipline:</b> Runes of Fortune<br><b>DN:</b> 4<br><b>XP Cost:</b> 15<br><b>Keywords:</b> AELDARI, PSYCHIC<br><br><b>Effect:</b> Target gains +3 Speed until next Turn. Potency: [2] Target may make additional Move Action this Turn. [1] +1 Speed."
+    },
+    "impair_senses": {
+      "name": "Impair Senses",
+      "discipline": "Runes of Fortune",
+      "dn": "Target's Willpower",
+      "cost": 20,
+      "description": "<b>Discipline:</b> Runes of Fortune<br><b>DN:</b> Target's Willpower<br><b>XP Cost:</b> 20<br><b>Keywords:</b> AELDARI, PSYCHIC<br><br><b>Effect:</b> Target gains Hindered (2) until next Turn. Potency: [3] Target must also make DN 3 Fear Test. [2] Target also gains Blinded."
+    },
+    "witchstrike": {
+      "name": "Witchstrike",
+      "discipline": "Runes of Fortune",
+      "dn": "6",
+      "cost": 20,
+      "description": "<b>Discipline:</b> Runes of Fortune<br><b>DN:</b> 6<br><b>XP Cost:</b> 20<br><b>Keywords:</b> AELDARI, PSYCHIC<br><br><b>Effect:</b> Attacks made with a Witchblade gain +2 ED damage. Potency: [2] +1 Round duration. [1] +1 ED damage."
     }
   }
 }
