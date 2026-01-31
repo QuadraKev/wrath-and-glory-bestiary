@@ -14,6 +14,9 @@ const EncounterState = {
     // Mob groupings
     mobs: [],
 
+    // Player Characters for initiative tracking
+    playerCharacters: [],
+
     // Track unsaved changes
     _isDirty: false,
 
@@ -40,7 +43,7 @@ const EncounterState = {
 
     // Check if encounter is empty (nothing to save)
     isEmpty() {
-        return this.individuals.length === 0 && this.mobs.length === 0;
+        return this.individuals.length === 0 && this.mobs.length === 0 && this.playerCharacters.length === 0;
     },
 
     // Generate a unique ID
@@ -398,6 +401,79 @@ const EncounterState = {
         this.markDirty();
     },
 
+    // ===== Player Character Management =====
+
+    // Add a player character
+    addPlayerCharacter(name) {
+        if (!name || !name.trim()) return null;
+
+        const pc = {
+            id: this.generateId(),
+            name: name.trim(),
+            initiative: null,
+            notes: ""
+        };
+        this.playerCharacters.push(pc);
+        this.markDirty();
+        return pc.id;
+    },
+
+    // Add multiple player characters from a text input (newline or comma separated)
+    addPlayerCharactersFromText(text) {
+        if (!text || !text.trim()) return [];
+
+        // Split by newlines or commas
+        const names = text.split(/[\n,]+/)
+            .map(n => n.trim())
+            .filter(n => n.length > 0);
+
+        const addedIds = [];
+        names.forEach(name => {
+            const id = this.addPlayerCharacter(name);
+            if (id) addedIds.push(id);
+        });
+
+        return addedIds;
+    },
+
+    // Remove a player character
+    removePlayerCharacter(id) {
+        this.playerCharacters = this.playerCharacters.filter(pc => pc.id !== id);
+        this.markDirty();
+    },
+
+    // Update player character name
+    updatePlayerCharacterName(id, name) {
+        const pc = this.playerCharacters.find(p => p.id === id);
+        if (pc) {
+            pc.name = name;
+            this.markDirty();
+        }
+    },
+
+    // Set initiative for a player character
+    setPlayerCharacterInitiative(id, value) {
+        const pc = this.playerCharacters.find(p => p.id === id);
+        if (pc) {
+            pc.initiative = value === '' || value === null ? null : parseInt(value);
+            this.markDirty();
+        }
+    },
+
+    // Update player character notes
+    updatePlayerCharacterNotes(id, notes) {
+        const pc = this.playerCharacters.find(p => p.id === id);
+        if (pc) {
+            pc.notes = notes;
+            this.markDirty();
+        }
+    },
+
+    // Get a player character by ID
+    getPlayerCharacter(id) {
+        return this.playerCharacters.find(p => p.id === id);
+    },
+
     // ===== Bonus Calculations =====
 
     // Calculate max wounds based on threat and bonus type
@@ -537,6 +613,18 @@ const EncounterState = {
             });
         });
 
+        // Add player characters
+        this.playerCharacters.forEach(pc => {
+            items.push({
+                type: 'player',
+                id: pc.id,
+                name: pc.name,
+                initiative: pc.initiative,
+                isDead: false,
+                data: pc
+            });
+        });
+
         // Sort by initiative (highest first, null at bottom)
         items.sort((a, b) => {
             if (a.initiative === null && b.initiative === null) return 0;
@@ -556,7 +644,8 @@ const EncounterState = {
             version: 1,
             settings: { ...this.settings },
             individuals: [...this.individuals],
-            mobs: [...this.mobs]
+            mobs: [...this.mobs],
+            playerCharacters: [...this.playerCharacters]
         };
     },
 
@@ -584,6 +673,7 @@ const EncounterState = {
             this.settings.name = result.fileName; // Use filename as encounter name
             this.individuals = parsed.individuals || [];
             this.mobs = parsed.mobs || [];
+            this.playerCharacters = parsed.playerCharacters || [];
             this.markClean(); // Just loaded, so no unsaved changes
         }
 
@@ -595,6 +685,7 @@ const EncounterState = {
         this.settings = data.settings || { tier: 1, playerCount: 4, name: "Unnamed Encounter" };
         this.individuals = data.individuals || [];
         this.mobs = data.mobs || [];
+        this.playerCharacters = data.playerCharacters || [];
     },
 
     // Clear the current encounter
@@ -602,6 +693,7 @@ const EncounterState = {
         this.settings = { tier: 1, playerCount: 4, name: "Unnamed Encounter" };
         this.individuals = [];
         this.mobs = [];
+        this.playerCharacters = [];
         this.markClean(); // Fresh encounter has no unsaved changes
     }
 };

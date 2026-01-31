@@ -2207,3 +2207,84 @@ body {
     opacity: 1;
     transform: translateX(-50%) translateY(0);
 }
+
+/* ===== Player Character Inputs ===== */
+.player-characters-section {
+    margin-top: 8px;
+}
+
+.player-character-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.player-character-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.pc-name-input {
+    flex: 1;
+    padding: 8px 10px;
+    background: var(--bg-card);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+}
+
+.pc-name-input:focus {
+    outline: none;
+    border-color: var(--accent-gold);
+}
+
+.pc-initiative-input {
+    width: 50px;
+    padding: 8px 6px;
+    background: var(--bg-card);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+    text-align: center;
+}
+
+.pc-initiative-input:focus {
+    outline: none;
+    border-color: var(--accent-gold);
+}
+
+.pc-initiative-input::placeholder {
+    color: var(--text-muted);
+    font-size: 11px;
+}
+
+/* Player Character Item in Encounter List */
+.player-item {
+    border-left: 3px solid var(--accent-green);
+}
+
+.player-item .encounter-item-header {
+    margin-bottom: 0;
+}
+
+.player-badge {
+    padding: 2px 8px;
+    border-radius: var(--radius-sm);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: var(--accent-green);
+    color: var(--bg-primary);
+}
+
+/* Player Detail */
+.player-detail-initiative {
+    margin-bottom: 20px;
+}
+
+.player-detail-initiative .search-input {
+    max-width: 100px;
+}

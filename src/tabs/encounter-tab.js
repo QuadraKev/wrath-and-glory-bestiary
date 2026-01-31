@@ -28,7 +28,8 @@ const EncounterTab = {
 
         document.getElementById('encounter-players').addEventListener('change', (e) => {
             EncounterState.updateSettings({ playerCount: parseInt(e.target.value) });
-            this.render();
+            this.renderPlayerCharacterInputs();
+            this.renderEncounterList();
         });
 
         document.getElementById('encounter-name').addEventListener('input', (e) => {
@@ -51,6 +52,7 @@ const EncounterTab = {
 
     render() {
         this.renderSettings();
+        this.renderPlayerCharacterInputs();
         this.renderEncounterList();
         this.renderDetail();
     },
@@ -61,6 +63,95 @@ const EncounterTab = {
         document.getElementById('encounter-tier').value = EncounterState.settings.tier;
         document.getElementById('encounter-players').value = EncounterState.settings.playerCount;
         document.getElementById('encounter-name').value = EncounterState.settings.name;
+    },
+
+    // ===== Player Character Inputs =====
+
+    renderPlayerCharacterInputs() {
+        const container = document.getElementById('player-character-inputs');
+        const playerCount = EncounterState.settings.playerCount;
+
+        // Build input rows - show existing PCs first, then empty slots for remaining
+        let html = '';
+        for (let i = 0; i < playerCount; i++) {
+            const pc = EncounterState.playerCharacters[i];
+            if (pc) {
+                html += `
+                    <div class="player-character-row" data-index="${i}" data-id="${pc.id}">
+                        <input type="text" class="pc-name-input" value="${this.escapeHtml(pc.name)}"
+                               data-index="${i}" data-id="${pc.id}" placeholder="Player ${i + 1}">
+                        <input type="number" class="pc-initiative-input" value="${pc.initiative || ''}"
+                               data-index="${i}" data-id="${pc.id}" placeholder="Init" min="1" max="99">
+                    </div>
+                `;
+            } else {
+                html += `
+                    <div class="player-character-row" data-index="${i}">
+                        <input type="text" class="pc-name-input" value=""
+                               data-index="${i}" placeholder="Player ${i + 1}">
+                        <input type="number" class="pc-initiative-input" value=""
+                               data-index="${i}" placeholder="Init" min="1" max="99">
+                    </div>
+                `;
+            }
+        }
+        container.innerHTML = html;
+
+        // Remove excess player characters if player count was reduced
+        while (EncounterState.playerCharacters.length > playerCount) {
+            const lastPc = EncounterState.playerCharacters[EncounterState.playerCharacters.length - 1];
+            EncounterState.removePlayerCharacter(lastPc.id);
+        }
+
+        // Bind events
+        container.querySelectorAll('.pc-name-input').forEach(input => {
+            input.addEventListener('change', (e) => {
+                const index = parseInt(e.target.dataset.index);
+                const existingId = e.target.dataset.id;
+                const newName = e.target.value.trim();
+
+                if (existingId) {
+                    // Update existing player character
+                    if (newName) {
+                        EncounterState.updatePlayerCharacterName(existingId, newName);
+                    }
+                } else if (newName) {
+                    // Create new player character at this index
+                    const newId = EncounterState.addPlayerCharacter(newName);
+                    // Re-render to update the data-id attribute
+                    this.renderPlayerCharacterInputs();
+                }
+                this.renderEncounterList();
+                if (this.selectedId && this.selectionType === 'player') {
+                    this.renderDetail();
+                }
+            });
+        });
+
+        container.querySelectorAll('.pc-initiative-input').forEach(input => {
+            input.addEventListener('change', (e) => {
+                const existingId = e.target.dataset.id;
+                const index = parseInt(e.target.dataset.index);
+
+                if (existingId) {
+                    EncounterState.setPlayerCharacterInitiative(existingId, e.target.value);
+                } else if (e.target.value) {
+                    // Create player character if setting initiative on empty slot
+                    const nameInput = container.querySelector(`.pc-name-input[data-index="${index}"]`);
+                    const name = nameInput?.value.trim() || `Player ${index + 1}`;
+                    const newId = EncounterState.addPlayerCharacter(name);
+                    EncounterState.setPlayerCharacterInitiative(newId, e.target.value);
+                    this.renderPlayerCharacterInputs();
+                }
+                this.renderEncounterList();
+            });
+        });
+    },
+
+    escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
     },
 
     // ===== Encounter List =====
@@ -125,8 +216,12 @@ const EncounterTab = {
                 const type = e.target.dataset.type;
                 if (type === 'individual') {
                     EncounterState.setInitiative(id, e.target.value);
-                } else {
+                } else if (type === 'mob') {
                     EncounterState.setMobInitiative(id, e.target.value);
+                } else if (type === 'player') {
+                    EncounterState.setPlayerCharacterInitiative(id, e.target.value);
+                    // Also update the sidebar input
+                    this.renderPlayerCharacterInputs();
                 }
                 this.renderEncounterList();
             });
@@ -187,9 +282,30 @@ const EncounterTab = {
     renderEncounterItem(item) {
         if (item.type === 'individual') {
             return this.renderIndividualItem(item);
-        } else {
+        } else if (item.type === 'mob') {
             return this.renderMobItem(item);
+        } else if (item.type === 'player') {
+            return this.renderPlayerItem(item);
         }
+        return '';
+    },
+
+    renderPlayerItem(item) {
+        const pc = item.data;
+        const isSelected = this.selectedId === item.id && this.selectionType === 'player';
+
+        return `
+            <div class="encounter-item player-item ${isSelected ? 'selected' : ''}"
+                 data-id="${item.id}" data-type="player">
+                <div class="encounter-item-header">
+                    <input type="number" class="initiative-input" value="${item.initiative || ''}"
+                           data-id="${item.id}" data-type="player" placeholder="Init"
+                           min="1" max="99">
+                    <span class="encounter-item-name">${this.escapeHtml(pc.name)}</span>
+                    <span class="player-badge">PC</span>
+                </div>
+            </div>
+        `;
     },
 
     renderIndividualItem(item) {
@@ -405,9 +521,50 @@ const EncounterTab = {
 
         if (this.selectionType === 'individual') {
             this.renderIndividualDetail(container);
-        } else {
+        } else if (this.selectionType === 'mob') {
             this.renderMobDetail(container);
+        } else if (this.selectionType === 'player') {
+            this.renderPlayerDetail(container);
         }
+    },
+
+    renderPlayerDetail(container) {
+        const pc = EncounterState.getPlayerCharacter(this.selectedId);
+        if (!pc) {
+            container.innerHTML = '<p>Player not found</p>';
+            return;
+        }
+
+        container.innerHTML = `
+            <div class="encounter-detail-content">
+                <div class="detail-header">
+                    <h3>${this.escapeHtml(pc.name)}</h3>
+                    <span class="player-badge">PLAYER CHARACTER</span>
+                </div>
+
+                <div class="player-detail-initiative">
+                    <label class="filter-label">Initiative</label>
+                    <input type="number" id="player-detail-initiative" class="search-input"
+                           value="${pc.initiative || ''}" placeholder="Initiative" min="1" max="99">
+                </div>
+
+                <div class="notes-section">
+                    <label class="notes-label">Notes</label>
+                    <textarea id="player-notes" class="notes-textarea" placeholder="Add notes...">${pc.notes || ''}</textarea>
+                </div>
+            </div>
+        `;
+
+        // Bind events
+        document.getElementById('player-detail-initiative')?.addEventListener('change', (e) => {
+            EncounterState.setPlayerCharacterInitiative(this.selectedId, e.target.value);
+            this.renderPlayerCharacterInputs();
+            this.renderEncounterList();
+        });
+
+        document.getElementById('player-notes')?.addEventListener('input', (e) => {
+            EncounterState.updatePlayerCharacterNotes(this.selectedId, e.target.value);
+        });
     },
 
     renderIndividualDetail(container) {
