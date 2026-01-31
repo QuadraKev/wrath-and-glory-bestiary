@@ -80,7 +80,7 @@ const EncounterTab = {
                     <div class="player-character-row" data-index="${i}" data-id="${pc.id}">
                         <input type="text" class="pc-name-input" value="${this.escapeHtml(pc.name)}"
                                data-index="${i}" data-id="${pc.id}" placeholder="Player ${i + 1}">
-                        <input type="number" class="pc-initiative-input" value="${pc.initiative || ''}"
+                        <input type="number" class="pc-initiative-input" value="${pc.initiative ?? ''}"
                                data-index="${i}" data-id="${pc.id}" placeholder="Init" min="0" max="99">
                     </div>
                 `;
@@ -135,7 +135,7 @@ const EncounterTab = {
 
                 if (existingId) {
                     EncounterState.setPlayerCharacterInitiative(existingId, e.target.value);
-                } else if (e.target.value) {
+                } else if (e.target.value !== '') {
                     // Create player character if setting initiative on empty slot
                     const nameInput = container.querySelector(`.pc-name-input[data-index="${index}"]`);
                     const name = nameInput?.value.trim() || `Player ${index + 1}`;
@@ -277,6 +277,87 @@ const EncounterTab = {
                 }
             });
         });
+
+        // Bind drag-and-drop handlers for reordering
+        this.bindDragDropHandlers(container);
+    },
+
+    // Track dragging state
+    draggedItem: null,
+
+    bindDragDropHandlers(container) {
+        const items = container.querySelectorAll('.encounter-item');
+
+        items.forEach(el => {
+            // Drag start
+            el.addEventListener('dragstart', (e) => {
+                this.draggedItem = {
+                    id: el.dataset.id,
+                    type: el.dataset.type
+                };
+                el.classList.add('dragging');
+                e.dataTransfer.effectAllowed = 'move';
+                e.dataTransfer.setData('text/plain', el.dataset.id);
+            });
+
+            // Drag end
+            el.addEventListener('dragend', (e) => {
+                el.classList.remove('dragging');
+                this.draggedItem = null;
+                // Remove all drag-over classes
+                container.querySelectorAll('.drag-over').forEach(item => {
+                    item.classList.remove('drag-over');
+                });
+            });
+
+            // Drag over
+            el.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                e.dataTransfer.dropEffect = 'move';
+
+                if (!this.draggedItem || this.draggedItem.id === el.dataset.id) return;
+
+                // Add visual indicator
+                el.classList.add('drag-over');
+            });
+
+            // Drag leave
+            el.addEventListener('dragleave', (e) => {
+                el.classList.remove('drag-over');
+            });
+
+            // Drop
+            el.addEventListener('drop', (e) => {
+                e.preventDefault();
+                el.classList.remove('drag-over');
+
+                if (!this.draggedItem || this.draggedItem.id === el.dataset.id) return;
+
+                // Get the index of the drop target
+                const allItems = Array.from(container.querySelectorAll('.encounter-item'));
+                const dropIndex = allItems.indexOf(el);
+
+                // Move the item in the state
+                EncounterState.moveItemInOrder(this.draggedItem.type, this.draggedItem.id, dropIndex);
+
+                // Re-render the list
+                this.renderEncounterList();
+            });
+        });
+
+        // Allow dropping at the end of the list
+        container.addEventListener('dragover', (e) => {
+            e.preventDefault();
+        });
+
+        container.addEventListener('drop', (e) => {
+            // Only handle if not dropped on an item
+            if (e.target === container && this.draggedItem) {
+                const allItems = container.querySelectorAll('.encounter-item');
+                EncounterState.moveItemInOrder(this.draggedItem.type, this.draggedItem.id, allItems.length);
+                this.renderEncounterList();
+            }
+        });
     },
 
     renderEncounterItem(item) {
@@ -296,9 +377,10 @@ const EncounterTab = {
 
         return `
             <div class="encounter-item player-item ${isSelected ? 'selected' : ''}"
-                 data-id="${item.id}" data-type="player">
+                 data-id="${item.id}" data-type="player" draggable="true">
                 <div class="encounter-item-header">
-                    <input type="number" class="initiative-input" value="${item.initiative || ''}"
+                    <span class="drag-handle" title="Drag to reorder">&#x2630;</span>
+                    <input type="number" class="initiative-input" value="${item.initiative ?? ''}"
                            data-id="${item.id}" data-type="player" placeholder="Init"
                            min="0" max="99">
                     <span class="encounter-item-name">${this.escapeHtml(pc.name)}</span>
@@ -324,14 +406,15 @@ const EncounterTab = {
 
         return `
             <div class="encounter-item ${isSelected ? 'selected' : ''} ${isMultiSelected ? 'multi-selected' : ''} ${deadClass}"
-                 data-id="${item.id}" data-type="individual" data-threat-id="${individual.threatId}">
+                 data-id="${item.id}" data-type="individual" data-threat-id="${individual.threatId}" draggable="true">
                 <div class="encounter-item-header">
+                    <span class="drag-handle" title="Drag to reorder">&#x2630;</span>
                     ${showCheckbox ? `
                         <input type="checkbox" class="multi-select-checkbox"
                                data-id="${item.id}" data-type="individual"
                                ${isMultiSelected ? 'checked' : ''}>
                     ` : ''}
-                    <input type="number" class="initiative-input" value="${item.initiative || ''}"
+                    <input type="number" class="initiative-input" value="${item.initiative ?? ''}"
                            data-id="${item.id}" data-type="individual" placeholder="Init"
                            min="0" max="99">
                     <span class="encounter-item-name">${item.name}</span>
@@ -378,9 +461,10 @@ const EncounterTab = {
 
         return `
             <div class="encounter-item mob-item ${isSelected ? 'selected' : ''} ${deadClass}"
-                 data-id="${item.id}" data-type="mob">
+                 data-id="${item.id}" data-type="mob" draggable="true">
                 <div class="encounter-item-header">
-                    <input type="number" class="initiative-input" value="${item.initiative || ''}"
+                    <span class="drag-handle" title="Drag to reorder">&#x2630;</span>
+                    <input type="number" class="initiative-input" value="${item.initiative ?? ''}"
                            data-id="${item.id}" data-type="mob" placeholder="Init"
                            min="0" max="99">
                     <span class="encounter-item-name">${mob.name}</span>
@@ -545,7 +629,7 @@ const EncounterTab = {
                 <div class="player-detail-initiative">
                     <label class="filter-label">Initiative</label>
                     <input type="number" id="player-detail-initiative" class="search-input"
-                           value="${pc.initiative || ''}" placeholder="Initiative" min="0" max="99">
+                           value="${pc.initiative ?? ''}" placeholder="Initiative" min="0" max="99">
                 </div>
 
                 <div class="notes-section">

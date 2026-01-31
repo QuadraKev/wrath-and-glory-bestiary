@@ -17,6 +17,10 @@ const EncounterState = {
     // Player Characters for initiative tracking
     playerCharacters: [],
 
+    // Manual ordering for encounter list (array of {type, id} objects)
+    // When set, this overrides initiative-based sorting
+    encounterOrder: null,
+
     // Track unsaved changes
     _isDirty: false,
 
@@ -474,6 +478,51 @@ const EncounterState = {
         return this.playerCharacters.find(p => p.id === id);
     },
 
+    // ===== Manual Ordering =====
+
+    // Set the manual order of encounter items
+    setEncounterOrder(orderedItems) {
+        this.encounterOrder = orderedItems.map(item => ({
+            type: item.type,
+            id: item.id
+        }));
+        this.markDirty();
+    },
+
+    // Clear manual order (revert to initiative-based sorting)
+    clearEncounterOrder() {
+        this.encounterOrder = null;
+        this.markDirty();
+    },
+
+    // Move an item to a new position in the order
+    moveItemInOrder(itemType, itemId, newIndex) {
+        // First, ensure we have a current order to work with
+        if (!this.encounterOrder) {
+            // Initialize order from current initiative-sorted list
+            const currentItems = this.getEncounterListItems();
+            this.encounterOrder = currentItems.map(item => ({
+                type: item.type,
+                id: item.id
+            }));
+        }
+
+        // Find and remove the item from its current position
+        const currentIndex = this.encounterOrder.findIndex(
+            item => item.type === itemType && item.id === itemId
+        );
+
+        if (currentIndex === -1) return;
+
+        const [movedItem] = this.encounterOrder.splice(currentIndex, 1);
+
+        // Insert at new position
+        const adjustedIndex = newIndex > currentIndex ? newIndex - 1 : newIndex;
+        this.encounterOrder.splice(Math.max(0, Math.min(adjustedIndex, this.encounterOrder.length)), 0, movedItem);
+
+        this.markDirty();
+    },
+
     // ===== Bonus Calculations =====
 
     // Calculate max wounds based on threat and bonus type
@@ -577,7 +626,7 @@ const EncounterState = {
         return this.individuals.filter(i => !i.mobId);
     },
 
-    // Get encounter list items sorted by initiative
+    // Get encounter list items sorted by initiative or manual order
     getEncounterListItems() {
         const items = [];
 
@@ -625,7 +674,40 @@ const EncounterState = {
             });
         });
 
-        // Sort by initiative (highest first, null at bottom)
+        // If we have a manual order, use it
+        if (this.encounterOrder && this.encounterOrder.length > 0) {
+            const orderedItems = [];
+            const itemMap = new Map();
+
+            // Create a map for quick lookup
+            items.forEach(item => {
+                itemMap.set(`${item.type}-${item.id}`, item);
+            });
+
+            // Add items in the stored order
+            this.encounterOrder.forEach(orderEntry => {
+                const key = `${orderEntry.type}-${orderEntry.id}`;
+                const item = itemMap.get(key);
+                if (item) {
+                    orderedItems.push(item);
+                    itemMap.delete(key);
+                }
+            });
+
+            // Add any new items (not in the order yet) at the end, sorted by initiative
+            const newItems = Array.from(itemMap.values());
+            newItems.sort((a, b) => {
+                if (a.initiative === null && b.initiative === null) return 0;
+                if (a.initiative === null) return 1;
+                if (b.initiative === null) return -1;
+                return b.initiative - a.initiative;
+            });
+            orderedItems.push(...newItems);
+
+            return orderedItems;
+        }
+
+        // Default: Sort by initiative (highest first, null at bottom)
         items.sort((a, b) => {
             if (a.initiative === null && b.initiative === null) return 0;
             if (a.initiative === null) return 1;
@@ -645,7 +727,8 @@ const EncounterState = {
             settings: { ...this.settings },
             individuals: [...this.individuals],
             mobs: [...this.mobs],
-            playerCharacters: [...this.playerCharacters]
+            playerCharacters: [...this.playerCharacters],
+            encounterOrder: this.encounterOrder ? [...this.encounterOrder] : null
         };
     },
 
@@ -674,6 +757,7 @@ const EncounterState = {
             this.individuals = parsed.individuals || [];
             this.mobs = parsed.mobs || [];
             this.playerCharacters = parsed.playerCharacters || [];
+            this.encounterOrder = parsed.encounterOrder || null;
             this.markClean(); // Just loaded, so no unsaved changes
         }
 
@@ -686,6 +770,7 @@ const EncounterState = {
         this.individuals = data.individuals || [];
         this.mobs = data.mobs || [];
         this.playerCharacters = data.playerCharacters || [];
+        this.encounterOrder = data.encounterOrder || null;
     },
 
     // Clear the current encounter
@@ -694,6 +779,7 @@ const EncounterState = {
         this.individuals = [];
         this.mobs = [];
         this.playerCharacters = [];
+        this.encounterOrder = null;
         this.markClean(); // Fresh encounter has no unsaved changes
     }
 };
