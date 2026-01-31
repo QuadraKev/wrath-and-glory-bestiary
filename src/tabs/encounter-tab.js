@@ -81,7 +81,7 @@ const EncounterTab = {
                         <input type="text" class="pc-name-input" value="${this.escapeHtml(pc.name)}"
                                data-index="${i}" data-id="${pc.id}" placeholder="Player ${i + 1}">
                         <input type="number" class="pc-initiative-input" value="${pc.initiative || ''}"
-                               data-index="${i}" data-id="${pc.id}" placeholder="Init" min="1" max="99">
+                               data-index="${i}" data-id="${pc.id}" placeholder="Init" min="0" max="99">
                     </div>
                 `;
             } else {
@@ -90,7 +90,7 @@ const EncounterTab = {
                         <input type="text" class="pc-name-input" value=""
                                data-index="${i}" placeholder="Player ${i + 1}">
                         <input type="number" class="pc-initiative-input" value=""
-                               data-index="${i}" placeholder="Init" min="1" max="99">
+                               data-index="${i}" placeholder="Init" min="0" max="99">
                     </div>
                 `;
             }
@@ -300,7 +300,7 @@ const EncounterTab = {
                 <div class="encounter-item-header">
                     <input type="number" class="initiative-input" value="${item.initiative || ''}"
                            data-id="${item.id}" data-type="player" placeholder="Init"
-                           min="1" max="99">
+                           min="0" max="99">
                     <span class="encounter-item-name">${this.escapeHtml(pc.name)}</span>
                     <span class="player-badge">PC</span>
                 </div>
@@ -333,7 +333,7 @@ const EncounterTab = {
                     ` : ''}
                     <input type="number" class="initiative-input" value="${item.initiative || ''}"
                            data-id="${item.id}" data-type="individual" placeholder="Init"
-                           min="1" max="99">
+                           min="0" max="99">
                     <span class="encounter-item-name">${item.name}</span>
                     <select class="bonus-select bonus-${bonus}" data-id="${item.id}">
                         <option value="none" ${bonus === 'none' ? 'selected' : ''}>No Bonus</option>
@@ -382,7 +382,7 @@ const EncounterTab = {
                 <div class="encounter-item-header">
                     <input type="number" class="initiative-input" value="${item.initiative || ''}"
                            data-id="${item.id}" data-type="mob" placeholder="Init"
-                           min="1" max="99">
+                           min="0" max="99">
                     <span class="encounter-item-name">${mob.name}</span>
                     <span class="mob-badge">MOB</span>
                 </div>
@@ -545,7 +545,7 @@ const EncounterTab = {
                 <div class="player-detail-initiative">
                     <label class="filter-label">Initiative</label>
                     <input type="number" id="player-detail-initiative" class="search-input"
-                           value="${pc.initiative || ''}" placeholder="Initiative" min="1" max="99">
+                           value="${pc.initiative || ''}" placeholder="Initiative" min="0" max="99">
                 </div>
 
                 <div class="notes-section">
