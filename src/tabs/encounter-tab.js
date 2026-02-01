@@ -48,6 +48,10 @@ const EncounterTab = {
         document.getElementById('btn-clear-encounter').addEventListener('click', () => {
             this.handleClear();
         });
+
+        document.getElementById('btn-sort-initiative').addEventListener('click', () => {
+            this.handleSortByInitiative();
+        });
     },
 
     render() {
@@ -1206,5 +1210,11 @@ const EncounterTab = {
             this.selectionType = null;
             this.render();
         }
+    },
+
+    handleSortByInitiative() {
+        EncounterState.clearEncounterOrder();
+        this.renderEncounterList();
+        this.showNotification('Sorted by initiative');
     }
 };
