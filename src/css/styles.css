@@ -1130,7 +1130,112 @@ body {
 
 /* ===== Encounter Tab ===== */
 #tab-encounter {
-    flex-direction: row;
+    flex-direction: column;
+}
+
+#tab-encounter .encounter-action-bar + .sidebar,
+#tab-encounter .encounter-action-bar ~ .content {
+    /* These will be in a row */
+}
+
+#tab-encounter {
+    display: none;
+}
+
+#tab-encounter.active {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Encounter Action Bar */
+.encounter-action-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-color);
+    flex-shrink: 0;
+}
+
+.encounter-name-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.action-bar-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.encounter-name-input {
+    width: 250px;
+    padding: 8px 12px;
+    background: var(--bg-card);
+    color: var(--accent-gold);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.encounter-name-input:focus {
+    outline: none;
+    border-color: var(--accent-gold);
+}
+
+.encounter-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-action {
+    padding: 8px 16px;
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.btn-action:hover {
+    background: var(--bg-hover);
+    border-color: var(--accent-gold);
+    color: var(--accent-gold);
+}
+
+.btn-action-danger {
+    color: var(--accent-red);
+}
+
+.btn-action-danger:hover {
+    border-color: var(--accent-red);
+    color: var(--accent-red);
+}
+
+/* Encounter content wrapper */
+.encounter-content-wrapper {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* Player list buttons */
+.player-list-buttons {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.player-list-buttons .btn-secondary {
+    flex: 1;
+    font-size: 11px;
+    padding: 6px 8px;
 }
 
 .encounter-sidebar {

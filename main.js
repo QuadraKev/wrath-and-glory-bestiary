@@ -145,6 +145,58 @@ ipcMain.handle('load-encounter-file', async (event) => {
     }
 });
 
+// Save player list to file
+ipcMain.handle('save-players-file', async (event, playerData) => {
+    try {
+        const result = await dialog.showSaveDialog(mainWindow, {
+            title: 'Save Player List',
+            defaultPath: 'players.players',
+            filters: [
+                { name: 'Player List Files', extensions: ['players'] }
+            ]
+        });
+
+        if (result.canceled || !result.filePath) {
+            return { success: false, canceled: true };
+        }
+
+        fs.writeFileSync(result.filePath, JSON.stringify(playerData, null, 2), 'utf8');
+        const fileName = path.basename(result.filePath, '.players');
+        console.log(`[Main] Player list saved to: ${result.filePath}`);
+        return { success: true, filePath: result.filePath, fileName: fileName };
+    } catch (error) {
+        console.error('[Main] Error saving player list:', error);
+        return { success: false, error: error.message };
+    }
+});
+
+// Load player list from file
+ipcMain.handle('load-players-file', async (event) => {
+    try {
+        const result = await dialog.showOpenDialog(mainWindow, {
+            title: 'Load Player List',
+            filters: [
+                { name: 'Player List Files', extensions: ['players'] }
+            ],
+            properties: ['openFile']
+        });
+
+        if (result.canceled || result.filePaths.length === 0) {
+            return { success: false, canceled: true };
+        }
+
+        const filePath = result.filePaths[0];
+        const data = fs.readFileSync(filePath, 'utf8');
+        const parsed = JSON.parse(data);
+        const fileName = path.basename(filePath, '.players');
+        console.log(`[Main] Player list loaded from: ${filePath}`);
+        return { success: true, data: parsed, fileName: fileName };
+    } catch (error) {
+        console.error('[Main] Error loading player list:', error);
+        return { success: false, error: error.message };
+    }
+});
+
 // Handle response from renderer about unsaved changes
 ipcMain.on('unsaved-changes-response', async (event, hasUnsavedChanges, encounterData) => {
     if (!hasUnsavedChanges) {

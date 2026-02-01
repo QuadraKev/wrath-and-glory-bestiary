@@ -52,6 +52,14 @@ const EncounterTab = {
         document.getElementById('btn-sort-initiative').addEventListener('click', () => {
             this.handleSortByInitiative();
         });
+
+        document.getElementById('btn-save-players').addEventListener('click', () => {
+            this.handleSavePlayers();
+        });
+
+        document.getElementById('btn-load-players').addEventListener('click', () => {
+            this.handleLoadPlayers();
+        });
     },
 
     render() {
@@ -1216,5 +1224,57 @@ const EncounterTab = {
         EncounterState.clearEncounterOrder();
         this.renderEncounterList();
         this.showNotification('Sorted by initiative');
+    },
+
+    async handleSavePlayers() {
+        const playerData = {
+            version: 1,
+            playerCount: EncounterState.settings.playerCount,
+            players: EncounterState.playerCharacters.map(pc => ({
+                name: pc.name,
+                notes: pc.notes || ''
+            }))
+        };
+
+        const result = await window.api.savePlayersFile(playerData);
+
+        if (result.success) {
+            this.showNotification('Player list saved!');
+        } else if (result.error) {
+            this.showNotification(`Error saving: ${result.error}`);
+        }
+    },
+
+    async handleLoadPlayers() {
+        const result = await window.api.loadPlayersFile();
+
+        if (result.success && result.data) {
+            const data = result.data;
+
+            // Update player count
+            if (data.playerCount) {
+                EncounterState.updateSettings({ playerCount: data.playerCount });
+                document.getElementById('encounter-players').value = data.playerCount;
+            }
+
+            // Clear existing player characters
+            EncounterState.playerCharacters = [];
+
+            // Add loaded players
+            if (data.players && Array.isArray(data.players)) {
+                data.players.forEach(p => {
+                    const id = EncounterState.addPlayerCharacter(p.name || 'Player');
+                    if (id && p.notes) {
+                        EncounterState.updatePlayerCharacterNotes(id, p.notes);
+                    }
+                });
+            }
+
+            this.renderPlayerCharacterInputs();
+            this.renderEncounterList();
+            this.showNotification(`Loaded ${data.players?.length || 0} players`);
+        } else if (result.error) {
+            this.showNotification(`Error loading: ${result.error}`);
+        }
     }
 };

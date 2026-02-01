@@ -109,15 +109,25 @@
 
             <!-- Encounter Tab -->
             <div id="tab-encounter" class="tab-content">
+                <!-- Encounter Action Bar -->
+                <div class="encounter-action-bar">
+                    <div class="encounter-name-section">
+                        <label class="action-bar-label">Encounter:</label>
+                        <input type="text" id="encounter-name" class="encounter-name-input" placeholder="Unnamed Encounter">
+                    </div>
+                    <div class="encounter-actions">
+                        <button id="btn-save-encounter" class="btn-action">Save Encounter</button>
+                        <button id="btn-load-encounter" class="btn-action">Load Encounter</button>
+                        <button id="btn-clear-encounter" class="btn-action btn-action-danger">Clear Encounter</button>
+                    </div>
+                </div>
+
+                <!-- Encounter Content Wrapper (sidebar + main) -->
+                <div class="encounter-content-wrapper">
                 <!-- Left Sidebar - Settings & Add -->
                 <aside class="sidebar encounter-sidebar">
                     <div class="sidebar-section">
                         <h3 class="sidebar-title">Encounter Settings</h3>
-                    </div>
-
-                    <div class="sidebar-section">
-                        <label class="filter-label">Encounter Name</label>
-                        <input type="text" id="encounter-name" class="search-input" placeholder="Unnamed Encounter">
                     </div>
 
                     <div class="sidebar-section">
@@ -140,15 +150,14 @@
                         <div id="player-character-inputs" class="player-character-inputs">
                             <!-- Populated by JavaScript based on player count -->
                         </div>
+                        <div class="player-list-buttons">
+                            <button id="btn-save-players" class="btn-secondary">Save Players</button>
+                            <button id="btn-load-players" class="btn-secondary">Load Players</button>
+                        </div>
                     </div>
 
-                    <div class="sidebar-section encounter-save-load">
-                        <div class="save-load-buttons">
-                            <button id="btn-save-encounter" class="btn-secondary">Save to File</button>
-                            <button id="btn-load-encounter" class="btn-secondary">Load from File</button>
-                        </div>
+                    <div class="sidebar-section">
                         <button id="btn-sort-initiative" class="btn-secondary">Sort by Initiative</button>
-                        <button id="btn-clear-encounter" class="btn-secondary btn-clear">Clear Encounter</button>
                     </div>
                 </aside>
 
@@ -172,6 +181,7 @@
                         </div>
                     </div>
                 </main>
+                </div><!-- End encounter-content-wrapper -->
             </div>
 
             <!-- Glossary Tab -->
