@@ -512,12 +512,18 @@ const EncounterState = {
             item => item.type === itemType && item.id === itemId
         );
 
-        if (currentIndex === -1) return;
-
-        const [movedItem] = this.encounterOrder.splice(currentIndex, 1);
+        let movedItem;
+        if (currentIndex === -1) {
+            // Item not in order yet (e.g., just removed from a mob)
+            // Add it as a new entry
+            movedItem = { type: itemType, id: itemId };
+        } else {
+            // Remove from current position
+            [movedItem] = this.encounterOrder.splice(currentIndex, 1);
+        }
 
         // Insert at new position
-        const adjustedIndex = newIndex > currentIndex ? newIndex - 1 : newIndex;
+        const adjustedIndex = currentIndex !== -1 && newIndex > currentIndex ? newIndex - 1 : newIndex;
         this.encounterOrder.splice(Math.max(0, Math.min(adjustedIndex, this.encounterOrder.length)), 0, movedItem);
 
         this.markDirty();
