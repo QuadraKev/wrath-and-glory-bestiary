@@ -283,81 +283,140 @@ const EncounterTab = {
     },
 
     // Track dragging state
-    draggedItem: null,
+    dragState: {
+        dragging: false,
+        element: null,
+        placeholder: null,
+        itemId: null,
+        itemType: null,
+        startY: 0,
+        currentY: 0,
+        offsetY: 0
+    },
 
     bindDragDropHandlers(container) {
         const items = container.querySelectorAll('.encounter-item');
 
         items.forEach(el => {
-            // Drag start
-            el.addEventListener('dragstart', (e) => {
-                this.draggedItem = {
-                    id: el.dataset.id,
-                    type: el.dataset.type
-                };
-                el.classList.add('dragging');
-                e.dataTransfer.effectAllowed = 'move';
-                e.dataTransfer.setData('text/plain', el.dataset.id);
-            });
-
-            // Drag end
-            el.addEventListener('dragend', (e) => {
-                el.classList.remove('dragging');
-                this.draggedItem = null;
-                // Remove all drag-over classes
-                container.querySelectorAll('.drag-over').forEach(item => {
-                    item.classList.remove('drag-over');
+            // Use mousedown on drag handle to initiate drag
+            const handle = el.querySelector('.drag-handle');
+            if (handle) {
+                handle.addEventListener('mousedown', (e) => {
+                    e.preventDefault();
+                    this.startDrag(e, el, container);
                 });
-            });
-
-            // Drag over
-            el.addEventListener('dragover', (e) => {
-                e.preventDefault();
-                e.dataTransfer.dropEffect = 'move';
-
-                if (!this.draggedItem || this.draggedItem.id === el.dataset.id) return;
-
-                // Add visual indicator
-                el.classList.add('drag-over');
-            });
-
-            // Drag leave
-            el.addEventListener('dragleave', (e) => {
-                el.classList.remove('drag-over');
-            });
-
-            // Drop
-            el.addEventListener('drop', (e) => {
-                e.preventDefault();
-                el.classList.remove('drag-over');
-
-                if (!this.draggedItem || this.draggedItem.id === el.dataset.id) return;
-
-                // Get the index of the drop target
-                const allItems = Array.from(container.querySelectorAll('.encounter-item'));
-                const dropIndex = allItems.indexOf(el);
-
-                // Move the item in the state
-                EncounterState.moveItemInOrder(this.draggedItem.type, this.draggedItem.id, dropIndex);
-
-                // Re-render the list
-                this.renderEncounterList();
-            });
-        });
-
-        // Allow dropping at the end of the list
-        container.addEventListener('dragover', (e) => {
-            e.preventDefault();
-        });
-
-        container.addEventListener('drop', (e) => {
-            // Only handle if not dropped on an item
-            if (e.target === container && this.draggedItem) {
-                const allItems = container.querySelectorAll('.encounter-item');
-                EncounterState.moveItemInOrder(this.draggedItem.type, this.draggedItem.id, allItems.length);
-                this.renderEncounterList();
             }
+
+            // Disable native drag since we're using custom implementation
+            el.setAttribute('draggable', 'false');
         });
+    },
+
+    startDrag(e, element, container) {
+        const rect = element.getBoundingClientRect();
+        const containerRect = container.getBoundingClientRect();
+
+        // Create a clone for dragging
+        const clone = element.cloneNode(true);
+        clone.classList.add('drag-clone');
+        clone.style.width = rect.width + 'px';
+        clone.style.position = 'fixed';
+        clone.style.left = rect.left + 'px';
+        clone.style.top = rect.top + 'px';
+        clone.style.zIndex = '1000';
+        clone.style.pointerEvents = 'none';
+        document.body.appendChild(clone);
+
+        // Create placeholder
+        const placeholder = document.createElement('div');
+        placeholder.className = 'drag-placeholder';
+        placeholder.style.height = rect.height + 'px';
+        element.parentNode.insertBefore(placeholder, element);
+
+        // Hide original element
+        element.classList.add('drag-original-hidden');
+
+        // Set up drag state
+        this.dragState = {
+            dragging: true,
+            element: element,
+            clone: clone,
+            placeholder: placeholder,
+            container: container,
+            itemId: element.dataset.id,
+            itemType: element.dataset.type,
+            startY: e.clientY,
+            offsetY: e.clientY - rect.top,
+            elementHeight: rect.height + 8 // Include gap
+        };
+
+        // Bind move and up handlers
+        document.addEventListener('mousemove', this.handleDragMove);
+        document.addEventListener('mouseup', this.handleDragEnd);
+    },
+
+    handleDragMove: function(e) {
+        const tab = EncounterTab;
+        if (!tab.dragState.dragging) return;
+
+        const { clone, placeholder, container, offsetY, elementHeight } = tab.dragState;
+
+        // Move the clone
+        clone.style.top = (e.clientY - offsetY) + 'px';
+
+        // Get all non-hidden items
+        const items = Array.from(container.querySelectorAll('.encounter-item:not(.drag-original-hidden)'));
+        const placeholderIndex = Array.from(container.children).indexOf(placeholder);
+
+        // Find where to insert placeholder based on mouse position
+        let newIndex = items.length;
+        for (let i = 0; i < items.length; i++) {
+            const itemRect = items[i].getBoundingClientRect();
+            const itemMiddle = itemRect.top + itemRect.height / 2;
+
+            if (e.clientY < itemMiddle) {
+                newIndex = Array.from(container.children).indexOf(items[i]);
+                break;
+            }
+        }
+
+        // Move placeholder if needed
+        const currentPlaceholderIndex = Array.from(container.children).indexOf(placeholder);
+        if (newIndex !== currentPlaceholderIndex) {
+            if (newIndex >= container.children.length) {
+                container.appendChild(placeholder);
+            } else {
+                container.insertBefore(placeholder, container.children[newIndex]);
+            }
+        }
+    },
+
+    handleDragEnd: function(e) {
+        const tab = EncounterTab;
+        if (!tab.dragState.dragging) return;
+
+        const { element, clone, placeholder, container, itemId, itemType } = tab.dragState;
+
+        // Get final position
+        const placeholderIndex = Array.from(container.children).indexOf(placeholder);
+
+        // Clean up
+        clone.remove();
+        placeholder.remove();
+        element.classList.remove('drag-original-hidden');
+
+        // Remove event listeners
+        document.removeEventListener('mousemove', tab.handleDragMove);
+        document.removeEventListener('mouseup', tab.handleDragEnd);
+
+        // Reset drag state
+        tab.dragState.dragging = false;
+
+        // Update the order in state
+        EncounterState.moveItemInOrder(itemType, itemId, placeholderIndex);
+
+        // Re-render
+        tab.renderEncounterList();
     },
 
     renderEncounterItem(item) {

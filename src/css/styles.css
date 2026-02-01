@@ -2297,6 +2297,7 @@ body {
     padding: 0 4px;
     user-select: none;
     flex-shrink: 0;
+    transition: color 0.2s;
 }
 
 .drag-handle:hover {
@@ -2307,17 +2308,33 @@ body {
     cursor: grabbing;
 }
 
-.encounter-item.dragging {
-    opacity: 0.5;
-    border-color: var(--accent-gold);
+/* Clone being dragged */
+.drag-clone {
+    background: var(--bg-card);
+    border: 2px solid var(--accent-gold);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg), 0 0 20px rgba(212, 175, 55, 0.3);
+    opacity: 0.95;
+    transform: scale(1.02);
+    transition: box-shadow 0.2s;
+}
+
+/* Placeholder showing where item will be dropped */
+.drag-placeholder {
     background: var(--bg-tertiary);
+    border: 2px dashed var(--accent-gold);
+    border-radius: var(--radius-md);
+    margin-bottom: 8px;
+    opacity: 0.6;
 }
 
-.encounter-item.drag-over {
-    border-top: 2px solid var(--accent-gold);
-    margin-top: -2px;
+/* Hide original element while dragging */
+.drag-original-hidden {
+    opacity: 0 !important;
+    pointer-events: none;
 }
 
-.encounter-item[draggable="true"] {
-    cursor: default;
+/* Smooth transitions for other items */
+.encounter-item {
+    transition: transform 0.15s ease-out;
 }
