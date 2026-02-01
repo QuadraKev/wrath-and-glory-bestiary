@@ -426,7 +426,7 @@
     "name": "COMBAT SERVITOR",
     "quote": "Halt. Halt. Hch... alt",
     "attribution": "Unit XY118, Gun Servitor",
-    "description": "Servitors are Humans whose brains have been lobotomised and reprogrammed by the Adeptus Mechanicus, and whose bodies have been heavily modified with technology — an apt supporter for the Imperium war machine, requiring no thoughts, only actions. They are perfectly adapted to their purpose, whether as a living weapon, a technical toolkit, or a portable cogitator.\n\nServitors are all but immune to pain, with reinforced plating hammered into their torsos and armoured mesh wrapping their vital organs. Combat Servitors are effective in a Mob or under the control of a commander, and are utterly implacable until forcibly stopped.",
+    "description": "[AI-Generated] Servitors are Humans whose brains have been lobotomised and reprogrammed by the Adeptus Mechanicus, and whose bodies have been heavily modified with technology — an apt supporter for the Imperium war machine, requiring no thoughts, only actions. They are perfectly adapted to their purpose, whether as a living weapon, a technical toolkit, or a portable cogitator.\n\nServitors are all but immune to pain, with reinforced plating hammered into their torsos and armoured mesh wrapping their vital organs. Combat Servitors are effective in a Mob or under the control of a commander, and are utterly implacable until forcibly stopped.",
     "tierThreat": {
       "1": "T",
       "2": "T",
@@ -485,7 +485,7 @@
     "name": "SERVO-SKULL",
     "quote": "Whirr. Click.",
     "attribution": "'Skully', beloved Servo-Skull of Inquisitor Lucetta Gargreve",
-    "description": "Servo-Skulls are Human skulls that have been fitted with support systems and an anti-grav motor, usually the sacrificed remains of a terminal favoured servant, or a low-ranking member of the Adeptus Mechanicus. Often seen flitting around laboratories of Tech-Priests, Administratum archives, and along the trenches of battlefields on the fringes of Imperial space, their small size and manoeuvrability allow them to enter otherwise inaccessible spaces or hazardous areas.\n\nServo-Skulls are difficult to hit due to their small size, and are most likely to be the scout or assistant for a larger force.",
+    "description": "[AI-Generated] Servo-Skulls are Human skulls that have been fitted with support systems and an anti-grav motor, usually the sacrificed remains of a terminal favoured servant, or a low-ranking member of the Adeptus Mechanicus. Often seen flitting around laboratories of Tech-Priests, Administratum archives, and along the trenches of battlefields on the fringes of Imperial space, their small size and manoeuvrability allow them to enter otherwise inaccessible spaces or hazardous areas.\n\nServo-Skulls are difficult to hit due to their small size, and are most likely to be the scout or assistant for a larger force.",
     "tierThreat": {
       "1": "T",
       "2": "T",
@@ -543,7 +543,7 @@
     "name": "CULTIST",
     "quote": "I will follow a Corpse-God no more. I am free.",
     "attribution": "Anonymous",
-    "description": "Cultists come from all walks of Imperial life; anyone can become disenfranchised with the Imperium's totalitarian rule. Those who forswear their loyalty to the Imperium almost invariably soon place their faith in the Dark Gods.\n\nTo the unwary, a cultist may appear no different than any other citizen of the Imperium. Most cover their blasphemous brands and tattoos with clothing, revealing them only in the presence of their peers. Cultists are rarely alone and fight with savage fury, whether following a leader or simply lashing out on the whims of Warp-born Chaos.",
+    "description": "[AI-Generated] Cultists come from all walks of Imperial life; anyone can become disenfranchised with the Imperium's totalitarian rule. Those who forswear their loyalty to the Imperium almost invariably soon place their faith in the Dark Gods.\n\nTo the unwary, a cultist may appear no different than any other citizen of the Imperium. Most cover their blasphemous brands and tattoos with clothing, revealing them only in the presence of their peers. Cultists are rarely alone and fight with savage fury, whether following a leader or simply lashing out on the whims of Warp-born Chaos.",
     "tierThreat": {
       "1": "T",
       "2": "T",
@@ -606,7 +606,7 @@
     "name": "CULT LEADER",
     "quote": "Cast off the lies of oppression. The True Path is before us. Open your eyes to the change made possible by the Master of Fates.",
     "attribution": "Ivano Caroson, High Cleric of the Transcendent Eye",
-    "description": "Fanaticism is most dangerous when focused by a leader. Smaller churches are led by those who began as any other cultist: a disgruntled citizen in need of hope, filling the void of faith with a new ideology. Cult leaders are people of firm conviction and zeal, skilled orators who are able to draw on community bonds to forge a loyal congregation.\n\nChaos Cultist Leaders make fantastic Adversaries, the cackling shepherd behind a corrupted flock, or lieutenants to a greater Threat at higher Tiers. They are masters of misdirection, often maintaining a respectable facade.",
+    "description": "[AI-Generated] Fanaticism is most dangerous when focused by a leader. Smaller churches are led by those who began as any other cultist: a disgruntled citizen in need of hope, filling the void of faith with a new ideology. Cult leaders are people of firm conviction and zeal, skilled orators who are able to draw on community bonds to forge a loyal congregation.\n\nChaos Cultist Leaders make fantastic Adversaries, the cackling shepherd behind a corrupted flock, or lieutenants to a greater Threat at higher Tiers. They are masters of misdirection, often maintaining a respectable facade.",
     "tierThreat": {
       "1": "A",
       "2": "E",
@@ -682,7 +682,7 @@
     "name": "ROGUE PSYKER",
     "quote": "I pity you, standing there with your cherished Wargear. How naive of you to think such trinkets can keep me from the power that is my birthright.",
     "attribution": "High Adept Sywethan of the Divine Path",
-    "description": "A Rogue Psyker can manipulate reality by channelling the power of the Warp, unconstrained — and unprotected — by the teachings of the Adeptus Astra Telepathica. Unsanctioned Psykers are illegal citizens, and those that avoid the torturous tithes of the Black Ships and the wrath of Ordo Hereticus witch hunters commonly fall to Chaos.\n\nWhatever their background, Rogue Psykers are lonely, unstable individuals with everything to lose. Rogue Psykers often ally with others for safety, but their connection to the Warp makes them fundamentally unpredictable.",
+    "description": "[AI-Generated] A Rogue Psyker can manipulate reality by channelling the power of the Warp, unconstrained — and unprotected — by the teachings of the Adeptus Astra Telepathica. Unsanctioned Psykers are illegal citizens, and those that avoid the torturous tithes of the Black Ships and the wrath of Ordo Hereticus witch hunters commonly fall to Chaos.\n\nWhatever their background, Rogue Psykers are lonely, unstable individuals with everything to lose. Rogue Psykers often ally with others for safety, but their connection to the Warp makes them fundamentally unpredictable.",
     "tierThreat": {
       "1": "A",
       "2": "E",
@@ -750,7 +750,7 @@
     "name": "POSSESSED MORTAL",
     "quote": "Pain paves my path to glory!",
     "attribution": "Welbec Ironlock, servant of Khorne",
-    "description": "Mortal beings, particularly Psykers, are vulnerable to possession by Daemons that are unable to manifest independently in the Materium. While there are common traits in the physical changes wrought by possession, no two cases are alike: they might display discoloured skin that puckers and scabs, a blackening or whitening of the eyes, extra limbs, bone protrusions and even wings.\n\nA Possessed Mortal becomes stronger, faster, and more resilient, able to think more quickly as they draw on forbidden knowledge. Daemonic possession is not subtle. It warps the Possessed Mortal in body, mind, and soul.",
+    "description": "[AI-Generated] Mortal beings, particularly Psykers, are vulnerable to possession by Daemons that are unable to manifest independently in the Materium. While there are common traits in the physical changes wrought by possession, no two cases are alike: they might display discoloured skin that puckers and scabs, a blackening or whitening of the eyes, extra limbs, bone protrusions and even wings.\n\nA Possessed Mortal becomes stronger, faster, and more resilient, able to think more quickly as they draw on forbidden knowledge. Daemonic possession is not subtle. It warps the Possessed Mortal in body, mind, and soul.",
     "tierThreat": {
       "1": "A",
       "2": "E",
@@ -818,7 +818,7 @@
     "name": "CHAOS SPACE MARINE",
     "quote": "A hundred lifetimes of murder and still the thrill of combat calls to me.",
     "attribution": "Ashesh Kushal Siddhran, Pleasure Prince of Slaanesh",
-    "description": "The fall of a Space Marine is a tragedy, the dark echo of the best that Humanity has to offer. Treacherous, narcissistic warmongers, they fight for no cause save their own.\n\nThe corrupting influence of the Warp twists and mutates his ceramite armour, sprouting grotesque growths of bone and glowing daemonic runes. Whatever their past, all Chaos Space Marines are united by one purpose: to see the galaxy consumed by war.",
+    "description": "[AI-Generated] The fall of a Space Marine is a tragedy, the dark echo of the best that Humanity has to offer. Treacherous, narcissistic warmongers, they fight for no cause save their own.\n\nThe corrupting influence of the Warp twists and mutates his ceramite armour, sprouting grotesque growths of bone and glowing daemonic runes. Whatever their past, all Chaos Space Marines are united by one purpose: to see the galaxy consumed by war.",
     "tierThreat": {
       "1": "A",
       "2": "A",
@@ -895,7 +895,7 @@
     "name": "BLOODLETTER",
     "quote": "Slay without pity; triumph without remorse. You are the legions of Khorne, His favourite warriors.",
     "attribution": "Rorath'rath the Skullweaver",
-    "description": "Bloodletters are the most numerous of all Khorne's daemonic creatures, Lesser Daemons that act as heralds of the Blood Tide and reapers of skulls. Battle is a Bloodletter's singular reason for existence; they have no purpose other than to fight and slaughter and kill.\n\nArmed with murderous obsidian Hellblades, Bloodletters attack in frenzy; hacking through armour and flesh, severing limbs, and claiming skulls for Khorne.",
+    "description": "[AI-Generated] Bloodletters are the most numerous of all Khorne's daemonic creatures, Lesser Daemons that act as heralds of the Blood Tide and reapers of skulls. Battle is a Bloodletter's singular reason for existence; they have no purpose other than to fight and slaughter and kill.\n\nArmed with murderous obsidian Hellblades, Bloodletters attack in frenzy; hacking through armour and flesh, severing limbs, and claiming skulls for Khorne.",
     "tierThreat": {
       "1": "A",
       "2": "A",
@@ -963,7 +963,7 @@
     "name": "DAEMONETTE",
     "quote": "Your desires betray you, mortal. The lies of your heart are sweet as nectar on my tongue.",
     "attribution": "Lyssa'har, Pleasureherald of Slaanesh",
-    "description": "Daemonettes form the mainstay of Slaanesh's pleasure hosts. Those who behold the Lesser Daemons become convinced that they are the very definition of beauty. At once sickly captivating and utterly revolting, their every movement robs their opponents of the will to fight.\n\nDaemonettes are swift, devastating foes. Precise in their savagery, they weave among their enemies to snip off limbs and peel open flesh.",
+    "description": "[AI-Generated] Daemonettes form the mainstay of Slaanesh's pleasure hosts. Those who behold the Lesser Daemons become convinced that they are the very definition of beauty. At once sickly captivating and utterly revolting, their every movement robs their opponents of the will to fight.\n\nDaemonettes are swift, devastating foes. Precise in their savagery, they weave among their enemies to snip off limbs and peel open flesh.",
     "tierThreat": {
       "1": "A",
       "2": "A",
@@ -1026,7 +1026,7 @@
     "name": "PINK HORROR",
     "quote": "I am many made one.",
     "attribution": "Tyzek V'th, Changebringer of Tzeentch",
-    "description": "Horrors claim a mastery of the Warp far beyond most mortals, revelling in their progenitor Tzeentch's status as the greatest sorcerer in any realm. Horrors manifest their power as spheres of change-fire that bypass armour to burn and mutate body and soul.\n\nThe largest of these Daemons are Pink Horrors, which caper across the battlefield like leering, excited children, burning everything in their wake. A slain Pink Horror splits into two Blue Horrors.",
+    "description": "[AI-Generated] Horrors claim a mastery of the Warp far beyond most mortals, revelling in their progenitor Tzeentch's status as the greatest sorcerer in any realm. Horrors manifest their power as spheres of change-fire that bypass armour to burn and mutate body and soul.\n\nThe largest of these Daemons are Pink Horrors, which caper across the battlefield like leering, excited children, burning everything in their wake. A slain Pink Horror splits into two Blue Horrors.",
     "tierThreat": {
       "1": "A",
       "2": "A",
@@ -1094,7 +1094,7 @@
     "name": "PLAGUEBEARER",
     "quote": "Soft flesh and brittle bone. You will feel the Grandfather's touch.",
     "attribution": "Foeticus, Plaguewarden of Nurgle",
-    "description": "Cursed to endure the endless monotony of tallying every sickness that spurts from Nurgle's foetid cauldron, a Plaguebearer spends the entirety of their blighted existence counting poxes, plagues, and epidemics. Foetid Lesser Daemons with one eye and a single horn erupting from their foreheads.\n\nTo fight a Plaguebearer is to fight the limits of your own body: clouds of toxic air surround them, at best blinding their foes and at worst ruining respiratory systems.",
+    "description": "[AI-Generated] Cursed to endure the endless monotony of tallying every sickness that spurts from Nurgle's foetid cauldron, a Plaguebearer spends the entirety of their blighted existence counting poxes, plagues, and epidemics. Foetid Lesser Daemons with one eye and a single horn erupting from their foreheads.\n\nTo fight a Plaguebearer is to fight the limits of your own body: clouds of toxic air surround them, at best blinding their foes and at worst ruining respiratory systems.",
     "tierThreat": {
       "1": "A",
       "2": "A",
@@ -1157,7 +1157,7 @@
     "name": "POXWALKER",
     "quote": "Join us...",
     "attribution": "The Ending Horde, Septis Manufactorum",
-    "description": "Poxwalkers are the end result of some of Nurgle's most virulent plagues. Once infected, a host withers, degrading until their soul erodes and their body is left a disease-ridden husk. After death the body continues to mutate, sprouting horns and bony protrusions.\n\nClumsy and slow, armed with only the crudest of weapons, a lone Poxwalker poses little threat to an experienced warrior, but in a horde they descend to spread infection with sickening abandon.",
+    "description": "[AI-Generated] Poxwalkers are the end result of some of Nurgle's most virulent plagues. Once infected, a host withers, degrading until their soul erodes and their body is left a disease-ridden husk. After death the body continues to mutate, sprouting horns and bony protrusions.\n\nClumsy and slow, armed with only the crudest of weapons, a lone Poxwalker poses little threat to an experienced warrior, but in a horde they descend to spread infection with sickening abandon.",
     "tierThreat": {
       "1": "T",
       "2": "T",
@@ -1209,7 +1209,7 @@
     "name": "CHAOS SPAWN",
     "quote": "Kill me...",
     "attribution": "Anonymous",
-    "description": "The result of failed attempts to ascend to daemonhood, each Chaos Spawn writhes with pain and power, their shifting flesh suffused with uncontrollable Warp energy. No two Spawn look the same: some are multi-limbed beasts with claws and wings, while others are bulbous or serpentine masses.\n\nChaos Spawn attack with swift aggression and shifting forms, equipped with raking claws one moment and grasping tentacles the next.",
+    "description": "[AI-Generated] The result of failed attempts to ascend to daemonhood, each Chaos Spawn writhes with pain and power, their shifting flesh suffused with uncontrollable Warp energy. No two Spawn look the same: some are multi-limbed beasts with claws and wings, while others are bulbous or serpentine masses.\n\nChaos Spawn attack with swift aggression and shifting forms, equipped with raking claws one moment and grasping tentacles the next.",
     "tierThreat": {
       "1": "E",
       "2": "E",
@@ -1271,7 +1271,7 @@
     "name": "ORK BOY",
     "quote": "I 'ate Humies. Now come 'ere so I can break yer bones.",
     "attribution": "Gutwakka, Toofless tribe",
-    "description": "Hulking monsters possessed of immense strength standing head and shoulders above most Humans, Ork Boyz value cunning over intelligence and possess an innate affinity with combat and the tools of war. Their formidable constitution lets them shrug off wounds that would fell a Human.\n\nOrks band together in loose groups called 'mobs' led by the toughest, meanest Ork. Orks are shock troops by nature, running straight into the fray. Where there is one Ork, there are many.",
+    "description": "[AI-Generated] Hulking monsters possessed of immense strength standing head and shoulders above most Humans, Ork Boyz value cunning over intelligence and possess an innate affinity with combat and the tools of war. Their formidable constitution lets them shrug off wounds that would fell a Human.\n\nOrks band together in loose groups called 'mobs' led by the toughest, meanest Ork. Orks are shock troops by nature, running straight into the fray. Where there is one Ork, there are many.",
     "tierThreat": {
       "1": "E",
       "2": "T",
@@ -1340,7 +1340,7 @@
     "name": "KOMMANDO",
     "quote": "'Ere boyz, watch this one try to scream.",
     "attribution": "Gogsnag Throatslitter",
-    "description": "Orks are not renowned for their subtlety. Kommandos, however, represent the exception to this rule. Excelling at acts of cunning, they range ahead of an Ork army, acting as scouts, saboteurs, and guerilla fighters.\n\nOther Orks view Kommandos with a mix of suspicion and disdain. A Kommando's real strength is their stealth, so putting them in a situation where they can get the drop on characters makes for a memorable encounter.",
+    "description": "[AI-Generated] Orks are not renowned for their subtlety. Kommandos, however, represent the exception to this rule. Excelling at acts of cunning, they range ahead of an Ork army, acting as scouts, saboteurs, and guerilla fighters.\n\nOther Orks view Kommandos with a mix of suspicion and disdain. A Kommando's real strength is their stealth, so putting them in a situation where they can get the drop on characters makes for a memorable encounter.",
     "tierThreat": {
       "1": "E",
       "2": "E",
@@ -1403,7 +1403,7 @@
     "name": "ORK NOB",
     "quote": "Pretty flag. I will strip it from its pole and hang your flesh in its place.",
     "attribution": "Barrukk Life-breaker",
-    "description": "Ork Nobz are organic sledgehammers, hulking brutes whose fists are large enough to clamp around a man's head and strong enough to rip it from his shoulders. Larger than normal Orks, a Nob's already massive musculature continues to thicken as they grow, as does their appetite for violence.\n\nBrawlers by nature, Nobz are always where the fighting is thickest, second only to a Warboss.",
+    "description": "[AI-Generated] Ork Nobz are organic sledgehammers, hulking brutes whose fists are large enough to clamp around a man's head and strong enough to rip it from his shoulders. Larger than normal Orks, a Nob's already massive musculature continues to thicken as they grow, as does their appetite for violence.\n\nBrawlers by nature, Nobz are always where the fighting is thickest, second only to a Warboss.",
     "tierThreat": {
       "1": "A",
       "2": "A",
@@ -1480,7 +1480,7 @@
     "name": "PAINBOY",
     "quote": "Stop yer screamin', 'dis a good fing! Yer old arms was rubbish, these three will be way more killy!",
     "attribution": "Nork Rivets, Painboy",
-    "description": "Those Orks with a gleeful interest in 'eksperimentin' on their fellow greenskins become Painboyz, the doctors of the Ork forces. They stitch their kin up on the battlefield with callous efficiency, but the true joy of the Painboy lies in attaching highly speculative augmetics to their patients.",
+    "description": "[AI-Generated] Those Orks with a gleeful interest in 'eksperimentin' on their fellow greenskins become Painboyz, the doctors of the Ork forces. They stitch their kin up on the battlefield with callous efficiency, but the true joy of the Painboy lies in attaching highly speculative augmetics to their patients.",
     "tierThreat": {
       "1": "A",
       "2": "E",
@@ -1561,7 +1561,7 @@
     "name": "GROT",
     "quote": "What's it? What's it? Give Sniklat the shiny.",
     "attribution": "Sniklat Daggerback",
-    "description": "Grots are the smaller, weaker cousins of the Orks, but what they lack in size, they more than make up for in raw cunning and natural spite. Far smarter than most Orks, and possessing spindly limbs they use to tinker with tiny gears and levers, Grots provide Ork Meks with invaluable pilots, mechanics, and test subjects.\n\nThey tend to be armed with archaic guns and will retreat to fight another day if overwhelmed.",
+    "description": "[AI-Generated] Grots are the smaller, weaker cousins of the Orks, but what they lack in size, they more than make up for in raw cunning and natural spite. Far smarter than most Orks, and possessing spindly limbs they use to tinker with tiny gears and levers, Grots provide Ork Meks with invaluable pilots, mechanics, and test subjects.\n\nThey tend to be armed with archaic guns and will retreat to fight another day if overwhelmed.",
     "tierThreat": {
       "1": "T",
       "2": "T",
@@ -1614,7 +1614,7 @@
     "name": "KILLA KAN",
     "quote": "Look at dat lil' runt go. Already killed a buncha Gurggdad's Boyz, an' we didn't even finish weldin' on the Grotzooka. Kan's like dat make a Mek proud!",
     "attribution": "Grukk Baddakka, Ork Mek, moments after the creation of Lil' Blitza",
-    "description": "Operated by a Grot wired into the chassis, Killa Kans are 10-foot-tall metal silos on spindly piston legs. They are most often seen lurching across conflict zones laying waste to their enemies haphazardly with Scorchas, Buzz Saws, or powered shears.\n\nThe Grot pilots of Killa Kans are often chosen for their untapped rage, and their screams of 'WAAAGH!' can strike fear into the hearts of hardened soldiers.",
+    "description": "[AI-Generated] Operated by a Grot wired into the chassis, Killa Kans are 10-foot-tall metal silos on spindly piston legs. They are most often seen lurching across conflict zones laying waste to their enemies haphazardly with Scorchas, Buzz Saws, or powered shears.\n\nThe Grot pilots of Killa Kans are often chosen for their untapped rage, and their screams of 'WAAAGH!' can strike fear into the hearts of hardened soldiers.",
     "tierThreat": {
       "1": "A",
       "2": "A",
@@ -1677,7 +1677,7 @@
     "name": "GUARDIAN DEFENDER",
     "quote": "Worry not of the portents — if they come to us, they have chosen death.",
     "attribution": "Meyennan, Ul-Khari Guardian Defender",
-    "description": "The Aeldari are a Species in decline — every citizen of a Craftworld must be trained in the elegant art of Aeldari warfare, ready to defend their home from the hostile galaxy. Though often outnumbered when called to battle, they rely on their advanced technology and sophisticated hit-and-run strategies to defeat their multitudinous foes with minimal losses.",
+    "description": "[AI-Generated] The Aeldari are a Species in decline — every citizen of a Craftworld must be trained in the elegant art of Aeldari warfare, ready to defend their home from the hostile galaxy. Though often outnumbered when called to battle, they rely on their advanced technology and sophisticated hit-and-run strategies to defeat their multitudinous foes with minimal losses.",
     "tierThreat": {
       "1": "T",
       "2": "T",
@@ -1741,7 +1741,7 @@
     "name": "WRAITHGUARD",
     "quote": "Gather the dead for war, let them join our ranks, lest we are forced to join theirs.",
     "attribution": "Farseer Kelmon",
-    "description": "The Infinity Circuit central to every Craftworld houses the still-conscious souls of deceased Aeldari. Their Spirit Stones are implanted into powerful statuesque constructs formed of psycho-reactive wraithbone.\n\nStanding taller even than the Primaris Astartes, the Wraithguard are built for war — strong, durable, and freed of the constraints of biology.",
+    "description": "[AI-Generated] The Infinity Circuit central to every Craftworld houses the still-conscious souls of deceased Aeldari. Their Spirit Stones are implanted into powerful statuesque constructs formed of psycho-reactive wraithbone.\n\nStanding taller even than the Primaris Astartes, the Wraithguard are built for war — strong, durable, and freed of the constraints of biology.",
     "tierThreat": {
       "1": "A",
       "2": "A",
@@ -1815,7 +1815,7 @@
     "name": "RANGER",
     "quote": "To wander the stars without destination is to fall to the deepest agonies.",
     "attribution": "Taldar Asuleth",
-    "description": "Armed with a specialised Long Rifle and shrouded by chameleon cloaks, Rangers are able to blend into almost any environment. Most enemies will not know what hit them when a Long Rifle shot finds its mark.\n\nDecades, sometimes centuries of exploring the most inhospitable environments and ruined worlds mean that Rangers can move through even the densest terrain as though it were open ground.",
+    "description": "[AI-Generated] Armed with a specialised Long Rifle and shrouded by chameleon cloaks, Rangers are able to blend into almost any environment. Most enemies will not know what hit them when a Long Rifle shot finds its mark.\n\nDecades, sometimes centuries of exploring the most inhospitable environments and ruined worlds mean that Rangers can move through even the densest terrain as though it were open ground.",
     "tierThreat": {
       "1": "A",
       "2": "E",
@@ -1883,7 +1883,7 @@
     "name": "CORSAIR",
     "quote": "Betrayal is inevitable. Each of us walks the stars alone.",
     "attribution": "Drasar Yl'aqir",
-    "description": "Like Rangers, Eldar Corsairs have abandoned the relative safety of their Craftworld to follow the path of the Outcast, but Corsairs find little peace in simply wandering the stars. Unable to look inwards for meaning, they cast ambitious eyes out into the galaxy, hoping to find purpose in adventure, pleasure, and riches.\n\nA Corsair is often found in lavish attire — fine tunics buttoned under flowing jackets or expensive cloaks.",
+    "description": "[AI-Generated] Like Rangers, Eldar Corsairs have abandoned the relative safety of their Craftworld to follow the path of the Outcast, but Corsairs find little peace in simply wandering the stars. Unable to look inwards for meaning, they cast ambitious eyes out into the galaxy, hoping to find purpose in adventure, pleasure, and riches.\n\nA Corsair is often found in lavish attire — fine tunics buttoned under flowing jackets or expensive cloaks.",
     "tierThreat": {
       "1": "E",
       "2": "T",
@@ -1952,7 +1952,7 @@
     "name": "GENESTEALER",
     "quote": "They move in the blink of an eye, and kill in the beat of the heart. Underestimate them at your peril.",
     "attribution": "Kilovan, Veteran Sergeant of the Dark Angels",
-    "description": "Genestealers are insidious aliens characterised by their six limbs, bulbous craniums, and ridged carapaces. A subtype of Tyranids, Genestealers are agile, durable, and surprisingly strong bipeds, able to scuttle with horrible speed on clawed limbs. They can tear through even the toughest armour with their razor-sharp talons.\n\nSkulking from the shadowed corridors of Space Hulks and devastated Imperium facilities, Genestealers are nightmare creatures cunning enough to lay traps and launch ambushes.",
+    "description": "[AI-Generated] Genestealers are insidious aliens characterised by their six limbs, bulbous craniums, and ridged carapaces. A subtype of Tyranids, Genestealers are agile, durable, and surprisingly strong bipeds, able to scuttle with horrible speed on clawed limbs. They can tear through even the toughest armour with their razor-sharp talons.\n\nSkulking from the shadowed corridors of Space Hulks and devastated Imperium facilities, Genestealers are nightmare creatures cunning enough to lay traps and launch ambushes.",
     "tierThreat": {
       "1": "A",
       "2": "A",
@@ -2015,7 +2015,7 @@
     "name": "GENESTEALER PATRIARCH",
     "quote": "A perfect form... four arms, glistening claws, the better to rend our deluded foes. All hail the Emperor Scaled!",
     "attribution": "Evelyn Webbyr, convert to the Cult of the Giving Claw",
-    "description": "When a Genestealer is separated from the gestalt Tyranid Hive Mind, its genetic makeup alters. It creates a lair, then captures living prey, implanting its own unholy genetic material into the host body.\n\nAs the Patriarch's cult grows, so does its power. Its body morphs and enlarges, becoming stronger, faster, and deadlier. Its psychic powers develop, spreading the near-telepathic link between its progeny.\n\nA Genestealer Patriarch is a terrifying foe at any Tier. Armies have fallen to these deadly villains — the Agents may be better off fleeing.",
+    "description": "[AI-Generated] When a Genestealer is separated from the gestalt Tyranid Hive Mind, its genetic makeup alters. It creates a lair, then captures living prey, implanting its own unholy genetic material into the host body.\n\nAs the Patriarch's cult grows, so does its power. Its body morphs and enlarges, becoming stronger, faster, and deadlier. Its psychic powers develop, spreading the near-telepathic link between its progeny.\n\nA Genestealer Patriarch is a terrifying foe at any Tier. Armies have fallen to these deadly villains — the Agents may be better off fleeing.",
     "tierThreat": {
       "1": "A",
       "2": "A",
@@ -2096,7 +2096,7 @@
     "name": "ACOLYTE HYBRID",
     "quote": "Well, at least we know the cooker works on these things. Burn the corpses of the fallen and find out what Throne-damned hole this blasphemous beast crawled out of!",
     "attribution": "Marie Von Xardt, Ordo Xenos Inquisitor",
-    "description": "The first and second generations of the Genestealer Infection are known as Acolyte Hybrids, bestial creatures closest in form to the Genestealers. They have a strong Broodmind bond, hunting in packs through the sewers of cities and long-abandoned mineshafts.\n\nLiving at the edges of society, they must often make do with whatever weapon they can scavenge, and mining equipment is easy to acquire.",
+    "description": "[AI-Generated] The first and second generations of the Genestealer Infection are known as Acolyte Hybrids, bestial creatures closest in form to the Genestealers. They have a strong Broodmind bond, hunting in packs through the sewers of cities and long-abandoned mineshafts.\n\nLiving at the edges of society, they must often make do with whatever weapon they can scavenge, and mining equipment is easy to acquire.",
     "tierThreat": {
       "1": "A",
       "2": "E",
@@ -2165,7 +2165,7 @@
     "name": "NEOPHYTE HYBRID",
     "quote": "Don't decry his skin condition, Garrus. He's the hardest worker here, even if he is sour company.",
     "attribution": "Voigt Sevrae, Trachlan strip-mine manager",
-    "description": "The third and fourth generations of a Genestealer Cult are known as Neophyte Hybrids and represent the point at which the Genestealer strain has integrated with Human genetics to produce cultists who can pass for Imperials. They appear almost Human, relying on numbers, preparation, and coordination in combat.\n\nThey possess Human intelligence linked into the Broodmind, retaining the fierce loyalty of all cult members.",
+    "description": "[AI-Generated] The third and fourth generations of a Genestealer Cult are known as Neophyte Hybrids and represent the point at which the Genestealer strain has integrated with Human genetics to produce cultists who can pass for Imperials. They appear almost Human, relying on numbers, preparation, and coordination in combat.\n\nThey possess Human intelligence linked into the Broodmind, retaining the fierce loyalty of all cult members.",
     "tierThreat": {
       "1": "T",
       "2": "T",
@@ -2229,7 +2229,7 @@
     "name": "CULT MAGUS",
     "quote": "A corpse asks for the sweat from your brow and the blood from your veins. Has he protected you from hunger? From the lash of the whip? No. He is dead, and we are risen!",
     "attribution": "Velit, Magus of the Cult of the Giving Claw",
-    "description": "Emerging from the fourth generation of a Genestealer Cult, a Magus might be Human in appearance but is xenos of mind. The Patriarch uses the mind of a powerful Psyker to communicate directly with its followers and coordinate the infiltration of the planet.\n\nA Genestealer Cult Magus is engineered when the cultists infect a Warp-touched Human who then produces this sophisticated hybrid. The Magus acts as the lawgiver and high priest of the cult.",
+    "description": "[AI-Generated] Emerging from the fourth generation of a Genestealer Cult, a Magus might be Human in appearance but is xenos of mind. The Patriarch uses the mind of a powerful Psyker to communicate directly with its followers and coordinate the infiltration of the planet.\n\nA Genestealer Cult Magus is engineered when the cultists infect a Warp-touched Human who then produces this sophisticated hybrid. The Magus acts as the lawgiver and high priest of the cult.",
     "tierThreat": {
       "1": "A",
       "2": "A",
@@ -6681,7 +6681,6 @@
   {
     "id": "squighog",
     "name": "SQUIGHOG",
-    "description": "Squighogs are vicious mounts used by Beast Snagga Boyz. Their thick skulls and powerful jaws make them devastating in a charge.",
     "tierThreat": {
       "1": "E",
       "2": "T",
@@ -6784,7 +6783,6 @@
   {
     "id": "smasha_squig",
     "name": "SMASHA SQUIG",
-    "description": "Smasha Squigs are larger, more aggressive variants of Squigs used as mounts by Ork Nobz and Beast Snagga leaders.",
     "tierThreat": {
       "1": "E",
       "2": "T",
@@ -10351,7 +10349,6 @@
   {
     "id": "xv95_ghostkeel_battlesuit_shasvre",
     "name": "XV95 GHOSTKEEL BATTLESUIT SHAS'VRE",
-    "description": "As one of the smallest T'au battlesuits in regular deployment, the XV25 stealth suit neither packs the impressive punch nor boasts the durability under fire of the larger models. Nonetheless, the mere rumour of its presence in the area of operation strikes fear into experienced Imperial guardsmen. A sudden burst of fire that wipes out a squad without warning, a markerlight illuminating a position out of nowhere to herald the impact of a seeker missile, a crucial communications station or supply depot blowing up without warning — these are all they see of a skilled XV25 Stealth Battlesuit operator.\n\nThe XV25 was designed by the Earth Caste for one purpose: just large enough to fit the newest generation of stealth field generators, it is a ghost on the battlefield. Operating behind enemy lines, these battlesuits are piloted by Fire Caste warriors often considered peculiarly aloof and even antisocial by their fellow T'au. These very qualities mark them as perfect infiltrators and saboteurs of course, and their independent thinking has produced more than a few revered tacticians. Operating outside of the tight-knit formations of the Fire Caste, however, sometimes for weeks on end, still makes them somewhat suspect among their kin.",
     "tierThreat": {
       "1": "A",
       "2": "A",
@@ -10663,7 +10660,6 @@
   {
     "id": "sniper_drone",
     "name": "SNIPER DRONE",
-    "description": "The Sniper Drone is deployed to support the Firesight Marksman, extending their deadly reach across the battlefield. Equipped with a Longshot Pulse Rifle and a Markerlight, these drones can engage targets at extreme range while their controller remains safely concealed.",
     "tierThreat": {
       "1": "T",
       "2": "T",
@@ -12041,7 +12037,7 @@
   {
     "id": "psychneuein",
     "name": "PSYCHNEUEIN",
-    "description": "Native to the immaterium, they enter realspace in order to breed by psychically implanting their eggs in the brains of injured, latent or weak-willed Psykers, usually with fatal results. Swarms are commonly made up of equal numbers of juvenile queens and drones.",
+    "description": "Psychneuein are 2-metre-long, psychically active insectoids resembling gargantuan Terran wasps. Native to the immaterium, they enter realspace in order to breed by psychically implanting their eggs in the brains of injured, latent or weak-willed Psykers, usually with fatal results. Swarms are commonly made up of equal numbers of juvenile queens and drones.",
     "tierThreat": {
       "1": "E",
       "2": "T",
@@ -12112,7 +12108,7 @@
   {
     "id": "corrupted_scribes",
     "name": "CORRUPTED SCRIBES",
-    "description": "The pilgrims of the Compostela cling to a semblance of life as hollowed-out husks eternally copying the Liber Servitium, unaware of their part in their own damnation. If disturbed, they respond with lethal force. One scribe is no threat to a well-armed agent, but a thousand might be a different issue.",
+    "description": "[AI-Generated] The pilgrims of the Compostela cling to a semblance of life as hollowed-out husks eternally copying the Liber Servitium, unaware of their part in their own damnation. If disturbed, they respond with lethal force. One scribe is no threat to a well-armed agent, but a thousand might be a different issue.",
     "tierThreat": {
       "1": "T",
       "2": "T",
@@ -12168,7 +12164,7 @@
   {
     "id": "jacobin_grizari",
     "name": "JACOBIN GRIZARI",
-    "description": "Jacobin Grizari is a charming and persuasive master criminal who shook Gilead high society with an outrageous heist of truly epic proportions. He convinced many of the upper echelons to invest a veritable fortune in Thronegelt on an audacious scheme promising a new and safe route through the Straits of Andraste, waiting only long enough for the Thronegelt to be in his possession before making his escape. The bounty on his head is sizable.",
+    "description": "[AI-Generated] Jacobin Grizari is a charming and persuasive master criminal who shook Gilead high society with an outrageous heist of truly epic proportions. He convinced many of the upper echelons to invest a veritable fortune in Thronegelt on an audacious scheme promising a new and safe route through the Straits of Andraste, waiting only long enough for the Thronegelt to be in his possession before making his escape. The bounty on his head is sizable.",
     "tierThreat": {
       "1": "E",
       "2": "T",
@@ -12235,7 +12231,7 @@
   {
     "id": "slaughter_servitor_processor",
     "name": "SLAUGHTER SERVITOR (PROCESSOR)",
-    "description": "Slaughter Servitors are horrific machines of death active at the Abattoir of the Luminous Emperor. The Processor variant is designed to swiftly dispatch targets with its spiker after immobilizing them with an electro-prod.",
+    "description": "The following represents three different types of servitors (Processor, Corral, and Excoriator) active at the Abattoir of the Luminous Emperor.",
     "tierThreat": {
       "1": "T",
       "2": "T",
@@ -12301,7 +12297,7 @@
   {
     "id": "slaughter_servitor_corral",
     "name": "SLAUGHTER SERVITOR (CORRAL)",
-    "description": "Slaughter Servitors are horrific machines of death active at the Abattoir of the Luminous Emperor. The Corral variant is a larger, heavily armored servitor designed to restrain and immobilize targets with its powerful hydraulic claws.",
+    "description": "The following represents three different types of servitors (Processor, Corral, and Excoriator) active at the Abattoir of the Luminous Emperor.",
     "tierThreat": {
       "1": "T",
       "2": "T",
@@ -12363,7 +12359,7 @@
   {
     "id": "slaughter_servitor_excoriator",
     "name": "SLAUGHTER SERVITOR (EXCORIATOR)",
-    "description": "Slaughter Servitors are horrific machines of death active at the Abattoir of the Luminous Emperor. The Excoriator variant is equipped with deadly blade arms designed to flay and bleed targets with horrifying efficiency.",
+    "description": "The following represents three different types of servitors (Processor, Corral, and Excoriator) active at the Abattoir of the Luminous Emperor.",
     "tierThreat": {
       "1": "T",
       "2": "T",
@@ -12548,7 +12544,7 @@
     "name": "SUNDERED WHEEL CULTIST",
     "quote": "We must remind the Magi that even the mightiest machine rests upon the functioning of its simplest component.",
     "attribution": "Alorex Vaunt, Cultist of the Sundered Wheel",
-    "description": "The Sundered Wheel is a cult of labourers who sabotage equipment to protest the harsh conditions imposed by the Mechanicus. Cultists are almost serene in their devotion to the Omnissiah, but should any mention be made of the Tech-Priests mistreating the laity, their faces grow grim and their jaws clench. Occasionally they will whisper a prayer about the Omnissiah's wrath while touching their hidden cog.",
+    "description": "Cultists are almost serene in their devotion to the Omnissiah. However, should any mention be made of the Tech-Priests mistreating the laity, their faces grow grim and their jaws clench. Occasionally they will whisper a prayer about the Omnissiah's wrath while touching their hidden cog.",
     "tierThreat": {
       "1": "T",
       "2": "T",
@@ -13027,7 +13023,7 @@
   {
     "id": "duke_of_putrescence",
     "name": "DUKE OF PUTRESCENCE (BLIGHTLORD CHAMPION)",
-    "description": "Khargast the Bloated is a Chaos Space Marine in Terminator Armour, blessed by Nurgle and armed with a fearsome Power Axe. He is oddly good-humoured, and talks to his opponents like old friends, although his phlegmy, gurgling voice is extremely off-putting. Even in defeat his humour remains, content in the knowledge that his rotting corpse will birth new diseases and parasites.",
+    "description": "[AI-Generated] Khargast the Bloated is a Chaos Space Marine in Terminator Armour, blessed by Nurgle and armed with a fearsome Power Axe. He is oddly good-humoured, and talks to his opponents like old friends, although his phlegmy, gurgling voice is extremely off-putting. Even in defeat his humour remains, content in the knowledge that his rotting corpse will birth new diseases and parasites.",
     "tierThreat": {
       "1": "A",
       "2": "A",
@@ -13325,7 +13321,7 @@
   {
     "id": "oily_squig",
     "name": "OILY SQUIG",
-    "description": "Oily Squigs are a type of orkoid scavenger used by Ork Mekaniaks to provide lubricant. They consume almost any organic material but prefer fats and oils, storing such chemicals in their plump, fleshy bodies and releasing it in a jet when they need to squeeze into tight spaces or when startled. Individually the squigs are no challenge at all to an armed Human, at worst giving a painful bite. Even in swarms they are cowardly creatures.",
+    "description": "[AI-Generated] Oily Squigs are a type of orkoid scavenger used by Ork Mekaniaks to provide lubricant. They consume almost any organic material but prefer fats and oils, storing such chemicals in their plump, fleshy bodies and releasing it in a jet when they need to squeeze into tight spaces or when startled. Individually the squigs are no challenge at all to an armed Human, at worst giving a painful bite. Even in swarms they are cowardly creatures.",
     "tierThreat": {
       "1": "T",
       "2": "T",
@@ -13578,7 +13574,7 @@
     "name": "BLUE HORROR",
     "quote": "I am many made one.",
     "attribution": "Tyzek V'th, Changebringer of Tzeentch",
-    "description": "Pink Horrors split into two Blue Horrors on death. Blue Horrors use the same statistics as Pink Horrors, with the following adjustments. These smaller Daemons coalesce from the remains of their larger kin, continuing the fight with bitter determination until there is not enough Warp energy left to sustain further manifestations.",
+    "description": "Pink Horrors split into two Blue Horrors on death. Blue Horrors use the same statistics as Pink Horrors, with the following adjustments.",
     "tierThreat": {
       "1": "E",
       "2": "E",
@@ -13641,7 +13637,7 @@
     "name": "BRIMSTONE HORROR",
     "quote": "I am many made one.",
     "attribution": "Tyzek V'th, Changebringer of Tzeentch",
-    "description": "Blue Horrors split into two Brimstone Horrors on death. Brimstone Horrors use the same statistics as Pink Horrors, with the following adjustments. These tiny Daemons of living Warpfire burn with hatred and swarm forward to consume their foes, the final manifestation of a Horror's Warp energy before dissipating entirely.",
+    "description": "Blue Horrors split into two Brimstone Horrors on death. Brimstone Horrors use the same statistics as Pink Horrors, with the following adjustments.",
     "tierThreat": {
       "1": "T",
       "2": "T",
