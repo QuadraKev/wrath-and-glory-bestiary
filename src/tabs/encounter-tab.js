@@ -918,11 +918,21 @@ const EncounterTab = {
     },
 
     renderThreatCardMini(threat) {
-        // Simplified threat card for the detail panel
+        // Full threat card for the detail panel
         const keywordsHtml = (threat.keywords || []).map(kw =>
             `<span class="threat-keyword-mini">${kw}</span>`
         ).join('');
 
+        // Render bonuses
+        const bonusesHtml = (threat.bonuses || []).map(bonus => `
+            <div class="ability-mini">
+                <span class="ability-type-mini">BONUS:</span>
+                <span class="ability-name-mini" data-glossary-enhance>${bonus.name}</span>
+                ${bonus.description ? `<div class="ability-desc-mini" data-glossary-enhance>${bonus.description}</div>` : ''}
+            </div>
+        `).join('');
+
+        // Render abilities
         const abilitiesHtml = (threat.abilities || []).map(ability => {
             let statsHtml = '';
             if (ability.type === 'ACTION' && ability.weaponId) {
@@ -931,7 +941,7 @@ const EncounterTab = {
                     statsHtml = this.formatWeaponStats(weapon);
                 }
             } else if (ability.stats) {
-                statsHtml = `, ${ability.stats}`;
+                statsHtml = `: ${ability.stats}`;
             }
 
             return `
@@ -944,25 +954,116 @@ const EncounterTab = {
             `;
         }).join('');
 
+        // Format attributes
+        const attrs = threat.attributes || {};
+        const attributesHtml = `
+            <div class="mini-attributes">
+                <span class="mini-attr"><b>S:</b> ${attrs.S ?? '-'}</span>
+                <span class="mini-attr"><b>T:</b> ${attrs.T ?? '-'}</span>
+                <span class="mini-attr"><b>A:</b> ${attrs.A ?? '-'}</span>
+                <span class="mini-attr"><b>I:</b> ${attrs.I ?? '-'}</span>
+                <span class="mini-attr"><b>Wil:</b> ${attrs.Wil ?? '-'}</span>
+                <span class="mini-attr"><b>Int:</b> ${attrs.Int ?? '-'}</span>
+                <span class="mini-attr"><b>Fel:</b> ${attrs.Fel ?? '-'}</span>
+            </div>
+        `;
+
+        // Format resilience with note
+        const resilienceText = threat.resilience?.value || '-';
+        const resilienceNote = threat.resilience?.note ? ` (${threat.resilience.note})` : '';
+
+        // Format defence with note
+        const defenceText = threat.defence || '-';
+        const defenceNote = threat.defenceNote ? ` (${threat.defenceNote})` : '';
+
+        // Format speed with note
+        const speedText = threat.speed || '-';
+        const speedNote = threat.speedNote ? ` (${threat.speedNote})` : '';
+
         return `
             <div class="mini-card">
                 <div class="mini-card-header">Threat Stats</div>
                 <div class="mini-card-body">
-                    <div class="mini-stats-row">
-                        <span class="mini-stat"><b>Defence:</b> ${threat.defence || '-'}</span>
-                        <span class="mini-stat"><b>Resilience:</b> ${threat.resilience?.value || '-'}</span>
-                    </div>
-                    <div class="mini-stats-row">
-                        <span class="mini-stat"><b>Shock:</b> ${threat.shock || '-'}</span>
-                        <span class="mini-stat"><b>Speed:</b> ${threat.speed || '-'}</span>
-                        <span class="mini-stat"><b>Size:</b> ${threat.size || '-'}</span>
-                    </div>
                     <div class="mini-keywords">
                         ${keywordsHtml}
                     </div>
-                    <div class="mini-abilities">
-                        ${abilitiesHtml}
+
+                    ${attributesHtml}
+
+                    <div class="mini-stats-grid">
+                        <div class="mini-stat-box">
+                            <span class="stat-box-label">Defence</span>
+                            <span class="stat-box-value">${defenceText}${defenceNote}</span>
+                        </div>
+                        <div class="mini-stat-box">
+                            <span class="stat-box-label">Resilience</span>
+                            <span class="stat-box-value">${resilienceText}${resilienceNote}</span>
+                        </div>
+                        <div class="mini-stat-box">
+                            <span class="stat-box-label">Wounds</span>
+                            <span class="stat-box-value">${threat.wounds || '-'}</span>
+                        </div>
+                        <div class="mini-stat-box">
+                            <span class="stat-box-label">Shock</span>
+                            <span class="stat-box-value">${threat.shock || '-'}</span>
+                        </div>
+                        <div class="mini-stat-box">
+                            <span class="stat-box-label">Speed</span>
+                            <span class="stat-box-value">${speedText}${speedNote}</span>
+                        </div>
+                        <div class="mini-stat-box">
+                            <span class="stat-box-label">Size</span>
+                            <span class="stat-box-value">${threat.size || '-'}</span>
+                        </div>
+                        <div class="mini-stat-box">
+                            <span class="stat-box-label">Conviction</span>
+                            <span class="stat-box-value">${threat.conviction ?? '-'}</span>
+                        </div>
+                        <div class="mini-stat-box">
+                            <span class="stat-box-label">Resolve</span>
+                            <span class="stat-box-value">${threat.resolve ?? '-'}</span>
+                        </div>
                     </div>
+
+                    ${threat.skills ? `
+                        <div class="mini-section">
+                            <span class="mini-section-label">Skills:</span>
+                            <span class="mini-section-value" data-glossary-enhance>${threat.skills}</span>
+                        </div>
+                    ` : ''}
+
+                    ${bonusesHtml ? `
+                        <div class="mini-section">
+                            <div class="mini-section-label">Bonuses</div>
+                            <div class="mini-abilities">${bonusesHtml}</div>
+                        </div>
+                    ` : ''}
+
+                    <div class="mini-section">
+                        <div class="mini-section-label">Abilities</div>
+                        <div class="mini-abilities">${abilitiesHtml}</div>
+                    </div>
+
+                    ${threat.determination ? `
+                        <div class="mini-section">
+                            <span class="mini-section-label">Determination:</span>
+                            <span class="mini-section-value" data-glossary-enhance>${threat.determination}</span>
+                        </div>
+                    ` : ''}
+
+                    ${threat.mobOptions ? `
+                        <div class="mini-section">
+                            <span class="mini-section-label">Mob Options:</span>
+                            <span class="mini-section-value" data-glossary-enhance>${threat.mobOptions}</span>
+                        </div>
+                    ` : ''}
+
+                    ${threat.mobAbilities ? `
+                        <div class="mini-section">
+                            <span class="mini-section-label">Mob Abilities:</span>
+                            <span class="mini-section-value" data-glossary-enhance>${threat.mobAbilities}</span>
+                        </div>
+                    ` : ''}
                 </div>
             </div>
         `;
