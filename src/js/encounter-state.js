@@ -195,7 +195,7 @@ const EncounterState = {
         const individual = this.individuals.find(i => i.id === id);
         if (!individual) return false;
         return individual.currentWounds >= individual.maxWounds ||
-               individual.currentShock >= individual.maxShock;
+               (individual.maxShock > 0 && individual.currentShock >= individual.maxShock);
     },
 
     // Mark an individual as dead (set wounds to max)
@@ -549,7 +549,11 @@ const EncounterState = {
 
     // Calculate max shock based on threat and bonus type
     calculateMaxShock(threat, bonus) {
-        const baseShock = threat.shock || 1;
+        // Threats with '-' or 0 shock have no shock and should not be modified
+        if (!threat.shock || typeof threat.shock !== 'number' || threat.shock <= 0) {
+            return 0;
+        }
+        const baseShock = threat.shock;
 
         switch (bonus) {
             case 'none':

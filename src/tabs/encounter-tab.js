@@ -276,6 +276,16 @@ const EncounterTab = {
             });
         });
 
+        // Bind delete buttons
+        container.querySelectorAll('.delete-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const id = btn.dataset.id;
+                const type = btn.dataset.type;
+                this.handleDelete(id, type);
+            });
+        });
+
         // Bind bonus select handlers
         container.querySelectorAll('.bonus-select').forEach(select => {
             select.addEventListener('click', (e) => e.stopPropagation());
@@ -468,8 +478,8 @@ const EncounterTab = {
         const isMultiSelected = this.multiSelectedIds.has(item.id);
         const deadClass = item.isDead ? 'dead' : '';
 
-        const woundPercent = (individual.currentWounds / individual.maxWounds) * 100;
-        const shockPercent = (individual.currentShock / individual.maxShock) * 100;
+        const woundPercent = individual.maxWounds > 0 ? (individual.currentWounds / individual.maxWounds) * 100 : 0;
+        const shockPercent = individual.maxShock > 0 ? (individual.currentShock / individual.maxShock) * 100 : 0;
 
         // Show checkbox for individuals not in a mob
         const showCheckbox = !individual.mobId;
@@ -508,7 +518,7 @@ const EncounterTab = {
                     <div class="stat-tracker shock-tracker">
                         <span class="stat-label">S:</span>
                         <button class="shock-btn" data-id="${item.id}" data-delta="-1">-</button>
-                        <span class="stat-value">${individual.currentShock}/${individual.maxShock}</span>
+                        <span class="stat-value">${individual.maxShock > 0 ? `${individual.currentShock}/${individual.maxShock}` : '-'}</span>
                         <button class="shock-btn" data-id="${item.id}" data-delta="1">+</button>
                         <div class="stat-bar">
                             <div class="stat-bar-fill shock-bar" style="width: ${shockPercent}%"></div>
@@ -518,6 +528,9 @@ const EncounterTab = {
                 <div class="encounter-item-actions">
                     <button class="duplicate-btn" data-id="${item.id}" data-type="individual" title="Duplicate">
                         <span>+</span>
+                    </button>
+                    <button class="delete-btn" data-id="${item.id}" data-type="individual" title="Remove">
+                        <span>&times;</span>
                     </button>
                 </div>
             </div>
@@ -548,6 +561,9 @@ const EncounterTab = {
                 <div class="encounter-item-actions">
                     <button class="duplicate-btn" data-id="${item.id}" data-type="mob" title="Duplicate Mob">
                         <span>+</span>
+                    </button>
+                    <button class="delete-btn" data-id="${item.id}" data-type="mob" title="Remove Mob">
+                        <span>&times;</span>
                     </button>
                 </div>
             </div>
@@ -601,7 +617,7 @@ const EncounterTab = {
 
         const count = this.multiSelectedIds.size;
 
-        if (count < 2) {
+        if (count < 1) {
             toolbar.classList.add('hidden');
             return;
         }
@@ -612,17 +628,20 @@ const EncounterTab = {
             .filter(i => i !== undefined);
 
         const threatIds = new Set(selectedIndividuals.map(i => i.threatId));
-        const canFormMob = threatIds.size === 1 && selectedIndividuals.every(i => !i.mobId);
+        const canFormMob = count >= 2 && threatIds.size === 1 && selectedIndividuals.every(i => !i.mobId);
 
         toolbar.classList.remove('hidden');
         toolbar.innerHTML = `
             <div class="toolbar-info">
-                <span>${count} threats selected</span>
-                ${threatIds.size > 1 ? '<span class="toolbar-warning">(different types - cannot form mob)</span>' : ''}
+                <span>${count} threat${count !== 1 ? 's' : ''} selected</span>
+                ${count >= 2 && threatIds.size > 1 ? '<span class="toolbar-warning">(different types - cannot form mob)</span>' : ''}
             </div>
             <div class="toolbar-actions">
                 <button class="btn-primary toolbar-btn" id="btn-form-mob" ${canFormMob ? '' : 'disabled'}>
                     Form Mob
+                </button>
+                <button class="btn-danger toolbar-btn" id="btn-delete-selected">
+                    Delete Selected
                 </button>
                 <button class="btn-secondary toolbar-btn" id="btn-clear-selection">
                     Clear
@@ -635,10 +654,32 @@ const EncounterTab = {
             this.handleFormMob();
         });
 
+        document.getElementById('btn-delete-selected')?.addEventListener('click', () => {
+            this.handleBulkDelete();
+        });
+
         document.getElementById('btn-clear-selection')?.addEventListener('click', () => {
             this.clearMultiSelection();
             this.renderEncounterList();
         });
+    },
+
+    handleBulkDelete() {
+        if (this.multiSelectedIds.size === 0) return;
+
+        const ids = Array.from(this.multiSelectedIds);
+        ids.forEach(id => {
+            EncounterState.removeIndividual(id);
+        });
+
+        if (this.selectedId && this.multiSelectedIds.has(this.selectedId)) {
+            this.selectedId = null;
+            this.selectionType = null;
+        }
+        this.clearMultiSelection();
+        this.renderEncounterList();
+        this.renderDetail();
+        this.showNotification(`Deleted ${ids.length} threat${ids.length !== 1 ? 's' : ''}`);
     },
 
     handleFormMob() {
@@ -754,18 +795,18 @@ const EncounterTab = {
                             <button class="tracker-btn" id="detail-wound-plus">+</button>
                         </div>
                         <div class="tracker-bar">
-                            <div class="tracker-bar-fill wounds-bar" style="width: ${(individual.currentWounds / individual.maxWounds) * 100}%"></div>
+                            <div class="tracker-bar-fill wounds-bar" style="width: ${individual.maxWounds > 0 ? (individual.currentWounds / individual.maxWounds) * 100 : 0}%"></div>
                         </div>
                     </div>
                     <div class="large-tracker shock-large">
                         <div class="tracker-label">Shock</div>
                         <div class="tracker-controls">
                             <button class="tracker-btn" id="detail-shock-minus">-</button>
-                            <span class="tracker-value">${individual.currentShock} / ${individual.maxShock}</span>
+                            <span class="tracker-value">${individual.maxShock > 0 ? `${individual.currentShock} / ${individual.maxShock}` : '-'}</span>
                             <button class="tracker-btn" id="detail-shock-plus">+</button>
                         </div>
                         <div class="tracker-bar">
-                            <div class="tracker-bar-fill shock-bar" style="width: ${(individual.currentShock / individual.maxShock) * 100}%"></div>
+                            <div class="tracker-bar-fill shock-bar" style="width: ${individual.maxShock > 0 ? (individual.currentShock / individual.maxShock) * 100 : 0}%"></div>
                         </div>
                     </div>
                 </div>
@@ -1253,6 +1294,21 @@ const EncounterTab = {
     },
 
     // ===== Event Handlers =====
+
+    handleDelete(id, type) {
+        if (type === 'individual') {
+            EncounterState.removeIndividual(id);
+        } else if (type === 'mob') {
+            EncounterState.removeMob(id);
+        }
+        if (this.selectedId === id) {
+            this.selectedId = null;
+            this.selectionType = null;
+        }
+        this.multiSelectedIds.delete(id);
+        this.renderEncounterList();
+        this.renderDetail();
+    },
 
     handleDuplicate(id, type) {
         if (type === 'individual') {

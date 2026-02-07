@@ -1621,6 +1621,25 @@ body {
     color: var(--bg-primary);
 }
 
+.delete-btn {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    background: var(--bg-secondary);
+    color: var(--accent-red);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.delete-btn:hover {
+    background: var(--accent-red);
+    color: var(--text-primary);
+}
+
 /* Mob Item */
 .mob-item .mob-info {
     display: flex;
