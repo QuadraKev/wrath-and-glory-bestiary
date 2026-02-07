@@ -13885,6 +13885,64 @@
     "description": "Cyber-Altered Task units (\"CATs\") are mechanical drones designed to perform simple tasks, like inorganic servitors. Programmed with a set of very simple instructions, they are occasionally used by the Adeptus Mechanicus, the Imperial Navy, and even some chapters of the Adeptus Astartes as remote probes and retrieval units. Though they do not possess any biological components, their extremely limited programming prevents them from being classified as examples of Abominable Intelligence. The drones utilise a simple short-ranged Vox transceiver which receives instructions from the user and relays data and pict-captures back to the user’s control unit. The drone’s ability to traverse environments independently is limited and relies more on simple trial-and-error than problem-solving ability. CATs have been in service across the Imperium for millennia, though their utility is limited compared to even a simple monotask servitor. Nevertheless, constructing CATs is a popular activity for Mechanicus Adepts and Techmarines, who claim that the activity is a useful meditative exercise, and CATs are frequently underfoot at any shrine to the Omnissiah, performing simple tasks for their masters and creators. In fact, some suspicious members of the Inquisition have observed that their creators seem to treat their CATs almost like pets, though the Mechanicum claims to be above such emotional attachments."
   },
   {
+    "id": "apoc_chapter_serf",
+    "name": "CHAPTER SERF",
+    "tierThreat": {
+      "1": "E",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS ASTARTES",
+      "[CHAPTER]"
+    ],
+    "attributes": {
+      "S": 3,
+      "T": 3,
+      "A": 3,
+      "I": 3,
+      "Wil": 4,
+      "Int": 3,
+      "Fel": 3
+    },
+    "resilience": {
+      "value": 4,
+      "note": "Armoured Bodyglove: 3 AR"
+    },
+    "defence": 2,
+    "wounds": 7,
+    "shock": 6,
+    "skills": "Default 6, Awareness 7 (Passive 4)",
+    "bonuses": [
+      {
+        "name": "Specialist",
+        "description": "Select two skills from the list below. The Chapter Serf has those skills at a rating of 8: Insight, Investigation, Medicae, Persuasion, Pilot, Scholar, Tech."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "ACTION",
+        "name": "Laspistol",
+        "stats": "7 +1 ED / Range 6-12-18 / Salvo 1 / Pistol"
+      },
+      {
+        "type": "ACTION",
+        "name": "Mono-knife",
+        "stats": "6 +2 ED / AP -1 / Rending (1)"
+      }
+    ],
+    "determination": "Spend 1 Glory to roll 3d6.",
+    "conviction": 4,
+    "resolve": 3,
+    "speed": 6,
+    "size": "Avg",
+    "source": "Abundance of Apocrypha",
+    "description": "Chapter serfs are the normal human bondsmen and servants of a Space Marine Chapter. The Space Marines themselves are too few in number to manage all the tasks required to maintain all the aspects of the Chapter, its fleet, fortress, and other myriad aspects. It is the serfs who perform most of these vital functions. A Chapter's fortress-monastery is home to a large population of these hereditary servants. Although they occupy a humble position, they are loyal members of the Chapter. They are generally descended from individuals selected as potential recruits to the Chapter, but in the end, judged unfit to become actual Space Marines. The serfs are still inducted into the Chapter cult, and do not begrudge the status they could have obtained. They are generally well treated within the Chapter, are educated and trained to a much higher standard than most other servants of the Imperium and have access to a better range of equipment. Many serfs were unsuccessful aspirants who failed to become Adeptus Astartes, and many more are descended from the failed aspirants of generations past. Chapter Serfs are known by a wide variety of names and titles depending on the Chapter they serve and the role they perform within their Chapter. They are sometimes referred to as thralls, menials, helots, or serviles, and they can be found in almost every part of a Chapter, assisting everyone from the Chapter Master to the Librarians and Tech-Marines, to the ordinary Battle Brothers."
+  },
+  {
     "id": "apoc_cherub",
     "name": "CHERUB",
     "tierThreat": {
