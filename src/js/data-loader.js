@@ -23,7 +23,10 @@ const DataLoader = {
         'Slaanesh': ['SLAANESH'],
         "T'au": ["T'AU", 'VESPID', 'DRONE'],
         'Tyranid': ['TYRANID'],
-        'Tzeentch': ['TZEENTCH']
+        'Tzeentch': ['TZEENTCH'],
+        'Adeptus Custodes': ['ADEPTUS CUSTODES', '[SHIELD HOST]'],
+        'Harlequin': ['HARLEQUIN', '[MASQUE]', '[SAEDATH]'],
+        'Leagues of Votann': ['LEAGUES OF VOTANN', 'KIN', '[LEAGUE]']
     },
 
     // Load a single data file

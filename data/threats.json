@@ -13688,5 +13688,2559 @@
     "speed": 6,
     "size": "Tiny",
     "source": "Core Rules"
+  },
+  {
+    "id": "apoc_arco_flagellant",
+    "name": "ARCO-FLAGELLANT",
+    "tierThreat": {
+      "1": "-",
+      "2": "E",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS MINISTORUM",
+      "SERVITOR"
+    ],
+    "attributes": {
+      "S": 5,
+      "T": 5,
+      "A": 4,
+      "I": 4,
+      "Wil": 5,
+      "Int": 1,
+      "Fel": 1
+    },
+    "resilience": {
+      "value": 10,
+      "note": "Implanted Armour: 4 AR"
+    },
+    "defence": 3,
+    "wounds": 11,
+    "shock": 0,
+    "skills": "Default 2, Awareness 6 (Passive 3), Athletics 6, Weapon Skill 8",
+    "bonuses": [
+      {
+        "name": "Iron Soul",
+        "description": "This Follower is unaffected by abilities that target the mind, and never needs to make a Resolve test to continue fighting."
+      },
+      {
+        "name": "Extremis Trigger Word",
+        "description": "An Arco-Flagellant, or a Mob of Arco-Flagellants, may be triggered by uttering a single code-word (either directly, or over a vox). When triggered, Arco-Flagellants become Frenzied and add +2 to their Speed."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "ACTION",
+        "name": "Arco-Flails",
+        "stats": "11 +3ED / AP -1 / Range 2m /"
+      },
+      {
+        "type": "ANNIHILATION",
+        "name": "Penance Through Death",
+        "description": "When an Arco-Flagellant is slain, it immediately makes a melee attack against a single enemy within reach. It then adds +1 to Glory."
+      }
+    ],
+    "determination": "Spend 1 Glory to roll 5d6. This Follower may roll Determination against Mortal Wounds.",
+    "conviction": 5,
+    "resolve": 4,
+    "speed": 6,
+    "size": "Avg",
+    "mobAbilities": "BERSERK KILLING MACHINES: When a member of this Mob is killed, roll 1d6: on a 5 or 6, they are not killed.",
+    "source": "Abundance of Apocrypha",
+    "description": "For those heretics found guilty of heresies of insufficient severity to warrant immediate execution, there is another fate in store: arco-flagellation. An arco-flagellant undergoes an extended program of surgical modification, including muscle grafts, combat drug injections, and cybernetically implanted weaponry. At the same time, the subject’s mind is reconditioned to turn him into a berserk killing machine who seeks only to destroy enemies of the Emperor. Normally, an arco-flagellant is kept calm through the use of a sealed pacifier helmet. The helmet floods the arco-flagellant’s senses with sacred images and songs, which renders the arco-flagellant virtually unresponsive to outside stimuli. However, once the proper activation word is given, the sensory input stops and a cocktail of combat drugs and stimulants are pumped in the arco-flagellant’s body, turning the once- passive cyborg into a frightening and fearless combatant that exists only to destroy everything it sees. The use of a deactivation word will cause the arco-flagellant to shut down and resume its passive state."
+  },
+  {
+    "id": "apoc_black_templars_neophyte",
+    "name": "BLACK TEMPLARS NEOPHYTE",
+    "tierThreat": {
+      "1": "-",
+      "2": "-",
+      "3": "E",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS ASTARTES",
+      "BLACK TEMPLARS"
+    ],
+    "attributes": {
+      "S": 4,
+      "T": 4,
+      "A": 4,
+      "I": 4,
+      "Wil": 4,
+      "Int": 3,
+      "Fel": 2
+    },
+    "resilience": {
+      "value": 9,
+      "note": "Scout Armour: 4 AR"
+    },
+    "defence": 3,
+    "wounds": 10,
+    "shock": 7,
+    "skills": "Default 6, Awareness 8 (Passive 4), Ballistic Skill 8, Weapon Skill 8",
+    "bonuses": [
+      {
+        "name": "Know No Fear",
+        "description": "Reroll any failed dice on a Resolve Test."
+      },
+      {
+        "name": "Space Marine Implants",
+        "description": "Gain bonus dice and options for actions from Space Marine Implants, p.75 of the Wrath & Glory Core Rulebook. MASTER’S VOW: If this follower’s owner has taken any Vow talents, this Follower also benefits from them while within 6m of their owner."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "ACTION",
+        "name": "Boltgun",
+        "stats": "10 + 1 ED / Range 12-24-36 /"
+      },
+      {
+        "type": "ACTION",
+        "name": "Bolt Pistol",
+        "stats": "10 +1 ED / Range 6-12-18 / Salvo 1 /"
+      },
+      {
+        "type": "ACTION",
+        "name": "Astartes Combat Knife",
+        "stats": "7 +3 ED / AP -1 / Reliable"
+      },
+      {
+        "type": "PASSIVE",
+        "name": "Follower Options",
+        "description": "The follower’s Boltgun may be exchanged for an Astartes Combat Shotgun. Astartes Combat Shotgun: 10 + 1 ED / Range 6-12- 18 / Salvo 2 / Assault, Spread, Reliable"
+      }
+    ],
+    "determination": "Spend 1 Glory to roll 3d6.",
+    "conviction": 4,
+    "resolve": 4,
+    "speed": 7,
+    "size": "Avg",
+    "source": "Abundance of Apocrypha",
+    "description": "killed. Black Templars Neophyte Unlike other Space Marine Chapters, the Black Templars have no dedicated Scout Company in which its aspirants are trained. Should a survivor of the trials impress one of the assembled battle-brothers, an Initiate may take it upon himself to personally mentor the neophyte in the art of war. From that point on, the Initiate takes sole responsibility for his pupil's training and conduct. He swears an oath to prepare the neophyte for his entry into the brotherhood that is the Chapter, teach him of its history, and guide him through its holy rites of worship to the Emperor. In return, the neophyte pledges obedience to his master and vows never to bring dishonour to his name. Neophytes also act as servants to their mentors, waiting on them at the great banquets and seeing to their day-to-day requirements. The crusade's Chaplains oversee this training and make sure the neophyte learns the history of the Chapter and watch for any signs of weakness in the neophyte's faith. The neophyte will also accompany his Initiate into combat, and should his master fall, another brother will take up his training. The bond between the Initiate and his neophyte pupil is strong, and if the neophyte meets his end, the Initiate will swear a death oath to avenge his apprentice or die trying. It is the Initiate's prerogative to say when his apprentice's training is complete. Once he has proven his valour and skill, a Black Templars neophyte submits to the Chapter's Chaplains to undergo the final trials of purity before, in a ceremony of great reverence, he is elevated into the ranks of a full battle-brother of Initiate status and honoured with a suit of Power Armour. He is now truly a Black Templar, possessed of great power, and sworn to use it in the Emperor's service unto death."
+  },
+  {
+    "id": "apoc_cat_unit",
+    "name": "CAT UNIT",
+    "tierThreat": {
+      "1": "T",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS MECHANICUS",
+      "NAVIS IMPERIALIS",
+      "ADEPTUS ASTARTES",
+      "ROBOT"
+    ],
+    "attributes": {
+      "S": 1,
+      "T": 3,
+      "A": 2,
+      "I": 1,
+      "Wil": 1,
+      "Int": 1,
+      "Fel": 1
+    },
+    "resilience": {
+      "value": 7,
+      "note": "Mechanical Construction: 3 AR"
+    },
+    "defence": 3,
+    "wounds": 5,
+    "shock": 0,
+    "skills": "Default 2, Awareness 4 (Passive 2)",
+    "bonuses": [
+      {
+        "name": "Iron Soul",
+        "description": "This Follower is unaffected by abilities that target the mind, and never needs to make a Resolve test to continue fighting."
+      },
+      {
+        "name": "Simple Automata",
+        "description": "The Follower can only perform simple actions—navigating an environment, picking up or dropping off small objects—without direct instruction from its operator."
+      },
+      {
+        "name": "Surveillance",
+        "description": "The Follower sends a constant feed of everything it sees and hears back to its operator, who may view them on a control device, or via armour autosenses or a data-tether."
+      },
+      {
+        "name": "Tracked",
+        "description": "This Follower moves on a set of segmented tracks. It cannot jump, climb, or traverse any obstacle taller than half its height."
+      }
+    ],
+    "abilities": [],
+    "conviction": 1,
+    "resolve": 1,
+    "speed": 8,
+    "size": "Tiny",
+    "source": "Abundance of Apocrypha",
+    "description": "Cyber-Altered Task units (\"CATs\") are mechanical drones designed to perform simple tasks, like inorganic servitors. Programmed with a set of very simple instructions, they are occasionally used by the Adeptus Mechanicus, the Imperial Navy, and even some chapters of the Adeptus Astartes as remote probes and retrieval units. Though they do not possess any biological components, their extremely limited programming prevents them from being classified as examples of Abominable Intelligence. The drones utilise a simple short-ranged Vox transceiver which receives instructions from the user and relays data and pict-captures back to the user’s control unit. The drone’s ability to traverse environments independently is limited and relies more on simple trial-and-error than problem-solving ability. CATs have been in service across the Imperium for millennia, though their utility is limited compared to even a simple monotask servitor. Nevertheless, constructing CATs is a popular activity for Mechanicus Adepts and Techmarines, who claim that the activity is a useful meditative exercise, and CATs are frequently underfoot at any shrine to the Omnissiah, performing simple tasks for their masters and creators. In fact, some suspicious members of the Inquisition have observed that their creators seem to treat their CATs almost like pets, though the Mechanicum claims to be above such emotional attachments."
+  },
+  {
+    "id": "apoc_cherub",
+    "name": "CHERUB",
+    "tierThreat": {
+      "1": "T",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTA SORORITAS",
+      "ADEPTUS MINISTORUM",
+      "ADEPTUS ASTARTES",
+      "SERVITOR"
+    ],
+    "attributes": {
+      "S": 1,
+      "T": 1,
+      "A": 4,
+      "I": 3,
+      "Wil": 2,
+      "Int": 1,
+      "Fel": 1
+    },
+    "resilience": {
+      "value": 3,
+      "note": "Artificial Body: 1 AR"
+    },
+    "defence": 4,
+    "wounds": 3,
+    "shock": 0,
+    "skills": "Default 2, Awareness 4 (Passive 2)",
+    "bonuses": [
+      {
+        "name": "Iron Soul",
+        "description": "This Follower is unaffected by abilities that target the mind, and never needs to make a Resolve test to continue fighting."
+      },
+      {
+        "name": "Symbol Of Purity",
+        "description": "A Cherub’s owner gains +2 Conviction while the Cherub is within 10m."
+      },
+      {
+        "name": "Variants",
+        "description": "A Cherub may have one of the following options:"
+      },
+      {
+        "name": "Armourium Cherub",
+        "description": "The Cherub carries 3 additional Ammo for its owner."
+      },
+      {
+        "name": "Incensor Cherub",
+        "description": "When the Cherub’s owner spends a Faith point, roll 1d6: on a 6, the Cherub’s owner regains 1 Faith Point. The Cherub must be within 10m for this to function."
+      },
+      {
+        "name": "Choristor Cherub",
+        "description": "While within 10m of its owner, the Cherub adds +2d to all the owner’s Leadership and Persuasion tests."
+      },
+      {
+        "name": "Defensor Cherub",
+        "description": "While within 3m of its owner, the Cherub’s owner gains +2 Resilience."
+      },
+      {
+        "name": "Warp-Bane Cherub",
+        "description": "Any psychic power which targets the Cherub or a character within 3m increases the DN by +2."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "ACTION",
+        "name": "Unarmed",
+        "stats": "3 +1 ED"
+      }
+    ],
+    "determination": "Spend 1 Glory to roll 2d6",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 8,
+    "size": "Tiny",
+    "speedNote": "Flight",
+    "source": "Abundance of Apocrypha",
+    "description": "The servitors known as Cherubim are of uncertain origin, but they are one of the few permitted examples of such bio-sculpted homunculi allowed within the Imperium. Taking the form most commonly resembling that of somewhat corpulent and unwholesome looking genderless children, they are also often implanted with augmetic feathery wings (and a grav generator) allowing limited flight. Cherubim are not truly alive at all and their synthesised, bloodless and waxen flesh needs neither to eat nor sleep and is fed from their internal power-cell. They are controlled by an augmented cortex and nervous system usually harvested from some lesser creature such as a simian, bird, swine or felid, and implanted with a set of programmed commands that allows them to perform some simple task such as copying text, fetching and carrying small items or tirelessly singing the Emperor’s praises with augmetic vocal cords. Outside the rarefied noble houses and Imperial hierarchy (most notably the Ecclesiarchy) where they are used, most citizens view Cherubim with a degree of distaste and superstitious fear. This is not entirely without cause as it is a matter of record that in rare instances Cherubim have been known to “devolve” allowing some corrupted and mangled version of their organic cortex to take over their behaviour with unpleasant consequences. These servitors are not purely functional in nature as their small chubby appearances are not suited for combat, maintenance, labour or any other such tasks. Their role was determined by the adept involved in their creation. Purposefully built as symbols of purity, they also serve as a form of decoration. Though not suited for combat roles, there are other more subtle tasks that a Cherub can be suited for such as spying, bearing weapons or equipment, being sycophants to their master and singing devotional hymns. Others possess integrated power generators allowing them to protect their master with an energy shield or anti-psychic equipment of use against psykers."
+  },
+  {
+    "id": "apoc_cyber_mastiff",
+    "name": "CYBER-MASTIFF",
+    "tierThreat": {
+      "1": "T",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS ARBITES",
+      "ANATHEMA PSYKANA",
+      "SERVITOR",
+      "BEAST"
+    ],
+    "attributes": {
+      "S": 5,
+      "T": 3,
+      "A": 4,
+      "I": 4,
+      "Wil": 3,
+      "Int": 1,
+      "Fel": 1
+    },
+    "resilience": {
+      "value": 8,
+      "note": "Mechanical Body: 4 AR"
+    },
+    "defence": 4,
+    "wounds": 5,
+    "shock": 0,
+    "skills": "Default 4, Awareness 8 (Passive 4), Intimidation 6, Weapon Skill 7",
+    "bonuses": [
+      {
+        "name": "Iron Soul",
+        "description": "This Follower is unaffected by abilities that target the mind, and never needs to make a Resolve test to continue fighting."
+      },
+      {
+        "name": "Animal",
+        "description": "A Cyber-Mastiff is unable to take any actions which would require the use of hands."
+      },
+      {
+        "name": "Apprehend",
+        "description": "If an enemy becomes Restrained as a result of a Cyber-Mastiff’s attack, the condition remains while they are engaged with the Cyber- Mastiff—they are restrained by the Cyber-Mastiff’s jaws. If an enemy attempts to break free, the DN is equal to the Cyber-Mastiff’s Strength, and a failed skill test inflicts 1d3 Mortal Wounds."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "ACTION",
+        "name": "Machine Jaws",
+        "stats": "10 +3 ED / AP -1 / Inflict"
+      }
+    ],
+    "determination": "Spend 1 Glory to roll 4d6",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 6,
+    "size": "Small",
+    "source": "Abundance of Apocrypha",
+    "description": "Cyber-Mastiffs are mechanical creatures that resemble a metal hound, who are guided by the brain and nervous system of a hunting creature after such components have been integrated by members of the Adeptus Mechanicus. It is also not uncommon, however, to see purely biological canines who have received some form of cybernetic upgrades. Cyber- Mastiffs are usually deployed under the control of Adeptus Arbites Patrol and Enforcer units for hunting down their prey and to catch criminal fugitives who attempt to escape, but they are also found in other units, such as Anathema Psykana Pursuer Cadres, and even by underhive bounty hunters. Commonly known as kill-dogs, razorfangs and rending rovers, Cyber-Mastiffs have an in-built hunting and attack instinct and can only respond to the simplest of commands from their assigned handler but are still fully capable of defending themselves and their masters. They can be fitted with additional sensors, such as an Auspex, which are always used on passive."
+  },
+  {
+    "id": "apoc_fenrisian_wolf",
+    "name": "FENRISIAN WOLF",
+    "tierThreat": {
+      "1": "-",
+      "2": "-",
+      "3": "E",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "SPACE WOLVES",
+      "BEAST"
+    ],
+    "attributes": {
+      "S": 6,
+      "T": 5,
+      "A": 5,
+      "I": 5,
+      "Wil": 3,
+      "Int": 2,
+      "Fel": 2
+    },
+    "resilience": {
+      "value": 6
+    },
+    "defence": 4,
+    "wounds": 11,
+    "shock": 6,
+    "skills": "Default 6, Awareness 10 (Passive 5), Intimidation 9, Weapon Skill 11",
+    "bonuses": [
+      {
+        "name": "Pack Animal",
+        "description": "This Follower adds +1 to Resolve for each SPACE WOLVES ally within 6 metres. Further, when it attacks an enemy, it adds +1 ED for each SPACE WOLVES ally who has attacked that enemy this round."
+      },
+      {
+        "name": "Animal",
+        "description": "A Fenrisian Wolf is unable to take any actions which would require the use of hands."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "ACTION",
+        "name": "Teeth and Claws",
+        "stats": "9 +3 ED / AP -1 / Inflict"
+      }
+    ],
+    "determination": "Spend 1 Glory to roll 5d6",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 10,
+    "size": "Avg",
+    "source": "Abundance of Apocrypha",
+    "description": "The massive Fenrisian Wolf is a fearsome semi-sentient predator and an enduring symbol of the Space Wolves Space Marine Chapter's frozen homeworld of Fenris. The Space Wolves, in the ancient tradition of their Primarch Leman Russ, often befriend and train Fenrisian Wolves (in so much as such a feral being can truly be trained). Fenrisian Wolves will fight ferociously beside their master against his foes. Fenrisian Wolves are simple, brutal beasts, loyal only to their master and remorseless against their enemies. As a follower, a Fenrisian Wolf will trail behind the battle- brother wherever he goes, whining if forced to stay behind, and attack his enemies with a gesture or a word. Fenrisian Wolves aid Space Wolves in numerous ways during battle. Their speed makes them a great flanking unit with which to harry the Space Wolves' enemies and pick off smaller units. They are also used as a fast- moving distraction to the main battleline, leaving the Space Wolves' opponents guessing at their next move. They will also stay by the side of the battle-brother if he falls, protecting his body and maybe even pulling him to safety."
+  },
+  {
+    "id": "apoc_grapplehawk",
+    "name": "GRAPPLEHAWK",
+    "tierThreat": {
+      "1": "T",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS ARBITES",
+      "ANATHEMA PSYKANA",
+      "SERVITOR",
+      "BEAST"
+    ],
+    "attributes": {
+      "S": 3,
+      "T": 2,
+      "A": 5,
+      "I": 5,
+      "Wil": 3,
+      "Int": 1,
+      "Fel": 1
+    },
+    "resilience": {
+      "value": 8,
+      "note": "Mechanical Body: 4 AR"
+    },
+    "defence": 4,
+    "wounds": 5,
+    "shock": 0,
+    "skills": "Default 4, Awareness 8 (Passive 4), Stealth 6, Weapon Skill 7",
+    "bonuses": [
+      {
+        "name": "Iron Soul",
+        "description": "This Follower is unaffected by abilities that target the mind, and never needs to make a Resolve test to continue fighting."
+      },
+      {
+        "name": "Animal",
+        "description": "A Grapplehawk is unable to take any actions which would require the use of hands."
+      },
+      {
+        "name": "Apprehend",
+        "description": "If an enemy becomes Restrained as a result of a Grapplehawk’s attack, the condition remains while they are engaged with the Grapplehawk—they are restrained by the Cyber- Mastiff’s jaws. If an enemy attempts to break free, the DN is equal to the Grapplehawk’s Strength, and a failed skill test inflicts 1d3 Mortal Wounds."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "ACTION",
+        "name": "Shock Pulse Claws",
+        "stats": "8 +3 ED / AP -1 /"
+      }
+    ],
+    "determination": "Spend 1 Glory to roll 3d6",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 10,
+    "size": "Small",
+    "speedNote": "Flight",
+    "source": "Abundance of Apocrypha",
+    "description": "Although most commonly employed by the Arbites, Grapplehawks are also used by some bounty hunters, Rogue Traders, Adeptus Mechanicus Magi, and the Pursuer Squads of the Anathema Psykana. Grapplehawks are technically a type of servitor and take the form of elegant shining steel hawks. Their glittering crania contain the transplanted instincts of avians trained to seize moving targets without damaging them. These instincts, transferred to mechanical constructs fitted with powerful suspensors and talons capable of tearing through cast-iron, enable handlers to detain suspects quickly (if brutally) on the streets of hive cities or wherever their prey may run."
+  },
+  {
+    "id": "apoc_psyber_eagle",
+    "name": "PSYBER EAGLE",
+    "tierThreat": {
+      "1": "-",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS ASTARTES",
+      "INQUISITION",
+      "ADEPTUS MECHANICUS",
+      "SERVITOR"
+    ],
+    "attributes": {
+      "S": 1,
+      "T": 2,
+      "A": 4,
+      "I": 4,
+      "Wil": 4,
+      "Int": 2,
+      "Fel": 1
+    },
+    "resilience": {
+      "value": 3
+    },
+    "defence": 5,
+    "wounds": 4,
+    "shock": 5,
+    "skills": "Default 2, Awareness 4 (Passive 2)",
+    "bonuses": [
+      {
+        "name": "Animal",
+        "description": "A Psyber-Eagle is unable to take any actions which would require the use of hands."
+      },
+      {
+        "name": "Psy-Bond",
+        "description": "The Follower is linked to its owner via a neural interface called a psyber-lure (implanted when the Follower is acquired). The owner can see, hear, etc., through the Follower’s senses, and give instant mental commands, so long as the Follower is within a number of kilometres equal to the owner’s Willpower."
+      },
+      {
+        "name": "Psychic Focus",
+        "description": "If the Follower’s owner is a PSYKER, the owner may focus their psychic abilities through the Follower. This adds +1 to the DN of the psychic power, but the power’s range and effect are measured from the Follower instead."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "ACTION",
+        "name": "Talons",
+        "stats": "3 + 2 ED"
+      }
+    ],
+    "determination": "Spend 1 Glory to roll 2d6",
+    "conviction": 4,
+    "resolve": 3,
+    "speed": 10,
+    "size": "Tiny",
+    "speedNote": "Flight",
+    "source": "Abundance of Apocrypha",
+    "description": "A psy-bonded (or \"psyber\") Familiar is a living creature bonded to its master by arcane technology. Cybernetic neural interface circuitry implanted in the minds of both Familiar and master (called a \"psyber-lure\") allows the creature to be directly and precisely controlled, with the master having access to the sensory experiences of the creature and able to give it instantaneous commands at great distance. Owing to the idiosyncrasies of the little understood technology, usually only small, non-sapient creatures can become psy-bonded to a Human master. Psyber-Eagles are genetically and cybernetically enhanced familiars created as gifts from the Adeptus Mechanicus to the grandees of the Imperium. They are often utilised by psykers to extend and channel their powers. The same profile can also be used for Psyber-Ravens, and similar augmented avian familiars. ."
+  },
+  {
+    "id": "apoc_calligraphus_servitor",
+    "name": "CALLIGRAPHUS SERVITOR",
+    "tierThreat": {
+      "1": "T",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS MECHANICUS",
+      "ADEPTUS MINISTORUM",
+      "SERVITOR"
+    ],
+    "attributes": {
+      "S": 4,
+      "T": 2,
+      "A": 2,
+      "I": 2,
+      "Wil": 1,
+      "Int": 1,
+      "Fel": 1
+    },
+    "resilience": {
+      "value": 6,
+      "note": "Augmetics: 3 AR"
+    },
+    "defence": 1,
+    "wounds": 4,
+    "shock": 0,
+    "skills": "Default 2, Awareness 6 (Passive 3), Scholar 4",
+    "bonuses": [
+      {
+        "name": "Auto-Scribe",
+        "description": "The Follower can copy any text it is provided and can transcribe any speech dictated to it. These accurate recordings grant the owner +2d on all Investigate and Scholar tests."
+      },
+      {
+        "name": "Iron Soul",
+        "description": "This Follower is unaffected by abilities that target the mind, and never needs to make a Resolve test to continue fighting."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "COMPLICATION",
+        "name": "Mindlock",
+        "description": "The Servitor is Exhausted for 1 round. This can be negated by an ally succeeding on a DN 3 Tech (Int) Test."
+      }
+    ],
+    "determination": "Spend 1 Glory to roll 3d6.",
+    "conviction": 1,
+    "resolve": 1,
+    "speed": 5,
+    "size": "Avg",
+    "source": "Abundance of Apocrypha",
+    "description": "of mindless, cybernetic drones created from a fusion of Human flesh and robotic technology that are used to carry out simple, manual tasks across the Imperium of Man. Servitors were created due to the strict prohibitions against the development or use of machine intelligences according to the tenets of the Cult Mechanicus, whose tech-priests deeply fear the creation of Silica Animus. They believe such artificial general intelligences to be the embodiments of blasphemy against the Omnissiah. While many of these programmable cybernetic slaves are genetically-engineered, vat-grown, sub-Human clones or replicae created by the Adeptus Mechanicus from Human genomes who have their bionic implants installed after \"birth\", others were once truly Human. These servitors were usually criminals who fell afoul of Imperial Law, particularly a person who has offended or damaged the Adeptus Mechanicus in some fashion. These unfortunate criminals will be sentenced to Servitude Imperpituis by the Arbitrators or Judges of the Adeptus Arbites and will be handed over to the Mechanicus' Tech-priests to be mind-wiped, reprogrammed, and cybernetically-enhanced to serve some specific, rudimentary function. Once lobotomised and \"improved\" through the process of painful operations, even criminals and Heretics are granted one last chance to serve the Imperium. Servitors are generally mindless, semi-organic robots, possessing only the most basic of instincts, though some are fully capable of speech if such functions and knowledge are programmed into them. Their brains are reprogrammed to perform only the task they were designed for, whether that be maintenance, construction, or even warfare. The altered and fragmented brain of a servitor functions poorly unless constantly supervised. Most will eventually go into a state of mindlock, babbling incoherent nonsense as the servitor tries to assert some form of control over its functions. Calligraphus Servitor Outfitted with a cluster of manipulator arms, each tipped with various writing instruments, a calligraphus servitor is capable of copying practically any document they are given. They can also transcribe spoken words and are often used to preserve sermons and speeches as well as taking dictation for letters, orders, and regulations. Many high-ranking members of the Holy Ordos have at least one calligraphus servitor on hand, while large monasteries and abbeys may have hundreds, usually engaged in replicating and preserving ancient texts."
+  },
+  {
+    "id": "apoc_combat_servitor",
+    "name": "COMBAT SERVITOR",
+    "tierThreat": {
+      "1": "T",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS MECHANICUS",
+      "SERVITOR"
+    ],
+    "attributes": {
+      "S": 4,
+      "T": 2,
+      "A": 2,
+      "I": 2,
+      "Wil": 1,
+      "Int": 1,
+      "Fel": 1
+    },
+    "resilience": {
+      "value": 7,
+      "note": "Augmetics: 4 AR"
+    },
+    "defence": 1,
+    "wounds": 4,
+    "shock": 0,
+    "skills": "Default 4, Awareness 4 (Passive 2), Weapon Skill 5",
+    "bonuses": [
+      {
+        "name": "Iron Soul",
+        "description": "This Follower is unaffected by abilities that target the mind, and never needs to make a Resolve test to continue fighting."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "ACTION",
+        "name": "Servo Arm",
+        "stats": "9 +2 ED / AP -3 / Brutal,"
+      },
+      {
+        "type": "COMPLICATION",
+        "name": "Mindlock",
+        "description": "The Servitor is Exhausted for 1 round. This can be negated by an ally succeeding on a DN 3 Tech (Int) Test."
+      }
+    ],
+    "determination": "Spend 1 Glory to roll 3d6.",
+    "conviction": 1,
+    "resolve": 1,
+    "speed": 5,
+    "size": "Avg",
+    "source": "Abundance of Apocrypha",
+    "description": "Combat Servitors are modified mono-task lifter Servitors intended to fight in close melee combat, and they are normally equipped with some form of augmetic power claw or servo-arm."
+  },
+  {
+    "id": "apoc_gun_servitor",
+    "name": "GUN SERVITOR",
+    "tierThreat": {
+      "1": "T",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS MECHANICUS",
+      "SERVITOR"
+    ],
+    "attributes": {
+      "S": 4,
+      "T": 2,
+      "A": 2,
+      "I": 2,
+      "Wil": 1,
+      "Int": 1,
+      "Fel": 1
+    },
+    "resilience": {
+      "value": 7,
+      "note": "Augmetics: 4 AR"
+    },
+    "defence": 1,
+    "wounds": 4,
+    "shock": 0,
+    "skills": "Default 4, Awareness 4 (Passive 2), Ballistic Skill 5",
+    "bonuses": [
+      {
+        "name": "Iron Soul",
+        "description": "This Follower is unaffected by abilities that target the mind, and never needs to make a Resolve test to continue fighting."
+      },
+      {
+        "name": "Gun Platform",
+        "description": "The Gun Servitor ignores the Heavy (X) trait on its weapons. It carries 3 Reloads of ammunition for its weapon."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "ACTION",
+        "name": "Heavy Bolter",
+        "stats": "12 +2 ED / AP -1 / Range 18-"
+      },
+      {
+        "type": "PASSIVE",
+        "name": "Follower Options",
+        "description": "The Follower’s Heavy Bolter may be replaced by any other Heavy weapon the owner acquires."
+      },
+      {
+        "type": "COMPLICATION",
+        "name": "Mindlock",
+        "description": "The Servitor is Exhausted for 1 round. This can be negated by an ally succeeding on a DN 3 Tech (Int) Test."
+      }
+    ],
+    "determination": "Spend 1 Glory to roll 3d6.",
+    "conviction": 1,
+    "resolve": 1,
+    "speed": 5,
+    "size": "Avg",
+    "source": "Abundance of Apocrypha",
+    "description": "Gun Servitors are intended to provide fire support for a Tech-priest or Techmarine as he works, and often they will have whole limbs replaced with cybernetically-implanted weapons. Many will have ammunition hoppers mounted somewhere on their bodies so they can lay down continuous curtains of fire without needing to reload."
+  },
+  {
+    "id": "apoc_monotask_servitor",
+    "name": "MONOTASK SERVITOR",
+    "tierThreat": {
+      "1": "T",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS MECHANICUS",
+      "SERVITOR"
+    ],
+    "attributes": {
+      "S": 4,
+      "T": 2,
+      "A": 2,
+      "I": 2,
+      "Wil": 1,
+      "Int": 1,
+      "Fel": 1
+    },
+    "resilience": {
+      "value": 7,
+      "note": "Augmetics: 4 AR"
+    },
+    "defence": 1,
+    "wounds": 4,
+    "shock": 0,
+    "skills": "Default 4, Awareness 4 (Passive 2), Tech 5",
+    "bonuses": [
+      {
+        "name": "Iron Soul",
+        "description": "This Follower is unaffected by abilities that target the mind, and never needs to make a Resolve test to continue fighting."
+      },
+      {
+        "name": "Assistant",
+        "description": "While a Monotask Servitor is within 3m of its owner, its owner adds +2d to any Tech test they attempt."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "ACTION",
+        "name": "Manipulator Claws",
+        "stats": "7 +2 ED / AP -1"
+      },
+      {
+        "type": "COMPLICATION",
+        "name": "Mindlock",
+        "description": "The Servitor is Exhausted for 1 round. This can be negated by an ally succeeding on a DN 3 Tech (Int) Test."
+      }
+    ],
+    "determination": "Spend 1 Glory to roll 3d6.",
+    "conviction": 1,
+    "resolve": 1,
+    "speed": 5,
+    "size": "Avg",
+    "source": "Abundance of Apocrypha",
+    "description": "A Monotask Servitor carries out tedious labours for their masters. Enginseers and Techmarines often replace at least one of this kind of Servitor's hands with a less powerful version of their own Servo-arm manipulators. Monotask Servitors will not hold up long in combat conditions, but they can be useful on missions to carry out simple repairs and perform menial labours."
+  },
+  {
+    "id": "apoc_medicae_servitor",
+    "name": "MEDICAE SERVITOR",
+    "tierThreat": {
+      "1": "T",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS MECHANICUS",
+      "OFFICIO MEDICAE",
+      "SERVITOR"
+    ],
+    "attributes": {
+      "S": 4,
+      "T": 2,
+      "A": 2,
+      "I": 2,
+      "Wil": 1,
+      "Int": 1,
+      "Fel": 1
+    },
+    "resilience": {
+      "value": 7,
+      "note": "Augmetics: 4 AR"
+    },
+    "defence": 1,
+    "wounds": 4,
+    "shock": 0,
+    "skills": "Default 4, Awareness 4 (Passive 2), Medicae 5",
+    "bonuses": [
+      {
+        "name": "Iron Soul",
+        "description": "This Follower is unaffected by abilities that target the mind, and never needs to make a Resolve test to continue fighting."
+      },
+      {
+        "name": "Assistant",
+        "description": "While a Medicae Servitor is within 3m of its owner, its owner adds +2d to any Medicae test they attempt."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "ACTION",
+        "name": "Manipulator Claws",
+        "stats": "7 +2 ED / AP -1"
+      },
+      {
+        "type": "ACTION",
+        "name": "Pharmacopoeia",
+        "stats": "The Medicae Servitor may use any"
+      },
+      {
+        "type": "COMPLICATION",
+        "name": "Mindlock",
+        "description": "The Servitor is Exhausted for 1 round. This can be negated by an ally succeeding on a DN 3 Tech (Int) Test."
+      }
+    ],
+    "determination": "Spend 1 Glory to roll 3d6.",
+    "conviction": 1,
+    "resolve": 1,
+    "speed": 5,
+    "size": "Avg",
+    "source": "Abundance of Apocrypha",
+    "description": "Medicae Servitors are often used to supplement trained medicae personnel in manufactorums and other dangerous environments. Some are fixed in place, mounted into a wall alcove with their legs removed, providing care to anyone brought to them. Others roam their designated area or follow a designated owner. When supporting a trained chirurgeon, they function as nurses and orderlies."
+  },
+  {
+    "id": "apoc_ministorum_choir_drone",
+    "name": "MINISTORUM CHOIR DRONE",
+    "tierThreat": {
+      "1": "T",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS MECHANICUS",
+      "ADEPTUS MINISTORUM",
+      "SERVITOR"
+    ],
+    "attributes": {
+      "S": 4,
+      "T": 2,
+      "A": 2,
+      "I": 2,
+      "Wil": 1,
+      "Int": 1,
+      "Fel": 1
+    },
+    "resilience": {
+      "value": 6,
+      "note": "Augmetics: 3 AR"
+    },
+    "defence": 1,
+    "wounds": 4,
+    "shock": 0,
+    "skills": "Default 2, Awareness 6 (Passive 3), Scholar 4",
+    "bonuses": [
+      {
+        "name": "Choristor",
+        "description": "While within 10m of its owner, the Follower adds +2d to all the owner’s Leadership and Persuasion tests."
+      },
+      {
+        "name": "Iron Soul",
+        "description": "This Follower is unaffected by abilities that target the mind, and never needs to make a Resolve test to continue fighting."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "COMPLICATION",
+        "name": "Mindlock",
+        "description": "The Servitor is Exhausted for 1 round. This can be negated by an ally succeeding on a DN 3 Tech (Int) Test."
+      }
+    ],
+    "determination": "Spend 1 Glory to roll 3d6.",
+    "conviction": 1,
+    "resolve": 1,
+    "speed": 5,
+    "size": "Avg",
+    "source": "Abundance of Apocrypha",
+    "description": "A simple form of servitor drone, choir drones are found in cathedrals and Shrine Worlds across the Imperium. Most are configured to sing (in some extreme cases only a single note) and then gathered into choirs numbering anywhere from a few dozen to a thousand or more. Other Ministorum drones may be set to repeat a sacred chant or prayer over and over, swing incense censers, turn prayer wheels, wave prayer flags, or play an instrument (such as blowing a sacred horn or beating on a drum)."
+  },
+  {
+    "id": "apoc_murder_servitor",
+    "name": "MURDER SERVITOR",
+    "tierThreat": {
+      "1": "-",
+      "2": "E",
+      "3": "E",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS MECHANICUS",
+      "NAVIS IMPERIALIS",
+      "SERVITOR"
+    ],
+    "attributes": {
+      "S": 5,
+      "T": 4,
+      "A": 4,
+      "I": 4,
+      "Wil": 3,
+      "Int": 1,
+      "Fel": 1
+    },
+    "resilience": {
+      "value": 9,
+      "note": "Augmetics: 4 AR"
+    },
+    "defence": 3,
+    "wounds": 8,
+    "shock": 0,
+    "skills": "Default 4, Awareness 6 (Passive 3), Athletics 5, Intimidation 5, Weapon Skill 7",
+    "bonuses": [
+      {
+        "name": "Second Strike",
+        "description": "This Follower reduces the Multi- Attack penalty by 2 DN, as though it had the Dual Wield Talent."
+      },
+      {
+        "name": "Iron Soul",
+        "description": "This Follower is unaffected by abilities that target the mind, and never needs to make a Resolve test to continue fighting."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "ACTION",
+        "name": "Mono-Talons",
+        "stats": "8 +3ED / AP -1 / Tearing"
+      },
+      {
+        "type": "ACTION",
+        "name": "Viscerator Limb",
+        "stats": "10 +4ED / AP -1 / Brutal"
+      },
+      {
+        "type": "ACTION",
+        "name": "Melta-Cutters",
+        "stats": "16 +3ED / AP -4 / Range 3-6-9 /"
+      },
+      {
+        "type": "COMPLICATION",
+        "name": "Murder-lock",
+        "description": "The Servitor is Frenzied for 1 round. This can be negated by an ally succeeding on a DN 3 Tech (Int) Test."
+      }
+    ],
+    "determination": "Spend 1 Glory to roll 5d6.",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 8,
+    "size": "Avg",
+    "source": "Abundance of Apocrypha",
+    "description": "Commonly used aboard starships to supplement boarding parties and raiding forces, murder servitors are ghoulish, skull-masked killing machines. The most common patterns take the form of a hunched, predatory monster, driven by sadistic and aggressive machine spirits. Mono-talons and viscerator-limbs allow them to tear apart most living foes, while melta- cutters allow them to burn through bulkheads and destroy equipment. Designed to intimidate as much as to kill, murder servitors are consummate hunters, stalking their prey and moving with inhuman speed. If not ordered otherwise, they spend hours hunting any living creature not programmed into their spoor-targeters, undeterred by any obstruction and unhindered by fear or humanity."
+  },
+  {
+    "id": "apoc_servo_skull",
+    "name": "SERVO SKULL",
+    "tierThreat": {
+      "1": "T",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS MECHANICUS",
+      "SERVITOR"
+    ],
+    "attributes": {
+      "S": 1,
+      "T": 1,
+      "A": 2,
+      "I": 4,
+      "Wil": 2,
+      "Int": 3,
+      "Fel": 2
+    },
+    "resilience": {
+      "value": 2
+    },
+    "defence": 5,
+    "wounds": 3,
+    "shock": 0,
+    "skills": "Default 5, Awareness 6 (Passive 3), Stealth 7",
+    "bonuses": [
+      {
+        "name": "Iron Soul",
+        "description": "This Follower is unaffected by abilities that target the mind, and never needs to make a Resolve test to continue fighting."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "ACTION",
+        "name": "Skull Bash",
+        "stats": "3 +1 ED"
+      }
+    ],
+    "determination": "Spend 1 Glory to roll 2d6.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 10,
+    "size": "Tiny",
+    "speedNote": "Flight",
+    "source": "Abundance of Apocrypha",
+    "description": "Human skulls outfitted with electronic and cybernetic components that utilise embedded anti-gravity field generators to allow them to hover and drift bodiless through the air. They are fashioned using added robotic components from the skulls and preserved brain tissue of loyal adepts of the Adeptus Terra and other pious Imperial servants so that they may continue their work for the Emperor of Mankind even after death. Presumably, to have one's skull chosen to serve as a Servo-skull is a great honour in the Imperium. Servo-skulls fill an important niche in Imperial work, serving as everything from auto-scribes that copy down important conversations and confessions of prisoners, to simple moving torches, hovering about their charge with electro-candles and lumen-globes to illuminate the area. Servo-skulls are used throughout all the different organisations of the Imperium, and each is built to perform a certain task. In many governmental buildings, they can be found buzzing through the air in their dozens, carrying out minor tasks, or carrying out routine surveillance on the people below."
+  },
+  {
+    "id": "apoc_daemonhost",
+    "name": "DAEMONHOST",
+    "tierThreat": {
+      "1": "-",
+      "2": "-",
+      "3": "E",
+      "4": "E",
+      "5": "E"
+    },
+    "keywords": [
+      "CHAOS",
+      "DAEMON",
+      "[MARK OF CHAOS]",
+      "PSYKER"
+    ],
+    "attributes": {
+      "S": 6,
+      "T": 6,
+      "A": 5,
+      "I": 5,
+      "Wil": 6,
+      "Int": 5,
+      "Fel": 4
+    },
+    "resilience": {
+      "value": 10,
+      "note": "Daemonic Aura: *3 AR"
+    },
+    "defence": 4,
+    "wounds": 12,
+    "shock": 0,
+    "skills": "Default 8, Awareness 10 (Passive 5), Intimidation 9, Scholar 9, Psychic Mastery 9",
+    "bonuses": [
+      {
+        "name": "Bound Daemon",
+        "description": "The Daemonhost’s abilities depend on how strongly the daemon is bound into the host. Thrice-Bound: The Daemonhost’s profile is unchanged. Twice-Bound: The Daemonhost’s AR, the DN of its Fear Test, the ED of its attacks, and its Intimidation, Scholar, and Psychic Mastery skills all increase by +1. The Daemonhost has a Flight speed of 6, and it knows one additional psychic power. Once-Bound: The Daemonhost’s AR, the DN of its Fear Test, the ED of its attacks, and its Intimidation, Scholar, and Psychic Mastery skills all increase by +2. The Daemonhost has a Flight speed of 7, and it knows two additional psychic powers. Unbound: The Daemonhost’s AR, the DN of its Fear Test, the ED of its attacks, and its Intimidation, Scholar, and Psychic Mastery skills all increase by +3. The Daemonhost has a Flight speed of 8, and it knows three additional psychic powers."
+      },
+      {
+        "name": "Servant Of The Lord Of Skulls",
+        "description": "A Daemonhost with the KHORNE keyword does not have the PSYKER keyword, the Psychic Mastery skill, and cannot use Psychic Powers. Instead, it has Weapon Skill 10 (which increases according to the Bound Daemon rule, above), and gains the Brutal trait on its Warp Grasp melee attack. A KHORNE Daemonhost may enter a Frenzied state as a Simple Action."
+      },
+      {
+        "name": "Unholy Changes",
+        "description": "The Daemonhost’s form is twisted by the entity within. Roll one or more times on the Mutation tables on page 287 of the Wrath & Glory Core Rulebook. An Unbound Daemonhost rolls four times. A Once-Bound Daemonhost rolls three times. A Twice-Bound Daemonhost rolls twice. A Thrice-Bound Daemonhost rolls once."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "BATTLECRY",
+        "name": "Daemonic Dread",
+        "description": "Anyone who can see this Follower, other than its owner, must take a DN 3 Fear Test."
+      },
+      {
+        "type": "ACTION",
+        "name": "Unholy Gaze",
+        "stats": "16 +2 ED / AP -1 / Range 6-"
+      },
+      {
+        "type": "ACTION",
+        "name": "Warp Grasp",
+        "stats": "9 + 2ED / AP -3 / Warp Weapon"
+      },
+      {
+        "type": "ACTION",
+        "name": "Maleficarum",
+        "stats": "The Daemonhost may attempt to"
+      },
+      {
+        "type": "COMPLICATION",
+        "name": "Daemonic Rebellion",
+        "description": "The Daemon attempts to break free of its bindings. It attempts a Willpower Test, with a DN based on its binding level: Thrice-bound is DN 5, Twice-bound is DN 4, Once-bound is DN 3. If it succeeds, its level of binding is reduced by one, towards Unbound. If already unbound, the daemon betrays its owner."
+      }
+    ],
+    "determination": "Daemonic Aura: Spend 1 Glory to roll 6d6. This Follower may roll Determination against Mortal Wounds, and any Wounds negated by Determination are ignored instead of being converted to Shock.",
+    "conviction": 6,
+    "resolve": 5,
+    "speed": 6,
+    "size": "Avg",
+    "source": "Abundance of Apocrypha",
+    "description": "A Daemonhost is an unholy creation of foul and dangerous rituals in which a powerful Daemon of Chaos is bound into a living Human or other mortal host body and enslaved to its creator's will. An utterly foul act, the creation of a Daemonhost condemns the soul of the host body to eternal torment and provides a lasting home in the material universe for a Daemon to work its malignant evil. Daemons do not rest easily under the will of any mortal, and to earn the enmity of such a creature is to gain an immortal enemy, so a Daemonhost's creator is faced with a dangerous conundrum: the more powerful the Daemonhost created, the weaker the bindings of the Daemon."
+  },
+  {
+    "id": "apoc_dark_disciple",
+    "name": "DARK DISCIPLE",
+    "tierThreat": {
+      "1": "T",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "CHAOS",
+      "HERETIC",
+      "[MARK OF CHAOS]",
+      "PRIEST"
+    ],
+    "attributes": {
+      "S": 2,
+      "T": 3,
+      "A": 3,
+      "I": 3,
+      "Wil": 3,
+      "Int": 2,
+      "Fel": 3
+    },
+    "resilience": {
+      "value": 7,
+      "note": "Aura of Dark Glory: *3 AR"
+    },
+    "defence": 2,
+    "wounds": 5,
+    "shock": 4,
+    "skills": "Default 4, Awareness 5 (Passive 3), Persuasion 6, Scholar 5",
+    "bonuses": [
+      {
+        "name": "Exultant",
+        "description": "When within 6m of their owner, a Dark Disciple adds one Exalted Icon to the owner’s Persuasion tests to perform Interaction Attacks or invoke Prayers to the Dark Gods."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "ACTION",
+        "name": "Cursed Athame",
+        "stats": "5 +2 ED / AP -1 / Rending"
+      }
+    ],
+    "determination": "Spend 1 Glory to roll 3d6.",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 6,
+    "size": "Avg",
+    "source": "Abundance of Apocrypha",
+    "description": "A Dark Disciple is a human Chaos Cultist who exalts in the service and glory of the Dark Gods. Dark Disciples are true believers in the Chaos Gods who seek to spread their worship and influence across the worlds of the Imperium of Man."
+  },
+  {
+    "id": "apoc_thrall_wizard",
+    "name": "THRALL WIZARD",
+    "tierThreat": {
+      "1": "T",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "CHAOS",
+      "HERETIC",
+      "[MARK OF CHAOS]",
+      "PSYKER"
+    ],
+    "attributes": {
+      "S": 2,
+      "T": 3,
+      "A": 3,
+      "I": 3,
+      "Wil": 3,
+      "Int": 3,
+      "Fel": 2
+    },
+    "resilience": {
+      "value": 7,
+      "note": "Aura of Dark Glory: *3 AR"
+    },
+    "defence": 2,
+    "wounds": 5,
+    "shock": 4,
+    "skills": "Default 4, Awareness 5 (Passive 3), Psychic Mastery 6, Scholar 5",
+    "bonuses": [
+      {
+        "name": "Ritualist",
+        "description": "When within 6m of their owner, a Dark Disciple adds one Exalted Icon to the owner’s Psychic Mastery tests."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "ACTION",
+        "name": "Cursed Athame",
+        "stats": "5 +2 ED / AP -1 / Rending"
+      }
+    ],
+    "determination": "Spend 1 Glory to roll 3d6.",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 6,
+    "size": "Avg",
+    "source": "Abundance of Apocrypha",
+    "description": "A Thrall Wizard is a human servant of Tzeentch who serves a Heretic Astartes Sorcerer. Many of them serve the Thousand Sons Legion, drawn from the mortal population of the Planet of the Sorcerers, but it is rare to encounter a Chaos Sorcerer who does not aspire to have minions and thralls to serve their whims."
+  },
+  {
+    "id": "apoc_rubric_marine",
+    "name": "RUBRIC MARINE",
+    "tierThreat": {
+      "1": "-",
+      "2": "-",
+      "3": "E",
+      "4": "E",
+      "5": "T"
+    },
+    "keywords": [
+      "CHAOS",
+      "HERETIC ASTARTES",
+      "THOUSAND SONS"
+    ],
+    "attributes": {
+      "S": 7,
+      "T": 5,
+      "A": 4,
+      "I": 4,
+      "Wil": 4,
+      "Int": 4,
+      "Fel": 2
+    },
+    "resilience": {
+      "value": 11,
+      "note": "Ancient Power Armour: 5 AR"
+    },
+    "defence": 3,
+    "wounds": 11,
+    "shock": 0,
+    "skills": "Default 7, Awareness 9 (Passive 5), Ballistic Skill 10, Weapon Skill 9",
+    "bonuses": [
+      {
+        "name": "Arcane Automata",
+        "description": "This Follower is unaffected by abilities that target the mind, and never needs to make a Resolve test to continue fighting."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "ACTION",
+        "name": "Inferno Boltgun",
+        "stats": "10 + 1 ED / AP -2 / Range"
+      },
+      {
+        "type": "ACTION",
+        "name": "Armoured Fists",
+        "stats": "7 +1 ED"
+      },
+      {
+        "type": "PASSIVE",
+        "name": "Follower Options",
+        "description": "The follower’s Inferno Boltgun may be exchanged for one of the following. Warpflamer: 10 +1ED / AP -2 / Range 4-8-12 / Salvo 1 / Assault, Corrupting, Flamer Soulreaper Cannon: 13 +1ED / AP -3 / Range 12-24- 36 / Salvo 5 / Heavy (7), Sustained"
+      }
+    ],
+    "determination": "All is Dust: Spend 1 Glory to roll 6d6. The Follower may re-roll any dice which roll 1s.",
+    "conviction": 4,
+    "resolve": 4,
+    "speed": 7,
+    "size": "Avg",
+    "source": "Abundance of Apocrypha",
+    "description": "Rubric Marines were created shortly after the Thousand Sons Legion fled to the Eye of Terror. Having dealt with sorcerous practices and energies for decades and now under the sway of Chaos, mutation ran wild within the Legion.[4a] In order to put an end to this warping process, a mighty spell called the Rubric of Ahriman was cast upon them. However, the powers unleashed reduced all Marines without psychic abilities to ash, sealing every clasp and joint of their armour and trapping their souls within. These living suits are still capable of fighting and receiving orders from their masters, and with no fear and no will of their own, they make perfect bodyguards and guardians. Without an Aspiring Sorcerer to guide them, Rubric Marines tend to fall into inactivity; in combat, however, their battle-hunger returns and so they tend to move more like their former living selves. A single Sorcerer is capable of controlling a whole squad and will use his powers to enchant their bolters and turn their ammunition into explosive Inferno Bolts. These magical shots are able to ignore mundane armour and burn the souls of sentient beings. When a Rubric Marine dies, the dried remains of his material form pour from his rent armour and are scattered to all winds of the battlefield. After this, only the most powerful sorcerers could re-collect this dust, reseal the armour, and through a complicated ritual reanimate the Rubric Marine to a new \"life\". The sorcery required for this deed are very dangerous and just one syllable misspelled could drive the Sorcerer insane - or kill him outright."
+  },
+  {
+    "id": "apoc_faolch",
+    "name": "FAOLCHÚ",
+    "tierThreat": {
+      "1": "T",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "AELDARI",
+      "ASURYANI",
+      "ANHRATHE",
+      "BEAST"
+    ],
+    "attributes": {
+      "S": 1,
+      "T": 1,
+      "A": 6,
+      "I": 6,
+      "Wil": 4,
+      "Int": 3,
+      "Fel": 1
+    },
+    "resilience": {
+      "value": 2
+    },
+    "defence": 7,
+    "wounds": 3,
+    "shock": 5,
+    "skills": "Default 2, Awareness 8 (Passive 4), Survival 6, Weapon Skill 5",
+    "bonuses": [
+      {
+        "name": "Animal",
+        "description": "A Faolchú is unable to take any actions which would require the use of hands."
+      },
+      {
+        "name": "Empathic Link",
+        "description": "The Follower is linked to its owner via a psychic bond. The owner can see, hear, etc., through the Follower’s senses, and give instant mental commands, so long as the Follower is within a number of kilometres equal to the owner’s Willpower."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "BATTLECRY",
+        "name": "To the Skies",
+        "description": "The Faolchú immediately makes a normal move."
+      },
+      {
+        "type": "ACTION",
+        "name": "Talons",
+        "stats": "3 + 2 ED"
+      }
+    ],
+    "determination": "Spend 1 Glory to roll 6d6.",
+    "conviction": 4,
+    "resolve": 3,
+    "speed": 12,
+    "size": "Tiny",
+    "speedNote": "Flight",
+    "source": "Abundance of Apocrypha",
+    "description": "A species of avian raptor—hunting bird—found on Aeldari worlds and bred in captivity on Asuryani craftworlds and Anhrathe vessels alike, Faolchú are named for the great falcon of Aeldari myth, who bore the sword Anaris from Vaul to the hero Eldanesh, that he might defend the Aeldari people from Khaine’s fury. These birds are commonly kept as pets and hunting animals by Aeldari, and some Anhrathe carry their Faolchú into battle to serve as scouts. The innate psychic abilities of the Aeldari allow them to form close bonds with their animal companions, without the clumsy augmetic devices used by humans, or the brutal ‘discipline’ of Orks."
+  },
+  {
+    "id": "apoc_gyrinx",
+    "name": "GYRINX",
+    "tierThreat": {
+      "1": "T",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "AELDARI",
+      "ASURYANI",
+      "ANHRATHE",
+      "HARLEQUIN",
+      "BEAST"
+    ],
+    "attributes": {
+      "S": 2,
+      "T": 2,
+      "A": 5,
+      "I": 5,
+      "Wil": 4,
+      "Int": 3,
+      "Fel": 3
+    },
+    "resilience": {
+      "value": 3
+    },
+    "defence": 6,
+    "wounds": 4,
+    "shock": 5,
+    "skills": "Default 2, Awareness 8 (Passive 4), Survival 6, Weapon Skill 5",
+    "bonuses": [
+      {
+        "name": "Animal",
+        "description": "A Gyrinx is unable to take any actions which would require the use of hands."
+      },
+      {
+        "name": "Empathic Bond",
+        "description": "The Follower is linked to its owner via a psychic bond. The Follower and its owner can communicate telepathically while within 6m. While the Follower is within 6m, the owner gains +Rank dice on all Initiative and Intellect tests."
+      },
+      {
+        "name": "Psychic Familiar",
+        "description": "While within 6m of its owner, the owner may add +2d to any Psychic Mastery test they attempt."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "ACTION",
+        "name": "Claws",
+        "stats": "3 + 2 ED"
+      }
+    ],
+    "determination": "Spend 1 Glory to roll 1d6",
+    "conviction": 4,
+    "resolve": 3,
+    "speed": 6,
+    "size": "Tiny",
+    "source": "Abundance of Apocrypha",
+    "description": "A Gyrinx resembles a large cat, with very thick and fluffy ginger or orange fur and bright blue eyes. They can grow to as much as a metre in length. Gyrinx are not intelligent as such, but they have an astounding ability to empathize with other creatures, forming a mental bond with their owner which is comparable to true friendship. This bond is of great benefit to the creature's owner, whose own speed of thought and action are actually improved while the Gyrinx is in close proximity. What benefit the Gyrinx obtains from the relationship is unclear, but there is plainly some deep- seated need being fulfilled, because an owner-less Gyrinx will actively seek out and adopt another creature. Oddly enough, Gyrinx show a slow metabolic change so that they can come to resemble their owner physically, temperamentally and in habit."
+  },
+  {
+    "id": "apoc_khymera",
+    "name": "KHYMERA",
+    "tierThreat": {
+      "1": "T",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "DRUKHARI",
+      "BEAST",
+      "DAEMON"
+    ],
+    "attributes": {
+      "S": 6,
+      "T": 6,
+      "A": 5,
+      "I": 5,
+      "Wil": 3,
+      "Int": 1,
+      "Fel": 1
+    },
+    "resilience": {
+      "value": 7
+    },
+    "defence": 4,
+    "wounds": 8,
+    "shock": 0,
+    "skills": "Default 4, Awareness 8 (Passive 4), Intimidation 6, Weapon Skill 8",
+    "bonuses": [
+      {
+        "name": "Animal",
+        "description": "A Khymera is unable to take any actions which would require the use of hands."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "BATTLECRY",
+        "name": "Frightful Form",
+        "description": "Anyone that can see this Threat must make a DN 3 Fear Test."
+      },
+      {
+        "type": "ACTION",
+        "name": "Claws and Talons",
+        "stats": "11 +3ED / AP -1"
+      }
+    ],
+    "determination": "Daemonic: Spend 1 Glory to roll 6d6. Daemons can roll Determination against Mortal Wounds. Any Wounds negated by Determination are ignored instead of being converted to Shock.",
+    "conviction": 3,
+    "resolve": 2,
+    "speed": 10,
+    "size": "Avg",
+    "source": "Abundance of Apocrypha",
+    "description": "A Khymera (pl. Khymerae), are terrifying creatures, literally born from an intelligent being's nightmares. They spawn in the Warp or on Daemon Worlds, coalescing into existence like malignant cysts around the psychic energies that fear and terror leaves in the Immaterium. They do not form at the whim of the Chaos Gods nor do they appear to be fragments of these powers. Khymerae lack a proper corporeal form, allowing them to flicker between realspace and the Sea of Souls at whim, appearing momentarily before a foe and then vanishing suddenly to launch an attack from an unexpected direction."
+  },
+  {
+    "id": "apoc_razorwing",
+    "name": "RAZORWING",
+    "tierThreat": {
+      "1": "T",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "DRUKHARI",
+      "BEAST"
+    ],
+    "attributes": {
+      "S": 1,
+      "T": 1,
+      "A": 5,
+      "I": 5,
+      "Wil": 2,
+      "Int": 1,
+      "Fel": 1
+    },
+    "resilience": {
+      "value": 2
+    },
+    "defence": 5,
+    "wounds": 1,
+    "shock": 3,
+    "skills": "Default 4, Awareness 8 (Passive 4), Weapon Skill 8",
+    "bonuses": [
+      {
+        "name": "Animal",
+        "description": "A Razorwing is unable to take any actions which would require the use of hands."
+      },
+      {
+        "name": "Flyby",
+        "description": "The Threat never counts as being Engaged, and thus enemies cannot attempt Reflexive Attacks when the Threat moves away."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "ACTION",
+        "name": "Razor Feathers",
+        "stats": "5 +2ED / AP -1 / Rending"
+      }
+    ],
+    "determination": "Scattered Flock: Spend 1 Glory to roll 1d6. Then the mob moves up to half its Speed and adds +2 to its Defence until the start of its next turn.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 12,
+    "size": "Small",
+    "speedNote": "Fly",
+    "mobAbilities": "FLOCK OF BLADES: Increase the base damage of this mob’s melee attacks by +1 and add +1ED for each creature in the mob, up to a maximum of +5 and +5ED.",
+    "source": "Abundance of Apocrypha",
+    "description": "Razorwings are large birds of prey with a wingspan of nearly thirteen feet. They drift along on thermal currents until they have a prey in sight, at which point they dive with such speeds that escape is impossible. Though usually just considered a bird of prey, they have been observed utilizing great intelligence and military tactics while hunting. Such is their rumored intelligence that some have claimed they can set races against one another and communicate. Razorwings have an insatiable hunger for bone and are incredibly swift. They attack in flocks, surrounding their prey in a deadly hurricane of knife-like feathers and razor-sharp beaks that strip their victim's flesh from their bones."
+  },
+  {
+    "id": "apoc_attack_squig",
+    "name": "ATTACK SQUIG",
+    "tierThreat": {
+      "1": "T",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "ORK",
+      "SQUIG",
+      "BEAST"
+    ],
+    "attributes": {
+      "S": 5,
+      "T": 3,
+      "A": 4,
+      "I": 3,
+      "Wil": 2,
+      "Int": 1,
+      "Fel": 1
+    },
+    "resilience": {
+      "value": 6,
+      "note": "Tough Hide: AR 2"
+    },
+    "defence": 3,
+    "wounds": 4,
+    "shock": 2,
+    "skills": "Default 4, Awareness 4 (Passive 2), Survival 5, Weapon Skill 6",
+    "bonuses": [
+      {
+        "name": "Animal",
+        "description": "A Squig is unable to take any actions which would require the use of hands."
+      },
+      {
+        "name": "Bouncing Gait",
+        "description": "A Squig adds +1d3 to its Speed each time it runs, charges, or sprints."
+      },
+      {
+        "name": "Squig Hound",
+        "description": "GRETCHIN within 3m of a Squig Hound add +2 to their Resolve."
+      },
+      {
+        "name": "Squigz Gone Wild",
+        "description": "A Squig which starts its turn without an Ork within 3m, or a RUNTHERD within 6m, becomes Frenzied."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "ACTION",
+        "name": "Big Chompy Teef",
+        "stats": "9 +4ED / AP -1 / Brutal"
+      },
+      {
+        "type": "ANNIHILATION",
+        "name": "Detonate",
+        "description": "The Bomb Squig explodes. Bomb Squig Explosion: 16 +3ED / AP -3 / Brutal, Blast (2d3)"
+      }
+    ],
+    "determination": "Spend 1 Ruin to roll 3d6.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 6,
+    "size": "Small",
+    "mobAbilities": "Bouncing Charge: A Mob of Attack Squigs add Inflict (Knockdown) to their melee attacks when they charge.",
+    "source": "Abundance of Apocrypha",
+    "description": "A Squig (short for \"Squiggly Beast\") is the simplest known form of Orkoid life. There are many types of Squig, each generally filling some functional or utilitarian role in the Ork ecosystem. They currently serve as the Orks' primary food source, much like herd animals are for Humans. Attack Squigs are one of the most common types of Squig. An Attack Squig is a bouncing ball of claws and razor-sharp teeth, with immense variations in morphology between individuals, with some having horns and a devil-like tail, while others are single-eyed or single-nosed creatures. Gretchin use them as both a food source (if the Squig doesn't eat them first!) or as a weapon of war, pushing herds of them into the enemy. Orks like to keep them as pets, and sometimes even as weapons as well. Bomb Squigs are little more than common Squigs with explosives strapped to their sides or gripped firmly in their teeth. When properly goaded, they run headlong at their master's desired target, detonating their explosive payload when in close proximity. Squighounds, commonly known as \"Growlers,\" are a variation of the Attack Squig, used by Ork Runtherdz to help them keep the Gretchins and slaves from other races in line, some have four legs, although two-legged varieties certainly exist. \"Growlers\" are also often kept as a form of pet by other Orks, as they are roughly the size of a small dog, hairy, and particularly vicious."
+  },
+  {
+    "id": "apoc_gretchin",
+    "name": "GRETCHIN",
+    "tierThreat": {
+      "1": "T",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "GRETCHIN",
+      "RUNTS"
+    ],
+    "attributes": {
+      "S": 1,
+      "T": 2,
+      "A": 3,
+      "I": 3,
+      "Wil": 1,
+      "Int": 2,
+      "Fel": 1
+    },
+    "resilience": {
+      "value": 4
+    },
+    "defence": 4,
+    "wounds": 4,
+    "shock": 2,
+    "skills": "Default 4, Awareness 4 (Passive 2), Ballistic Skill 5, Stealth 5, Survival 5",
+    "bonuses": [
+      {
+        "name": "Ammo Runt",
+        "description": "An Ammo Runt carries two Reloads for its owner. The owner may ignore the first Complication they suffer on a ranged attack."
+      },
+      {
+        "name": "Cowardly",
+        "description": "When making a Resolve test, if the Wrath die rolls a failure, it is counted as a Complication. DOK’S ORDERLY: A Dok’s Orderly has a Medicae skill of 5. When a DOK has a Grot Orderly within 2m, they may re-roll any 1s on their Medicae tests."
+      },
+      {
+        "name": "Grot Oiler",
+        "description": "A Grot Oiler has a Tech skill of 5. When a MEK has a Grot Oiler within 2m, they may re-roll any 1s on their Tech tests."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "ACTION",
+        "name": "Grot Blasta",
+        "stats": "7 +1ED / AP – / Range 6-12-18"
+      },
+      {
+        "type": "ACTION",
+        "name": "Sneaky Stabba",
+        "stats": "3 +2ED / Silent"
+      }
+    ],
+    "determination": "Spend 1 Ruin to roll 2d6.",
+    "conviction": 1,
+    "resolve": 1,
+    "speed": 5,
+    "size": "Small",
+    "mobAbilities": "Grot Shields: ORK Threats count as having full cover (+2 Defence) when they are behind and within 6m of a Gretchin Mob. Each failed attack against ORK Threats benefitting from this inflicts 1d3 Mortal Wounds on the Gretchin Mob instead.",
+    "source": "Abundance of Apocrypha",
+    "description": "(Knockdown) to their melee attacks when they charge. Grot Gretchin or Grotz are basically a smaller subspecies of Orks, who are more cowardly than normal Orks and are usually used as living shields, to clear mine fields, are stepped on to get through difficult terrain, and sometimes even as emergency rations. Gretchins are quite low in the strict hierarchy of Ork society because of their small size (the lowest Orkoids being the Snotlings) and are often used for the dirtiest jobs like scavenging and being used as the football when the bigger Orks get bored. While they are not as aggressive as standard Orks, they enjoy fighting weaker opponents and are less likely to flee if they comfortably outnumber their opponents. If a Gretchin is particularly wealthy, he may purchase a second-hand, worn-down, low-tech gun. These guns are mainly to reassure the Gretchin that they have a chance of killing something, provided they remember which way to hold the gun. Even so, Gretchin have to be forced into battle by Runtherdz who utilise grabba sticks in order to ensure that the Gretchin stay in battle. A skilled Runtherd can grab a fleeing Gretchin and hurl him into a minefield with one smooth motion. The more tech-savvy of the Runtherdz use a grot prod which delivers an electric charge to a Gretchin's vulnerable parts. Basically, all Gretchin work as slaves for Orks, although there is a faction of revolutionary Rebel Grots that developed in the chaos of the Ork World of Gorkamorka. As they are a bit more organised than the larger Orks, Gretchin are often used to maintain Greenskin war machines and artillery. Such work is considered highly undesirable by most Orks because it prevents them from being in the heart of the battle. Gretchin also serve as attendants or \"ammo runts\" to Ork Warbosses, assistants to Ork Mekboyz, and orderlies to Ork Mad Doks."
+  },
+  {
+    "id": "apoc_corv",
+    "name": "CORV",
+    "tierThreat": {
+      "1": "T",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "LEAGUES OF VOTANN",
+      "COG",
+      "ROBOT"
+    ],
+    "attributes": {
+      "S": 2,
+      "T": 5,
+      "A": 4,
+      "I": 4,
+      "Wil": 2,
+      "Int": 1,
+      "Fel": 1
+    },
+    "resilience": {
+      "value": 10,
+      "note": "Armoured Shell: 4 AR"
+    },
+    "defence": 3,
+    "wounds": 7,
+    "shock": 0,
+    "skills": "Default 2, Awareness 4 (Passive 2), Ballistic Skill 6",
+    "bonuses": [
+      {
+        "name": "Automata",
+        "description": "This Follower is unaffected by abilities that target the mind, and never needs to make a Resolve test to continue fighting."
+      },
+      {
+        "name": "Barrier Tech",
+        "description": "While one or more CORVs are within 6m of its owner, whenever its owner suffers Perils of the Warp, one CORV is destroyed instead."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "ACTION",
+        "name": "Autoch-pattern Bolter",
+        "stats": "10 + 1 ED / AP -1 /"
+      }
+    ],
+    "determination": "Spend 1 Glory to roll 6d6.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 5,
+    "size": "Avg",
+    "speedNote": "Flight",
+    "source": "Abundance of Apocrypha",
+    "description": "These floating drones are a constant accompaniment to a Grimnyr, serving both as protectors and as psychic conduits. The integrated barrier-tech they contain shields them from surges within the Warp, protecting their charge from sudden, unexpected floods of aethyric energy."
+  },
+  {
+    "id": "apoc_e_cog",
+    "name": "E-COG",
+    "tierThreat": {
+      "1": "T",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "LEAGUES OF VOTANN",
+      "COG",
+      "ROBOT",
+      "BRÔKHYR"
+    ],
+    "attributes": {
+      "S": 2,
+      "T": 5,
+      "A": 4,
+      "I": 4,
+      "Wil": 2,
+      "Int": 1,
+      "Fel": 1
+    },
+    "resilience": {
+      "value": 10,
+      "note": "Armoured Shell: 4 AR"
+    },
+    "defence": 3,
+    "wounds": 7,
+    "shock": 0,
+    "skills": "Default 2, Awareness 4 (Passive 2), Ballistic Skill 6, Tech 6, Weapon Skill 5",
+    "bonuses": [
+      {
+        "name": "Automata",
+        "description": "This Follower is unaffected by abilities that target the mind, and never needs to make a Resolve test to continue fighting."
+      },
+      {
+        "name": "A.N-Vyl Work",
+        "description": "While one or more E-COGs are within 6m of its owner, whenever its owner attempts a Tech test, they gain +1 Exalted Icon for each E-COG within 6m."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "ACTION",
+        "name": "Autoch-pattern Bolter",
+        "stats": "10 + 1 ED / AP -1 /"
+      },
+      {
+        "type": "PASSIVE",
+        "name": "Follower Options",
+        "description": "An E-COG may exchange its Autoch-pattern Bolter with one of the following: Manipulator Arms: 7 + 1 ED, +2d on Tech tests. Plasma Torch: 10 + 2 ED / AP -4 / Careful, Unwieldy (2)"
+      }
+    ],
+    "determination": "Spend 1 Glory to roll 6d6.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 5,
+    "size": "Avg",
+    "speedNote": "Flight",
+    "source": "Abundance of Apocrypha",
+    "description": "These floating drones are commonly found assisting Brôkhyr Iron-Masters both at their Hold’s forges and on the battlefield. Within a given group, each E-COG will be equipped differently, fulfilling a different function or a different set of tasks."
+  },
+  {
+    "id": "apoc_t_au_drone",
+    "name": "T’AU DRONE",
+    "tierThreat": {
+      "1": "T",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "T’AU EMPIRE",
+      "DRONE"
+    ],
+    "attributes": {
+      "S": 3,
+      "T": 4,
+      "A": 5,
+      "I": 4,
+      "Wil": 2,
+      "Int": 1,
+      "Fel": 1
+    },
+    "resilience": {
+      "value": 9,
+      "note": "Armoured Shell: 4 AR"
+    },
+    "defence": 3,
+    "wounds": 6,
+    "shock": 4,
+    "skills": "Default 3, Awareness 4 (Passive 2)",
+    "bonuses": [
+      {
+        "name": "Artificial Intelligence",
+        "description": "A drone is immune to fear, terror, and all interaction-based skills. It can only perform simple actions in accordance with its programming or instructions given by an operator."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "REACTION",
+        "name": "Saviour Protocols",
+        "description": "If an allied T’au within 5m is the target of an attack, the Drone may attempt an Agility test (DN 3). If it succeeds, it interposes itself, and becomes the target of the attack instead. If multiple drones are within range to do this, only one drone may make the attempt."
+      }
+    ],
+    "determination": "Roll 4d6. A drone may only roll determination when using Saviour Protocols.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 10,
+    "size": "(flight)",
+    "source": "Abundance of Apocrypha",
+    "description": "MV 8 Missile Drone 7 Very Rare T’AU EMPIRE, DRONE, XV88 A Tau Drone (Kor’vesa in the Tau language, meaning “flying helper”) is a form of artificial intelligence extensively utilised by the Tau Empire for a variety of combat and non-combat purposes. The mobile variants of Tau Drones exist in the form of sleek disk-shaped machines which are well-armoured and equipped with small anti-gravitic engines and manoeuvring jet- thrusters so that they can hover and skim across the ground. As they hover over landscapes, rotating back and forth, their sensor vane constantly transmits vital information about their surroundings. These types of Drones are commonly seen alongside the warriors of the Fire Caste, but similar designs can be found buzzing through the streets and skies of any T’au settlement. Although small and innocuous, those foes that underestimate Tau Drones often pay for such a costly mistake with their lives. In addition, Drone intelligences can also be found built into a great number of technologies developed by the Tau Earth Caste, giving a simple synthetic intellect to a wide array of devices. There are many different types of Drones utilised by the Tau in varying roles; these can range from mundane civilian uses to multiple combat roles. Tau Drones can carry a wide variety of equipment, ranging from defensive Shield Generators to offensive weaponry, communications equipment, and various combat support systems. Most Tau Drones can interact with their Tau masters, obeying simple instructions and even anticipating what duties are required of them. The Tau value their Drones, and whilst they are not regarded as having equal status to a Tau, they are treated much like a favoured animal companion amongst humans. A basic T’au Drone has the following profile, which is then modified according to the type of Drone desired:"
+  },
+  {
+    "name": "DX-4 TECHNICAL DRONE",
+    "description": "The DX-4 Technical Drone is used by T'au commanders and Fire Warrior teams on the battlefield as a mobile engineering unit or a sentry, and by Earth caste engineers and technicians as an assistant. In place of weaponry each Technical Drone carries repair and sensor equipment and can be used to fix damaged or destroyed equipment in the field.",
+    "tierThreat": {
+      "1": "T",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "T'AU EMPIRE",
+      "DRONE",
+      "EARTH CASTE"
+    ],
+    "attributes": {
+      "S": 3,
+      "T": 4,
+      "A": 5,
+      "I": 4,
+      "Wil": 2,
+      "Int": 1,
+      "Fel": 1
+    },
+    "resilience": {
+      "value": 9,
+      "note": "Armoured Shell: 4 AR"
+    },
+    "defence": 3,
+    "wounds": 6,
+    "shock": 4,
+    "skills": "Default 3, Awareness 4 (Passive 2), Tech 5",
+    "determination": "Roll 4d6. A drone may only roll determination when using Saviour Protocols.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 10,
+    "size": "Avg",
+    "id": "apoc_dx4_technical_drone",
+    "bonuses": [
+      {
+        "name": "Artificial Intelligence",
+        "description": "A drone is immune to fear, terror, and all interaction-based skills. It can only perform simple actions in accordance with its programming or instructions given by an operator."
+      },
+      {
+        "name": "Repair Protocol",
+        "description": "As an action, a Technical Drone may attempt a Tech test (DN 3) to perform repairs on a T'au vehicle, or a character wearing armour with the BATTLESUIT keyword within 1 metre, restoring 1 Wound, plus +1 for each shift."
+      },
+      {
+        "name": "Surveillance Protocol",
+        "description": "The drone's Passive Awareness is increased by +2."
+      },
+      {
+        "name": "Technical Assistant",
+        "description": "When assisting an Earth caste T'au, the assisted character receives +2d on Awareness and Tech tests."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "REACTION",
+        "name": "Saviour Protocols",
+        "description": "If an allied T'au within 5m is the target of an attack, the Drone may attempt an Agility test (DN 3). If it succeeds, it interposes itself, and becomes the target of the attack instead. If multiple drones are within range to do this, only one drone may make the attempt."
+      }
+    ],
+    "source": "Abundance of Apocrypha"
+  },
+  {
+    "name": "ESCORT DRONE",
+    "description": "Escort Drones are a type of small drone that often accompany T'au Water Caste negotiators and incorporate both defensive as well as minor offensive capabilities. They are nimble and compact, making use of small efficient anti-grav units. They not only act as protectors for their charge but as tools for trade as they are programmed to record and deliver complex messages.",
+    "tierThreat": {
+      "1": "T",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "T'AU EMPIRE",
+      "DRONE",
+      "WATER CASTE"
+    ],
+    "attributes": {
+      "S": 3,
+      "T": 4,
+      "A": 5,
+      "I": 4,
+      "Wil": 2,
+      "Int": 1,
+      "Fel": 1
+    },
+    "resilience": {
+      "value": 9,
+      "note": "Armoured Shell: 4 AR"
+    },
+    "defence": 4,
+    "wounds": 6,
+    "shock": 4,
+    "skills": "Default 3, Awareness 4 (Passive 2), Ballistic Skill 4",
+    "determination": "Roll 4d6. A drone may only roll determination when using Saviour Protocols.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 10,
+    "size": "Small",
+    "id": "apoc_escort_drone",
+    "bonuses": [
+      {
+        "name": "Artificial Intelligence",
+        "description": "A drone is immune to fear, terror, and all interaction-based skills. It can only perform simple actions in accordance with its programming or instructions given by an operator."
+      },
+      {
+        "name": "Aide",
+        "description": "If the drone's owner is within 5m of the escort drone, they receive +2d on Awareness, Insight, and Scholar tests."
+      },
+      {
+        "name": "Messenger",
+        "description": "The drone can be instructed to convey recorded messages to specific individuals. The drone will seek out the individual by the shortest and safest available path, project the message."
+      },
+      {
+        "name": "Threat Identification Protocol",
+        "description": "When this drone makes a ranged attack, it can only attack the closest enemy."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "ACTION",
+        "name": "Twin Pulse Pistols",
+        "stats": "12 +1ED / AP - / Range 6-12-18 / Salvo 2 / Pistol"
+      },
+      {
+        "type": "REACTION",
+        "name": "Saviour Protocols",
+        "description": "If an allied T'au within 5m is the target of an attack, the Drone may attempt an Agility test (DN 3). If it succeeds, it interposes itself, and becomes the target of the attack instead. If multiple drones are within range to do this, only one drone may make the attempt."
+      }
+    ],
+    "source": "Abundance of Apocrypha"
+  },
+  {
+    "name": "HOVER DRONE PLATFORM",
+    "description": "Hover drones are larger units used as anti-gravity transports by important personages, such as Ethereals.",
+    "tierThreat": {
+      "1": "T",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "T'AU EMPIRE",
+      "DRONE",
+      "ETHEREAL CASTE"
+    ],
+    "attributes": {
+      "S": 3,
+      "T": 4,
+      "A": 5,
+      "I": 4,
+      "Wil": 2,
+      "Int": 1,
+      "Fel": 1
+    },
+    "resilience": {
+      "value": 9,
+      "note": "Armoured Shell: 4 AR"
+    },
+    "defence": 3,
+    "wounds": 6,
+    "shock": 4,
+    "skills": "Default 3, Awareness 4 (Passive 2)",
+    "determination": "Roll 4d6. A drone may only roll determination when using Saviour Protocols.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 10,
+    "size": "Large",
+    "id": "apoc_hover_drone_platform",
+    "bonuses": [
+      {
+        "name": "Artificial Intelligence",
+        "description": "A drone is immune to fear, terror, and all interaction-based skills. It can only perform simple actions in accordance with its programming or instructions given by an operator."
+      },
+      {
+        "name": "Platform",
+        "description": "A single Average-sized T'au not wearing a BATTLESUIT may stand upon a Hover Drone Platform. The platform does not take any actions of its own (not even the Saviour Protocols reaction), but rather, acts during the mounted character's turn, giving the mounted character a Speed of 10 (flight). It cannot be targeted separately from the mounted character."
+      }
+    ],
+    "abilities": [],
+    "source": "Abundance of Apocrypha"
+  },
+  {
+    "name": "MB-3 RECON DRONE",
+    "description": "Pathfinder teams are often accompanied by a Recon Drone, which provides both additional supporting firepower and a range of sensor data which is invaluable in the field.",
+    "tierThreat": {
+      "1": "T",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "T'AU EMPIRE",
+      "DRONE",
+      "PATHFINDER"
+    ],
+    "attributes": {
+      "S": 4,
+      "T": 4,
+      "A": 5,
+      "I": 4,
+      "Wil": 2,
+      "Int": 1,
+      "Fel": 1
+    },
+    "resilience": {
+      "value": 9,
+      "note": "Armoured Shell: 4 AR"
+    },
+    "defence": 3,
+    "wounds": 6,
+    "shock": 4,
+    "skills": "Default 3, Awareness 4 (Passive 2), Ballistic Skill 4",
+    "determination": "Roll 4d6. A drone may only roll determination when using Saviour Protocols.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 10,
+    "size": "Avg",
+    "id": "apoc_mb3_recon_drone",
+    "bonuses": [
+      {
+        "name": "Artificial Intelligence",
+        "description": "A drone is immune to fear, terror, and all interaction-based skills. It can only perform simple actions in accordance with its programming or instructions given by an operator."
+      },
+      {
+        "name": "Recon Suite",
+        "description": "The user, and any of the user's allies with the FIRE CASTE keyword, within 5 metres of the Recon Drone add +2 bonus dice to Awareness tests, and they may ignore any defence increase from cover when they make shooting attacks against enemies within 18m."
+      },
+      {
+        "name": "Threat Identification Protocol",
+        "description": "When this drone makes a ranged attack, it can only attack the closest enemy."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "ACTION",
+        "name": "Burst Cannon",
+        "stats": "12 +1ED / AP - / Range 9-18-27 / Salvo 6 / Assault, Rapid Fire (3), Heavy (4)"
+      },
+      {
+        "type": "REACTION",
+        "name": "Saviour Protocols",
+        "description": "If an allied T'au within 5m is the target of an attack, the Drone may attempt an Agility test (DN 3). If it succeeds, it interposes itself, and becomes the target of the attack instead. If multiple drones are within range to do this, only one drone may make the attempt."
+      }
+    ],
+    "source": "Abundance of Apocrypha"
+  },
+  {
+    "name": "MV-1 TACTICAL DRONE",
+    "description": "Tactical Drones, also called Gun Drones, are utilised by Fire Warrior teams, mounted onto vehicles, and found in dedicated squadrons of their own to support their flesh-and-blood allies.",
+    "tierThreat": {
+      "1": "T",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "T'AU EMPIRE",
+      "DRONE",
+      "FIRE CASTE"
+    ],
+    "attributes": {
+      "S": 3,
+      "T": 4,
+      "A": 5,
+      "I": 4,
+      "Wil": 2,
+      "Int": 1,
+      "Fel": 1
+    },
+    "resilience": {
+      "value": 9,
+      "note": "Armoured Shell: 4 AR"
+    },
+    "defence": 3,
+    "wounds": 6,
+    "shock": 4,
+    "skills": "Default 3, Awareness 4 (Passive 2), Ballistic Skill 4",
+    "determination": "Roll 4d6. A drone may only roll determination when using Saviour Protocols.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 10,
+    "size": "Avg",
+    "id": "apoc_mv1_tactical_drone",
+    "bonuses": [
+      {
+        "name": "Artificial Intelligence",
+        "description": "A drone is immune to fear, terror, and all interaction-based skills. It can only perform simple actions in accordance with its programming or instructions given by an operator."
+      },
+      {
+        "name": "Threat Identification Protocol",
+        "description": "When this drone makes a ranged attack, it can only attack the closest enemy."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "ACTION",
+        "name": "Twin Pulse Carbine",
+        "stats": "12 +1ED / AP - / Range 12-24-36 / Salvo 4 / Assault"
+      },
+      {
+        "type": "REACTION",
+        "name": "Saviour Protocols",
+        "description": "If an allied T'au within 5m is the target of an attack, the Drone may attempt an Agility test (DN 3). If it succeeds, it interposes itself, and becomes the target of the attack instead. If multiple drones are within range to do this, only one drone may make the attempt."
+      }
+    ],
+    "source": "Abundance of Apocrypha"
+  },
+  {
+    "name": "MV-31 PULSE ACCELERATOR DRONE",
+    "description": "Pulse Accelerator Drones are frequently used by Pathfinder teams. Their Pulse Accelerators augment the effectiveness of Pulse weapons used nearby.",
+    "tierThreat": {
+      "1": "T",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "T'AU EMPIRE",
+      "DRONE",
+      "PATHFINDER"
+    ],
+    "attributes": {
+      "S": 3,
+      "T": 4,
+      "A": 5,
+      "I": 4,
+      "Wil": 2,
+      "Int": 1,
+      "Fel": 1
+    },
+    "resilience": {
+      "value": 9,
+      "note": "Armoured Shell: 4 AR"
+    },
+    "defence": 3,
+    "wounds": 6,
+    "shock": 4,
+    "skills": "Default 3, Awareness 4 (Passive 2)",
+    "determination": "Roll 4d6. A drone may only roll determination when using Saviour Protocols.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 10,
+    "size": "Avg",
+    "id": "apoc_mv31_pulse_accelerator_drone",
+    "bonuses": [
+      {
+        "name": "Artificial Intelligence",
+        "description": "A drone is immune to fear, terror, and all interaction-based skills. It can only perform simple actions in accordance with its programming or instructions given by an operator."
+      },
+      {
+        "name": "Pulse Accelerator",
+        "description": "Allied characters within 5m of the Drone improve the AP of all PULSE weapons by 1 (i.e., AP - becomes AP -1, or AP -1 becomes AP -2)."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "REACTION",
+        "name": "Saviour Protocols",
+        "description": "If an allied T'au within 5m is the target of an attack, the Drone may attempt an Agility test (DN 3). If it succeeds, it interposes itself, and becomes the target of the attack instead. If multiple drones are within range to do this, only one drone may make the attempt."
+      }
+    ],
+    "source": "Abundance of Apocrypha"
+  },
+  {
+    "name": "MV-33 GRAV-INHIBITOR DRONE",
+    "description": "Grav-inhibitor Drones are often found accompanying Pathfinder teams. These drones are equipped with gravity wave projectiles, which hinder enemy attempts to close with the team.",
+    "tierThreat": {
+      "1": "T",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "T'AU EMPIRE",
+      "DRONE",
+      "PATHFINDER"
+    ],
+    "attributes": {
+      "S": 3,
+      "T": 4,
+      "A": 5,
+      "I": 4,
+      "Wil": 2,
+      "Int": 1,
+      "Fel": 1
+    },
+    "resilience": {
+      "value": 9,
+      "note": "Armoured Shell: 4 AR"
+    },
+    "defence": 3,
+    "wounds": 6,
+    "shock": 4,
+    "skills": "Default 3, Awareness 4 (Passive 2)",
+    "determination": "Roll 4d6. A drone may only roll determination when using Saviour Protocols.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 10,
+    "size": "Avg",
+    "id": "apoc_mv33_grav_inhibitor_drone",
+    "bonuses": [
+      {
+        "name": "Artificial Intelligence",
+        "description": "A drone is immune to fear, terror, and all interaction-based skills. It can only perform simple actions in accordance with its programming or instructions given by an operator."
+      },
+      {
+        "name": "Gravity Wave Projector",
+        "description": "Enemies attempting to Run, Sprint, or Charge to any point within 12m of the drone reduce their Speed by 1d3 (roll for each foe)."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "REACTION",
+        "name": "Saviour Protocols",
+        "description": "If an allied T'au within 5m is the target of an attack, the Drone may attempt an Agility test (DN 3). If it succeeds, it interposes itself, and becomes the target of the attack instead. If multiple drones are within range to do this, only one drone may make the attempt."
+      }
+    ],
+    "source": "Abundance of Apocrypha"
+  },
+  {
+    "name": "MV-36 GUARDIAN DRONE",
+    "description": "Guardian Drones accompany Fire Warrior teams, especially Breacher Teams. Their emitters generate a protective energy field around nearby allies, which is especially effective in conjunction with the field amplifiers worn by Breachers.",
+    "tierThreat": {
+      "1": "T",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "T'AU EMPIRE",
+      "DRONE",
+      "FIRE CASTE"
+    ],
+    "attributes": {
+      "S": 3,
+      "T": 4,
+      "A": 5,
+      "I": 4,
+      "Wil": 2,
+      "Int": 1,
+      "Fel": 1
+    },
+    "resilience": {
+      "value": 11,
+      "note": "Armoured Shell: 4 AR"
+    },
+    "defence": 3,
+    "wounds": 6,
+    "shock": 4,
+    "skills": "Default 3, Awareness 4 (Passive 2)",
+    "determination": "Roll 4d6. A drone may only roll determination when using Saviour Protocols.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 10,
+    "size": "Avg",
+    "id": "apoc_mv36_guardian_drone",
+    "bonuses": [
+      {
+        "name": "Artificial Intelligence",
+        "description": "A drone is immune to fear, terror, and all interaction-based skills. It can only perform simple actions in accordance with its programming or instructions given by an operator."
+      },
+      {
+        "name": "Guardian Field",
+        "description": "The drone's Resilience is increased by +2. The drone can protect up to 10 friendly FIRE CASTE allies within 10m, adding +1 to their Resilience. This bonus is increased to +2 for any ally equipped with a Field Relay Amplifier."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "REACTION",
+        "name": "Saviour Protocols",
+        "description": "If an allied T'au within 5m is the target of an attack, the Drone may attempt an Agility test (DN 3). If it succeeds, it interposes itself, and becomes the target of the attack instead. If multiple drones are within range to do this, only one drone may make the attempt."
+      }
+    ],
+    "source": "Abundance of Apocrypha"
+  },
+  {
+    "name": "MV-4 SHIELD DRONE",
+    "description": "Shield Drones are unarmed drones equipped with a shield generator, which are used to provide close protection to VIPs, battlefield commanders, battlesuits, and occasionally even line infantry squads.",
+    "tierThreat": {
+      "1": "T",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "T'AU EMPIRE",
+      "DRONE"
+    ],
+    "attributes": {
+      "S": 3,
+      "T": 4,
+      "A": 5,
+      "I": 4,
+      "Wil": 2,
+      "Int": 1,
+      "Fel": 1
+    },
+    "resilience": {
+      "value": 9,
+      "note": "*9, Shield Generator"
+    },
+    "defence": 3,
+    "wounds": 6,
+    "shock": 4,
+    "skills": "Default 3, Awareness 4 (Passive 2)",
+    "determination": "Roll 4d6. A drone may only roll determination when using Saviour Protocols. The Shield Drone can roll Determination against Mortal Wounds.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 10,
+    "size": "Avg",
+    "id": "apoc_mv4_shield_drone",
+    "bonuses": [
+      {
+        "name": "Artificial Intelligence",
+        "description": "A drone is immune to fear, terror, and all interaction-based skills. It can only perform simple actions in accordance with its programming or instructions given by an operator."
+      },
+      {
+        "name": "Shield Generator",
+        "description": "The Armour Rating of a Shield Generator is invulnerable, and it cannot be modified by an attack's AP. The Shield Drone can roll Determination against Mortal Wounds."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "REACTION",
+        "name": "Saviour Protocols",
+        "description": "If an allied T'au within 5m is the target of an attack, the Drone may attempt an Agility test (DN 3). If it succeeds, it interposes itself, and becomes the target of the attack instead. If multiple drones are within range to do this, only one drone may make the attempt."
+      }
+    ],
+    "source": "Abundance of Apocrypha"
+  },
+  {
+    "name": "MV-7 MARKER DRONE",
+    "description": "Marker Drones are fitted with a markerlight projector and are frequently used alongside other T'au forces to mark priority targets for elimination.",
+    "tierThreat": {
+      "1": "T",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "T'AU EMPIRE",
+      "DRONE",
+      "FIRE CASTE"
+    ],
+    "attributes": {
+      "S": 3,
+      "T": 4,
+      "A": 5,
+      "I": 4,
+      "Wil": 2,
+      "Int": 1,
+      "Fel": 1
+    },
+    "resilience": {
+      "value": 9,
+      "note": "Armoured Shell: 4 AR"
+    },
+    "defence": 3,
+    "wounds": 6,
+    "shock": 4,
+    "skills": "Default 3, Awareness 4 (Passive 2), Ballistic Skill 4",
+    "determination": "Roll 4d6. A drone may only roll determination when using Saviour Protocols.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 10,
+    "size": "Avg",
+    "id": "apoc_mv7_marker_drone",
+    "bonuses": [
+      {
+        "name": "Artificial Intelligence",
+        "description": "A drone is immune to fear, terror, and all interaction-based skills. It can only perform simple actions in accordance with its programming or instructions given by an operator."
+      },
+      {
+        "name": "Threat Identification Protocol",
+        "description": "When this drone makes a ranged attack, it can only attack the closest enemy."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "ACTION",
+        "name": "Markerlight",
+        "stats": "Range 18-36-54 / Salvo 0 / Special"
+      },
+      {
+        "type": "REACTION",
+        "name": "Saviour Protocols",
+        "description": "If an allied T'au within 5m is the target of an attack, the Drone may attempt an Agility test (DN 3). If it succeeds, it interposes itself, and becomes the target of the attack instead. If multiple drones are within range to do this, only one drone may make the attempt."
+      }
+    ],
+    "source": "Abundance of Apocrypha"
+  },
+  {
+    "name": "MV-71 SNIPER DRONE",
+    "description": "Sniper Drones are armed with potent Longshot pulse rifles. They tend to operate in small groups, directed by a single spotter using a drone controller, called a Firesight Marksman.",
+    "tierThreat": {
+      "1": "T",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "T'AU EMPIRE",
+      "DRONE",
+      "FIRE CASTE"
+    ],
+    "attributes": {
+      "S": 3,
+      "T": 4,
+      "A": 5,
+      "I": 4,
+      "Wil": 2,
+      "Int": 1,
+      "Fel": 1
+    },
+    "resilience": {
+      "value": 9,
+      "note": "Armoured Shell: 4 AR"
+    },
+    "defence": 3,
+    "wounds": 6,
+    "shock": 4,
+    "skills": "Default 3, Awareness 4 (Passive 2), Ballistic Skill 6",
+    "determination": "Roll 4d6. A drone may only roll determination when using Saviour Protocols.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 10,
+    "size": "Avg",
+    "id": "apoc_mv71_sniper_drone",
+    "bonuses": [
+      {
+        "name": "Artificial Intelligence",
+        "description": "A drone is immune to fear, terror, and all interaction-based skills. It can only perform simple actions in accordance with its programming or instructions given by an operator."
+      },
+      {
+        "name": "Threat Identification Protocol",
+        "description": "When this drone makes a ranged attack, it can only attack the closest enemy."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "ACTION",
+        "name": "Longshot Pulse Rifle",
+        "stats": "12 +1ED / AP -2 / Range 24-48-72 / Salvo 1 / Rapid Fire (1), Sniper (2)"
+      },
+      {
+        "type": "REACTION",
+        "name": "Saviour Protocols",
+        "description": "If an allied T'au within 5m is the target of an attack, the Drone may attempt an Agility test (DN 3). If it succeeds, it interposes itself, and becomes the target of the attack instead. If multiple drones are within range to do this, only one drone may make the attempt."
+      }
+    ],
+    "source": "Abundance of Apocrypha"
+  },
+  {
+    "name": "MV-8 MISSILE DRONE",
+    "description": "Missile Drones are normally found in support of heavy units such as XV88 Broadside Battlesuits, though this may change as Fire Caste Commanders evaluate their usefulness.",
+    "tierThreat": {
+      "1": "T",
+      "2": "T",
+      "3": "T",
+      "4": "T",
+      "5": "T"
+    },
+    "keywords": [
+      "T'AU EMPIRE",
+      "DRONE",
+      "XV88"
+    ],
+    "attributes": {
+      "S": 3,
+      "T": 4,
+      "A": 5,
+      "I": 4,
+      "Wil": 2,
+      "Int": 1,
+      "Fel": 1
+    },
+    "resilience": {
+      "value": 9,
+      "note": "Armoured Shell: 4 AR"
+    },
+    "defence": 3,
+    "wounds": 6,
+    "shock": 4,
+    "skills": "Default 3, Awareness 4 (Passive 2), Ballistic Skill 4",
+    "determination": "Roll 4d6. A drone may only roll determination when using Saviour Protocols.",
+    "conviction": 2,
+    "resolve": 1,
+    "speed": 10,
+    "size": "Avg",
+    "id": "apoc_mv8_missile_drone",
+    "bonuses": [
+      {
+        "name": "Artificial Intelligence",
+        "description": "A drone is immune to fear, terror, and all interaction-based skills. It can only perform simple actions in accordance with its programming or instructions given by an operator."
+      },
+      {
+        "name": "Stable Platform",
+        "description": "The drone counts as being braced, for the purposes of the Heavy trait, if it does not move on the same turn as it fires."
+      },
+      {
+        "name": "Threat Identification Protocol",
+        "description": "When this drone makes a ranged attack, it can only attack the closest enemy."
+      }
+    ],
+    "abilities": [
+      {
+        "type": "ACTION",
+        "name": "Missile Pod",
+        "stats": "14 +2ED / AP -1 / Range 18-36-54 / Salvo 2 / Barrage, Blast (2), Heavy (6)"
+      },
+      {
+        "type": "REACTION",
+        "name": "Saviour Protocols",
+        "description": "If an allied T'au within 5m is the target of an attack, the Drone may attempt an Agility test (DN 3). If it succeeds, it interposes itself, and becomes the target of the attack instead. If multiple drones are within range to do this, only one drone may make the attempt."
+      }
+    ],
+    "source": "Abundance of Apocrypha"
   }
 ]
